@@ -56,8 +56,9 @@ def clean_text(text):
     return text
 
 
-def _fetch_qq_cartoon_today():
+def _fetch_qq_cartoon_today() -> dict[str, list]:
     """从腾讯视频动漫频道获取今日更新的动漫信息。"""
+    html_path = "tencent_cartoon.html"  # 临时 HTML 文件名
     try:
         logger.info("开始抓取腾讯视频动漫频道每日更新信息...")
         random_delay()
@@ -176,6 +177,7 @@ def _fetch_qq_cartoon_today():
         logger.exception(f"获取腾讯动漫更新信息时发生意外错误: {str(e)}")
         return {}
     finally:
+        os.remove(html_path)  # 清理临时 HTML 文件
         random_delay()
 
 
