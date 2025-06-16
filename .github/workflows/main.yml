@@ -52,18 +52,16 @@ jobs:
         if: success()
         run: |
           git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"s
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
           # 生成智能提交信息
           timestamp=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
           commit_hash=$(git rev-parse --short HEAD)
           commit_msg="🌐 Update nodes - ${timestamp} (${commit_hash})"
           
-          # 添加所有变更文件
-          # git add -u README.md
+          git add -A  # 添加所有变更文件
           
-          # 仅在存在变更时提交
-          if ! git diff-index --quiet HEAD; then
+          if ! git diff-index --cached --quiet HEAD; then
             git commit -m "$commit_msg"
             git pull --rebase  # 防止冲突
             branch_name=${GITHUB_REF#refs/heads/}
