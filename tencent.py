@@ -13,14 +13,14 @@ import logging  # 导入 logging 模块
 from config import HEADERS, CARTOON_BASE_URL
 
 # 配置日志
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
 
 
 def random_delay(min_sec=1.2, max_sec=4.5):
     """引入随机延迟，模拟人类行为并避免被封锁。"""
     delay = random.uniform(min_sec, max_sec)
     time.sleep(delay)
-    logging.debug(f"延迟了 {delay:.2f} 秒。")
+    logger.debug(f"延迟了 {delay:.2f} 秒。")
 
 
 def normalize_url(url, base_url="https://v.qq.com"):
@@ -59,14 +59,14 @@ def clean_text(text):
 def fetch_qq_cartoon_today():
     """从腾讯视频动漫频道获取今日更新的动漫信息。"""
     try:
-        logging.info("开始抓取腾讯视频动漫频道每日更新信息...")
+        logger.info("开始抓取腾讯视频动漫频道每日更新信息...")
         random_delay()
 
         session = requests.Session()
         session.headers.update(HEADERS)
 
         # 获取页面内容
-        logging.info("正在获取腾讯动漫页面...")
+        logger.info("正在获取腾讯动漫页面...")
         res = session.get(CARTOON_BASE_URL, timeout=15)
         res.raise_for_status()  # 对于不良响应（4xx 或 5xx）抛出 HTTPError
 
@@ -75,7 +75,7 @@ def fetch_qq_cartoon_today():
         html_path = os.path.join(os.getcwd(), html_filename)  # 使用 os.path.join 构造路径
         with open(html_path, "w", encoding="utf-8") as f:
             f.write(res.text)
-        logging.info(f"HTML 已保存到 {html_path}")
+        logger.info(f"HTML 已保存到 {html_path}")
 
         # 解析 HTML
         soup = BeautifulSoup(res.text, "html.parser")
@@ -85,7 +85,7 @@ def fetch_qq_cartoon_today():
         weekday = weekday_map[datetime.now().weekday()]
         result = {weekday: []}
 
-        logging.info("正在查找今日更新模块...")
+        logger.info("正在查找今日更新模块...")
 
         today_updates_items = []
 
@@ -94,17 +94,17 @@ def fetch_qq_cartoon_today():
         for section in update_sections:
             title_div = section.find('div', class_='mod_figure_list_title')
             if title_div and "每日更新" in title_div.get_text():
-                logging.info("找到 '每日更新' 标题的 section。")
+                logger.info("找到 '每日更新' 标题的 section。")
                 today_updates_items = section.select('li.list_item')
                 if today_updates_items:
                     break  # 找到 section，无需检查其他 section
 
         # 方法 2: 如果未找到 "每日更新" section，尝试通过 ID 查找时间表模块
         if not today_updates_items:
-            logging.info("尝试通过 ID 查找时间表模块...")
+            logger.info("尝试通过 ID 查找时间表模块...")
             schedule_module = soup.find('div', id='schedule')
             if schedule_module:
-                logging.info("找到时间表模块。")
+                logger.info("找到时间表模块。")
                 # 查找 '今天' 标签，然后查找其对应的内容
                 today_tab = schedule_module.find('div', class_='tab_item', string='今天')
                 if today_tab:
@@ -115,21 +115,21 @@ def fetch_qq_cartoon_today():
                     # 目前，我们尝试在模块内查找任何列表项。
                     today_updates_items = schedule_module.select('div.tab_content li.list_item')
                     if today_updates_items:
-                        logging.info("在时间表模块中找到 '今天' 标签内容。")
+                        logger.info("在时间表模块中找到 '今天' 标签内容。")
 
         # 方法 3: 备用方案 - 收集所有列表项，然后尽可能根据更新信息进行筛选。
         # 这是在无法明确标记 "今日" section 时的最后手段。
         if not today_updates_items:
-            logging.warning("未找到明确的 '每日更新' 或 '今天' section。尝试选择所有潜在的更新项。")
+            logger.warning("未找到明确的 '每日更新' 或 '今天' section。尝试选择所有潜在的更新项。")
             # 此选择器范围较广，可能包含非今日更新项。
             # 后期处理需要更加小心。
             today_updates_items = soup.select('li.list_item')
 
         if not today_updates_items:
-            logging.warning("未使用任何方法找到更新内容。")
+            logger.warning("未使用任何方法找到更新内容。")
             return result
 
-        logging.info(f"找到 {len(today_updates_items)} 个潜在的更新项。")
+        logger.info(f"找到 {len(today_updates_items)} 个潜在的更新项。")
 
         for item in today_updates_items:
             # 提取动漫标题
@@ -146,7 +146,7 @@ def fetch_qq_cartoon_today():
             if not any(keyword in title for keyword in
                        ["动漫", "动画", "番剧", "剧场版", "影院版", "第季", "第部", "全集"]) \
                     and len(title) > 3:  # 假设动漫标题通常超过 3 个字符
-                logging.debug(f"跳过可能是非动漫的内容: '{title}'")
+                logger.debug(f"跳过可能是非动漫的内容: '{title}'")
                 continue
             """
             # 提取详情链接
@@ -194,22 +194,22 @@ def fetch_qq_cartoon_today():
             }
 
             result[weekday].append(anime_info)
-            logging.info(f"已添加: '{title}'")
+            logger.info(f"已添加: '{title}'")
 
         return result
 
     except requests.exceptions.Timeout:
-        logging.error("请求超时。将在 10 秒后重试...")
+        logger.error("请求超时。将在 10 秒后重试...")
         time.sleep(10)
         return fetch_qq_cartoon_today()  # 重试一次
     except requests.exceptions.TooManyRedirects:
-        logging.error("重定向过多。请检查 URL。")
+        logger.error("重定向过多。请检查 URL。")
         return {}
     except requests.exceptions.RequestException as e:
-        logging.error(f"网络请求错误: {str(e)}")
+        logger.error(f"网络请求错误: {str(e)}")
         return {}
     except Exception as e:
-        logging.exception(f"获取腾讯动漫更新信息时发生意外错误: {str(e)}")  # 记录 traceback
+        logger.exception(f"获取腾讯动漫更新信息时发生意外错误: {str(e)}")  # 记录 traceback
         return {}
     finally:
         random_delay()
@@ -218,24 +218,24 @@ def fetch_qq_cartoon_today():
 def save_results(results, filename="tencent_cartoon.json"):
     """将结果保存到 JSON 文件。"""
     if not results:
-        logging.info("没有可保存的结果。")
+        logger.info("没有可保存的结果。")
         return
 
     file_path = os.path.join(os.getcwd(), filename)
     with open(file_path, 'w', encoding='utf-8') as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
-    logging.info(f"结果已保存到 {file_path}")
+    logger.info(f"结果已保存到 {file_path}")
 
 
 def print_results(results):
     """将获取到的动漫更新结果打印到控制台。"""
     if not results:
-        logging.info("没有找到任何更新信息可供打印。")
+        logger.info("没有找到任何更新信息可供打印。")
         return
 
     weekday = list(results.keys())[0]
     if not results[weekday]:
-        logging.info(f"{weekday} 没有找到更新的动漫。")
+        logger.info(f"{weekday} 没有找到更新的动漫。")
         return
 
     print(f"\n{weekday} 更新动漫列表:")
@@ -269,11 +269,11 @@ if __name__ == "__main__":
             print_results(today_updates)
             save_results(today_updates, f"tencent_cartoon_test_{i}.json")
         else:
-            logging.warning("未能获取今日更新信息。")
+            logger.warning("未能获取今日更新信息。")
 
         # 在测试之间添加较长延迟，除非是最后一次测试
         if i < num_tests:
-            logging.info(f"\n等待 10 秒后进行下一次测试 (测试 #{i + 1})...")
+            logger.info(f"\n等待 10 秒后进行下一次测试 (测试 #{i + 1})...")
             time.sleep(10)
 
     print("\n所有测试完成！")
