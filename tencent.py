@@ -1,14 +1,14 @@
-import requests
-import requests
-from bs4 import BeautifulSoup
-from urllib.parse import urljoin
 import json
-from datetime import datetime
+import logging  # 导入 logging 模块
+import os
+import random
 import re
 import time
-import random
-import os
-import logging  # 导入 logging 模块
+from datetime import datetime
+from urllib.parse import urljoin, unquote
+
+import requests
+from bs4 import BeautifulSoup
 
 from config import HEADERS, CARTOON_BASE_URL
 
@@ -87,45 +87,79 @@ def fetch_qq_cartoon_today():
 
         logger.info("正在查找今日更新模块...")
 
-        today_updates_items = []
+        # 查找所有包含动漫项目的容器
+        banner_wraps = soup.find_all('div', class_='form-banner-item-wrap')
+        logger.info(f"找到 {len(banner_wraps)} 个动漫容器")
 
-        # 方法 1: 查找明确标题为 "今日更新" 的 section
-        update_sections = soup.find_all('div', class_='form-banner-item-wrap')
-        for section in update_sections:
-            title_div = section.text.strip()  # 获取 section 的文本内容
-            logger.info(f"检查 section 标题: {title_div}")
-            # 先按 “独播” 分割，丢弃第一个空串
-            chunks = [c.strip() for c in title_div.split("独播") if c.strip()]
+        for wrap in banner_wraps:
+            # 每个容器内有多个项目，但只取第一个实际显示的项目
+            video_items = wrap.find_all('div', class_='video-banner-item')
 
-            pattern = re.compile(
-                r"更新至(?P<update_count>\d+集)\s+"
-                r"(?P<title>[\u4e00-\u9fa5\w\s\-\']+?)\s+"
-                r"(?P=title)\s+"
-                r"(?P<update_info>.+?)追在追\s+"
-                r"(?P=title)\s+"
-                r"(?P<tagline>.+)$"
-            )
-
-            for chunk in chunks:
-                # 去掉多余空白和 HTML nbsp 符号
-                clean = re.sub(r"\u00A0|\s{2,}", " ", chunk).strip()
-                m = pattern.match(clean)
-                if not m:
-                    continue
-
-                # 添加到结果
-                anime_info = {
+            for item in video_items:
+                # 提取主要信息
+                data = {
                     "platform": "tencent",
-                    "title": m.group("title").strip(),
-                    "update_count": m.group("update_count"),
-                    "update_info": m.group("update_info").strip(),  # 如果 update_info 可用则使用，否则使用 episodes
-                    "image": "",
-                    "link": "",
-                    "text": m.group("tagline").strip()
+                    "title": None,
+                    "update_count": None,
+                    "update_info": None,
+                    "image_url": None,
+                    "detail_url": None,
+                    "tagline": None,
+                    "metadata": {}
                 }
 
-                result[weekday].append(anime_info)
-                logger.info(f"已添加: '{m.group("title").strip()}'")
+                # 提取标题
+                title_elem = item.select_one('.banner-title')
+                if title_elem:
+                    data["title"] = clean_text(title_elem.get_text(strip=True))
+
+                # 提取更新集数
+                update_count_elem = item.select_one('.corner-mark--rightBottom')
+                if update_count_elem:
+                    data["update_count"] = clean_text(update_count_elem.get_text(strip=True))
+
+                # 提取更新说明
+                update_info_elem = item.select_one('.banner-subtitle')
+                if update_info_elem:
+                    data["update_info"] = clean_text(update_info_elem.get_text(strip=True))
+
+                # 提取封面图片
+                img_elem = item.select_one('.banner-cover')
+                if img_elem:
+                    img_url = img_elem.get('data-src') or img_elem.get('src')
+                    if img_url:
+                        data["image"] = normalize_url(img_url)
+
+                # 提取详情链接
+                link_elem = item.select_one('.banner-cover-wrap')
+                if link_elem and link_elem.get('href'):
+                    data["link"] = normalize_url(link_elem['href'])
+
+                # 提取宣传语
+                tagline_elem = item.select_one('.tag-wrap span')
+                if tagline_elem:
+                    data["tagline"] = clean_text(tagline_elem.get_text(strip=True))
+
+                # 提取平台信息
+                platform_elem = item.select_one('.corner-mark--rightTop')
+                if platform_elem:
+                    data["platform"] = data["platform"] + clean_text(platform_elem.get_text(strip=True))
+
+                # 提取元数据参数
+                dt_params = item.get('dt-params', '')
+                if dt_params:
+                    params = {}
+                    for pair in dt_params.split('&'):
+                        if '=' in pair:
+                            key, value = pair.split('=', 1)
+                            params[key] = unquote(value)
+
+                    data["metadata"] = params
+
+                # 添加到结果列表
+                if data["title"]:
+                    result[weekday].append(data)
+                    logger.info(f"已添加: {data['title']}")
 
         return result
 
@@ -140,7 +174,7 @@ def fetch_qq_cartoon_today():
         logger.error(f"网络请求错误: {str(e)}")
         return {}
     except Exception as e:
-        logger.exception(f"获取腾讯动漫更新信息时发生意外错误: {str(e)}")  # 记录 traceback
+        logger.exception(f"获取腾讯动漫更新信息时发生意外错误: {str(e)}")
         return {}
     finally:
         random_delay()
