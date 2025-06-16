@@ -56,7 +56,7 @@ def clean_text(text):
     return text
 
 
-def fetch_qq_cartoon_today():
+def _fetch_qq_cartoon_today():
     """从腾讯视频动漫频道获取今日更新的动漫信息。"""
     try:
         logger.info("开始抓取腾讯视频动漫频道每日更新信息...")
@@ -165,7 +165,7 @@ def fetch_qq_cartoon_today():
     except requests.exceptions.Timeout:
         logger.error("请求超时。将在 10 秒后重试...")
         time.sleep(10)
-        return fetch_qq_cartoon_today()  # 重试一次
+        return _fetch_qq_cartoon_today()  # 重试一次
     except requests.exceptions.TooManyRedirects:
         logger.error("重定向过多。请检查 URL。")
         return {}
@@ -219,19 +219,20 @@ def print_results(results):
     print(f"\n统计: 共找到 {len(results[weekday])} 部今日更新的动漫")
 
 
-if __name__ == "__main__":
+def fetch_qq_cartoon_today() -> dict[str, list] | None:
     # 执行 5 次测试
     num_tests = 5
     for i in range(1, num_tests + 1):
-        print(f"\n{'=' * 40}")
-        print(f"测试 #{i}")
-        print(f"{'=' * 40}")
+        logger.info(f"\n{'=' * 40}")
+        logger.info(f"测试 #{i}")
+        logger.info(f"{'=' * 40}")
 
-        today_updates = fetch_qq_cartoon_today()
+        today_updates = _fetch_qq_cartoon_today()
 
         if today_updates:
             print_results(today_updates)
-            save_results(today_updates, f"tencent_cartoon_test_{i}.json")
+            return today_updates
+            # save_results(today_updates, f"tencent_cartoon_test_{i}.json")
         else:
             logger.warning("未能获取今日更新信息。")
 
@@ -240,4 +241,7 @@ if __name__ == "__main__":
             logger.info(f"\n等待 10 秒后进行下一次测试 (测试 #{i + 1})...")
             time.sleep(10)
 
+
+if __name__ == "__main__":
+    fetch_qq_cartoon_today()
     print("\n所有测试完成！")
