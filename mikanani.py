@@ -20,10 +20,14 @@ def fetch_mikanani_today():
                 a = li.find("a", href=True)
                 title = a.get_text(strip=True) if a else text
                 link = urljoin(MIKANANI_BASE_URL, a["href"]) if a else None
-                result[weekday].append({
+                anime_info = {
                     "platform": "Mikanani",
                     "title": title,
+                    "update_count": "",
+                    "update_info": "",
+                    "image": "",
                     "link": link,
                     "text": text
-                })
+                }
+                result[weekday].append(anime_info)
     return result
