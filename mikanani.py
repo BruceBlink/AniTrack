@@ -6,6 +6,7 @@ from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 from datetime import datetime
 
+import config
 from config import MIKANANI_BASE_URL, HEADERS
 
 logger = logging.getLogger(__name__)
@@ -18,7 +19,7 @@ def fetch_mikanani_today():
     soup = BeautifulSoup(res.text, "html.parser")
     logger.info(f"Parsing today's Mikanani data: {soup}")
     today_str = datetime.now().strftime("%Y/%m/%d")
-    weekday = ["星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日"][datetime.now().weekday()]
+    weekday = config.weekday
     result = {weekday: []}
     for li in soup.find_all("li"):
         if li.find("div", class_="num-node text-center"):
