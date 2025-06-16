@@ -22,7 +22,7 @@
 1. 克隆仓库到本地：
 
 ```bash
-git clone [仓库地址]
+git clone https://github.com/BruceBlink/WatchDaily
 cd WatchDaily
 ```
 
