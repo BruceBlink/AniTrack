@@ -90,111 +90,42 @@ def fetch_qq_cartoon_today():
         today_updates_items = []
 
         # 方法 1: 查找明确标题为 "今日更新" 的 section
-        update_sections = soup.find_all('section', class_='mod_figure_list')
+        update_sections = soup.find_all('div', class_='form-banner-item-wrap')
         for section in update_sections:
-            title_div = section.find('div', class_='mod_figure_list_title')
-            if title_div and "每日更新" in title_div.get_text():
-                logger.info("找到 '每日更新' 标题的 section。")
-                today_updates_items = section.select('li.list_item')
-                if today_updates_items:
-                    break  # 找到 section，无需检查其他 section
+            title_div = section.text.strip()  # 获取 section 的文本内容
+            logger.info(f"检查 section 标题: {title_div}")
+            # 先按 “独播” 分割，丢弃第一个空串
+            chunks = [c.strip() for c in title_div.split("独播") if c.strip()]
 
-        # 方法 2: 如果未找到 "每日更新" section，尝试通过 ID 查找时间表模块
-        if not today_updates_items:
-            logger.info("尝试通过 ID 查找时间表模块...")
-            schedule_module = soup.find('div', id='schedule')
-            if schedule_module:
-                logger.info("找到时间表模块。")
-                # 查找 '今天' 标签，然后查找其对应的内容
-                today_tab = schedule_module.find('div', class_='tab_item', string='今天')
-                if today_tab:
-                    # 活跃标签的内容通常有 'tab_content_active' 或类似。
-                    # 或者，有时它只是下一个兄弟元素或具有特定 ID/class 的 div。
-                    # 此选择器假定活跃内容在 'tab_content' 中且是活跃的。
-                    # 一个更健壮的解决方案可能涉及检查 'data-index' 或 'data-tab' 属性（如果它们明确链接）。
-                    # 目前，我们尝试在模块内查找任何列表项。
-                    today_updates_items = schedule_module.select('div.tab_content li.list_item')
-                    if today_updates_items:
-                        logger.info("在时间表模块中找到 '今天' 标签内容。")
+            pattern = re.compile(
+                r"更新至(?P<update_count>\d+集)\s+"
+                r"(?P<title>[\u4e00-\u9fa5\w\s\-\']+?)\s+"
+                r"(?P=title)\s+"
+                r"(?P<update_info>.+?)追在追\s+"
+                r"(?P=title)\s+"
+                r"(?P<tagline>.+)$"
+            )
 
-        # 方法 3: 备用方案 - 收集所有列表项，然后尽可能根据更新信息进行筛选。
-        # 这是在无法明确标记 "今日" section 时的最后手段。
-        if not today_updates_items:
-            logger.warning("未找到明确的 '每日更新' 或 '今天' section。尝试选择所有潜在的更新项。")
-            # 此选择器范围较广，可能包含非今日更新项。
-            # 后期处理需要更加小心。
-            today_updates_items = soup.select('li.list_item')
+            for chunk in chunks:
+                # 去掉多余空白和 HTML nbsp 符号
+                clean = re.sub(r"\u00A0|\s{2,}", " ", chunk).strip()
+                m = pattern.match(clean)
+                if not m:
+                    continue
 
-        if not today_updates_items:
-            logger.warning("未使用任何方法找到更新内容。")
-            return result
+                # 添加到结果
+                anime_info = {
+                    "platform": "tencent",
+                    "title": m.group("title").strip(),
+                    "update_count": m.group("update_count"),
+                    "update_info": m.group("update_info").strip(),  # 如果 update_info 可用则使用，否则使用 episodes
+                    "image": "",
+                    "link": "",
+                    "text": m.group("tagline").strip()
+                }
 
-        logger.info(f"找到 {len(today_updates_items)} 个潜在的更新项。")
-
-        for item in today_updates_items:
-            # 提取动漫标题
-            title = "未知标题"
-            # 优先选择 'figure_title a'，因为它通常是直接的链接/标题
-            title_tag = item.select_one('a.figure_title, div.figure_title a, div.figure_title')
-            if title_tag:
-                title = clean_text(title_tag.get_text(strip=True))
-
-            # 根据标题中的关键词进行非动漫内容的基本过滤
-            # 这是一种启发式方法，可能需要根据观察到的数据进行调整。
-            # 此外，检查标题是否过短或过于通用，这可能表示是广告或不相关的项目。
-            """
-            if not any(keyword in title for keyword in
-                       ["动漫", "动画", "番剧", "剧场版", "影院版", "第季", "第部", "全集"]) \
-                    and len(title) > 3:  # 假设动漫标题通常超过 3 个字符
-                logger.debug(f"跳过可能是非动漫的内容: '{title}'")
-                continue
-            """
-            # 提取详情链接
-            link = ""
-            link_tag = item.select_one('a.figure, a.figure_title')  # 'a.figure' 通常是主要的点击区域
-            if link_tag and link_tag.get('href'):
-                link = normalize_url(link_tag['href'])
-
-            # 提取更新集数（例如："更新至30集"）
-            episodes = "更新信息未知"
-            # 寻找特定的 class 或模式以获取集数信息
-            episode_tag = item.select_one('div.figure_desc, div.figure_info, span.figure_update')
-            if episode_tag:
-                episodes = clean_text(episode_tag.get_text(strip=True))
-
-            # 提取封面图片 URL
-            img_url = ""
-            # 优先使用 data-src（如果可用），然后是 src
-            img_tag = item.select_one('img.figure_pic, img.pic, img[src*="qq.com/v"], img[data-src*="qq.com/v"]')
-            if img_tag:
-                img_url = img_tag.get('data-src') or img_tag.get('src', '')
-                img_url = normalize_url(img_url)
-
-                # 忽略 base64 占位图
-                if img_url.startswith('data:image'):
-                    img_url = ""
-
-            # 提取更新说明/标题，如果它与集数信息不同
-            update_info = ""
-            # 此选择器需要与 'episode_tag' 区分开（如果可能）
-            # 有时 'figure_caption' 可能包含比集数更广泛的信息
-            caption_tag = item.select_one('div.figure_caption')
-            if caption_tag and caption_tag != episode_tag:  # 确保它与 episode_tag 不同
-                update_info = clean_text(caption_tag.get_text(strip=True))
-
-            # 添加到结果
-            anime_info = {
-                "platform": "tencent",
-                "title": title,
-                "update_count": episodes,
-                "update_info": update_info if update_info else episodes,  # 如果 update_info 可用则使用，否则使用 episodes
-                "image": img_url,
-                "link": link,
-                "text": f"{title} | {episodes}{' | ' + update_info if update_info and update_info != episodes else ''}"
-            }
-
-            result[weekday].append(anime_info)
-            logger.info(f"已添加: '{title}'")
+                result[weekday].append(anime_info)
+                logger.info(f"已添加: '{m.group("title").strip()}'")
 
         return result
 
