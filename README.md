@@ -72,11 +72,8 @@ pip install -r requirements.txt
 python main.py
 ```
 
-1. 更新信息将保存在 `mikanani_today.json` 文件中
-
 ## 数据存储
 
-- `mikanani_today.json`: 存储从蜜柑计划获取的每日更新信息
 
 ## 项目文件说明
 
