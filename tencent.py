@@ -4,12 +4,12 @@ import os
 import random
 import re
 import time
-from datetime import datetime
 from urllib.parse import urljoin, unquote
 
 import requests
 from bs4 import BeautifulSoup
 
+import config
 from config import HEADERS, CARTOON_BASE_URL
 
 # 配置日志
@@ -81,8 +81,7 @@ def fetch_qq_cartoon_today():
         soup = BeautifulSoup(res.text, "html.parser")
 
         # 获取今天的中文星期
-        weekday_map = ["周一", "周二", "周三", "周四", "周五", "周六", "周日"]
-        weekday = weekday_map[datetime.now().weekday()]
+        weekday = config.weekday
         result = {weekday: []}
 
         logger.info("正在查找今日更新模块...")

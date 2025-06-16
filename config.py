@@ -1,3 +1,5 @@
+from datetime import datetime
+
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 "
                   "Safari/537.36 Edg/125.0.0.0",
@@ -20,3 +22,4 @@ HEADERS = {
 
 CARTOON_BASE_URL = "https://v.qq.com/channel/cartoon"
 MIKANANI_BASE_URL = "https://mikanani.me"
+weekday = ["星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日"][datetime.now().weekday()]
