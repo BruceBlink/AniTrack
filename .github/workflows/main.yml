@@ -2,7 +2,7 @@ name: Watch-Daily-Update
 
 on:
   schedule:
-    - cron: '0 */3 * * *'  # 每3小时运行一次（UTC时间）
+    - cron: '0 8-11,20-23 * * *'  # 每天在 08:00、09:00、10:00、11:00 以及 20:00、21:00、22:00、23:00（UTC）运行
   workflow_dispatch:
   push:
     paths-ignore:
