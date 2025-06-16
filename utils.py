@@ -18,7 +18,7 @@ def update_today_section_in_readme(data):
         for item in items:
             title = item["title"]
             link = item["link"]
-            text = item["text"]
+            text = item.get("text") or items.get("update_count")
             if link:
                 today_md.append(f"- [{title}]({link}) - {text}\n")
             else:
@@ -29,3 +29,13 @@ def update_today_section_in_readme(data):
 
         with open("README.md", "w", encoding="utf-8") as f:
             f.writelines(lines)
+
+
+def merge_data(dict1:dict[str,list], dict2:dict[str,list]) -> dict[str, list]:
+    """
+    合并两个数据字典，优先保留 data1 中的条目。
+    """
+    merged_dict = {}
+    for key in set(dict1.keys()) | set(dict2.keys()):
+        merged_dict[key] = dict1.get(key, []) + dict2.get(key, [])
+    return merged_dict
