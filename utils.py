@@ -18,7 +18,7 @@ def update_today_section_in_readme(data):
         for item in items:
             title = item["title"]
             link = item["link"]
-            text = item.get("text") or items.get("update_count")
+            text = item.get("text") or item.get("update_count") or "未知"
             if link:
                 today_md.append(f"- [{title}]({link}) - {text}\n")
             else:
