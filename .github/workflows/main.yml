@@ -1,4 +1,4 @@
-name: free-v2ray-node
+name: Watch-Daily-Update
 
 on:
   schedule:
@@ -14,7 +14,7 @@ on:
 
 jobs:
   update-nodes:
-    name: Update Proxy Nodes
+    name: Update Daily Watch
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -60,7 +60,7 @@ jobs:
           commit_msg="🌐 Update nodes - ${timestamp} (${commit_hash})"
           
           # 添加所有变更文件
-          # git add README.md
+          # git add -u README.md
           
           # 仅在存在变更时提交
           if ! git diff-index --quiet HEAD; then
