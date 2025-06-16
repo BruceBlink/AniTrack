@@ -1,4 +1,5 @@
 import logging
+import re
 
 import requests
 from bs4 import BeautifulSoup
@@ -21,17 +22,22 @@ def fetch_mikanani_today():
     result = {weekday: []}
     for li in soup.find_all("li"):
         if li.find("div", class_="num-node text-center"):
-            text = li.get_text(" ", strip=True)[2:]
+            text = li.get_text(" ", strip=True)[2:15]
             if today_str in text:
                 a = li.find("a", href=True)
                 title = a.get_text(strip=True) if a else text
                 link = urljoin(MIKANANI_BASE_URL, a["href"]) if a else None
+                # 提取背景图 URL
+                span = li.find("span", class_="js-expand_bangumi")
+                image = ""
+                if span and span.has_attr("data-src"):
+                    image = urljoin(MIKANANI_BASE_URL, span["data-src"])
                 anime_info = {
                     "platform": "Mikanani",
                     "title": title,
                     "update_count": "",
                     "update_info": "",
-                    "image": "",
+                    "image": image,
                     "link": link,
                     "text": text
                 }
