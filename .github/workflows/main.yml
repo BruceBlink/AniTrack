@@ -42,20 +42,12 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run node collector
+      - name: Run cartoon collector
         run: python main.py
         timeout-minutes: 150
         env:
           MAX_CONCURRENT_TESTS: 50  # 自定义并发数
 
-      - name: Validate output
-        id: validation
-        run: |
-#          # 检查文件存在性、大小和基本格式
-#          if [ ! -f "v2ray.txt" ]; then
-#            echo "::error::Output file not found"
-#            exit 1
-#          fi
       - name: Commit changes
         if: success()
         run: |
@@ -68,7 +60,7 @@ jobs:
           commit_msg="🌐 Update nodes - ${timestamp} (${commit_hash})"
           
           # 添加所有变更文件
-          # git add v2ray.txt
+          # git add README.md
           
           # 仅在存在变更时提交
           if ! git diff-index --quiet HEAD; then
