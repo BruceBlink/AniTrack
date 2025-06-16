@@ -16,8 +16,10 @@
 
 ### 星期一 番剧更新
 - [转生成猫咪的大叔](https://mikanani.me/Home/Bangumi/3491) - 2025/06/16 更新
+- [鬼人幻灯抄](https://mikanani.me/Home/Bangumi/3580) - 2025/06/16 更新
 - [随兴旅-That's Journey-](https://mikanani.me/Home/Bangumi/3598) - 2025/06/16 更新
 - [夏日口袋](https://mikanani.me/Home/Bangumi/3599) - 2025/06/16 更新
+- [测不准的阿波连同学 第二季](https://mikanani.me/Home/Bangumi/3612) - 2025/06/16 更新
 - [航海王](https://mikanani.me/Home/Bangumi/228) - 2025/06/16 更新
 - [魔神创造传](https://mikanani.me/Home/Bangumi/3534) - 2025/06/16 更新
 - [魔女守护者](https://mikanani.me/Home/Bangumi/3587) - 2025/06/16 更新
@@ -33,6 +35,14 @@
 - [推理要在晚餐后](https://mikanani.me/Home/Bangumi/3605) - 2025/06/16 更新
 - [摇滚乃是淑女的爱好](https://mikanani.me/Home/Bangumi/3606) - 2025/06/16 更新
 - [终末起点](https://mikanani.me/Home/Bangumi/3615) - 2025/06/16 更新
+- [仙逆](https://v.qq.com/x/cover/mzc00200aaogpgh.html) - 更新至93集
+- [大猿魂](https://v.qq.com/x/cover/mzc0020096xci6x.html) - 更新至04集
+- [诛仙合集篇](https://v.qq.com/x/cover/mzc00200phqxwd6.html) - 更新至05集
+- [吞天记](https://v.qq.com/x/cover/mzc00200t39giu5.html) - 更新至12集
+- [无上神帝](https://v.qq.com/x/cover/mzc00200ilydv1a.html) - 更新至500集
+- [逆天至尊](https://v.qq.com/x/cover/mzc00200azkttu2.html) - 更新至419集
+- [吞噬星空](https://v.qq.com/x/cover/324olz7ilvo2j5f.html) - 更新至176集
+- [星辰变 第6季](https://v.qq.com/x/cover/mzc002006wuirfi.html) - 更新至16集
 
 ## 系统要求
 
