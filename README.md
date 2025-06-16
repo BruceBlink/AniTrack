@@ -14,6 +14,23 @@
 
 ## 今日更新
 ### 星期一 番剧更新
+- [转生成猫咪的大叔](https://mikanani.me/Home/Bangumi/3491) - 2025/06/16 更新 转生成猫咪的大叔
+- [随兴旅-That's Journey-](https://mikanani.me/Home/Bangumi/3598) - 2025/06/16 更新 随兴旅-That's Journey-
+- [夏日口袋](https://mikanani.me/Home/Bangumi/3599) - 2025/06/16 更新 夏日口袋
+- [航海王](https://mikanani.me/Home/Bangumi/228) - 2025/06/16 更新 航海王
+- [魔神创造传](https://mikanani.me/Home/Bangumi/3534) - 2025/06/16 更新 魔神创造传
+- [魔女守护者](https://mikanani.me/Home/Bangumi/3587) - 2025/06/16 更新 魔女守护者
+- [赛马娘 芦毛灰姑娘](https://mikanani.me/Home/Bangumi/3604) - 2025/06/16 更新 赛马娘 芦毛灰姑娘
+- [受到猩猩之神庇护的大小姐在皇家骑士团受到宠爱](https://mikanani.me/Home/Bangumi/3608) - 2025/06/16 更新 受到猩猩之神庇护的大小姐在皇家骑士团受到宠爱
+- [爱有些沉重的黑暗精灵从异世界追过来了](https://mikanani.me/Home/Bangumi/3617) - 2025/06/16 更新 爱有些沉重的黑暗精灵从异世界追过来了
+- [快藏起来！玛琪娜同学!!](https://mikanani.me/Home/Bangumi/3621) - 2025/06/16 更新 快藏起来！玛琪娜同学!!
+- [拉撒路](https://mikanani.me/Home/Bangumi/3624) - 2025/06/16 更新 拉撒路
+- [时光流逝，饭菜依旧美味](https://mikanani.me/Home/Bangumi/3623) - 2025/06/16 更新 时光流逝，饭菜依旧美味
+- [mono女孩](https://mikanani.me/Home/Bangumi/3628) - 2025/06/16 更新 mono女孩
+- [药屋少女的呢喃 第二季](https://mikanani.me/Home/Bangumi/3530) - 2025/06/16 更新 药屋少女的呢喃 第二季
+- [推理要在晚餐后](https://mikanani.me/Home/Bangumi/3605) - 2025/06/16 更新 推理要在晚餐后
+- [摇滚乃是淑女的爱好](https://mikanani.me/Home/Bangumi/3606) - 2025/06/16 更新 摇滚乃是淑女的爱好
+- [终末起点](https://mikanani.me/Home/Bangumi/3615) - 2025/06/16 更新 终末起点
 ## 系统要求
 
 - Python 3.12+
