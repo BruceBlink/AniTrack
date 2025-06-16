@@ -31,9 +31,9 @@ def update_today_section_in_readme(data):
             f.writelines(lines)
 
 
-def merge_data(dict1:dict[str,list], dict2:dict[str,list]) -> dict[str, list]:
+def merge_data(dict1: dict[str, list], dict2: dict[str, list]) -> dict[str, list]:
     """
-    合并两个数据字典，优先保留 data1 中的条目。
+    合并两个数据字典
     """
     merged_dict = {}
     for key in set(dict1.keys()) | set(dict2.keys()):
