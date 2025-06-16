@@ -37,7 +37,7 @@ pip install -r requirements.txt
 1. 运行主程序：
 
 ```bash
-python mikanani.py
+python main.py
 ```
 
 1. 更新信息将保存在 `mikanani_today.json` 文件中
