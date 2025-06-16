@@ -1,4 +1,9 @@
-def update_today_section_in_readme(data):
+def update_today_section_in_readme(data: dict[str, list]) -> None:
+    """
+    更新 README.md 中的 "今日更新" 部分的内容
+    :param data:
+    :return:
+    """
     weekday = list(data.keys())[0]
     items = data[weekday]
     with open("README.md", "r", encoding="utf-8") as f:
