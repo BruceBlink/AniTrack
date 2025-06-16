@@ -8,7 +8,7 @@ def update_today_section_in_readme(data):
     end_idx = None
     for i, line in enumerate(lines):
         if line.strip() == "## 今日更新":
-            start_idx = i + 1
+            start_idx = i + 2  # 跳过标题和空行
         if line.strip() == "## 系统要求":
             end_idx = i
             break
@@ -24,8 +24,7 @@ def update_today_section_in_readme(data):
             else:
                 today_md.append(f"- {title} - {text}\n")
         # 保证末尾有空行
-        if not today_md[-1].endswith("\n"):
-            today_md[-1] += "\n"
+        today_md[-1] += "\n"
         lines[start_idx:end_idx] = today_md
 
         with open("README.md", "w", encoding="utf-8") as f:
