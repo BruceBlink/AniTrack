@@ -1,15 +1,13 @@
 import requests
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
-import json
 from datetime import datetime
 
-HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
-BASE_URL = "https://mikanani.me"
+from config import MIKANANI_BASE_URL, HEADERS
 
 
 def fetch_mikanani_today():
-    res = requests.get(BASE_URL, headers=HEADERS, timeout=10)
+    res = requests.get(MIKANANI_BASE_URL, headers=HEADERS, timeout=10)
     res.raise_for_status()
     soup = BeautifulSoup(res.text, "html.parser")
     today_str = datetime.now().strftime("%Y/%m/%d")
@@ -21,7 +19,7 @@ def fetch_mikanani_today():
             if today_str in text:
                 a = li.find("a", href=True)
                 title = a.get_text(strip=True) if a else text
-                link = urljoin(BASE_URL, a["href"]) if a else None
+                link = urljoin(MIKANANI_BASE_URL, a["href"]) if a else None
                 result[weekday].append({
                     "platform": "Mikanani",
                     "title": title,
