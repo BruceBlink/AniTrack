@@ -40,15 +40,6 @@
 - [防风少年 第二季](https://mikanani.me/Home/Bangumi/3634) - 2025/06/16 更新
 - [终末起点](https://mikanani.me/Home/Bangumi/3615) - 2025/06/16 更新
 - [记忆缝线](https://mikanani.me/Home/Bangumi/3620) - 2025/06/16 更新
-- [仙逆](https://v.qq.com/x/cover/mzc00200aaogpgh.html) - 更新至93集
-- [大猿魂](https://v.qq.com/x/cover/mzc0020096xci6x.html) - 更新至04集
-- [诛仙合集篇](https://v.qq.com/x/cover/mzc00200phqxwd6.html) - 更新至05集
-- [吞天记](https://v.qq.com/x/cover/mzc00200t39giu5.html) - 更新至12集
-- [无上神帝](https://v.qq.com/x/cover/mzc00200ilydv1a.html) - 更新至500集
-- [逆天至尊](https://v.qq.com/x/cover/mzc00200azkttu2.html) - 更新至419集
-- [吞噬星空](https://v.qq.com/x/cover/324olz7ilvo2j5f.html) - 更新至176集
-- [星辰变 第6季](https://v.qq.com/x/cover/mzc002006wuirfi.html) - 更新至16集
-- [记忆缝线](https://mikanani.me/Home/Bangumi/3620) - 2025/06/16 更新
 
 ## 系统要求
 
