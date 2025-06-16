@@ -8,8 +8,10 @@ from config import MIKANANI_BASE_URL, HEADERS
 
 def fetch_mikanani_today():
     res = requests.get(MIKANANI_BASE_URL, headers=HEADERS, timeout=10)
+    print(res)
     res.raise_for_status()
     soup = BeautifulSoup(res.text, "html.parser")
+    print(soup)
     today_str = datetime.now().strftime("%Y/%m/%d")
     weekday = ["星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日"][datetime.now().weekday()]
     result = {weekday: []}
