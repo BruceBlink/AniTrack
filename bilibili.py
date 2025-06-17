@@ -10,6 +10,7 @@ from config import HEADERS, BILIBILI_GUOCHUANG_API, BILIBILI_ANIME_API
 from utils import print_results
 from common import Result
 from utils import iso_date_ld
+from decorators import retry, print_after_return, save_after_return
 # 配置日志
 logger = logging.getLogger(__name__)
 
@@ -99,66 +100,29 @@ def _fetch_bilibili_update_today(api_url: str) -> dict[str, list] | None:
         return None
 
 
-def save_results(results, filename="tencent_cartoon.json"):
-    """将结果保存到 JSON 文件。"""
-    if not results:
-        logger.info("没有可保存的结果。")
-        return
-
-    file_path = os.path.join(os.getcwd(), filename)
-    with open(file_path, 'w', encoding='utf-8') as f:
-        json.dump(results, f, ensure_ascii=False, indent=2)
-    logger.info(f"结果已保存到 {file_path}")
-
-
+@retry(
+    retries=5,
+    delay=10,
+    retry_condition=lambda result: not any(result.values())
+)
+@print_after_return(print_results, print_condition=lambda r: any(r.values()))
+#@save_after_return(filename="bilibili_guochuang_today.json", save_condition=lambda r: any(r.values()))
 def fetch_bilibili_guochuang_today() -> dict[str, list] | None:
     """获取哔哩哔哩国创频道今日更新的动漫信息。"""
     logger.info("开始测试哔哩哔哩国创频道今日更新...")
-    # 执行 5 次测试
-    num_tests = 5
-    for i in range(1, num_tests + 1):
-        logger.info(f"\n{'=' * 40}")
-        logger.info(f"测试 #{i}")
-        logger.info(f"{'=' * 40}")
-
-        today_updates = _fetch_bilibili_update_today(BILIBILI_GUOCHUANG_API)
-
-        if today_updates:
-            print_results(today_updates)
-            return today_updates
-            # save_results(today_updates, f"tencent_cartoon_test_{i}.json")
-        else:
-            logger.warning("未能获取今日国创更新信息。")
-
-        # 在测试之间添加较长延迟，除非是最后一次测试
-        if i < num_tests:
-            logger.info(f"\n等待 10 秒后进行下一次测试 (测试 #{i + 1})...")
-            time.sleep(10)
+    return _fetch_bilibili_update_today(BILIBILI_GUOCHUANG_API)
 
 
+@retry(
+    retries=5,
+    delay=10,
+    retry_condition=lambda result: not any(result.values())
+)
+@print_after_return(print_results, print_condition=lambda r: any(r.values()))
 def fetch_bilibili_anime_today() -> dict[str, list] | None:
-    """获取哔哩哔哩番剧频道今日更新的动漫信息。"""
-    # 执行 5 次测试
-    logger.info("开始测试哔哩哔哩番剧频道今日更新...")
-    num_tests = 5
-    for i in range(1, num_tests + 1):
-        logger.info(f"\n{'=' * 40}")
-        logger.info(f"测试 #{i}")
-        logger.info(f"{'=' * 40}")
+    logger.info("调用 _fetch_bilibili_update_today 获取今日番剧更新信息...")
+    return _fetch_bilibili_update_today(BILIBILI_ANIME_API)
 
-        today_updates = _fetch_bilibili_update_today(BILIBILI_ANIME_API)
-
-        if today_updates:
-            print_results(today_updates)
-            return today_updates
-            # save_results(today_updates, f"tencent_cartoon_test_{i}.json")
-        else:
-            logger.warning("未能获取今日番剧更新信息。")
-
-        # 在测试之间添加较长延迟，除非是最后一次测试
-        if i < num_tests:
-            logger.info(f"\n等待 10 秒后进行下一次测试 (测试 #{i + 1})...")
-            time.sleep(10)
 
 
 if __name__ == "__main__":
