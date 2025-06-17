@@ -25,4 +25,7 @@ weekday = ["星期一", "星期二", "星期三", "星期四", "星期五", "星
 # Base URLs for various anime and cartoon sites
 TENCENT_CARTOON_BASE_URL = "https://v.qq.com/channel/cartoon"
 MIKANANI_BASE_URL = "https://mikanani.me"
-BILIBILI_GUOCHUNAG = "https://www.bilibili.com/guochuang/timeline/"
+# Bilibili 国创
+BILIBILI_GUOCHUANG_API = "https://api.bilibili.com/pgc/web/timeline?types=4&before=6&after=6"
+# Bilibili 番剧
+BILIBILI_ANIME_API="https://api.bilibili.com/pgc/web/timeline?types=1&before=6&after=6"
