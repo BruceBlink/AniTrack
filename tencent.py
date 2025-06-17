@@ -12,7 +12,7 @@ from bs4 import BeautifulSoup
 import config
 from common import Result
 from config import HEADERS, TENCENT_CARTOON_BASE_URL
-from utils import print_results, extract_number, iso_date_ld, random_delay
+from utils import print_results, extract_number, iso_date_ld, random_delay, clean_text
 from decorators import retry, print_after_return, save_after_return
 # 配置日志
 logger = logging.getLogger(__name__)
@@ -31,24 +31,6 @@ def normalize_url(url, base_url="https://v.qq.com"):
         # 处理 URL 可能是相对路径但不是以 / 开头的情况
         return urljoin(base_url, url)
     return url
-
-
-def clean_text(text):
-    """清理文本，替换 HTML 实体并规范化空白字符。"""
-    if not text:
-        return ""
-
-    # 替换常见的 HTML 实体
-    text = re.sub(r'&nbsp;', ' ', text)
-    text = re.sub(r'&amp;', '&', text)
-    text = re.sub(r'&lt;', '<', text)
-    text = re.sub(r'&gt;', '>', text)
-    text = re.sub(r'&quot;', '"', text)
-    text = re.sub(r'&#x27;', "'", text)  # 撇号
-
-    # 将所有空白字符（空格、制表符、换行符）规范化为单个空格，然后去除首尾空格。
-    text = re.sub(r'\s+', ' ', text).strip()
-    return text
 
 
 def _fetch_qq_cartoon_today() -> dict[str, list]:
