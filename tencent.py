@@ -11,6 +11,7 @@ from bs4 import BeautifulSoup
 
 import config
 from config import HEADERS, TENCENT_CARTOON_BASE_URL
+from utils import print_results
 
 # 配置日志
 logger = logging.getLogger(__name__)
@@ -191,34 +192,6 @@ def save_results(results, filename="tencent_cartoon.json"):
     with open(file_path, 'w', encoding='utf-8') as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
     logger.info(f"结果已保存到 {file_path}")
-
-
-def print_results(results):
-    """将获取到的动漫更新结果打印到控制台。"""
-    if not results:
-        logger.info("没有找到任何更新信息可供打印。")
-        return
-
-    weekday = list(results.keys())[0]
-    if not results[weekday]:
-        logger.info(f"{weekday} 没有找到更新的动漫。")
-        return
-
-    print(f"\n{weekday} 更新动漫列表:")
-    print("=" * 80)
-
-    for i, anime in enumerate(results[weekday], 1):
-        print(f"{i}. {anime['title']}")
-        print(f"   更新集数: {anime['update_count']}")
-        if anime['update_info'] and anime['update_info'] != anime['update_count']:  # 避免冗余
-            print(f"   更新说明: {anime['update_info']}")
-        if anime['image']:
-            print(f"   封面图片: {anime['image']}")
-        if anime['link']:
-            print(f"   详情链接: {anime['link']}")
-        print("-" * 80)
-
-    print(f"\n统计: 共找到 {len(results[weekday])} 部今日更新的动漫")
 
 
 def fetch_qq_cartoon_today() -> dict[str, list] | None:

@@ -44,3 +44,31 @@ def merge_data(dict1: dict[str, list], dict2: dict[str, list]) -> dict[str, list
     for key in set(dict1.keys()) | set(dict2.keys()):
         merged_dict[key] = dict1.get(key, []) + dict2.get(key, [])
     return merged_dict
+
+
+def print_results(results: dict[str, list]):
+    """将获取到的动漫更新结果打印到控制台。"""
+    if not results:
+        print("没有找到任何更新信息可供打印。")
+        return
+
+    weekday = list(results.keys())[0]
+    if not results[weekday]:
+        print(f"{weekday} 没有找到更新的动漫。")
+        return
+
+    print(f"\n{weekday} 更新动漫列表:")
+    print("=" * 80)
+
+    for i, anime in enumerate(results[weekday], 1):
+        print(f"{i}. {anime['title']}")
+        print(f"   更新集数: {anime['update_count']}")
+        if anime['update_info'] and anime['update_info'] != anime['update_count']:  # 避免冗余
+            print(f"   更新说明: {anime['update_info']}")
+        if anime['image_url']:
+            print(f"   封面图片: {anime['image_url']}")
+        if anime['detail_url']:
+            print(f"   详情链接: {anime['detail_url']}")
+        print("-" * 80)
+
+    print(f"\n统计: 共找到 {len(results[weekday])} 部今日更新的动漫")
