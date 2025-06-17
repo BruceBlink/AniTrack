@@ -2,6 +2,10 @@ from dataclasses import dataclass, asdict
 from abc import ABC, abstractmethod
 import logging
 
+import requests
+
+import config
+
 
 @dataclass(order=True)
 class Result:
@@ -39,8 +43,15 @@ class AbstractFetcher(ABC):
     def __init__(self):
         self.logger = logging.getLogger(self.__class__.__name__)
         self.api_url = None
+        self.platform = None
+        self.result = {config.weekday: []}
 
     @abstractmethod
     def fetch_data(self):
-        """抽象方法，子类需要实现数据抓取逻辑。"""
-        pass
+        self.logger.info(f"Fetching today's data from {self.api_url} ...")
+        try:
+            response = requests.get(self.api_url, headers=config.HEADERS, timeout=10)
+            response.raise_for_status()
+        except requests.RequestException as e:
+            self.logger.error(f"请求 {self.api_url} 失败：{e}")
+            raise e
