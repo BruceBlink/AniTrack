@@ -13,3 +13,6 @@ class Result:
 
     def __getitem__(self, key: str):
         return getattr(self, key)
+
+    def __setitem__(self, key, value):
+        return setattr(self, key, value)
