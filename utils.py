@@ -1,3 +1,4 @@
+import re
 from collections.abc import Mapping
 from typing import Any, Dict, List
 
@@ -120,4 +121,10 @@ chinese_date = now.strftime("%Y年%m月%d日")  # 2025年06月17日
 compact = now.strftime("%y%m%d")  # 250617
 weekday = now.strftime("%A")  # Tuesday
 
-print(iso_date, iso_datetime, chinese_date, compact, weekday, sep="\n")
+
+# print(iso_date, iso_datetime, chinese_date, compact, weekday, sep="\n")
+
+def extract_number(text: str) -> int | None:
+    """ 从字符串中提取第一个数字并返回整数。"""
+    match = re.search(r'\d+', text)
+    return int(match.group()) if match else None
