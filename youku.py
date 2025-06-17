@@ -11,50 +11,10 @@ from bs4 import BeautifulSoup
 import config
 from common import Result
 from config import HEADERS, YOUKU_COMICS_API
-from utils import iso_date_ld
+from utils import iso_date_ld, random_delay
 
 # 配置日志
 logger = logging.getLogger(__name__)
-
-
-def random_delay(min_sec=1.2, max_sec=4.5):
-    """引入随机延迟，模拟人类行为并避免被封锁。"""
-    delay = random.uniform(min_sec, max_sec)
-    time.sleep(delay)
-    logger.debug(f"延迟了 {delay:.2f} 秒。")
-
-
-def normalize_url(url, base_url="https://v.qq.com"):
-    """将给定 URL 规范化为绝对路径。"""
-    if not url:
-        return ""
-
-    if url.startswith('//'):
-        return 'https:' + url
-    elif url.startswith('/'):
-        return urljoin(base_url, url)
-    elif not url.startswith('http'):
-        # 处理 URL 可能是相对路径但不是以 / 开头的情况
-        return urljoin(base_url, url)
-    return url
-
-
-def clean_text(text):
-    """清理文本，替换 HTML 实体并规范化空白字符。"""
-    if not text:
-        return ""
-
-    # 替换常见的 HTML 实体
-    text = re.sub(r'&nbsp;', ' ', text)
-    text = re.sub(r'&amp;', '&', text)
-    text = re.sub(r'&lt;', '<', text)
-    text = re.sub(r'&gt;', '>', text)
-    text = re.sub(r'&quot;', '"', text)
-    text = re.sub(r'&#x27;', "'", text)  # 撇号
-
-    # 将所有空白字符（空格、制表符、换行符）规范化为单个空格，然后去除首尾空格。
-    text = re.sub(r'\s+', ' ', text).strip()
-    return text
 
 
 def _fetch_youku_cartoon_today(api_url: str) -> dict[str, list]:
@@ -121,13 +81,14 @@ def _fetch_youku_cartoon_today(api_url: str) -> dict[str, list]:
                 update_info=update_info,
                 image_url=image_url,
                 detail_url=detail_url,
-                update_time= iso_date_ld,
+                update_time=iso_date_ld,
             )
 
             # 添加到结果列表
             comics.append(comic)
-        print(comics)
-        return result[weekday].extend(comics) or {}
+        result[weekday] = comics or {}
+
+        return result
 
     except requests.exceptions.Timeout:
         logger.error("请求超时。将在 10 秒后重试...")
@@ -146,15 +107,16 @@ def _fetch_youku_cartoon_today(api_url: str) -> dict[str, list]:
         os.remove(html_path)  # 清理临时 HTML 文件
         random_delay()
 
-    # @retry(
-    retries = 5,
-    delay = 10,
-    retry_condition = lambda result: not any(result.values())
 
-
-# )
-# @print_after_return(print_results, print_condition=lambda r: any(r.values()))
-# @save_after_return(filename="qq_cartoon_today.json", save_condition=lambda r: any(r.values()))
+#     # @retry(
+#     retries = 5,
+#     delay = 10,
+#     retry_condition = lambda result: not any(result.values())
+#
+#
+# # )
+# # @print_after_return(print_results, print_condition=lambda r: any(r.values()))
+# # @save_after_return(filename="qq_cartoon_today.json", save_condition=lambda r: any(r.values()))
 def fetch_youku_cartoon_today() -> dict[str, list] | None:
     """获取腾讯视频动漫频道今日更新的动漫信息。"""
     logger.info("开始获取优酷动漫频道今日更新...")
