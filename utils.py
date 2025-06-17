@@ -1,6 +1,6 @@
 import re
-from collections.abc import Mapping
-from typing import Any, Dict, List
+
+from common import Result
 
 
 def update_today_section_in_readme(data: dict[str, list]) -> None:
@@ -28,7 +28,8 @@ def update_today_section_in_readme(data: dict[str, list]) -> None:
         for item in items:
             title = item["title"]
             link = item["detail_url"]
-            text = item.get("text") or item.get("update_count") or "未知"
+            count = item["update_count"]
+            text = f'{item["update_time"]} 更新' + (f' 更新至 {str(count)}集' if count else '')
             if link:
                 today_md.append(f"- [{title}]({link}) - {text}\n")
             else:
@@ -41,30 +42,15 @@ def update_today_section_in_readme(data: dict[str, list]) -> None:
             f.writelines(lines)
 
 
-def _freeze(obj: Any) -> Any:
+def merge_dict_data(*dicts: dict[str, list[Result]]) -> dict[str, list[Result]]:
     """
-    将任意嵌套的 dict/list/set 转换为可哈希的签名：
-      - dict -> frozenset of (key, freeze(value))
-      - list -> tuple of freeze(item)
-      - set -> frozenset of freeze(item)
-      - 其他 -> 原样返回（假设本身是可哈希的）
-    """
-    if isinstance(obj, Mapping):
-        return frozenset((k, _freeze(v)) for k, v in sorted(obj.items()))
-    if isinstance(obj, list):
-        return tuple(_freeze(v) for v in obj)
-    if isinstance(obj, set):
-        return frozenset(_freeze(v) for v in obj)
-    return obj
-
-
-def merge_dict_data(*dicts: Dict[str, List[Any]]) -> Dict[str, List[Any]]:
-    """
-    合并任意数量的数据字典，并去除重复元素（支持元素为 dict/list等不可哈希类型）。
+    合并任意数量的数据字典，并去除重复元素。
     相同键下的列表会按传入顺序拼接，且只保留第一次出现的元素。
+
+    要求：列表元素必须为可哈希类型，如使用 @dataclass(frozen=True) 的对象或者实现了__hash__函数的对象。
     """
-    merged: Dict[str, List[Any]] = {}
-    seen_map: Dict[str, set] = {}
+    merged: dict[str, list[Result]] = {}
+    seen_map: dict[str, set[Result]] = {}
 
     for d in dicts:
         for key, lst in d.items():
@@ -72,9 +58,8 @@ def merge_dict_data(*dicts: Dict[str, List[Any]]) -> Dict[str, List[Any]]:
             seen_map.setdefault(key, set())
 
             for item in lst:
-                sig = _freeze(item)
-                if sig not in seen_map[key]:
-                    seen_map[key].add(sig)
+                if item not in seen_map[key]:
+                    seen_map[key].add(item)
                     merged[key].append(item)
 
     return merged
