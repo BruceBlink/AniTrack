@@ -2,7 +2,7 @@ name: Watch-Daily-Update
 
 on:
   schedule:
-    - cron: '0 0-3,12-15 * * *'  # 每天在 08:00、09:00、10:00、11:00 以及 20:00、21:00、22:00、23:00（UTC+8北京时间）运行
+    - cron: '0 0-15 * * *'  # UTC 时间的 00:00 ~ 15:00，每小时一次 = 北京时间 08:00 ~ 23:00每小时一次
   workflow_dispatch:
   push:
     paths-ignore:
