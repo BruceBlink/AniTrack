@@ -127,12 +127,12 @@ def _fetch_qq_cartoon_today() -> dict[str, list]:
                 if img_elem:
                     img_url = img_elem.get('data-src') or img_elem.get('src')
                     if img_url:
-                        data["image"] = normalize_url(img_url)
+                        data["image_url"] = normalize_url(img_url)
 
                 # 提取详情链接
                 link_elem = item.select_one('.banner-cover-wrap')
                 if link_elem and link_elem.get('href'):
-                    data["link"] = normalize_url(link_elem['href'])
+                    data["detail_url"] = normalize_url(link_elem['href'])
 
                 # 提取宣传语
                 tagline_elem = item.select_one('.tag-wrap span')
@@ -158,7 +158,7 @@ def _fetch_qq_cartoon_today() -> dict[str, list]:
                 # 添加到结果列表
                 if data["title"]:
                     result[weekday].append(data)
-                    logger.info(f"已添加: {data['title']}")
+                    logger.info(f"识别到更新：{data.title} {data.update_info}")
 
         return result
 
