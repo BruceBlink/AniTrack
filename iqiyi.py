@@ -12,7 +12,7 @@ from utils import iso_date_ld, random_delay, clean_text, extract_number, print_r
 logger = logging.getLogger(__name__)
 
 
-def _fetch_iqiyi_cartoon_today(api_url: str) -> dict[str, list]:
+def _fetch_iqiyi_cartoon_today(api_url: str) -> dict[str, list]|None:
     """从腾讯视频动漫频道获取今日更新的动漫信息。"""
     try:
         logger.info(f"开始请求爱奇艺追番表 API {api_url} ...")

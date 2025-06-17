@@ -12,7 +12,7 @@ from bs4 import BeautifulSoup
 import config
 from common import Result
 from config import HEADERS, TENCENT_CARTOON_BASE_URL
-from utils import print_results, extract_number, iso_date_ld
+from utils import print_results, extract_number, iso_date_ld, random_delay
 from decorators import retry, print_after_return, save_after_return
 # 配置日志
 logger = logging.getLogger(__name__)
