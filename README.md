@@ -26,8 +26,6 @@
 - [大侠请上功](https://www.bilibili.com/bangumi/play/ep1508581) - 2025/06/17 更新 更新至 7集
 - [我是不白吃](https://www.bilibili.com/bangumi/play/ep1800693) - 2025/06/17 更新 更新至 985集
 - [那年那兔那些事儿 第七季](https://www.bilibili.com/bangumi/play/ep1438462) - 2025/06/17 更新 更新至 10集
-- [最强王者的第二人生](https://www.bilibili.com/bangumi/play/ep1750509) - 2025/06/17 更新 更新至 9集
-- [直至魔女消逝](https://www.bilibili.com/bangumi/play/ep1755087) - 2025/06/17 更新 更新至 9集
 - [大夏剑主 动态漫画](http://www.iqiyi.com/v_2f1ar1e82rk.html) - 2025/06/17 更新 更新至 186集
 - [丹道至尊](http://www.iqiyi.com/v_1bsc8u64b8c.html) - 2025/06/17 更新 更新至 128集
 - [斗战天下](http://www.iqiyi.com/v_te1xtm32hk.html) - 2025/06/17 更新 更新至 46集
