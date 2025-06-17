@@ -7,12 +7,14 @@ from urllib.parse import urljoin
 from datetime import datetime
 
 import config
+from common import Result
 from config import MIKANANI_BASE_URL, HEADERS
+from utils import iso_date_ld
 
 logger = logging.getLogger(__name__)
 
 
-def fetch_mikanani_today():
+def fetch_mikanani_today() -> dict[str, list]:
     logger.info("Fetching today's Mikanani data...")
     res = requests.get(MIKANANI_BASE_URL, headers=HEADERS, timeout=10)
     res.raise_for_status()
@@ -33,14 +35,16 @@ def fetch_mikanani_today():
                 image = ""
                 if span and span.has_attr("data-src"):
                     image = urljoin(MIKANANI_BASE_URL, span["data-src"])
-                anime_info = {
-                    "platform": "Mikanani",
-                    "title": title,
-                    "update_count": "",
-                    "update_info": "",
-                    "image_url": image,
-                    "detail_url": link,
-                    "text": text
-                }
+
+                anime_info = Result(
+                    platform="Mikanani",
+                    title=title,
+                    update_count="",
+                    update_info=text,
+                    image_url=image,
+                    detail_url=link,
+                    update_time=iso_date_ld,
+                )
+                logger.info(f"识别到更新：{anime_info.title} {anime_info.update_info}")
                 result[weekday].append(anime_info)
     return result
