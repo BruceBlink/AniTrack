@@ -38,8 +38,8 @@ def fetch_mikanani_today():
                     "title": title,
                     "update_count": "",
                     "update_info": "",
-                    "image": image,
-                    "link": link,
+                    "image_url": image,
+                    "detail_url": link,
                     "text": text
                 }
                 result[weekday].append(anime_info)
