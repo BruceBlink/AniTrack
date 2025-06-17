@@ -29,6 +29,7 @@
 - [打了300年的史莱姆，不知不觉就练到了满级 ～其二～](https://mikanani.me/Home/Bangumi/3586) - 2025/06/17 更新
 - [我是星际国家的恶德领主！](https://mikanani.me/Home/Bangumi/3592) - 2025/06/17 更新
 - [时光流逝，饭菜依旧美味](https://mikanani.me/Home/Bangumi/3623) - 2025/06/17 更新
+- [真･武士传 剑勇传说](https://mikanani.me/Home/Bangumi/3637) - 2025/06/17 更新
 - [外星人姆姆](https://mikanani.me/Home/Bangumi/3594) - 2025/06/17 更新
 - [拜托请穿上，鹰峰同学](https://mikanani.me/Home/Bangumi/3603) - 2025/06/17 更新
 - [吞噬星空](https://v.qq.com/x/cover/324olz7ilvo2j5f.html) - 2025/06/17 更新 更新至 176集
@@ -38,8 +39,8 @@
 - [炼气十万年](https://v.qq.com/x/cover/mzc002006n62s11.html) - 2025/06/17 更新 更新至 250集
 - [诛仙合集篇](https://v.qq.com/x/cover/mzc00200phqxwd6.html) - 2025/06/17 更新 更新至 6集
 - [灵剑尊](https://v.qq.com/x/cover/2w2legt0g8z26al.html) - 2025/06/17 更新 更新至 605集
-- [一念永恒 第3季](https://v.qq.com/x/cover/mzc002003lw1kp8.html) - 2025/06/17 更新 更新至 53集
-- [遮天](https://v.qq.com/x/cover/mzc00200n53vkqc.html) - 2025/06/17 更新 更新至 113集
+- [一念永恒 第3季](https://v.qq.com/x/cover/mzc002003lw1kp8.html) - 2025/06/17 更新 更新至 54集
+- [遮天](https://v.qq.com/x/cover/mzc00200n53vkqc.html) - 2025/06/17 更新 更新至 114集
 - [我的师兄太强了](https://www.bilibili.com/bangumi/play/ep1524724) - 2025/06/17 更新 更新至 28集
 - [大侠请上功](https://www.bilibili.com/bangumi/play/ep1508581) - 2025/06/17 更新 更新至 7集
 
