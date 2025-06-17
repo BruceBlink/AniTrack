@@ -6,7 +6,7 @@ import re
 import time
 import requests
 import config
-from config import HEADERS, BILIBILI_GUOCHUANG_API
+from config import HEADERS, BILIBILI_GUOCHUANG_API, BILIBILI_ANIME_API
 from utils import print_results
 
 # 配置日志
@@ -38,18 +38,18 @@ def clean_text(text):
     return text
 
 
-def _fetch_bilibili_guochuang_today() -> dict[str, list[dict]] | None:
+def _fetch_bilibili_update_today(api_url: str) -> dict[str, list[dict]] | None:
     """从哔哩哔哩国创频道官方 JSON 接口获取今日更新的动漫信息。"""
     try:
-        logger.info("开始请求哔哩哔哩国创频道更新时间线 API...")
-        res = requests.get(BILIBILI_GUOCHUANG_API, headers=HEADERS, timeout=15)
+        logger.info(f"开始请求哔哩哔哩更新时间线 API {api_url} ...")
+        res = requests.get(api_url, headers=HEADERS, timeout=15)
         res.raise_for_status()
 
         data = res.json()
         if data.get("code") != 0 or "result" not in data:
             logger.error("接口返回异常：%s", data)
             return None
-        logger.info(f"成功获取哔哩哔哩国创更新时间线数据{data}。")
+        logger.info(f"成功获取哔哩哔哩更新时间线数据{data}。")
         # 找到 is_today == 1 的那一天
         today_list = [d for d in data["result"] if d.get("is_today") == 1]
         if not today_list:
@@ -90,7 +90,7 @@ def _fetch_bilibili_guochuang_today() -> dict[str, list[dict]] | None:
     except requests.exceptions.Timeout:
         logger.warning("请求超时，10 秒后重试...")
         time.sleep(10)
-        return _fetch_bilibili_guochuang_today()
+        return _fetch_bilibili_update_today()
     except requests.exceptions.RequestException as e:
         logger.error("请求错误：%s", e)
         return None
@@ -112,6 +112,8 @@ def save_results(results, filename="tencent_cartoon.json"):
 
 
 def fetch_bilibili_guochuang_today() -> dict[str, list] | None:
+    """获取哔哩哔哩国创频道今日更新的动漫信息。"""
+    logger.info("开始测试哔哩哔哩国创频道今日更新...")
     # 执行 5 次测试
     num_tests = 5
     for i in range(1, num_tests + 1):
@@ -119,14 +121,39 @@ def fetch_bilibili_guochuang_today() -> dict[str, list] | None:
         logger.info(f"测试 #{i}")
         logger.info(f"{'=' * 40}")
 
-        today_updates = _fetch_bilibili_guochuang_today()
+        today_updates = _fetch_bilibili_update_today(BILIBILI_GUOCHUANG_API)
 
         if today_updates:
             print_results(today_updates)
             return today_updates
             # save_results(today_updates, f"tencent_cartoon_test_{i}.json")
         else:
-            logger.warning("未能获取今日更新信息。")
+            logger.warning("未能获取今日国创更新信息。")
+
+        # 在测试之间添加较长延迟，除非是最后一次测试
+        if i < num_tests:
+            logger.info(f"\n等待 10 秒后进行下一次测试 (测试 #{i + 1})...")
+            time.sleep(10)
+
+
+def fetch_bilibili_anime_today() -> dict[str, list] | None:
+    """获取哔哩哔哩番剧频道今日更新的动漫信息。"""
+    # 执行 5 次测试
+    logger.info("开始测试哔哩哔哩番剧频道今日更新...")
+    num_tests = 5
+    for i in range(1, num_tests + 1):
+        logger.info(f"\n{'=' * 40}")
+        logger.info(f"测试 #{i}")
+        logger.info(f"{'=' * 40}")
+
+        today_updates = _fetch_bilibili_update_today(BILIBILI_ANIME_API)
+
+        if today_updates:
+            print_results(today_updates)
+            return today_updates
+            # save_results(today_updates, f"tencent_cartoon_test_{i}.json")
+        else:
+            logger.warning("未能获取今日番剧更新信息。")
 
         # 在测试之间添加较长延迟，除非是最后一次测试
         if i < num_tests:
