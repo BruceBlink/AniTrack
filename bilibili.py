@@ -103,7 +103,7 @@ def _fetch_bilibili_update_today(api_url: str) -> dict[str, list] | None:
 @retry(
     retries=5,
     delay=10,
-    retry_condition=lambda result: not any(result.values())
+    retry_condition=lambda result: not result or not any(result.values())
 )
 @print_after_return(print_results, print_condition=lambda r: any(r.values()))
 #@save_after_return(filename="bilibili_guochuang_today.json", save_condition=lambda r: any(r.values()))
@@ -116,7 +116,7 @@ def fetch_bilibili_guochuang_today() -> dict[str, list] | None:
 @retry(
     retries=5,
     delay=10,
-    retry_condition=lambda result: not any(result.values())
+    retry_condition=lambda result: not result or not any(result.values())
 )
 @print_after_return(print_results, print_condition=lambda r: any(r.values()))
 def fetch_bilibili_anime_today() -> dict[str, list] | None:

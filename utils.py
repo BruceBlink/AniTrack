@@ -53,14 +53,15 @@ def merge_dict_data(*dicts: dict[str, list[Result]]) -> dict[str, list[Result]]:
     seen_map: dict[str, set[Result]] = {}
 
     for d in dicts:
-        for key, lst in d.items():
-            merged.setdefault(key, [])
-            seen_map.setdefault(key, set())
+        if d:
+            for key, lst in d.items():
+                merged.setdefault(key, [])
+                seen_map.setdefault(key, set())
 
-            for item in lst:
-                if item not in seen_map[key]:
-                    seen_map[key].add(item)
-                    merged[key].append(item)
+                for item in lst:
+                    if item not in seen_map[key]:
+                        seen_map[key].add(item)
+                        merged[key].append(item)
 
     return merged
 

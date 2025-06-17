@@ -33,9 +33,13 @@ def retry(
                 try:
                     logger.info(f"\n{'=' * 40}\n第 {attempt} 次尝试\n{'=' * 40}")
                     result = func(*args, **kwargs)
-                    if not retry_condition(result):
+                    try:
+                        if not retry_condition(result):
+                            return result
+                        logger.warning("条件未满足，准备重试...")
+                    except Exception as inner:
+                        logger.error(f"重试判断条件出错：{inner}")
                         return result
-                    logger.warning("结果不满足条件，准备重试...")
                 except exceptions as e:
                     logger.warning(f"第 {attempt} 次调用发生异常：{e}")
                 if attempt < retries:
