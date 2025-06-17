@@ -8,7 +8,8 @@ import requests
 import config
 from config import HEADERS, BILIBILI_GUOCHUANG_API, BILIBILI_ANIME_API
 from utils import print_results
-
+from common import Result
+from utils import iso_date_ld
 # 配置日志
 logger = logging.getLogger(__name__)
 
@@ -38,7 +39,7 @@ def clean_text(text):
     return text
 
 
-def _fetch_bilibili_update_today(api_url: str) -> dict[str, list[dict]] | None:
+def _fetch_bilibili_update_today(api_url: str) -> dict[str, list] | None:
     """从哔哩哔哩国创频道官方 JSON 接口获取今日更新的动漫信息。"""
     try:
         logger.info(f"开始请求哔哩哔哩更新时间线 API {api_url} ...")
@@ -59,7 +60,7 @@ def _fetch_bilibili_update_today(api_url: str) -> dict[str, list[dict]] | None:
         today = today_list[0]
         update_time = today["date"]  # e.g. "6-17"
         weekday = config.weekday
-        result: dict[str, list[dict]] = {weekday: []}
+        result: dict[str, list] = {weekday: []}
 
         for ep in today.get("episodes", []):
             # 只取已经 published 的
@@ -72,17 +73,16 @@ def _fetch_bilibili_update_today(api_url: str) -> dict[str, list[dict]] | None:
                 count = int(pub_index.lstrip("第").rstrip("话"))
             except:
                 count = None
-
-            item = {
-                "platform": "bilibili",
-                "title": ep.get("title"),
-                "update_count": count,
-                "update_info": pub_index,
-                "image_url": ep.get("square_cover") or ep.get("cover"),
-                "detail_url": f"https://www.bilibili.com/bangumi/play/ep{ep.get('episode_id')}",
-                "update_time": update_time
-            }
-            logger.info("识别到更新：%s %s", item["title"], item["update_info"])
+            item = Result(
+                platform = "bilibili",
+                title = clean_text(ep.get("title", "")),
+                update_count = count,
+                update_info = "更新至" + pub_index,
+                image_url = ep.get("square_cover") or ep.get("cover"),
+                detail_url = f"https://www.bilibili.com/bangumi/play/ep{ep.get('episode_id')}",
+                update_time = iso_date_ld
+            )
+            logger.info("识别到更新：%s %s", item.title, item.update_info)
             result[weekday].append(item)
 
         return result
