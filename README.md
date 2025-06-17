@@ -43,6 +43,9 @@
 - [遮天](https://v.qq.com/x/cover/mzc00200n53vkqc.html) - 2025/06/17 更新 更新至 114集
 - [我的师兄太强了](https://www.bilibili.com/bangumi/play/ep1524724) - 2025/06/17 更新 更新至 28集
 - [大侠请上功](https://www.bilibili.com/bangumi/play/ep1508581) - 2025/06/17 更新 更新至 7集
+- [我是不白吃](https://www.bilibili.com/bangumi/play/ep1800693) - 2025/06/17 更新 更新至 985集
+- [那年那兔那些事儿 第七季](https://www.bilibili.com/bangumi/play/ep1438462) - 2025/06/17 更新 更新至 10集
+- [最强王者的第二人生](https://www.bilibili.com/bangumi/play/ep1750509) - 2025/06/17 更新 更新至 9集
 
 ## 系统要求
 
