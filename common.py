@@ -1,4 +1,6 @@
 from dataclasses import dataclass, asdict
+from abc import ABC, abstractmethod
+import logging
 
 
 @dataclass(order=True)
@@ -31,3 +33,14 @@ class Result:
     def to_dict(self) -> dict:
         """将 Result 对象转换为字典，用于序列化等操作。"""
         return asdict(self)
+
+
+class AbstractFetcher(ABC):
+    def __init__(self):
+        self.logger = logging.getLogger(self.__class__.__name__)
+        self.api_url = None
+
+    @abstractmethod
+    def fetch_data(self):
+        """抽象方法，子类需要实现数据抓取逻辑。"""
+        pass
