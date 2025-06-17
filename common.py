@@ -16,3 +16,14 @@ class Result:
 
     def __setitem__(self, key, value):
         return setattr(self, key, value)
+
+    def __hash__(self):
+        return hash((
+            self.platform,
+            self.title,
+            self.update_count,
+            self.update_info,
+            self.image_url,
+            self.detail_url,
+            self.update_time
+        ))
