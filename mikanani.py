@@ -22,12 +22,13 @@ def _fetch_mikanani_today() -> dict[str, list]:
 
     try:
         response = requests.get(MIKANANI_BASE_URL, headers=HEADERS, timeout=10)
+        response.encoding = 'utf-8'
         response.raise_for_status()
     except requests.RequestException as e:
         logger.error(f"请求 Mikanani 页面失败：{e}")
         return result
 
-    soup = BeautifulSoup(response.text, "html.parser")
+    soup = BeautifulSoup(response.content, 'html.parser', from_encoding='utf-8')
     logger.debug(f"解析 HTML 内容：{soup}")
 
     for li in soup.find_all("li"):
