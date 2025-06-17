@@ -15,28 +15,36 @@
 ## 今日更新
 
 ### 星期二 番剧更新
-- [转生成猫咪的大叔](https://mikanani.me/Home/Bangumi/3491) - 2025/06/17 更新
-- [#COMPASS2.0 战斗天赋解析系统](https://mikanani.me/Home/Bangumi/3590) - 2025/06/17 更新
-- [随兴旅-That's Journey-](https://mikanani.me/Home/Bangumi/3598) - 2025/06/17 更新
-- [夏日口袋](https://mikanani.me/Home/Bangumi/3599) - 2025/06/17 更新
-- [中禅寺老师的灵怪讲义实录 老师会把谜题全都解开的。](https://mikanani.me/Home/Bangumi/3601) - 2025/06/17 更新
-- [正义使者 -我的英雄学院之非法英雄-](https://mikanani.me/Home/Bangumi/3619) - 2025/06/17 更新
-- [魔女守护者](https://mikanani.me/Home/Bangumi/3587) - 2025/06/17 更新
-- [受到猩猩之神庇护的大小姐在皇家骑士团受到宠爱](https://mikanani.me/Home/Bangumi/3608) - 2025/06/17 更新
-- [拉撒路](https://mikanani.me/Home/Bangumi/3624) - 2025/06/17 更新
-- [干杂活我乃最强～关于原英雄队伍的杂役人员，实际上除了战斗能力外全是SSS的故事～](https://mikanani.me/Home/Bangumi/3632) - 2025/06/17 更新
-- [安妮·雪莉](https://mikanani.me/Home/Bangumi/3582) - 2025/06/17 更新
-- [打了300年的史莱姆，不知不觉就练到了满级 ～其二～](https://mikanani.me/Home/Bangumi/3586) - 2025/06/17 更新
-- [我是星际国家的恶德领主！](https://mikanani.me/Home/Bangumi/3592) - 2025/06/17 更新
-- [时光流逝，饭菜依旧美味](https://mikanani.me/Home/Bangumi/3623) - 2025/06/17 更新
-- [真･武士传 剑勇传说](https://mikanani.me/Home/Bangumi/3637) - 2025/06/17 更新
-- [外星人姆姆](https://mikanani.me/Home/Bangumi/3594) - 2025/06/17 更新
-- [拜托请穿上，鹰峰同学](https://mikanani.me/Home/Bangumi/3603) - 2025/06/17 更新
+- [吞噬星空](https://v.qq.com/x/cover/324olz7ilvo2j5f.html) - 2025/06/17 更新 更新至 176集
+- [万界独尊](https://v.qq.com/x/cover/mzc00200cu8uq8c.html) - 2025/06/17 更新 更新至 339集
+- [星辰变 第6季](https://v.qq.com/x/cover/mzc002006wuirfi.html) - 2025/06/17 更新 更新至 16集
+- [武神主宰](https://v.qq.com/x/cover/7q544xyrava3vxf.html) - 2025/06/17 更新 更新至 556集
+- [炼气十万年](https://v.qq.com/x/cover/mzc002006n62s11.html) - 2025/06/17 更新 更新至 250集
+- [诛仙合集篇](https://v.qq.com/x/cover/mzc00200phqxwd6.html) - 2025/06/17 更新 更新至 6集
+- [灵剑尊](https://v.qq.com/x/cover/2w2legt0g8z26al.html) - 2025/06/17 更新 更新至 605集
+- [一念永恒 第3季](https://v.qq.com/x/cover/mzc002003lw1kp8.html) - 2025/06/17 更新 更新至 54集
+- [遮天](https://v.qq.com/x/cover/mzc00200n53vkqc.html) - 2025/06/17 更新 更新至 114集
 - [我的师兄太强了](https://www.bilibili.com/bangumi/play/ep1524724) - 2025/06/17 更新 更新至 28集
 - [大侠请上功](https://www.bilibili.com/bangumi/play/ep1508581) - 2025/06/17 更新 更新至 7集
 - [我是不白吃](https://www.bilibili.com/bangumi/play/ep1800693) - 2025/06/17 更新 更新至 985集
 - [那年那兔那些事儿 第七季](https://www.bilibili.com/bangumi/play/ep1438462) - 2025/06/17 更新 更新至 10集
 - [最强王者的第二人生](https://www.bilibili.com/bangumi/play/ep1750509) - 2025/06/17 更新 更新至 9集
+- [大夏剑主 动态漫画](http://www.iqiyi.com/v_2f1ar1e82rk.html) - 2025/06/17 更新 更新至 186集
+- [丹道至尊](http://www.iqiyi.com/v_1bsc8u64b8c.html) - 2025/06/17 更新 更新至 128集
+- [斗战天下](http://www.iqiyi.com/v_te1xtm32hk.html) - 2025/06/17 更新 更新至 46集
+- [绝世战魂](http://www.iqiyi.com/v_1wvyqasu2no.html) - 2025/06/17 更新 更新至 123集
+- [全民御兽：开局山海经，我横扫全球 动态漫画](http://www.iqiyi.com/v_1ncsoog0ht4.html) - 2025/06/17 更新 更新至 68集
+- [万物合一 动态漫画](http://www.iqiyi.com/v_20b2ugldpxo.html) - 2025/06/17 更新 更新至 60集
+- [末世盗贼行 动态漫画](http://www.iqiyi.com/v_20x944yw8ho.html) - 2025/06/17 更新 更新至 61集
+- [龙脉武神 动态漫画](http://www.iqiyi.com/v_17wl0fhzbzw.html) - 2025/06/17 更新 更新至 61集
+- [末世神级升级系统 动态漫画 第1季](http://www.iqiyi.com/v_1nsb0pndbas.html) - 2025/06/17 更新 更新至 68集
+- [我不过是个大罗金仙：横扫岛国篇 动态漫画](http://www.iqiyi.com/v_28rikmhkmjc.html) - 2025/06/17 更新 更新至 44集
+- [从哥布林到哥布林神 动态漫画](http://www.iqiyi.com/v_okar3e9qjk.html) - 2025/06/17 更新 更新至 14集
+- [末日狠人：开局囤积万亿物资 动态漫画](http://www.iqiyi.com/v_15kixsqap08.html) - 2025/06/17 更新 更新至 14集
+- [那年那兔那些事儿 第7季](http://www.iqiyi.com/v_1ikbf2jsdxg.html) - 2025/06/17 更新 更新至 10集
+- [江思先生 动态漫画](http://www.iqiyi.com/v_25iso6bw3c8.html) - 2025/06/17 更新 更新至 82集
+- [进化狂潮 动态漫画 第2季](http://www.iqiyi.com/v_1bd4divc9x0.html) - 2025/06/17 更新 更新至 63集
+- [全民末日：我！病毒君王 动态漫画](http://www.iqiyi.com/v_gx0wx0acqw.html) - 2025/06/17 更新 更新至 35集
 
 ## 系统要求
 
