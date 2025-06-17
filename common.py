@@ -45,13 +45,14 @@ class AbstractFetcher(ABC):
         self.api_url = None
         self.platform = None
         self.result = {config.weekday: []}
+        self.response = None
 
     @abstractmethod
-    def fetch_data(self):
+    def send_request(self):
         self.logger.info(f"Fetching today's data from {self.api_url} ...")
         try:
-            response = requests.get(self.api_url, headers=config.HEADERS, timeout=10)
-            response.raise_for_status()
+            self.response = requests.get(self.api_url, headers=config.HEADERS, timeout=10)
+            self.response.raise_for_status()
         except requests.RequestException as e:
             self.logger.error(f"请求 {self.api_url} 失败：{e}")
             raise e
