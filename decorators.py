@@ -1,7 +1,11 @@
-import time
+import json
 import logging
+import os
+import time
 from functools import wraps
 from typing import Callable, Any
+
+from common import Result
 
 logger = logging.getLogger(__name__)
 
@@ -45,10 +49,6 @@ def retry(
     return decorator
 
 
-from functools import wraps
-from typing import Callable, Any
-
-
 def print_after_return(print_func: Callable[[Any], None], print_condition: Callable[[Any], bool] = lambda x: True):
     """
     成功返回后调用指定的打印函数。
@@ -64,6 +64,50 @@ def print_after_return(print_func: Callable[[Any], None], print_condition: Calla
             result = func(*args, **kwargs)
             if print_condition(result):
                 print_func(result)
+            return result
+
+        return wrapper
+
+    return decorator
+
+
+def save_after_return(filename: str = "results.json", save_condition: Callable[[Any], bool] = lambda r: bool(r)):
+    """
+    自动保存函数返回值到 JSON 文件的装饰器。
+
+    参数：
+    - filename: 保存的 JSON 文件名（默认：results.json）
+    - save_condition: 判断是否需要保存的条件函数，默认只要返回值非空就保存
+    """
+
+    def decorator(func):
+        @wraps(func)
+        def wrapper(*args, **kwargs):
+            result = func(*args, **kwargs)
+            if save_condition(result):
+                file_path = os.path.join(os.getcwd(), filename)
+
+                # 尝试转换为可序列化格式
+                def convert(obj):
+                    if isinstance(obj, Result):
+                        return obj.to_dict()
+                    elif isinstance(obj, list):
+                        return [convert(item) for item in obj]
+                    elif isinstance(obj, dict):
+                        return {k: convert(v) for k, v in obj.items()}
+                    else:
+                        return obj
+
+                serializable_result = convert(result)
+
+                try:
+                    with open(file_path, 'w', encoding='utf-8') as f:
+                        json.dump(serializable_result, f, ensure_ascii=False, indent=2)
+                    logger.info(f"结果已保存到 {file_path}")
+                except Exception as e:
+                    logger.error(f"保存结果失败: {e}")
+            else:
+                logger.info("结果为空，不保存文件。")
             return result
 
         return wrapper
