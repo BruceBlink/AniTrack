@@ -65,13 +65,21 @@ python main.py
 ```
 
 ## 数据存储
-
+直接更新在readme中
 
 ## 项目文件说明
 
-- `mikanani.py`: 主程序文件，包含爬虫逻辑和数据处理
-- `requirements.txt`: 项目依赖文件
-- `mikanani_today.json`: 数据存储文件
+- `main.py`: 主程序文件，包含数据整合和更新到readme的逻辑  
+- `mikanani.py`: 蜜柑计划数据爬取模块
+- `tencent.py`: 腾讯视频数据爬取模块
+- `utils.py`: 工具函数模块
+- `config.py`: 配置文件，包含常量和配置参数
+- `README.md`: 项目说明文件
+- `requirements.txt`: Python依赖包列表
+- `.github/workflows/`: GitHub Actions工作流配置
+  - `mian.yml`: 自动更新README的工作流
+- `.gitignore`: Git忽略文件列表
+- `LICENSE`: 许可证文件
 
 ## 贡献指南
 
