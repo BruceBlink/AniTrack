@@ -163,4 +163,5 @@ def fetch_bilibili_anime_today() -> dict[str, list] | None:
 
 if __name__ == "__main__":
     fetch_bilibili_guochuang_today()
+    fetch_bilibili_anime_today()
     print("\n所有测试完成！")
