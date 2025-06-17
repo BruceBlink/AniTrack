@@ -105,3 +105,19 @@ def print_results(results: dict[str, list]):
         print("-" * 80)
 
     print(f"\n统计: 共找到 {len(results[weekday])} 部今日更新的动漫")
+
+
+from datetime import datetime
+
+# 获取当前本地时间（你的环境默认就是 +08:00 新加坡时区）
+now = datetime.now()
+
+# 常见格式示例
+iso_date = now.strftime("%Y-%m-%d")  # 2025-06-17
+iso_date_ld = now.strftime("%Y/%m/%d")  # 2025-06-17
+iso_datetime = now.strftime("%Y-%m-%d %H:%M:%S")  # 2025-06-17 10:23:45
+chinese_date = now.strftime("%Y年%m月%d日")  # 2025年06月17日
+compact = now.strftime("%y%m%d")  # 250617
+weekday = now.strftime("%A")  # Tuesday
+
+print(iso_date, iso_datetime, chinese_date, compact, weekday, sep="\n")
