@@ -57,7 +57,7 @@ jobs:
           # 生成智能提交信息
           timestamp=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
           commit_hash=$(git rev-parse --short HEAD)
-          commit_msg="🌐 Update nodes - ${timestamp} (${commit_hash})"
+          commit_msg="🌐 Update cartoon info - ${timestamp} (${commit_hash})"
           
           git add -A  # 添加所有变更文件
           
