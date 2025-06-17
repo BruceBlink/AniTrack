@@ -1,5 +1,7 @@
+import logging
 import re
-
+import time
+import random
 from common import Result
 
 
@@ -114,3 +116,28 @@ def extract_number(text: str) -> int | None:
     """ 从字符串中提取第一个数字并返回整数。"""
     match = re.search(r'\d+', text)
     return int(match.group()) if match else None
+
+
+def random_delay(min_sec=1.2, max_sec=4.5):
+    """引入随机延迟，模拟人类行为并避免被封锁。"""
+    delay = random.uniform(min_sec, max_sec)
+    time.sleep(delay)
+    logging.debug(f"延迟了 {delay:.2f} 秒。")
+
+
+def clean_text(text):
+    """清理文本，替换 HTML 实体并规范化空白字符。"""
+    if not text:
+        return ""
+
+    # 替换常见的 HTML 实体
+    text = re.sub(r'&nbsp;', ' ', text)
+    text = re.sub(r'&amp;', '&', text)
+    text = re.sub(r'&lt;', '<', text)
+    text = re.sub(r'&gt;', '>', text)
+    text = re.sub(r'&quot;', '"', text)
+    text = re.sub(r'&#x27;', "'", text)  # 撇号
+
+    # 将所有空白字符（空格、制表符、换行符）规范化为单个空格，然后去除首尾空格。
+    text = re.sub(r'\s+', ' ', text).strip()
+    return text
