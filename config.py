@@ -28,4 +28,6 @@ MIKANANI_BASE_URL = "https://mikanani.me"
 # Bilibili 国创
 BILIBILI_GUOCHUANG_API = "https://api.bilibili.com/pgc/web/timeline?types=4&before=6&after=6"
 # Bilibili 番剧
-BILIBILI_ANIME_API="https://api.bilibili.com/pgc/web/timeline?types=1&before=6&after=6"
+BILIBILI_ANIME_API = "https://api.bilibili.com/pgc/web/timeline?types=1&before=6&after=6"
+# Youku 动漫
+YOUKU_COMICS_API = "https://www.youku.com/ku/webcomic"
