@@ -20,6 +20,9 @@ HEADERS = {
     "Sec-Fetch-User": "?1",
 }
 
-CARTOON_BASE_URL = "https://v.qq.com/channel/cartoon"
-MIKANANI_BASE_URL = "https://mikanani.me"
 weekday = ["星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日"][datetime.now().weekday()]
+
+# Base URLs for various anime and cartoon sites
+TENCENT_CARTOON_BASE_URL = "https://v.qq.com/channel/cartoon"
+MIKANANI_BASE_URL = "https://mikanani.me"
+BILIBILI_GUOCHUNAG = "https://www.bilibili.com/guochuang/timeline/"

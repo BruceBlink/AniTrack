@@ -10,7 +10,7 @@ import requests
 from bs4 import BeautifulSoup
 
 import config
-from config import HEADERS, CARTOON_BASE_URL
+from config import HEADERS, TENCENT_CARTOON_BASE_URL
 
 # 配置日志
 logger = logging.getLogger(__name__)
@@ -68,7 +68,7 @@ def _fetch_qq_cartoon_today() -> dict[str, list]:
 
         # 获取页面内容
         logger.info("正在获取腾讯动漫页面...")
-        res = session.get(CARTOON_BASE_URL, timeout=15)
+        res = session.get(TENCENT_CARTOON_BASE_URL, timeout=15)
         res.raise_for_status()  # 对于不良响应（4xx 或 5xx）抛出 HTTPError
 
         # 保存 HTML 以便调试
