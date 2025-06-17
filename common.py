@@ -1,4 +1,4 @@
-from dataclasses import dataclass
+from dataclasses import dataclass, asdict
 
 
 @dataclass(order=True)
@@ -27,3 +27,7 @@ class Result:
             self.detail_url,
             self.update_time
         ))
+
+    def to_dict(self) -> dict:
+        """将 Result 对象转换为字典，用于序列化等操作。"""
+        return asdict(self)
