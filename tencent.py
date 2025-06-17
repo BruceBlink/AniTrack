@@ -33,7 +33,7 @@ def normalize_url(url, base_url="https://v.qq.com"):
     return url
 
 
-def _fetch_qq_cartoon_today() -> dict[str, list]:
+def _fetch_qq_cartoon_today(api_url: str) -> dict[str, list]:
     """从腾讯视频动漫频道获取今日更新的动漫信息。"""
     html_path = "tencent_cartoon.html"  # 临时 HTML 文件名
     try:
@@ -45,7 +45,7 @@ def _fetch_qq_cartoon_today() -> dict[str, list]:
 
         # 获取页面内容
         logger.info("正在获取腾讯动漫页面...")
-        res = session.get(TENCENT_CARTOON_BASE_URL, timeout=15)
+        res = session.get(api_url, timeout=15)
         res.raise_for_status()  # 对于不良响应（4xx 或 5xx）抛出 HTTPError
 
         # 保存 HTML 以便调试
@@ -165,7 +165,7 @@ def _fetch_qq_cartoon_today() -> dict[str, list]:
 def fetch_qq_cartoon_today() -> dict[str, list] | None:
     """获取腾讯视频动漫频道今日更新的动漫信息。"""
     logger.info("开始获取腾讯视频动漫频道今日更新...")
-    return _fetch_qq_cartoon_today()
+    return _fetch_qq_cartoon_today(TENCENT_CARTOON_BASE_URL)
 
 
 if __name__ == "__main__":
