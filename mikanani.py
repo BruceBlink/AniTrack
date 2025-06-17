@@ -28,7 +28,7 @@ def _fetch_mikanani_today() -> dict[str, list]:
         logger.error(f"请求 Mikanani 页面失败：{e}")
         return result
 
-    soup = BeautifulSoup(response.content, 'html.parser', from_encoding='utf-8')
+    soup = BeautifulSoup(response.text, 'html.parser', from_encoding='utf-8')
     logger.debug(f"解析 HTML 内容：{soup}")
 
     for li in soup.find_all("li"):
