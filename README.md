@@ -13,19 +13,13 @@
 ## 今日更新
 
 ### 星期二 番剧更新
-- [吞噬星空](https://v.qq.com/x/cover/324olz7ilvo2j5f.html) - 2025/06/17 更新 更新至 176集
-- [万界独尊](https://v.qq.com/x/cover/mzc00200cu8uq8c.html) - 2025/06/17 更新 更新至 339集
-- [星辰变 第6季](https://v.qq.com/x/cover/mzc002006wuirfi.html) - 2025/06/17 更新 更新至 16集
-- [武神主宰](https://v.qq.com/x/cover/7q544xyrava3vxf.html) - 2025/06/17 更新 更新至 556集
-- [炼气十万年](https://v.qq.com/x/cover/mzc002006n62s11.html) - 2025/06/17 更新 更新至 250集
-- [诛仙合集篇](https://v.qq.com/x/cover/mzc00200phqxwd6.html) - 2025/06/17 更新 更新至 6集
-- [灵剑尊](https://v.qq.com/x/cover/2w2legt0g8z26al.html) - 2025/06/17 更新 更新至 605集
 - [一念永恒 第3季](https://v.qq.com/x/cover/mzc002003lw1kp8.html) - 2025/06/17 更新 更新至 54集
 - [遮天](https://v.qq.com/x/cover/mzc00200n53vkqc.html) - 2025/06/17 更新 更新至 114集
-- [我的师兄太强了](https://www.bilibili.com/bangumi/play/ep1524724) - 2025/06/17 更新 更新至 28集
-- [大侠请上功](https://www.bilibili.com/bangumi/play/ep1508581) - 2025/06/17 更新 更新至 7集
-- [我是不白吃](https://www.bilibili.com/bangumi/play/ep1800693) - 2025/06/17 更新 更新至 985集
-- [那年那兔那些事儿 第七季](https://www.bilibili.com/bangumi/play/ep1438462) - 2025/06/17 更新 更新至 10集
+- [诛仙合集篇](https://v.qq.com/x/cover/mzc00200phqxwd6.html) - 2025/06/17 更新 更新至 6集
+- [剑道第一仙](https://v.qq.com/x/cover/mzc00200bkls85f.html) - 2025/06/17 更新 更新至 140集
+- [吞天记](https://v.qq.com/x/cover/mzc00200t39giu5.html) - 2025/06/17 更新 更新至 12集
+- [神印王座](https://v.qq.com/x/cover/mzc002007j7p5hn.html) - 2025/06/17 更新 更新至 163集
+- [诛仙 第3季](https://v.qq.com/x/cover/mzc00200z195unq.html) - 2025/06/17 更新 更新至 3集
 - [大夏剑主 动态漫画](http://www.iqiyi.com/v_2f1ar1e82rk.html) - 2025/06/17 更新 更新至 186集
 - [丹道至尊](http://www.iqiyi.com/v_1bsc8u64b8c.html) - 2025/06/17 更新 更新至 128集
 - [斗战天下](http://www.iqiyi.com/v_te1xtm32hk.html) - 2025/06/17 更新 更新至 46集
