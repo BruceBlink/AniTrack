@@ -1,3 +1,7 @@
+from collections.abc import Mapping
+from typing import Any, Dict, List
+
+
 def update_today_section_in_readme(data: dict[str, list]) -> None:
     """
     更新 README.md 中的 "今日更新" 部分的内容
@@ -22,7 +26,7 @@ def update_today_section_in_readme(data: dict[str, list]) -> None:
         today_md = [f"### {weekday} 番剧更新\n"]
         for item in items:
             title = item["title"]
-            link = item["link"]
+            link = item["detail_url"]
             text = item.get("text") or item.get("update_count") or "未知"
             if link:
                 today_md.append(f"- [{title}]({link}) - {text}\n")
@@ -36,14 +40,43 @@ def update_today_section_in_readme(data: dict[str, list]) -> None:
             f.writelines(lines)
 
 
-def merge_data(dict1: dict[str, list], dict2: dict[str, list]) -> dict[str, list]:
+def _freeze(obj: Any) -> Any:
     """
-    合并两个数据字典
+    将任意嵌套的 dict/list/set 转换为可哈希的签名：
+      - dict -> frozenset of (key, freeze(value))
+      - list -> tuple of freeze(item)
+      - set -> frozenset of freeze(item)
+      - 其他 -> 原样返回（假设本身是可哈希的）
     """
-    merged_dict = {}
-    for key in set(dict1.keys()) | set(dict2.keys()):
-        merged_dict[key] = dict1.get(key, []) + dict2.get(key, [])
-    return merged_dict
+    if isinstance(obj, Mapping):
+        return frozenset((k, _freeze(v)) for k, v in sorted(obj.items()))
+    if isinstance(obj, list):
+        return tuple(_freeze(v) for v in obj)
+    if isinstance(obj, set):
+        return frozenset(_freeze(v) for v in obj)
+    return obj
+
+
+def merge_dict_data(*dicts: Dict[str, List[Any]]) -> Dict[str, List[Any]]:
+    """
+    合并任意数量的数据字典，并去除重复元素（支持元素为 dict/list等不可哈希类型）。
+    相同键下的列表会按传入顺序拼接，且只保留第一次出现的元素。
+    """
+    merged: Dict[str, List[Any]] = {}
+    seen_map: Dict[str, set] = {}
+
+    for d in dicts:
+        for key, lst in d.items():
+            merged.setdefault(key, [])
+            seen_map.setdefault(key, set())
+
+            for item in lst:
+                sig = _freeze(item)
+                if sig not in seen_map[key]:
+                    seen_map[key].add(sig)
+                    merged[key].append(item)
+
+    return merged
 
 
 def print_results(results: dict[str, list]):
