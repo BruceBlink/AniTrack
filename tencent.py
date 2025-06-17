@@ -10,8 +10,9 @@ import requests
 from bs4 import BeautifulSoup
 
 import config
+from common import Result
 from config import HEADERS, TENCENT_CARTOON_BASE_URL
-from utils import print_results
+from utils import print_results, extract_number, iso_date_ld
 
 # 配置日志
 logger = logging.getLogger(__name__)
@@ -97,18 +98,15 @@ def _fetch_qq_cartoon_today() -> dict[str, list]:
             video_items = wrap.find_all('div', class_='video-banner-item')
 
             for item in video_items:
-                # 提取主要信息
-                data = {
-                    "platform": "tencent",
-                    "title": None,
-                    "update_count": None,
-                    "update_info": None,
-                    "image_url": None,
-                    "detail_url": None,
-                    "tagline": None,
-                    "metadata": {}
-                }
-
+                data = Result(
+                    platform="tencent",
+                    title="",
+                    update_count="",
+                    update_info="",
+                    image_url="",
+                    detail_url="",
+                    update_time=iso_date_ld
+                )
                 # 提取标题
                 title_elem = item.select_one('.banner-title')
                 if title_elem:
@@ -117,7 +115,7 @@ def _fetch_qq_cartoon_today() -> dict[str, list]:
                 # 提取更新集数
                 update_count_elem = item.select_one('.corner-mark--rightBottom')
                 if update_count_elem:
-                    data["update_count"] = clean_text(update_count_elem.get_text(strip=True))
+                    data["update_count"] = extract_number(clean_text(update_count_elem.get_text(strip=True)))
 
                 # 提取更新说明
                 update_info_elem = item.select_one('.banner-subtitle')
