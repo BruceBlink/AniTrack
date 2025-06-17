@@ -26,6 +26,7 @@
 - [拉撒路](https://mikanani.me/Home/Bangumi/3624) - 2025/06/17 更新
 - [干杂活我乃最强～关于原英雄队伍的杂役人员，实际上除了战斗能力外全是SSS的故事～](https://mikanani.me/Home/Bangumi/3632) - 2025/06/17 更新
 - [安妮·雪莉](https://mikanani.me/Home/Bangumi/3582) - 2025/06/17 更新
+- [打了300年的史莱姆，不知不觉就练到了满级 ～其二～](https://mikanani.me/Home/Bangumi/3586) - 2025/06/17 更新
 - [我是星际国家的恶德领主！](https://mikanani.me/Home/Bangumi/3592) - 2025/06/17 更新
 - [时光流逝，饭菜依旧美味](https://mikanani.me/Home/Bangumi/3623) - 2025/06/17 更新
 - [外星人姆姆](https://mikanani.me/Home/Bangumi/3594) - 2025/06/17 更新
