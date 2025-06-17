@@ -5,7 +5,7 @@ from dataclasses import dataclass
 class Result:
     platform: str
     title: str
-    update_count: int
+    update_count: str
     update_info: str
     image_url: str
     detail_url: str
