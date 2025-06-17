@@ -18,13 +18,6 @@ from decorators import retry, print_after_return, save_after_return
 logger = logging.getLogger(__name__)
 
 
-def random_delay(min_sec=1.2, max_sec=4.5):
-    """引入随机延迟，模拟人类行为并避免被封锁。"""
-    delay = random.uniform(min_sec, max_sec)
-    time.sleep(delay)
-    logger.debug(f"延迟了 {delay:.2f} 秒。")
-
-
 def normalize_url(url, base_url="https://v.qq.com"):
     """将给定 URL 规范化为绝对路径。"""
     if not url:
