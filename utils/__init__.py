@@ -7,5 +7,7 @@ from .utils import (
     weekday_today,
     iso_date_ld,
     print_results,
-    update_today_section_in_readme
+    update_today_section_in_readme,
+    encode_url,
+    decode_url
 )
