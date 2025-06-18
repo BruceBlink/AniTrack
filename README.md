@@ -20,8 +20,10 @@
 - [紫云寺家的兄弟姐妹](https://mikanani.me/Home/Bangumi/3614) - 2025/06/18 更新
 - [竹轮战纪～用我的可爱来侵略地球～](https://mikanani.me/Home/Bangumi/3638) - 2025/06/18 更新
 - [拉撒路](https://mikanani.me/Home/Bangumi/3624) - 2025/06/18 更新
+- [我家有个阿宅女忍者](https://mikanani.me/Home/Bangumi/3526) - 2025/06/18 更新
 - [脱离了A级队伍的我，和从前的徒弟们前往迷宫深处。](https://mikanani.me/Home/Bangumi/3556) - 2025/06/18 更新
 - [mono女孩](https://mikanani.me/Home/Bangumi/3628) - 2025/06/18 更新
+- [忍者与杀手二人组的日常生活](https://mikanani.me/Home/Bangumi/3584) - 2025/06/18 更新
 - [一念永恒 第3季](https://v.qq.com/x/cover/mzc002003lw1kp8.html) - 2025/06/18 更新 更新至 54集
 - [遮天](https://v.qq.com/x/cover/mzc00200n53vkqc.html) - 2025/06/18 更新 更新至 114集
 - [诛仙合集篇](https://v.qq.com/x/cover/mzc00200phqxwd6.html) - 2025/06/18 更新 更新至 6集
@@ -36,11 +38,11 @@
 - [修真聊天群 动态漫画](http://www.iqiyi.com/v_1khwur3ntm4.html) - 2025/06/18 更新 更新至 50集
 - [特工王妃虐渣记 动态漫画](http://www.iqiyi.com/v_11u444o3k1o.html) - 2025/06/18 更新 更新至 64集
 - [被迫成为隐藏职业 动态漫画](http://www.iqiyi.com/v_23jscm9fkgg.html) - 2025/06/18 更新 更新至 58集
-- [都市古仙医](http://www.iqiyi.com/v_1la70ef6oaw.html) - 2025/06/18 更新 更新至 79集
+- [都市古仙医](http://www.iqiyi.com/v_1la70ef6oaw.html) - 2025/06/18 更新 更新至 80集
 - [穿越后我成了团宠 动态漫画](http://www.iqiyi.com/v_1kl1g82i2wo.html) - 2025/06/18 更新 更新至 42集
 - [逆天仙命：捡个婴儿当大佬 动态漫画](http://www.iqiyi.com/v_2b9tawusim4.html) - 2025/06/18 更新 更新至 39集
 - [邪神降世，我有一座大凶狱 动态漫画](http://www.iqiyi.com/v_dp0rbk9hd4.html) - 2025/06/18 更新 更新至 54集
-- [一世独尊](http://www.iqiyi.com/v_16zxzexerfg.html) - 2025/06/18 更新 更新至 132集
+- [一世独尊](http://www.iqiyi.com/v_16zxzexerfg.html) - 2025/06/18 更新 更新至 133集
 - [开局签到至尊丹田 动态漫画](http://www.iqiyi.com/v_2amiwl7pa8s.html) - 2025/06/18 更新 更新至 182集
 - [神探双骄 动态漫画](http://www.iqiyi.com/v_2aoz08v35fk.html) - 2025/06/18 更新 更新至 31集
 - [诡异游戏：我靠亿万功德氪通关 动态漫画](http://www.iqiyi.com/v_1vjgd7croug.html) - 2025/06/18 更新 更新至 103集
