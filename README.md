@@ -14,6 +14,8 @@
 
 ### 星期三 番剧更新
 - [你与我最后的战场，亦或是世界起始的圣战 第二季](https://mikanani.me/Home/Bangumi/3383) - 2025/06/18 更新 【Mikanani】
+- [华Doll-Reinterpretation of Flowering-](https://mikanani.me/Home/Bangumi/3589) - 2025/06/18 更新 【Mikanani】
+- [拜托请穿上，鹰峰同学](https://mikanani.me/Home/Bangumi/3603) - 2025/06/18 更新 【Mikanani】
 - [圣女因太过完美不够可爱而被废除婚约并卖到邻国](https://mikanani.me/Home/Bangumi/3609) - 2025/06/18 更新 【Mikanani】
 - [记忆缝线](https://mikanani.me/Home/Bangumi/3620) - 2025/06/18 更新 【Mikanani】
 - [全力兔子 第二季](https://mikanani.me/Home/Bangumi/3639) - 2025/06/18 更新 【Mikanani】
@@ -74,7 +76,7 @@
 - 暴富系统：我有999个新马甲 第二季 - 2025/06/18 更新 更新至 55集 【youku】
 - 无敌神王 - 2025/06/18 更新 更新至 19集 【youku】
 
-**今天总共更新了 60 部番剧。**
+**今天总共更新了 62 部番剧。**
 
 ## 系统要求
 
