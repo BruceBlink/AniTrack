@@ -1,11 +1,12 @@
 import logging
+
 import utils
-from platform.bilibili import BilibiliFetcher
-from config import BILIBILI_GUOCHUANG_API, BILIBILI_ANIME_API
-from platform.iqiyi import fetch_iqiyi_cartoon_today
 from common.logger_setup import init_logger
-from platform.mikanani import fetch_mikanani_today
-from platform.tencent import fetch_qq_cartoon_today
+from config import BILIBILI_GUOCHUANG_API, BILIBILI_ANIME_API
+from platforms.bilibili import BilibiliFetcher
+from platforms.iqiyi import fetch_iqiyi_cartoon_today
+from platforms.mikanani import fetch_mikanani_today
+from platforms.tencent import fetch_qq_cartoon_today
 from utils import update_today_section_in_readme
 
 
@@ -26,7 +27,7 @@ def main():
                                  iqiyi_cartoon_data)  # 合并多个数据字典
     # 更新 README 中的今日番剧更新部分
     update_today_section_in_readme(data)
-    logging.info("今日的番剧更新数据已更新到 README 中。")
+    logging.info(f"今日的番剧更新数据已更新到 README 中,总共更新了 {len(data[utils.weekday_today])} 部番剧。")
     # with open("mikanani_today.json", "w", encoding="utf-8") as f:
     #     json.dump(data, f, ensure_ascii=False, indent=2)
     # print(json.dumps(data, ensure_ascii=False, indent=2))
