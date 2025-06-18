@@ -1,3 +1,4 @@
+import json
 import logging  # 导入 logging 模块
 import os
 import time
@@ -43,36 +44,36 @@ def _fetch_youku_cartoon_today(api_url: str) -> dict[str, list]:
         # 解析 HTML
         soup = BeautifulSoup(res.text, "html.parser")
 
-        # 查找包含所有漫画的主容器
-        container = soup.find('div', class_='hscroll_content_fdYOj')
+        # 找含 INITIAL_DATA 的 script 标签
+        script = None
+        for tag in soup.find_all("script"):
+            text = tag.string
+            if text and "__INITIAL_DATA__" in text:
+                script = text
+                break
+        if not script:
+            raise ValueError("未找到包含 window.__INITIAL_DATA__ 的 <script>")
+
+        # 清洗并提取 JSON 部分
+        prefix = "window.__INITIAL_DATA__="
+        json_str = script[len(prefix) + 1:].strip().rstrip(";")
+        fixed_json_str = json_str.replace('undefined', 'null')
+
+        data = json.loads(fixed_json_str)
+        moduleList = data.get("moduleList", None)
 
         # 提取所有漫画卡片
         comics = []
-        for card in container.find_all('div', class_='g-col'):
-            # 提取平台类型
-            tag_div = card.find('div', class_='pack_mark_1hLkl')
-            platform = tag_div.find('span').text.strip() if tag_div else ""
-
-            # 提取标题
-            a_tag = card.find('a')
-            title = a_tag.get('aria-label', '').split()[-1] if a_tag else ""
-
-            # 提取更新集数
-            update_span = card.find('span', class_='lb_texts_23IEZ')
-            update_count = update_span.text.strip() if update_span else ""
-
-            # 提取更新信息
-            subtitle_div = card.find('div', class_='subtitle_1CJyy')
-            update_info = subtitle_div.text.strip() if subtitle_div else ""
-
-            # 提取图片URL
-            img_tag = card.find('img', class_='pack_img_YJm41')
-            image_url = img_tag.get('src', '') if img_tag else ""
-
+        for card in moduleList:
+            # title
+            title = card.get('title', '').strip()
+            update_count = ''
+            update_info = ''
+            image_url = ''
             # 提取详情页URL
-            detail_url = "https:" + a_tag.get('href', '') if a_tag else ""
+            detail_url = "https:"
             comic = Result(
-                platform=platform,
+                platform='youku',
                 title=title,
                 update_count=update_count,
                 update_info=update_info,
@@ -115,7 +116,6 @@ def _fetch_youku_cartoon_today(api_url: str) -> dict[str, list]:
 # # @print_after_return(print_results, print_condition=lambda r: any(r.values()))
 # # @save_after_return(filename="qq_cartoon_today.json", save_condition=lambda r: any(r.values()))
 def fetch_youku_cartoon_today() -> dict[str, list] | None:
-    """获取腾讯视频动漫频道今日更新的动漫信息。"""
     logger.info("开始获取优酷动漫频道今日更新...")
     return _fetch_youku_cartoon_today(YOUKU_COMICS_API)
 
