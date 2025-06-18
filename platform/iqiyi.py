@@ -1,11 +1,13 @@
 import logging  # 导入 logging 模块
 import time
 from datetime import datetime
+
 import requests
+
+import utils
 from common import Result
-import config
-from config import HEADERS, IQIYI_CARTOON_API
 from common.decorators import retry, print_after_return
+from config import HEADERS, IQIYI_CARTOON_API
 from utils import iso_date_ld, random_delay, clean_text, extract_number, print_results
 
 # 配置日志
@@ -34,7 +36,7 @@ def _fetch_iqiyi_cartoon_today(api_url: str) -> dict[str, list] | None:
 
                 if not today_list:
                     logger.info("今日没有更新")
-                    return {config.weekday: []}
+                    return {utils.weekday_today: []}
 
                 # 使用列表生成式处理更新数据
                 results = [
@@ -54,10 +56,10 @@ def _fetch_iqiyi_cartoon_today(api_url: str) -> dict[str, list] | None:
                 for res in results:
                     logger.info("识别到更新：%s %s", res.title, res.update_info)
 
-                return {config.weekday: results}
+                return {utils.weekday_today: results}
 
         logger.warning("未找到追番表数据")
-        return {config.weekday: []}
+        return {utils.weekday_today: []}
 
     except requests.exceptions.Timeout:
         logger.warning("请求超时，将在 10 秒后重试...")

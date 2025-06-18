@@ -26,28 +26,28 @@
 - [忍者与杀手二人组的日常生活](https://mikanani.me/Home/Bangumi/3584) - 2025/06/18 更新
 - [一念永恒 第3季](https://v.qq.com/x/cover/mzc002003lw1kp8.html) - 2025/06/18 更新 更新至 54集
 - [遮天](https://v.qq.com/x/cover/mzc00200n53vkqc.html) - 2025/06/18 更新 更新至 114集
-- [诛仙合集篇](https://v.qq.com/x/cover/mzc00200phqxwd6.html) - 2025/06/18 更新 更新至 6集
+- [诛仙合集篇](https://v.qq.com/x/cover/mzc00200phqxwd6.html) - 2025/06/18 更新 更新至 7集
 - [剑道第一仙](https://v.qq.com/x/cover/mzc00200bkls85f.html) - 2025/06/18 更新 更新至 140集
-- [吞天记](https://v.qq.com/x/cover/mzc00200t39giu5.html) - 2025/06/18 更新 更新至 12集
+- [吞天记](https://v.qq.com/x/cover/mzc00200t39giu5.html) - 2025/06/18 更新 更新至 13集
 - [神印王座](https://v.qq.com/x/cover/mzc002007j7p5hn.html) - 2025/06/18 更新 更新至 163集
 - [诛仙 第3季](https://v.qq.com/x/cover/mzc00200z195unq.html) - 2025/06/18 更新 更新至 3集
-- [末日后酒店](https://www.bilibili.com/bangumi/play/ep1723583) - 2025/06/18 更新 更新至 11集
-- [大夏剑主 动态漫画](http://www.iqiyi.com/v_2f1ar1e82rk.html) - 2025/06/18 更新 更新至 186集
+- [少年歌行 血染天启篇](https://www.bilibili.com/bangumi/play/ep1343070) - 2025/06/18 更新 更新至 25集
+- [武道大帝 动态漫画](http://www.iqiyi.com/v_11za575v9yo.html) - 2025/06/18 更新 更新至 95集
 - [神宠进化 动态漫画 第2季](http://www.iqiyi.com/v_1zmppdpww5o.html) - 2025/06/18 更新 更新至 80集
-- [魔法小公主绮莉 动态漫画](http://www.iqiyi.com/v_1gn3zf8qr4k.html) - 2025/06/18 更新 更新至 64集
 - [修真聊天群 动态漫画](http://www.iqiyi.com/v_1khwur3ntm4.html) - 2025/06/18 更新 更新至 50集
-- [特工王妃虐渣记 动态漫画](http://www.iqiyi.com/v_11u444o3k1o.html) - 2025/06/18 更新 更新至 64集
-- [被迫成为隐藏职业 动态漫画](http://www.iqiyi.com/v_23jscm9fkgg.html) - 2025/06/18 更新 更新至 58集
 - [都市古仙医](http://www.iqiyi.com/v_1la70ef6oaw.html) - 2025/06/18 更新 更新至 80集
-- [穿越后我成了团宠 动态漫画](http://www.iqiyi.com/v_1kl1g82i2wo.html) - 2025/06/18 更新 更新至 42集
-- [逆天仙命：捡个婴儿当大佬 动态漫画](http://www.iqiyi.com/v_2b9tawusim4.html) - 2025/06/18 更新 更新至 39集
-- [邪神降世，我有一座大凶狱 动态漫画](http://www.iqiyi.com/v_dp0rbk9hd4.html) - 2025/06/18 更新 更新至 54集
+- [镇国神婿 动态漫画 第2季](http://www.iqiyi.com/v_1ymg7qta6eg.html) - 2025/06/18 更新 更新至 120集
+- [都市神医：七个师姐保我无敌 动态漫画](http://www.iqiyi.com/v_1c30eisx3k0.html) - 2025/06/18 更新 更新至 140集
 - [一世独尊](http://www.iqiyi.com/v_16zxzexerfg.html) - 2025/06/18 更新 更新至 133集
 - [开局签到至尊丹田 动态漫画](http://www.iqiyi.com/v_2amiwl7pa8s.html) - 2025/06/18 更新 更新至 182集
+- [炼体十万层：都市篇 动态漫画](http://www.iqiyi.com/v_g7jc0m8tuc.html) - 2025/06/18 更新 更新至 196集
+- [超神宠兽店 动态漫画](http://www.iqiyi.com/v_14v7qba0c4c.html) - 2025/06/18 更新 更新至 123集
+- [我契约了我自己 动态漫画](http://www.iqiyi.com/v_1eje0fry51g.html) - 2025/06/18 更新 更新至 66集
+- [鲲吞天下 动态漫画](http://www.iqiyi.com/v_1im5q6v2k2c.html) - 2025/06/18 更新 更新至 158集
+- [我被困在同一天一千年 动态漫画](http://www.iqiyi.com/v_1hz54gdh48w.html) - 2025/06/18 更新 更新至 114集
 - [神探双骄 动态漫画](http://www.iqiyi.com/v_2aoz08v35fk.html) - 2025/06/18 更新 更新至 31集
-- [诡异游戏：我靠亿万功德氪通关 动态漫画](http://www.iqiyi.com/v_1vjgd7croug.html) - 2025/06/18 更新 更新至 103集
-- [斗罗大陆5重生唐三 动态漫画](http://www.iqiyi.com/v_20079ouizgs.html) - 2025/06/18 更新 更新至 23集
-- [全民诡异：开局掌握零元购 动态漫画](http://www.iqiyi.com/v_1t3om8emqd8.html) - 2025/06/18 更新 更新至 46集
+- [逆天仙命：捡个婴儿当大佬 动态漫画](http://www.iqiyi.com/v_2b9tawusim4.html) - 2025/06/18 更新 更新至 39集
+- [重生为怪兽什么鬼 动态漫画 第2季 兽神崛起](http://www.iqiyi.com/v_2ayd5437xd8.html) - 2025/06/18 更新 更新至 96集
 
 ## 系统要求
 

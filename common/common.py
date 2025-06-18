@@ -1,10 +1,11 @@
-from dataclasses import dataclass, asdict
-from abc import ABC, abstractmethod
 import logging
+from abc import ABC, abstractmethod
+from dataclasses import dataclass, asdict
 
 import requests
 
 import config
+import utils
 
 
 @dataclass(order=True)
@@ -44,7 +45,7 @@ class AbstractFetcher(ABC):
         self.logger = logging.getLogger(self.__class__.__name__)
         self.api_url = None
         self.platform = None
-        self.result = {config.weekday: []}
+        self.result = {utils.weekday_today: []}
         self.response = None
 
     @abstractmethod

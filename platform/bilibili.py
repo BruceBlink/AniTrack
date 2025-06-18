@@ -2,10 +2,10 @@ import time
 
 import requests
 
+import utils
 from common import Result, AbstractFetcher
-import config
-from config import BILIBILI_GUOCHUANG_API, BILIBILI_ANIME_API
 from common.decorators import retry, print_after_return
+from config import BILIBILI_GUOCHUANG_API, BILIBILI_ANIME_API
 from utils import iso_date_ld
 from utils import print_results, clean_text
 
@@ -39,7 +39,6 @@ class BilibiliFetcher(AbstractFetcher):
                 return {"today": []}
 
             today = today_list[0]
-            update_time = today["date"]  # e.g. "6-17"
 
             for ep in today.get("episodes", []):
                 # 只取已经 published 的
@@ -48,21 +47,18 @@ class BilibiliFetcher(AbstractFetcher):
 
                 # 解析集数数字
                 pub_index = ep.get("pub_index", "").strip()  # e.g. "第28话"
-                try:
-                    count = int(pub_index.lstrip("第").rstrip("话"))
-                except:
-                    count = None
+                count = utils.extract_number(pub_index)
                 item = Result(
                     platform="bilibili",
                     title=clean_text(ep.get("title", "")),
-                    update_count=count,
+                    update_count=str(count),
                     update_info="更新至" + pub_index,
                     image_url=ep.get("square_cover") or ep.get("cover"),
                     detail_url=f"https://www.bilibili.com/bangumi/play/ep{ep.get('episode_id')}",
                     update_time=iso_date_ld
                 )
                 self.logger.info("识别到更新：%s %s", item.title, item.update_info)
-                self.result[config.weekday].append(item)
+                self.result[utils.weekday_today].append(item)
 
             return self.result
 

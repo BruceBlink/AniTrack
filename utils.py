@@ -1,7 +1,8 @@
 import logging
+import random
 import re
 import time
-import random
+
 from common import Result
 
 
@@ -108,6 +109,7 @@ iso_datetime = now.strftime("%Y-%m-%d %H:%M:%S")  # 2025-06-17 10:23:45
 chinese_date = now.strftime("%Y年%m月%d日")  # 2025年06月17日
 compact = now.strftime("%y%m%d")  # 250617
 weekday = now.strftime("%A")  # Tuesday
+weekday_today = ["星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日"][datetime.now().weekday()]
 
 
 # print(iso_date, iso_datetime, chinese_date, compact, weekday, sep="\n")

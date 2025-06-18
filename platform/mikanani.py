@@ -5,10 +5,10 @@ from urllib.parse import urljoin
 import requests
 from bs4 import BeautifulSoup
 
+import utils
 from common import Result
-import config
-from config import MIKANANI_BASE_URL, HEADERS
 from common.decorators import retry, print_after_return
+from config import MIKANANI_BASE_URL, HEADERS
 from utils import iso_date_ld, print_results
 
 logger = logging.getLogger(__name__)
@@ -17,7 +17,7 @@ logger = logging.getLogger(__name__)
 def _fetch_mikanani_today() -> dict[str, list]:
     """抓取 Mikanani 今日更新的番剧数据。"""
     logger.info("Fetching today's Mikanani data...")
-    result = {config.weekday: []}
+    result = {utils.weekday_today: []}
     today_str = datetime.now().strftime("%Y/%m/%d")
 
     try:
@@ -60,7 +60,7 @@ def _fetch_mikanani_today() -> dict[str, list]:
         )
 
         logger.info(f"识别到更新：{anime_info.title} - {anime_info.update_info}")
-        result[config.weekday].append(anime_info)
+        result[utils.weekday_today].append(anime_info)
 
     return result
 

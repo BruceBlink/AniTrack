@@ -6,10 +6,10 @@ from urllib.parse import urljoin, unquote
 import requests
 from bs4 import BeautifulSoup
 
+import utils
 from common import Result
-import config
-from config import HEADERS, TENCENT_CARTOON_BASE_URL
 from common.decorators import retry, print_after_return
+from config import HEADERS, TENCENT_CARTOON_BASE_URL
 from utils import print_results, extract_number, iso_date_ld, random_delay, clean_text
 
 # 配置日志
@@ -57,7 +57,7 @@ def _fetch_qq_cartoon_today(api_url: str) -> dict[str, list]:
         soup = BeautifulSoup(res.text, "html.parser")
 
         # 获取今天的中文星期
-        weekday = config.weekday
+        weekday = utils.weekday_today
         result = {weekday: []}
 
         logger.info("正在查找今日更新模块...")
