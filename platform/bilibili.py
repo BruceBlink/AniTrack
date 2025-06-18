@@ -2,10 +2,10 @@ import time
 
 import requests
 
-import config
 from common import Result, AbstractFetcher
+import config
 from config import BILIBILI_GUOCHUANG_API, BILIBILI_ANIME_API
-from decorators import retry, print_after_return
+from common.decorators import retry, print_after_return
 from utils import iso_date_ld
 from utils import print_results, clean_text
 

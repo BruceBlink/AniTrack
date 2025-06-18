@@ -5,8 +5,8 @@ import time
 import requests
 from bs4 import BeautifulSoup
 
-import config
 from common import Result
+import config
 from config import HEADERS, YOUKU_COMICS_API
 from utils import iso_date_ld, random_delay
 

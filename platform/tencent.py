@@ -6,10 +6,10 @@ from urllib.parse import urljoin, unquote
 import requests
 from bs4 import BeautifulSoup
 
-import config
 from common import Result
+import config
 from config import HEADERS, TENCENT_CARTOON_BASE_URL
-from decorators import retry, print_after_return
+from common.decorators import retry, print_after_return
 from utils import print_results, extract_number, iso_date_ld, random_delay, clean_text
 
 # 配置日志

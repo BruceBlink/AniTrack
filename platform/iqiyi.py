@@ -2,10 +2,10 @@ import logging  # 导入 logging 模块
 import time
 from datetime import datetime
 import requests
-import config
 from common import Result
+import config
 from config import HEADERS, IQIYI_CARTOON_API
-from decorators import retry, print_after_return
+from common.decorators import retry, print_after_return
 from utils import iso_date_ld, random_delay, clean_text, extract_number, print_results
 
 # 配置日志

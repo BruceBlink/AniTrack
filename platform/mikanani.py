@@ -5,10 +5,10 @@ from urllib.parse import urljoin
 import requests
 from bs4 import BeautifulSoup
 
-import config
 from common import Result
+import config
 from config import MIKANANI_BASE_URL, HEADERS
-from decorators import retry, print_after_return
+from common.decorators import retry, print_after_return
 from utils import iso_date_ld, print_results
 
 logger = logging.getLogger(__name__)

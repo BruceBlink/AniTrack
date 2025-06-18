@@ -3,7 +3,7 @@ import utils
 from platform.bilibili import BilibiliFetcher
 from config import BILIBILI_GUOCHUANG_API, BILIBILI_ANIME_API
 from platform.iqiyi import fetch_iqiyi_cartoon_today
-from logger_setup import init_logger
+from common.logger_setup import init_logger
 from platform.mikanani import fetch_mikanani_today
 from platform.tencent import fetch_qq_cartoon_today
 from utils import update_today_section_in_readme
