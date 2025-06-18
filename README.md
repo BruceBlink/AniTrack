@@ -13,6 +13,7 @@
 ## 今日更新
 
 ### 星期三 番剧更新
+- [圣女因太过完美不够可爱而被废除婚约并卖到邻国](https://mikanani.me/Home/Bangumi/3609) - 2025/06/18 更新 【Mikanani】
 - [记忆缝线](https://mikanani.me/Home/Bangumi/3620) - 2025/06/18 更新 【Mikanani】
 - [直至魔女消逝](https://mikanani.me/Home/Bangumi/3583) - 2025/06/18 更新 【Mikanani】
 - [机动战士高达 GQuuuuuuX](https://mikanani.me/Home/Bangumi/3585) - 2025/06/18 更新 【Mikanani】
@@ -53,7 +54,7 @@
 - [斗罗大陆5重生唐三 动态漫画](http://www.iqiyi.com/v_20079ouizgs.html) - 2025/06/18 更新 更新至 24集 【iqiyi】
 - [全民诡异：开局掌握零元购 动态漫画](http://www.iqiyi.com/v_1t3om8emqd8.html) - 2025/06/18 更新 更新至 47集 【iqiyi】
 
-**今天总共更新了 39 部番剧。**
+**今天总共更新了 40 部番剧。**
 
 ## 系统要求
 
