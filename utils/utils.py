@@ -46,7 +46,7 @@ def update_today_section_in_readme(data: dict[str, list]) -> None:
             link = item["detail_url"]
             count = item["update_count"]
             text = f'{item["update_time"]} 更新' + (
-                f' 更新至 {str(count)}集' if count else '') + f' 【{item["platform"]}】'
+                f' 更新至{str(count)}集' if count else '') + f' 【{item["platform"]}】'
             if link:
                 today_md.append(f"- [{title}]({link}) - {text}\n")
             else:
