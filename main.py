@@ -19,7 +19,7 @@ def main():
     # 获取 bilibili 国创和番剧今日更新数据
     fetcher = FetcherImpl()
     bilibili_guochuang_data = fetcher.bilibili_guochuang.fetch_bilibili_cartoon_today()
-    bilibili_anime_data = fetcher.bilibili_guochuang.fetch_bilibili_cartoon_today()
+    bilibili_anime_data = fetcher.bilibili_anime.fetch_bilibili_cartoon_today()
     # 获取iqiyi 今日更新数据
     iqiyi_cartoon_data = fetch_iqiyi_cartoon_today()
     # 合并获取的数据
