@@ -21,11 +21,11 @@ class BilibiliFetcher(AbstractFetcher):
         self.platform = platform
 
     def send_request(self):
-        """实现数据抓取逻辑，获取哔哩哔哩国创频道今日更新的动漫信息。"""
+        """发送请求到哔哩哔哩的 API 接口，获取今日更新数据。"""
         super().send_request()
 
     def _fetch_bilibili_update_today(self) -> dict[str, list] | None:
-        """从哔哩哔哩国创频道官方 JSON 接口获取今日更新的动漫信息。"""
+        """从哔哩哔哩官方 JSON 接口获取今日更新的信息。"""
         try:
             self.send_request()
             data = self.response.json()
@@ -85,7 +85,7 @@ class BilibiliFetcher(AbstractFetcher):
     @print_after_return(print_results, print_condition=lambda r: any(r.values()))
     #@save_after_return(filename="bilibili_guochuang_today.json", save_condition=lambda r: any(r.values()))
     def fetch_bilibili_cartoon_today(self) -> dict[str, list] | None:
-        """获取哔哩哔哩国创频道今日更新的动漫信息。"""
+        """获取哔哩哔哩动漫频道今日更新的动漫信息。"""
         self.logger.info("开始获取哔哩哔哩动漫频道今日更新...")
         return self._fetch_bilibili_update_today()
 
