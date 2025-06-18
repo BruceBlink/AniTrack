@@ -1,16 +1,15 @@
-import json
-import logging  # 导入 logging 模块
-import os
-import random
-import re
 import time
+
 import requests
+
 import config
-from config import HEADERS, BILIBILI_GUOCHUANG_API, BILIBILI_ANIME_API
-from utils import print_results, clean_text
 from common import Result, AbstractFetcher
+from config import BILIBILI_GUOCHUANG_API, BILIBILI_ANIME_API
+from decorators import retry, print_after_return
 from utils import iso_date_ld
-from decorators import retry, print_after_return, save_after_return
+from utils import print_results, clean_text
+
+
 # 配置日志
 class BilibiliFetcher(AbstractFetcher):
     """哔哩哔哩数据抓取器，继承自抽象基类 AbstractFetcher。"""
@@ -54,13 +53,13 @@ class BilibiliFetcher(AbstractFetcher):
                 except:
                     count = None
                 item = Result(
-                    platform = "bilibili",
-                    title = clean_text(ep.get("title", "")),
-                    update_count = count,
-                    update_info = "更新至" + pub_index,
-                    image_url = ep.get("square_cover") or ep.get("cover"),
-                    detail_url = f"https://www.bilibili.com/bangumi/play/ep{ep.get('episode_id')}",
-                    update_time = iso_date_ld
+                    platform="bilibili",
+                    title=clean_text(ep.get("title", "")),
+                    update_count=count,
+                    update_info="更新至" + pub_index,
+                    image_url=ep.get("square_cover") or ep.get("cover"),
+                    detail_url=f"https://www.bilibili.com/bangumi/play/ep{ep.get('episode_id')}",
+                    update_time=iso_date_ld
                 )
                 self.logger.info("识别到更新：%s %s", item.title, item.update_info)
                 self.result[config.weekday].append(item)
@@ -77,6 +76,7 @@ class BilibiliFetcher(AbstractFetcher):
         except Exception as e:
             self.logger.exception("未知错误：%s", e)
             return None
+
     @retry(
         retries=5,
         delay=10,
@@ -88,7 +88,6 @@ class BilibiliFetcher(AbstractFetcher):
         """获取哔哩哔哩国创频道今日更新的动漫信息。"""
         self.logger.info("开始获取哔哩哔哩动漫频道今日更新...")
         return self._fetch_bilibili_update_today()
-
 
 
 if __name__ == "__main__":

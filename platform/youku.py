@@ -1,9 +1,6 @@
 import logging  # 导入 logging 模块
 import os
-import random
-import re
 import time
-from urllib.parse import urljoin
 
 import requests
 from bs4 import BeautifulSoup
