@@ -33,8 +33,8 @@
 - [诛仙合集篇](https://v.qq.com/x/cover/mzc00200phqxwd6.html) - 2025/06/18 更新 更新至 7集 【tencent独播】
 - [剑道第一仙](https://v.qq.com/x/cover/mzc00200bkls85f.html) - 2025/06/18 更新 更新至 140集 【tencent独播】
 - [吞天记](https://v.qq.com/x/cover/mzc00200t39giu5.html) - 2025/06/18 更新 更新至 13集 【tencent独播】
-- [神印王座](https://v.qq.com/x/cover/mzc002007j7p5hn.html) - 2025/06/18 更新 更新至 163集 【tencent独播】
-- [诛仙 第3季](https://v.qq.com/x/cover/mzc00200z195unq.html) - 2025/06/18 更新 更新至 3集 【tencent独播】
+- [神印王座](https://v.qq.com/x/cover/mzc002007j7p5hn.html) - 2025/06/18 更新 更新至 164集 【tencent独播】
+- [诛仙 第3季](https://v.qq.com/x/cover/mzc00200z195unq.html) - 2025/06/18 更新 更新至 4集 【tencent独播】
 - [少年歌行 血染天启篇](https://www.bilibili.com/bangumi/play/ep1343070) - 2025/06/18 更新 更新至 25集 【bilibili】
 - [君有云 第二季](https://www.bilibili.com/bangumi/play/ep1554088) - 2025/06/18 更新 更新至 6集 【bilibili】
 - [大夏剑主 动态漫画](http://www.iqiyi.com/v_2f1ar1e82rk.html) - 2025/06/18 更新 更新至 186集 【iqiyi】
