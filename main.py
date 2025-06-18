@@ -7,6 +7,7 @@ from platforms.bilibili import BilibiliFetcher
 from platforms.iqiyi import fetch_iqiyi_cartoon_today
 from platforms.mikanani import fetch_mikanani_today
 from platforms.tencent import fetch_qq_cartoon_today
+from platforms.youku import fetch_youku_cartoon_today
 from utils import update_today_section_in_readme
 
 
@@ -23,8 +24,10 @@ def main():
     bilibili_anime_data = fetcher.bilibili_guochuang.fetch_bilibili_cartoon_today()
     # 获取iqiyi 今日更新数据
     iqiyi_cartoon_data = fetch_iqiyi_cartoon_today()
+    # 获取优酷动漫今日更新数据
+    youku_cartoon_data = fetch_youku_cartoon_today()
     data = utils.merge_dict_data(mikanani_data, tencent_data, bilibili_guochuang_data, bilibili_anime_data,
-                                 iqiyi_cartoon_data)  # 合并多个数据字典
+                                 iqiyi_cartoon_data, youku_cartoon_data)  # 合并多个数据字典
     # 更新 README 中的今日番剧更新部分
     update_today_section_in_readme(data)
     logging.info(f"今日的番剧更新数据已更新到 README 中,总共更新了 {len(data[utils.weekday_today])} 部番剧。")
