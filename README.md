@@ -13,12 +13,14 @@
 ## 今日更新
 
 ### 星期三 番剧更新
+- [记忆缝线](https://mikanani.me/Home/Bangumi/3620) - 2025/06/18 更新 【Mikanani】
 - [直至魔女消逝](https://mikanani.me/Home/Bangumi/3583) - 2025/06/18 更新 【Mikanani】
 - [机动战士高达 GQuuuuuuX](https://mikanani.me/Home/Bangumi/3585) - 2025/06/18 更新 【Mikanani】
 - [末日后酒店](https://mikanani.me/Home/Bangumi/3600) - 2025/06/18 更新 【Mikanani】
 - [阳光马达棒球场！](https://mikanani.me/Home/Bangumi/3613) - 2025/06/18 更新 【Mikanani】
 - [紫云寺家的兄弟姐妹](https://mikanani.me/Home/Bangumi/3614) - 2025/06/18 更新 【Mikanani】
 - [竹轮战纪～用我的可爱来侵略地球～](https://mikanani.me/Home/Bangumi/3638) - 2025/06/18 更新 【Mikanani】
+- [搞笑漫画日和GO](https://mikanani.me/Home/Bangumi/3627) - 2025/06/18 更新 【Mikanani】
 - [快藏起来！玛琪娜同学!!](https://mikanani.me/Home/Bangumi/3621) - 2025/06/18 更新 【Mikanani】
 - [拉撒路](https://mikanani.me/Home/Bangumi/3624) - 2025/06/18 更新 【Mikanani】
 - [我家有个阿宅女忍者](https://mikanani.me/Home/Bangumi/3526) - 2025/06/18 更新 【Mikanani】
@@ -42,7 +44,7 @@
 - [被迫成为隐藏职业 动态漫画](http://www.iqiyi.com/v_23jscm9fkgg.html) - 2025/06/18 更新 更新至 58集 【iqiyi】
 - [都市古仙医](http://www.iqiyi.com/v_1la70ef6oaw.html) - 2025/06/18 更新 更新至 80集 【iqiyi】
 - [穿越后我成了团宠 动态漫画](http://www.iqiyi.com/v_1kl1g82i2wo.html) - 2025/06/18 更新 更新至 42集 【iqiyi】
-- [逆天仙命：捡个婴儿当大佬 动态漫画](http://www.iqiyi.com/v_2b9tawusim4.html) - 2025/06/18 更新 更新至 39集 【iqiyi】
+- [逆天仙命：捡个婴儿当大佬 动态漫画](http://www.iqiyi.com/v_2b9tawusim4.html) - 2025/06/18 更新 更新至 40集 【iqiyi】
 - [邪神降世，我有一座大凶狱 动态漫画](http://www.iqiyi.com/v_dp0rbk9hd4.html) - 2025/06/18 更新 更新至 54集 【iqiyi】
 - [一世独尊](http://www.iqiyi.com/v_16zxzexerfg.html) - 2025/06/18 更新 更新至 133集 【iqiyi】
 - [开局签到至尊丹田 动态漫画](http://www.iqiyi.com/v_2amiwl7pa8s.html) - 2025/06/18 更新 更新至 183集 【iqiyi】
@@ -51,7 +53,7 @@
 - [斗罗大陆5重生唐三 动态漫画](http://www.iqiyi.com/v_20079ouizgs.html) - 2025/06/18 更新 更新至 24集 【iqiyi】
 - [全民诡异：开局掌握零元购 动态漫画](http://www.iqiyi.com/v_1t3om8emqd8.html) - 2025/06/18 更新 更新至 47集 【iqiyi】
 
-**今天总共更新了 37 部番剧。**
+**今天总共更新了 39 部番剧。**
 
 ## 系统要求
 
