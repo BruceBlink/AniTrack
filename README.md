@@ -13,6 +13,15 @@
 ## 今日更新
 
 ### 星期三 番剧更新
+- [直至魔女消逝](https://mikanani.me/Home/Bangumi/3583) - 2025/06/18 更新
+- [机动战士高达 GQuuuuuuX](https://mikanani.me/Home/Bangumi/3585) - 2025/06/18 更新
+- [末日后酒店](https://mikanani.me/Home/Bangumi/3600) - 2025/06/18 更新
+- [阳光马达棒球场！](https://mikanani.me/Home/Bangumi/3613) - 2025/06/18 更新
+- [紫云寺家的兄弟姐妹](https://mikanani.me/Home/Bangumi/3614) - 2025/06/18 更新
+- [竹轮战纪～用我的可爱来侵略地球～](https://mikanani.me/Home/Bangumi/3638) - 2025/06/18 更新
+- [拉撒路](https://mikanani.me/Home/Bangumi/3624) - 2025/06/18 更新
+- [脱离了A级队伍的我，和从前的徒弟们前往迷宫深处。](https://mikanani.me/Home/Bangumi/3556) - 2025/06/18 更新
+- [mono女孩](https://mikanani.me/Home/Bangumi/3628) - 2025/06/18 更新
 - [一念永恒 第3季](https://v.qq.com/x/cover/mzc002003lw1kp8.html) - 2025/06/18 更新 更新至 54集
 - [遮天](https://v.qq.com/x/cover/mzc00200n53vkqc.html) - 2025/06/18 更新 更新至 114集
 - [诛仙合集篇](https://v.qq.com/x/cover/mzc00200phqxwd6.html) - 2025/06/18 更新 更新至 6集
@@ -20,6 +29,7 @@
 - [吞天记](https://v.qq.com/x/cover/mzc00200t39giu5.html) - 2025/06/18 更新 更新至 12集
 - [神印王座](https://v.qq.com/x/cover/mzc002007j7p5hn.html) - 2025/06/18 更新 更新至 163集
 - [诛仙 第3季](https://v.qq.com/x/cover/mzc00200z195unq.html) - 2025/06/18 更新 更新至 3集
+- [末日后酒店](https://www.bilibili.com/bangumi/play/ep1723583) - 2025/06/18 更新 更新至 11集
 - [大夏剑主 动态漫画](http://www.iqiyi.com/v_2f1ar1e82rk.html) - 2025/06/18 更新 更新至 186集
 - [神宠进化 动态漫画 第2季](http://www.iqiyi.com/v_1zmppdpww5o.html) - 2025/06/18 更新 更新至 80集
 - [魔法小公主绮莉 动态漫画](http://www.iqiyi.com/v_1gn3zf8qr4k.html) - 2025/06/18 更新 更新至 64集
