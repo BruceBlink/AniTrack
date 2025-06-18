@@ -39,7 +39,7 @@ def update_today_section_in_readme(data: dict[str, list]) -> None:
             end_idx = i
             break
 
-    if start_idx is not None and end_idx is not None and start_idx <= end_idx:
+    if start_idx and end_idx and start_idx <= end_idx:
         today_md = [f"### {_weekday} 番剧更新\n"]
         for item in items:
             title = item["title"]
@@ -50,11 +50,12 @@ def update_today_section_in_readme(data: dict[str, list]) -> None:
                 today_md.append(f"- [{title}]({link}) - {text}\n")
             else:
                 today_md.append(f"- {title} - {text}\n")
+        today_md.append(f"\n**今天总共更新了 {len(items)} 部番剧。**\n")
         # 保证末尾有空行
         today_md[-1] += "\n"
         lines[start_idx:end_idx] = today_md
 
-        with open("../README.md", "w", encoding="utf-8") as f:
+        with open("README.md", "w", encoding="utf-8") as f:
             f.writelines(lines)
 
 
