@@ -25,15 +25,19 @@ class Result:
         return setattr(self, key, value)
 
     def __hash__(self):
-        return hash((
-            self.platform,
+        return hash((  # 只比较标题和更新集数
             self.title,
             self.update_count,
-            self.update_info,
-            self.image_url,
-            self.detail_url,
-            self.update_time
         ))
+
+    def __eq__(self, other):
+        if not isinstance(other, Result):
+            return NotImplemented
+        return (
+            # 只要标题和更新集数和相同即可
+                self.title == other.title and
+                self.update_count == other.update_count
+        )
 
     def to_dict(self) -> dict:
         """将 Result 对象转换为字典，用于序列化等操作。"""
