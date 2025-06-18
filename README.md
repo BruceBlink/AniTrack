@@ -86,16 +86,25 @@ python main.py
 
 ## 项目文件说明
 
-- `main.py`: 主程序文件，包含数据整合和更新到readme的逻辑  
-- `mikanani.py`: 蜜柑计划数据爬取模块
-- `tencent.py`: 腾讯视频数据爬取模块
-- `bilibili.py`: 哔哩哔哩数据爬取模块
-- `iqiyi.py`: 爱奇艺数据爬取模块
-- `youku.py`: 优酷数据爬取模块
-- `common.py`: 公共函数模块，包含数据处理和格式化逻辑
-- `decorators.py`: 装饰器模块，用于日志记录和异常处理
-- `utils.py`: 工具函数模块
-- `config.py`: 配置文件，包含常量和配置参数
+- `main.py`: 主程序文件，包含数据整合和更新到readme的逻辑
+- `platforms/`: 各大视频平台数据爬取模块
+  - `__init__.py`: 初始化文件
+  - `mikanani.py`: 蜜柑计划数据爬取模块
+  - `tencent.py`: 腾讯视频数据爬取模块
+  - `bilibili.py`: 哔哩哔哩数据爬取模块
+  - `iqiyi.py`: 爱奇艺数据爬取模块
+  - `youku.py`: 优酷数据爬取模块
+- `common/`: 公共模块
+  - `__init__.py`: 初始化文件
+  - `common.py`: 公共函数模块，包含数据处理和格式化逻辑
+  - `constants.py`: 常量定义模块，包含各平台的URL和其他常量
+  - `decorators.py`: 装饰器模块，用于日志记录和异常处理
+  - `logger_setup.py`: 日志记录模块
+- `utils`:
+  - `__init__.py`: 初始化文件
+  - `utils.py`: 工具函数模块，包含一些通用的辅助函数
+- `config`: 配置模块
+  - `config.py`: 配置文件，包含常量和配置参数
 - `README.md`: 项目说明文件
 - `requirements.txt`: Python依赖包列表
 - `.github/workflows/`: GitHub Actions工作流配置
