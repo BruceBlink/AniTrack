@@ -5,9 +5,9 @@ from datetime import datetime
 import requests
 
 import utils
-from common import Result
+from common import Result, HEADERS
 from common.decorators import retry, print_after_return
-from config import HEADERS, IQIYI_CARTOON_API
+from config import IQIYI_CARTOON_API
 from utils import iso_date_ld, random_delay, clean_text, extract_number, print_results
 
 # 配置日志

@@ -7,9 +7,9 @@ import requests
 from bs4 import BeautifulSoup
 
 import utils
-from common import Result
+from common import Result, HEADERS
 from common.decorators import retry, print_after_return
-from config import HEADERS, TENCENT_CARTOON_BASE_URL
+from config import TENCENT_CARTOON_BASE_URL
 from utils import print_results, extract_number, iso_date_ld, random_delay, clean_text
 
 # 配置日志

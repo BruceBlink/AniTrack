@@ -2,8 +2,21 @@ import logging
 import random
 import re
 import time
+from datetime import datetime
 
 from common import Result
+
+# 获取当前本地时间（你的环境默认就是 +08:00 新加坡时区）
+now = datetime.now()
+
+# 常见格式示例
+iso_date = now.strftime("%Y-%m-%d")  # 2025-06-17
+iso_date_ld = now.strftime("%Y/%m/%d")  # 2025-06-17
+iso_datetime = now.strftime("%Y-%m-%d %H:%M:%S")  # 2025-06-17 10:23:45
+chinese_date = now.strftime("%Y年%m月%d日")  # 2025年06月17日
+compact = now.strftime("%y%m%d")  # 250617
+weekday = now.strftime("%A")  # Tuesday
+weekday_today = ["星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日"][datetime.now().weekday()]
 
 
 def update_today_section_in_readme(data: dict[str, list]) -> None:
@@ -12,8 +25,8 @@ def update_today_section_in_readme(data: dict[str, list]) -> None:
     :param data:
     :return:
     """
-    weekday = list(data.keys())[0]
-    items = data[weekday]
+    _weekday = list(data.keys())[0]
+    items = data[_weekday]
     with open("README.md", "r", encoding="utf-8") as f:
         lines = f.readlines()
 
@@ -27,7 +40,7 @@ def update_today_section_in_readme(data: dict[str, list]) -> None:
             break
 
     if start_idx is not None and end_idx is not None and start_idx <= end_idx:
-        today_md = [f"### {weekday} 番剧更新\n"]
+        today_md = [f"### {_weekday} 番剧更新\n"]
         for item in items:
             title = item["title"]
             link = item["detail_url"]
@@ -41,7 +54,7 @@ def update_today_section_in_readme(data: dict[str, list]) -> None:
         today_md[-1] += "\n"
         lines[start_idx:end_idx] = today_md
 
-        with open("README.md", "w", encoding="utf-8") as f:
+        with open("../README.md", "w", encoding="utf-8") as f:
             f.writelines(lines)
 
 
@@ -75,15 +88,15 @@ def print_results(results: dict[str, list]):
         print("没有找到任何更新信息可供打印。")
         return
 
-    weekday = list(results.keys())[0]
-    if not results[weekday]:
-        print(f"{weekday} 没有找到更新的动漫。")
+    _weekday = list(results.keys())[0]
+    if not results[_weekday]:
+        print(f"{_weekday} 没有找到更新的动漫。")
         return
 
-    print(f"\n{weekday} 更新动漫列表:")
+    print(f"\n{_weekday} 更新动漫列表:")
     print("=" * 80)
 
-    for i, anime in enumerate(results[weekday], 1):
+    for i, anime in enumerate(results[_weekday], 1):
         print(f"{i}. {anime['title']}")
         print(f"   更新集数: {anime['update_count']}")
         if anime['update_info'] and anime['update_info'] != anime['update_count']:  # 避免冗余
@@ -94,22 +107,7 @@ def print_results(results: dict[str, list]):
             print(f"   详情链接: {anime['detail_url']}")
         print("-" * 80)
 
-    print(f"\n统计: 共找到 {len(results[weekday])} 部今日更新的动漫")
-
-
-from datetime import datetime
-
-# 获取当前本地时间（你的环境默认就是 +08:00 新加坡时区）
-now = datetime.now()
-
-# 常见格式示例
-iso_date = now.strftime("%Y-%m-%d")  # 2025-06-17
-iso_date_ld = now.strftime("%Y/%m/%d")  # 2025-06-17
-iso_datetime = now.strftime("%Y-%m-%d %H:%M:%S")  # 2025-06-17 10:23:45
-chinese_date = now.strftime("%Y年%m月%d日")  # 2025年06月17日
-compact = now.strftime("%y%m%d")  # 250617
-weekday = now.strftime("%A")  # Tuesday
-weekday_today = ["星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日"][datetime.now().weekday()]
+    print(f"\n统计: 共找到 {len(results[_weekday])} 部今日更新的动漫")
 
 
 # print(iso_date, iso_datetime, chinese_date, compact, weekday, sep="\n")

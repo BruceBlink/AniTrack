@@ -6,9 +6,9 @@ import requests
 from bs4 import BeautifulSoup
 
 import utils
-from common import Result
+from common import Result, HEADERS
 from common.decorators import retry, print_after_return
-from config import MIKANANI_BASE_URL, HEADERS
+from config import MIKANANI_BASE_URL
 from utils import iso_date_ld, print_results
 
 logger = logging.getLogger(__name__)

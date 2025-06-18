@@ -4,8 +4,8 @@ from dataclasses import dataclass, asdict
 
 import requests
 
-import config
 import utils
+from common import contants
 
 
 @dataclass(order=True)
@@ -52,7 +52,7 @@ class AbstractFetcher(ABC):
     def send_request(self):
         self.logger.info(f"Fetching today's data from {self.api_url} ...")
         try:
-            self.response = requests.get(self.api_url, headers=config.HEADERS, timeout=10)
+            self.response = requests.get(self.api_url, headers=contants.HEADERS, timeout=10)
             self.response.raise_for_status()
         except requests.RequestException as e:
             self.logger.error(f"请求 {self.api_url} 失败：{e}")

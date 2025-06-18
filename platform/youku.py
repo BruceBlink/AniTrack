@@ -5,9 +5,9 @@ import time
 import requests
 from bs4 import BeautifulSoup
 
-from common import Result
-import config
-from config import HEADERS, YOUKU_COMICS_API
+import utils
+from common import Result, HEADERS
+from config import YOUKU_COMICS_API
 from utils import iso_date_ld, random_delay
 
 # 配置日志
@@ -36,7 +36,7 @@ def _fetch_youku_cartoon_today(api_url: str) -> dict[str, list]:
             f.write(res.text)
         logger.info(f"HTML 已保存到 {html_path}")
         # 获取今天的中文星期
-        weekday = config.weekday
+        weekday = utils.weekday_today
         result = {weekday: []}
 
         logger.info("正在查找今日更新模块...")
@@ -90,7 +90,7 @@ def _fetch_youku_cartoon_today(api_url: str) -> dict[str, list]:
     except requests.exceptions.Timeout:
         logger.error("请求超时。将在 10 秒后重试...")
         time.sleep(10)
-        return _fetch_youku_cartoon_today()  # 重试一次
+        return _fetch_youku_cartoon_today(api_url)  # 重试一次
     except requests.exceptions.TooManyRedirects:
         logger.error("重定向过多。请检查 URL。")
         return {}
