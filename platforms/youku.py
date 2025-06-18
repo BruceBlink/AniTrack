@@ -61,30 +61,42 @@ def _fetch_youku_cartoon_today(api_url: str) -> dict[str, list]:
 
         data = json.loads(fixed_json_str)
         moduleList = data.get("moduleList", None)
-
+        # 视频地址需要vid +
+        # https://v.youku.com/video?vid=XNjQ3MjQzMjE2MA==&scm=20140719.apircmd.298496.video_XNjQ3MjQzMjE2MA==
         # 提取所有漫画卡片
-        comics = []
+        comics = set()
         for card in moduleList:
             # title
-            title = card.get('title', '').strip()
-            update_count = ''
-            update_info = ''
-            image_url = ''
-            # 提取详情页URL
-            detail_url = "https:"
-            comic = Result(
-                platform='youku',
-                title=title,
-                update_count=update_count,
-                update_info=update_info,
-                image_url=image_url,
-                detail_url=detail_url,
-                update_time=iso_date_ld,
-            )
-
-            # 添加到结果列表
-            comics.append(comic)
-        result[weekday] = comics or {}
+            print(card)
+            components = card.get('components', [])
+            for itemLists in components:
+                # 遍历itemList
+                itemList = itemLists.get('itemList', [])
+                itemList_title = itemLists.get('title', None)
+                if itemList_title == '每日更新':
+                    for items in itemList:
+                        for item in items:
+                            # 过滤出更新的漫画
+                            updateTips = item.get('updateTips', None)
+                            if updateTips != '有更新':
+                                continue
+                            title = item.get('title', '').strip()
+                            update_info = item.get('lbTexts', '').strip()
+                            update_count = str(utils.extract_number(item.get('lbTexts', '')))
+                            image_url = item.get('img', '').strip()
+                            detail_url = ""
+                            comic = Result(
+                                platform='youku',
+                                title=title,
+                                update_count=update_count,
+                                update_info=update_info,
+                                image_url=image_url,
+                                detail_url=detail_url,
+                                update_time=iso_date_ld,
+                            )
+                            # 添加到结果列表
+                            comics.add(comic)
+        result[weekday] = list(comics) or {}
 
         return result
 
