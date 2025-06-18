@@ -13,8 +13,10 @@
 ## 今日更新
 
 ### 星期三 番剧更新
+- [你与我最后的战场，亦或是世界起始的圣战 第二季](https://mikanani.me/Home/Bangumi/3383) - 2025/06/18 更新 【Mikanani】
 - [圣女因太过完美不够可爱而被废除婚约并卖到邻国](https://mikanani.me/Home/Bangumi/3609) - 2025/06/18 更新 【Mikanani】
 - [记忆缝线](https://mikanani.me/Home/Bangumi/3620) - 2025/06/18 更新 【Mikanani】
+- [全力兔子 第二季](https://mikanani.me/Home/Bangumi/3639) - 2025/06/18 更新 【Mikanani】
 - [直至魔女消逝](https://mikanani.me/Home/Bangumi/3583) - 2025/06/18 更新 【Mikanani】
 - [机动战士高达 GQuuuuuuX](https://mikanani.me/Home/Bangumi/3585) - 2025/06/18 更新 【Mikanani】
 - [末日后酒店](https://mikanani.me/Home/Bangumi/3600) - 2025/06/18 更新 【Mikanani】
@@ -22,8 +24,10 @@
 - [紫云寺家的兄弟姐妹](https://mikanani.me/Home/Bangumi/3614) - 2025/06/18 更新 【Mikanani】
 - [竹轮战纪～用我的可爱来侵略地球～](https://mikanani.me/Home/Bangumi/3638) - 2025/06/18 更新 【Mikanani】
 - [搞笑漫画日和GO](https://mikanani.me/Home/Bangumi/3627) - 2025/06/18 更新 【Mikanani】
+- [赛马娘 芦毛灰姑娘](https://mikanani.me/Home/Bangumi/3604) - 2025/06/18 更新 【Mikanani】
 - [快藏起来！玛琪娜同学!!](https://mikanani.me/Home/Bangumi/3621) - 2025/06/18 更新 【Mikanani】
 - [拉撒路](https://mikanani.me/Home/Bangumi/3624) - 2025/06/18 更新 【Mikanani】
+- [凸变英雄X](https://mikanani.me/Home/Bangumi/3640) - 2025/06/18 更新 【Mikanani】
 - [我家有个阿宅女忍者](https://mikanani.me/Home/Bangumi/3526) - 2025/06/18 更新 【Mikanani】
 - [脱离了A级队伍的我，和从前的徒弟们前往迷宫深处。](https://mikanani.me/Home/Bangumi/3556) - 2025/06/18 更新 【Mikanani】
 - [mono女孩](https://mikanani.me/Home/Bangumi/3628) - 2025/06/18 更新 【Mikanani】
@@ -70,7 +74,7 @@
 - 暴富系统：我有999个新马甲 第二季 - 2025/06/18 更新 更新至 55集 【youku】
 - 无敌神王 - 2025/06/18 更新 更新至 19集 【youku】
 
-**今天总共更新了 56 部番剧。**
+**今天总共更新了 60 部番剧。**
 
 ## 系统要求
 
