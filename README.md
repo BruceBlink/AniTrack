@@ -13,6 +13,7 @@
 ## 今日更新
 
 ### 星期三 番剧更新
+- [忍者与杀手二人组的日常生活](https://mikanani.me/Home/Bangumi/3584) - 2025/06/18 更新 【Mikanani】
 - [你与我最后的战场，亦或是世界起始的圣战 第二季](https://mikanani.me/Home/Bangumi/3383) - 2025/06/18 更新 【Mikanani】
 - [华Doll-Reinterpretation of Flowering-](https://mikanani.me/Home/Bangumi/3589) - 2025/06/18 更新 【Mikanani】
 - [拜托请穿上，鹰峰同学](https://mikanani.me/Home/Bangumi/3603) - 2025/06/18 更新 【Mikanani】
@@ -33,50 +34,44 @@
 - [我家有个阿宅女忍者](https://mikanani.me/Home/Bangumi/3526) - 2025/06/18 更新 【Mikanani】
 - [脱离了A级队伍的我，和从前的徒弟们前往迷宫深处。](https://mikanani.me/Home/Bangumi/3556) - 2025/06/18 更新 【Mikanani】
 - [mono女孩](https://mikanani.me/Home/Bangumi/3628) - 2025/06/18 更新 【Mikanani】
-- [忍者与杀手二人组的日常生活](https://mikanani.me/Home/Bangumi/3584) - 2025/06/18 更新 【Mikanani】
-- [一念永恒 第3季](https://v.qq.com/x/cover/mzc002003lw1kp8.html) - 2025/06/18 更新 更新至 54集 【tencent独播】
-- [遮天](https://v.qq.com/x/cover/mzc00200n53vkqc.html) - 2025/06/18 更新 更新至 114集 【tencent独播】
-- [诛仙合集篇](https://v.qq.com/x/cover/mzc00200phqxwd6.html) - 2025/06/18 更新 更新至 7集 【tencent独播】
-- [剑道第一仙](https://v.qq.com/x/cover/mzc00200bkls85f.html) - 2025/06/18 更新 更新至 140集 【tencent独播】
-- [吞天记](https://v.qq.com/x/cover/mzc00200t39giu5.html) - 2025/06/18 更新 更新至 13集 【tencent独播】
-- [神印王座](https://v.qq.com/x/cover/mzc002007j7p5hn.html) - 2025/06/18 更新 更新至 164集 【tencent独播】
-- [诛仙 第3季](https://v.qq.com/x/cover/mzc00200z195unq.html) - 2025/06/18 更新 更新至 4集 【tencent独播】
-- [少年歌行 血染天启篇](https://www.bilibili.com/bangumi/play/ep1343070) - 2025/06/18 更新 更新至 25集 【bilibili】
-- [君有云 第二季](https://www.bilibili.com/bangumi/play/ep1554088) - 2025/06/18 更新 更新至 6集 【bilibili】
-- [大夏剑主 动态漫画](http://www.iqiyi.com/v_2f1ar1e82rk.html) - 2025/06/18 更新 更新至 186集 【iqiyi】
-- [神宠进化 动态漫画 第2季](http://www.iqiyi.com/v_1zmppdpww5o.html) - 2025/06/18 更新 更新至 81集 【iqiyi】
-- [魔法小公主绮莉 动态漫画](http://www.iqiyi.com/v_1gn3zf8qr4k.html) - 2025/06/18 更新 更新至 64集 【iqiyi】
-- [修真聊天群 动态漫画](http://www.iqiyi.com/v_1khwur3ntm4.html) - 2025/06/18 更新 更新至 50集 【iqiyi】
-- [特工王妃虐渣记 动态漫画](http://www.iqiyi.com/v_11u444o3k1o.html) - 2025/06/18 更新 更新至 64集 【iqiyi】
-- [被迫成为隐藏职业 动态漫画](http://www.iqiyi.com/v_23jscm9fkgg.html) - 2025/06/18 更新 更新至 58集 【iqiyi】
-- [都市古仙医](http://www.iqiyi.com/v_1la70ef6oaw.html) - 2025/06/18 更新 更新至 80集 【iqiyi】
-- [穿越后我成了团宠 动态漫画](http://www.iqiyi.com/v_1kl1g82i2wo.html) - 2025/06/18 更新 更新至 42集 【iqiyi】
-- [逆天仙命：捡个婴儿当大佬 动态漫画](http://www.iqiyi.com/v_2b9tawusim4.html) - 2025/06/18 更新 更新至 40集 【iqiyi】
-- [邪神降世，我有一座大凶狱 动态漫画](http://www.iqiyi.com/v_dp0rbk9hd4.html) - 2025/06/18 更新 更新至 54集 【iqiyi】
-- [一世独尊](http://www.iqiyi.com/v_16zxzexerfg.html) - 2025/06/18 更新 更新至 133集 【iqiyi】
-- [开局签到至尊丹田 动态漫画](http://www.iqiyi.com/v_2amiwl7pa8s.html) - 2025/06/18 更新 更新至 183集 【iqiyi】
-- [神探双骄 动态漫画](http://www.iqiyi.com/v_2aoz08v35fk.html) - 2025/06/18 更新 更新至 31集 【iqiyi】
-- [诡异游戏：我靠亿万功德氪通关 动态漫画](http://www.iqiyi.com/v_1vjgd7croug.html) - 2025/06/18 更新 更新至 104集 【iqiyi】
-- [斗罗大陆5重生唐三 动态漫画](http://www.iqiyi.com/v_20079ouizgs.html) - 2025/06/18 更新 更新至 24集 【iqiyi】
-- [全民诡异：开局掌握零元购 动态漫画](http://www.iqiyi.com/v_1t3om8emqd8.html) - 2025/06/18 更新 更新至 47集 【iqiyi】
-- 香格里拉边境 - 2025/06/18 更新 更新至 10集 【youku】
-- 武道大帝 - 2025/06/18 更新 更新至 61集 【youku】
-- 盖世扫地僧：我可以无限融合 - 2025/06/18 更新 更新至 112集 【youku】
-- 斗罗大陆5重生唐三 - 2025/06/18 更新 更新至 24集 【youku】
-- 全民诡异：开局掌握零元购 - 2025/06/18 更新 更新至 47集 【youku】
-- 我被困在同一天一千年 - 2025/06/18 更新 更新至 115集 【youku】
-- 全民转职：无职的我终结了神明！ - 2025/06/18 更新 更新至 14集 【youku】
-- 百斩屠神 - 2025/06/18 更新 更新至 50集 【youku】
-- 重生为怪兽什么鬼2：兽神崛起 - 2025/06/18 更新 更新至 97集 【youku】
-- 精神病面前 鬼东西算个球 - 2025/06/18 更新 更新至 118集 【youku】
-- 我刷爆了无限致命游戏 - 2025/06/18 更新 更新至 72集 【youku】
-- 末日重生：全球冰封 - 2025/06/18 更新 更新至 19集 【youku】
-- 寒冰末日：我屯了千亿物资 - 2025/06/18 更新 更新至 41集 【youku】
-- 重生归来：直接无敌 第三季 - 2025/06/18 更新 更新至 95集 【youku】
-- 暴富系统：我有999个新马甲 第二季 - 2025/06/18 更新 更新至 55集 【youku】
-- 无敌神王 - 2025/06/18 更新 更新至 19集 【youku】
+- [神印王座](https://v.qq.com/x/cover/mzc002007j7p5hn.html) - 2025/06/18 更新 更新至164集 【tencent独播】
+- [诛仙 第3季](https://v.qq.com/x/cover/mzc00200z195unq.html) - 2025/06/18 更新 更新至4集 【tencent独播】
+- [完美世界](https://v.qq.com/x/cover/mcv8hkc8zk8lnov.html) - 2025/06/18 更新 更新至219集 【tencent独播】
+- [大夏剑主 动态漫画](http://www.iqiyi.com/v_2f1ar1e82rk.html) - 2025/06/18 更新 更新至186集 【iqiyi】
+- [神宠进化 动态漫画 第2季](http://www.iqiyi.com/v_1zmppdpww5o.html) - 2025/06/18 更新 更新至81集 【iqiyi】
+- [魔法小公主绮莉 动态漫画](http://www.iqiyi.com/v_1gn3zf8qr4k.html) - 2025/06/18 更新 更新至64集 【iqiyi】
+- [修真聊天群 动态漫画](http://www.iqiyi.com/v_1khwur3ntm4.html) - 2025/06/18 更新 更新至50集 【iqiyi】
+- [特工王妃虐渣记 动态漫画](http://www.iqiyi.com/v_11u444o3k1o.html) - 2025/06/18 更新 更新至64集 【iqiyi】
+- [被迫成为隐藏职业 动态漫画](http://www.iqiyi.com/v_23jscm9fkgg.html) - 2025/06/18 更新 更新至58集 【iqiyi】
+- [都市古仙医](http://www.iqiyi.com/v_1la70ef6oaw.html) - 2025/06/18 更新 更新至80集 【iqiyi】
+- [穿越后我成了团宠 动态漫画](http://www.iqiyi.com/v_1kl1g82i2wo.html) - 2025/06/18 更新 更新至42集 【iqiyi】
+- [逆天仙命：捡个婴儿当大佬 动态漫画](http://www.iqiyi.com/v_2b9tawusim4.html) - 2025/06/18 更新 更新至40集 【iqiyi】
+- [邪神降世，我有一座大凶狱 动态漫画](http://www.iqiyi.com/v_dp0rbk9hd4.html) - 2025/06/18 更新 更新至54集 【iqiyi】
+- [一世独尊](http://www.iqiyi.com/v_16zxzexerfg.html) - 2025/06/18 更新 更新至133集 【iqiyi】
+- [开局签到至尊丹田 动态漫画](http://www.iqiyi.com/v_2amiwl7pa8s.html) - 2025/06/18 更新 更新至183集 【iqiyi】
+- [神探双骄 动态漫画](http://www.iqiyi.com/v_2aoz08v35fk.html) - 2025/06/18 更新 更新至31集 【iqiyi】
+- [诡异游戏：我靠亿万功德氪通关 动态漫画](http://www.iqiyi.com/v_1vjgd7croug.html) - 2025/06/18 更新 更新至104集 【iqiyi】
+- [斗罗大陆5重生唐三 动态漫画](http://www.iqiyi.com/v_20079ouizgs.html) - 2025/06/18 更新 更新至24集 【iqiyi】
+- [全民诡异：开局掌握零元购 动态漫画](http://www.iqiyi.com/v_1t3om8emqd8.html) - 2025/06/18 更新 更新至47集 【iqiyi】
+- 香格里拉边境 - 2025/06/18 更新 更新至10集 【youku】
+- 武道大帝 - 2025/06/18 更新 更新至61集 【youku】
+- 盖世扫地僧：我可以无限融合 - 2025/06/18 更新 更新至112集 【youku】
+- 少年歌行 血染天启篇 - 2025/06/18 更新 更新至25集 【youku】
+- 斗罗大陆5重生唐三 - 2025/06/18 更新 更新至24集 【youku】
+- 全民诡异：开局掌握零元购 - 2025/06/18 更新 更新至47集 【youku】
+- 我被困在同一天一千年 - 2025/06/18 更新 更新至115集 【youku】
+- 全民转职：无职的我终结了神明！ - 2025/06/18 更新 更新至14集 【youku】
+- 百斩屠神 - 2025/06/18 更新 更新至50集 【youku】
+- 重生为怪兽什么鬼2：兽神崛起 - 2025/06/18 更新 更新至97集 【youku】
+- 精神病面前 鬼东西算个球 - 2025/06/18 更新 更新至118集 【youku】
+- 我刷爆了无限致命游戏 - 2025/06/18 更新 更新至72集 【youku】
+- 末日重生：全球冰封 - 2025/06/18 更新 更新至19集 【youku】
+- 寒冰末日：我屯了千亿物资 - 2025/06/18 更新 更新至41集 【youku】
+- 重生归来：直接无敌 第三季 - 2025/06/18 更新 更新至95集 【youku】
+- 暴富系统：我有999个新马甲 第二季 - 2025/06/18 更新 更新至55集 【youku】
+- 无敌神王 - 2025/06/18 更新 更新至19集 【youku】
 
-**今天总共更新了 62 部番剧。**
+**今天总共更新了 57 部番剧。**
 
 ## 系统要求
 
