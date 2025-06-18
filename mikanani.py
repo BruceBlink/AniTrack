@@ -73,8 +73,8 @@ def _fetch_mikanani_today() -> dict[str, list]:
 @print_after_return(print_results, print_condition=lambda r: any(r.values()))
 # @save_after_return(filename="qq_cartoon_today.json", save_condition=lambda r: any(r.values()))
 def fetch_mikanani_today() -> dict[str, list] | None:
-    """获取腾讯视频动漫频道今日更新的动漫信息。"""
-    logger.info("开始获取腾讯视频动漫频道今日更新...")
+    """获取蜜柑计划今日更新的动漫信息。"""
+    logger.info("开始获取蜜柑计划今日更新...")
     return _fetch_mikanani_today()
 
 
