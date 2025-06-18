@@ -38,7 +38,7 @@
 - [少年歌行 血染天启篇](https://www.bilibili.com/bangumi/play/ep1343070) - 2025/06/18 更新 更新至 25集 【bilibili】
 - [君有云 第二季](https://www.bilibili.com/bangumi/play/ep1554088) - 2025/06/18 更新 更新至 6集 【bilibili】
 - [大夏剑主 动态漫画](http://www.iqiyi.com/v_2f1ar1e82rk.html) - 2025/06/18 更新 更新至 186集 【iqiyi】
-- [神宠进化 动态漫画 第2季](http://www.iqiyi.com/v_1zmppdpww5o.html) - 2025/06/18 更新 更新至 80集 【iqiyi】
+- [神宠进化 动态漫画 第2季](http://www.iqiyi.com/v_1zmppdpww5o.html) - 2025/06/18 更新 更新至 81集 【iqiyi】
 - [魔法小公主绮莉 动态漫画](http://www.iqiyi.com/v_1gn3zf8qr4k.html) - 2025/06/18 更新 更新至 64集 【iqiyi】
 - [修真聊天群 动态漫画](http://www.iqiyi.com/v_1khwur3ntm4.html) - 2025/06/18 更新 更新至 50集 【iqiyi】
 - [特工王妃虐渣记 动态漫画](http://www.iqiyi.com/v_11u444o3k1o.html) - 2025/06/18 更新 更新至 64集 【iqiyi】
