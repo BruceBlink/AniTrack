@@ -6,8 +6,9 @@ import requests
 from bs4 import BeautifulSoup
 
 import utils
-from common import Result, HEADERS
+from common import Result, HEADERS, retry, print_after_return
 from config import YOUKU_COMICS_API
+from utils import print_results
 
 # 配置日志
 logger = logging.getLogger(__name__)
@@ -61,8 +62,6 @@ def _fetch_youku_cartoon_today(api_url: str) -> dict[str, list] | None:
 
             # 提取并清理 JSON 字符串
             prefix = "window.__INITIAL_DATA__="
-            idx = script_content.find(prefix)
-            print(idx)
             json_str = script_content[len(prefix) + 1:].strip().rstrip(";")
             fixed_json_str = json_str.replace('undefined', 'null')
             # 视频地址需要vid +
@@ -143,15 +142,13 @@ def _fetch_youku_cartoon_today(api_url: str) -> dict[str, list] | None:
     return None  # 发生任何异常，返回 None
 
 
-#     # @retry(
-#     retries = 5,
-#     delay = 10,
-#     retry_condition = lambda result: not any(result.values())
-#
-#
-# # )
-# # @print_after_return(print_results, print_condition=lambda r: any(r.values()))
-# # @save_after_return(filename="qq_cartoon_today.json", save_condition=lambda r: any(r.values()))
+@retry(
+    retries=5,
+    delay=10,
+    retry_condition=lambda result: not any(result.values())
+)
+@print_after_return(print_results, print_condition=lambda r: any(r.values()))
+# @save_after_return(filename="qq_cartoon_today.json", save_condition=lambda r: any(r.values()))
 def fetch_youku_cartoon_today() -> dict[str, list] | None:
     logger.info("开始获取优酷动漫频道今日更新...")
     return _fetch_youku_cartoon_today(YOUKU_COMICS_API)
