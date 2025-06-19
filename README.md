@@ -128,7 +128,7 @@ pip install -r requirements.txt
 
 ```txt
 AniTrack/
-├── 2025-06-19_cartoon.json       存储动漫相关数据的JSON文件
+├── xxxxx_cartoon.json            存储动漫相关数据的JSON文件
 ├── Dockerfile                    用于构建项目Docker镜像的配置文件
 ├── Makefile                      自动化构建和管理任务的脚本
 ├── README.md                     项目说明文档
