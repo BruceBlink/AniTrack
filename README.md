@@ -1,8 +1,8 @@
-# 追播 (AniTrack) - 你的个人追剧助手 🎬
+# 追播 (AniTracker) - 你的个人追剧助手 🎬
 
 ## 项目简介
 
-追播(AniTrack)是一个强大的追剧工具，专门设计用于帮助用户轻松追踪每日更新的动漫和剧集。通过爬取各大视频平台的节目更新信息，让用户能够及时了解自己关注的内容更新状态，合理安排观看时间。
+追播(AniTracker)是一个强大的追剧工具，专门设计用于帮助用户轻松追踪每日更新的动漫和剧集。通过爬取各大视频平台的节目更新信息，让用户能够及时了解自己关注的内容更新状态，合理安排观看时间。
 
 ## 功能特点
 
@@ -89,8 +89,8 @@
 1. 克隆仓库到本地：
 
 ```bash
-git clone https://github.com/BruceBlink/AniTrack
-cd AniTrack
+git clone https://github.com/BruceBlink/AniTracker
+cd AniTracker
 ```
 
 1. 安装依赖：
@@ -112,13 +112,13 @@ pip install -r requirements.txt
   安装以及启动
 
     ```bash
-    docker-compose -f docker-compose.yml -p anitrack up -d
+    docker-compose -f docker-compose.yml -p AniTracker up -d
     ```
 
   停止及卸载
 
     ```bash
-    docker-compose -f docker-compose.yml -p anitrack down
+    docker-compose -f docker-compose.yml -p AniTracker down
     ```
   
 - **docker运行**
@@ -126,7 +126,7 @@ pip install -r requirements.txt
   如果你没有安装docker-compose，可以直接使用以下命令运行：
 
   ```bash
-  docker run -d --name anitrack -v ${PWD}:/app -v ${PWD}/logs:/app/logs likanug515/anitrack:latest
+  docker run -d --name AniTracker -v ${PWD}:/app -v ${PWD}/logs:/app/logs likanug515/AniTracker:latest
   ```
 
 ## 数据存储
@@ -136,7 +136,7 @@ pip install -r requirements.txt
 ## 项目文件说明
 
 ```txt
-AniTrack/
+AniTracker/
 ├── xxxxx_cartoon.json            存储动漫相关数据的JSON文件
 ├── Dockerfile                    用于构建项目Docker镜像的配置文件
 ├── Makefile                      自动化构建和管理任务的脚本
@@ -194,7 +194,7 @@ AniTrack/
 
 如有任何问题或建议，欢迎通过以下方式联系：
 
-- 提交 [Issue](https://github.com/bruceblink/AniTrack/issues)
+- 提交 [Issue](https://github.com/bruceblink/AniTracker/issues)
 - [发送邮件](mailto:likanug.g@qq.com)
 
 ## 致谢
