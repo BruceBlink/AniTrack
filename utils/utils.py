@@ -2,6 +2,7 @@ import logging
 import random
 import re
 import time
+from collections import defaultdict
 from datetime import datetime
 
 from common import Result
@@ -67,20 +68,18 @@ def merge_dict_data(*dicts: dict[str, list[Result]]) -> dict[str, list[Result]]:
 
     要求：列表元素必须为可哈希类型，如使用 @dataclass(frozen=True) 的对象或者实现了__hash__函数的对象。
     """
-    merged: dict[str, list[Result]] = {}
-    seen_map: dict[str, set[Result]] = {}
+    merged: dict[str, list[Result]] = defaultdict(list)
+    seen: dict[str, set[Result]] = defaultdict(set)
 
     for d in dicts:
         if d:
-            for key, lst in d.items():
-                merged.setdefault(key, [])
-                seen_map.setdefault(key, set())
-
-                for item in lst:
-                    if item not in seen_map[key]:
-                        seen_map[key].add(item)
-                        merged[key].append(item)
-
+            for key, seq in d.items():
+                seen_for_key = seen[key]
+                merged_for_key = merged[key]
+                for item in seq:
+                    if item not in seen_for_key:
+                        seen_for_key.add(item)
+                        merged_for_key.append(item)
     return merged
 
 
