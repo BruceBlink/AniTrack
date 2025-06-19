@@ -2,10 +2,10 @@ import logging
 
 import utils
 from common.logger_setup import init_logger
-from config import BILIBILI_GUOCHUANG_API, BILIBILI_ANIME_API
+from config import BILIBILI_GUOCHUANG_API, BILIBILI_ANIME_API, MIKANANI_BASE_URL
 from platforms.bilibili import BilibiliFetcher
 from platforms.iqiyi import fetch_iqiyi_cartoon_today
-from platforms.mikanani import fetch_mikanani_today
+from platforms.mikanani import MikananiFetcher
 from platforms.tencent import fetch_qq_cartoon_today
 from platforms.youku import fetch_youku_cartoon_today
 
@@ -36,7 +36,7 @@ def get_all_update_data():
     """
     fetcher = FetcherImpl()
     return {
-        "mikanani": fetch_mikanani_today(),
+        "mikanani": fetcher.mikanani.fetch_mikanani_update_today(),
         "tencent": fetch_qq_cartoon_today(),
         "bilibili_guochuang": fetcher.bilibili_guochuang.fetch_bilibili_cartoon_today(),
         "bilibili_anime": fetcher.bilibili_anime.fetch_bilibili_cartoon_today(),
@@ -56,6 +56,7 @@ class FetcherImpl:
     def __init__(self):
         self.bilibili_guochuang = BilibiliFetcher(BILIBILI_GUOCHUANG_API)
         self.bilibili_anime = BilibiliFetcher(BILIBILI_ANIME_API)
+        self.mikanani = MikananiFetcher(MIKANANI_BASE_URL)
 
 
 if __name__ == "__main__":
