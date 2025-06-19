@@ -35,37 +35,37 @@
 - [余烬行者](http://www.iqiyi.com/v_1qs4cf5g9nw.html) - 2025/06/19 更新 更新至4集 【iqiyi】
 - [陆地键仙](http://www.iqiyi.com/v_lobrkfgdeg.html) - 2025/06/19 更新 更新至127集 【iqiyi】
 - [万界至尊](http://www.iqiyi.com/v_1837rw5g03s.html) - 2025/06/19 更新 更新至227集 【iqiyi】
-- [大夏剑主 动态漫画](http://www.iqiyi.com/v_2f1ar1e82rk.html) - 2025/06/19 更新 更新至186集 【iqiyi】
-- [开心锤锤](http://www.iqiyi.com/v_kab1f7kxn0.html) - 2025/06/19 更新 更新至6集 【iqiyi】
+- [我是大仙尊 动态漫画](http://www.iqiyi.com/v_19rwetjdac.html) - 2025/06/19 更新 更新至287集 【iqiyi】
 - [我的弟子遍布诸天万界 动态漫画](http://www.iqiyi.com/v_29f7nwy6n8o.html) - 2025/06/19 更新 更新至233集 【iqiyi】
 - [收徒亿万返还：为师无敌世间 动态漫画](http://www.iqiyi.com/v_10nn5ifcye0.html) - 2025/06/19 更新 更新至128集 【iqiyi】
+- [仙帝归来 动态漫画 第3季](http://www.iqiyi.com/v_1t7naqzj344.html) - 2025/06/19 更新 更新至118集 【iqiyi】
+- [开局被动无敌 动态漫画](http://www.iqiyi.com/v_2dfkqz5s0zo.html) - 2025/06/19 更新 更新至36集 【iqiyi】
 - [我拿捏了气运之子 动态漫画 第1季](http://www.iqiyi.com/v_1okp2nuojz4.html) - 2025/06/19 更新 更新至75集 【iqiyi】
+- [气运之子：我可以无限暴击 动态漫画](http://www.iqiyi.com/v_164lhl8m7ps.html) - 2025/06/19 更新 更新至93集 【iqiyi】
+- [我是怪兽大主宰 动态漫画](http://www.iqiyi.com/v_1ttisrr9q8c.html) - 2025/06/19 更新 更新至100集 【iqiyi】
+- [长生不死的我只修禁术 动态漫画 第1季](http://www.iqiyi.com/v_1t5jwv2cqic.html) - 2025/06/19 更新 更新至69集 【iqiyi】
+- [主角系统：我在各界当大佬 动态漫画](http://www.iqiyi.com/v_22le6k9q3j8.html) - 2025/06/19 更新 更新至60集 【iqiyi】
+- [氪丹修仙只苟长生 动态漫画](http://www.iqiyi.com/v_1vfx4rcrg1w.html) - 2025/06/19 更新 更新至60集 【iqiyi】
 - [原来我早就无敌了 动态漫画](http://www.iqiyi.com/v_117jjmsjv3o.html) - 2025/06/19 更新 更新至170集 【iqiyi】
-- [从零开始当首富 动态漫画 第2季](http://www.iqiyi.com/v_2ar1d6errzc.html) - 2025/06/19 更新 更新至93集 【iqiyi】
-- [反派初始化 动态漫画](http://www.iqiyi.com/v_1n29q743evs.html) - 2025/06/19 更新 更新至19集 【iqiyi】
-- [全民御兽：开局山海经，我横扫全球 动态漫画](http://www.iqiyi.com/v_1ncsoog0ht4.html) - 2025/06/19 更新 更新至69集 【iqiyi】
-- [古神游戏 动态漫画](http://www.iqiyi.com/v_1up7enc5h9k.html) - 2025/06/19 更新 更新至46集 【iqiyi】
-- [平平无奇大师兄 动态漫画](http://www.iqiyi.com/v_13j8sd838xo.html) - 2025/06/19 更新 更新至26集 【iqiyi】
-- [末世钞能力者 动态漫画](http://www.iqiyi.com/v_1ee7zd8s2j8.html) - 2025/06/19 更新 更新至29集 【iqiyi】
-- [全民诡异：开局掌握零元购](https://www.youku.com/ku/webcomic) - 2025/06/19 更新 更新至48集 【youku】
+- [全民御兽：开局山海经，我横扫全球](https://www.youku.com/ku/webcomic) - 2025/06/19 更新 更新至69集 【youku】
 - [盖世扫地僧：我可以无限融合](https://www.youku.com/ku/webcomic) - 2025/06/19 更新 更新至113集 【youku】
-- [假面骑士圣刃 中配版](https://www.youku.com/ku/webcomic) - 2025/06/19 更新 更新至28集 【youku】
-- [氪丹修仙只苟长生](https://www.youku.com/ku/webcomic) - 2025/06/19 更新 更新至51集 【youku】
+- [全民诡异：开局掌握零元购](https://www.youku.com/ku/webcomic) - 2025/06/19 更新 更新至48集 【youku】
 - [师尊：这个冲师逆徒才不是圣子](https://www.youku.com/ku/webcomic) - 2025/06/19 更新 更新至22集 【youku】
 - [收徒亿万返还：为师无敌世间 第二季](https://www.youku.com/ku/webcomic) - 2025/06/19 更新 更新至128集 【youku】
-- [我在末日玄幻世界无敌了](https://www.youku.com/ku/webcomic) - 2025/06/19 更新 更新至35集 【youku】
 - [神戒降临：最强异世界](https://www.youku.com/ku/webcomic) - 2025/06/19 更新 更新至16集 【youku】
 - [师兄啊师兄](https://www.youku.com/ku/webcomic) - 2025/06/19 更新 更新至94集 【youku】
-- [轩辕小豆之山海奇缘](https://www.youku.com/ku/webcomic) - 2025/06/19 更新 更新至48集 【youku】
-- [仙武帝尊](https://www.youku.com/ku/webcomic) - 2025/06/19 更新 更新至458集 【youku】
-- [气运之子：我可以无限暴击](https://www.youku.com/ku/webcomic) - 2025/06/19 更新 更新至51集 【youku】
+- [氪丹修仙只苟长生](https://www.youku.com/ku/webcomic) - 2025/06/19 更新 更新至51集 【youku】
 - [结婚后，我把冰山女总裁气哭了](https://www.youku.com/ku/webcomic) - 2025/06/19 更新 更新至35集 【youku】
-- [弟子修炼，我躺平！第二季](https://www.youku.com/ku/webcomic) - 2025/06/19 更新 更新至80集 【youku】
-- [无敌神王](https://www.youku.com/ku/webcomic) - 2025/06/19 更新 更新至20集 【youku】
-- [全民御兽：开局山海经，我横扫全球](https://www.youku.com/ku/webcomic) - 2025/06/19 更新 更新至69集 【youku】
+- [气运之子：我可以无限暴击](https://www.youku.com/ku/webcomic) - 2025/06/19 更新 更新至51集 【youku】
 - [我掌控百万阴兵阴将](https://www.youku.com/ku/webcomic) - 2025/06/19 更新 更新至28集 【youku】
 - [古神游戏](https://www.youku.com/ku/webcomic) - 2025/06/19 更新 更新至46集 【youku】
 - [暴富系统：我有999个新马甲 第二季](https://www.youku.com/ku/webcomic) - 2025/06/19 更新 更新至56集 【youku】
+- [我在末日玄幻世界无敌了](https://www.youku.com/ku/webcomic) - 2025/06/19 更新 更新至35集 【youku】
+- [假面骑士圣刃 中配版](https://www.youku.com/ku/webcomic) - 2025/06/19 更新 更新至28集 【youku】
+- [轩辕小豆之山海奇缘](https://www.youku.com/ku/webcomic) - 2025/06/19 更新 更新至48集 【youku】
+- [无敌神王](https://www.youku.com/ku/webcomic) - 2025/06/19 更新 更新至20集 【youku】
+- [仙武帝尊](https://www.youku.com/ku/webcomic) - 2025/06/19 更新 更新至458集 【youku】
+- [弟子修炼，我躺平！第二季](https://www.youku.com/ku/webcomic) - 2025/06/19 更新 更新至80集 【youku】
 
 **今天总共更新了 53 部番剧。**
 
@@ -96,7 +96,8 @@ pip install -r requirements.txt
     ```bash
     python main.py
     ```
-- **或者用docker运行**：
+    
+- **或者用docker-compose运行**：
 
   安装以及启动
 
@@ -107,6 +108,14 @@ pip install -r requirements.txt
     ```bash
     docker-compose -f docker-compose.yml -p anitrack down
     ```
+  
+- **docker运行**
+
+  如果你没有安装docker-compose，可以直接使用以下命令运行：
+
+  ```bash
+  docker run -d --name anitrack -v ${PWD}:/app -v ${PWD}/logs:/app/logs likanug515/anitrack:latest
+  ```
 
 ## 数据存储
 
