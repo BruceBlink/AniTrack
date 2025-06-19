@@ -8,32 +8,41 @@ from platforms.iqiyi import fetch_iqiyi_cartoon_today
 from platforms.mikanani import fetch_mikanani_today
 from platforms.tencent import fetch_qq_cartoon_today
 from platforms.youku import fetch_youku_cartoon_today
-from utils import update_today_section_in_readme
 
 
 def main():
     init()
     logging.info("开始获取今日的 追番数据...")
-    # 获取今日的追番数据
-    mikanani_data = fetch_mikanani_today()
-    # 获取腾讯动漫今日更新数据
-    tencent_data = fetch_qq_cartoon_today()
-    # 获取 bilibili 国创和番剧今日更新数据
-    fetcher = FetcherImpl()
-    bilibili_guochuang_data = fetcher.bilibili_guochuang.fetch_bilibili_cartoon_today()
-    bilibili_anime_data = fetcher.bilibili_guochuang.fetch_bilibili_cartoon_today()
-    # 获取iqiyi 今日更新数据
-    iqiyi_cartoon_data = fetch_iqiyi_cartoon_today()
-    # 获取优酷动漫今日更新数据
-    youku_cartoon_data = fetch_youku_cartoon_today()
-    data = utils.merge_dict_data(mikanani_data, tencent_data, bilibili_guochuang_data, bilibili_anime_data,
-                                 iqiyi_cartoon_data, youku_cartoon_data)  # 合并多个数据字典
+    # 获取所有平台的今日更新数据
+    data = get_all_update_data()
+    logging.info("今日的追番数据获取完成。")
+    # 合并所有平台的数据
+    merged_data = utils.merge_dict_data(*data.values())
+    # 保存合并后的数据到 JSON 文件
+    logging.info("保存今日追番数据到 JSON 文件...")
+    utils.save_data_to_json("today_cartoon.json", merged_data)
     # 更新 README 中的今日番剧更新部分
-    update_today_section_in_readme(data)
-    logging.info(f"今日的番剧更新数据已更新到 README 中,总共更新了 {len(data[utils.weekday_today])} 部番剧。")
-    # with open("mikanani_today.json", "w", encoding="utf-8") as f:
-    #     json.dump(data, f, ensure_ascii=False, indent=2)
-    # print(json.dumps(data, ensure_ascii=False, indent=2))
+    logging.info("更新 README 中的今日番剧更新部分...")
+    utils.update_today_section_in_readme(merged_data)
+    today_key = utils.weekday_today
+    count = len(merged_data.get(today_key, []))
+    logging.info(f"今日的番剧更新数据已更新到 README 中，总共更新了 {count} 部番剧。")
+
+
+def get_all_update_data():
+    """
+    获取所有平台的今日更新数据。
+    返回一个包含各平台更新数据的字典。
+    """
+    fetcher = FetcherImpl()
+    return {
+        "mikanani": fetch_mikanani_today(),
+        "tencent": fetch_qq_cartoon_today(),
+        "bilibili_guochuang": fetcher.bilibili_guochuang.fetch_bilibili_cartoon_today(),
+        "bilibili_anime": fetcher.bilibili_anime.fetch_bilibili_cartoon_today(),
+        "iqiyi": fetch_iqiyi_cartoon_today(),
+        "youku": fetch_youku_cartoon_today()
+    }
 
 
 def init():
