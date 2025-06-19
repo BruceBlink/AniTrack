@@ -1,4 +1,5 @@
 import logging
+import os
 from logging import getLogger, StreamHandler, Formatter
 from logging.handlers import RotatingFileHandler
 
@@ -22,6 +23,9 @@ def init_logger(level=logging.DEBUG, log_file=None):
 
     # 如果指定了 log_file，再加一个滚动文件 handler
     if log_file:
+        # 确保目录存在
+        dir_path = os.path.dirname(os.path.abspath(log_file)) or '.'
+        os.makedirs(dir_path, exist_ok=True)
         fh = RotatingFileHandler(log_file, maxBytes=10_000_000, backupCount=5, encoding="utf-8")
         fh.setFormatter(formatter)
         logger.addHandler(fh)
