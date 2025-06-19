@@ -130,7 +130,7 @@ pip install -r requirements.txt
   如果你没有安装docker-compose，可以直接使用以下命令运行：
 
   ```bash
-  docker run -d --name anitracker -v ${PWD}:/app -v ${PWD}/logs:/app/logs likanug515/anitracker:latest
+  docker run -d --name anitracker -v ${PWD}/data:/app/data -v ${PWD}/logs:/app/logs likanug515/anitracker:latest
   ```
 
 ## 数据存储
