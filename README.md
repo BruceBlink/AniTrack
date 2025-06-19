@@ -185,8 +185,8 @@ AniTrack/
 
 如有任何问题或建议，欢迎通过以下方式联系：
 
-- 提交 Issue
-- 发送邮件至 [你的邮箱]
+- 提交 [Issue](https://github.com/bruceblink/AniTrack/issues)
+- [发送邮件](mailto:likanug.g@qq.com)
 
 ## 致谢
 
