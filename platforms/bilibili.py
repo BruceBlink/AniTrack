@@ -24,6 +24,7 @@ class BilibiliFetcher(AbstractFetcher):
         super().send_request()
 
     def _build_result_from_episode(self, ep: dict) -> Result:
+        super()._build_result_from_episode(ep)
         """从单个 episode 字典构建 Result 对象。"""
         pub_index = ep.get("pub_index", "").strip()
         count = utils.extract_number(pub_index)
