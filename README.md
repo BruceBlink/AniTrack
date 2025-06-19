@@ -97,7 +97,7 @@ pip install -r requirements.txt
     python main.py
     ```
     
-- **或者用docker-compose运行**：
+- **用docker-compose运行**：
 
   安装以及启动
 
@@ -119,7 +119,7 @@ pip install -r requirements.txt
 
 ## 数据存储
 
-直接更新在readme中
+直接更新在readme中和存储在**_cartoon.json文件中
 
 ## 项目文件说明
 
@@ -160,7 +160,7 @@ pip install -r requirements.txt
 
 ## 未来计划
 
-- [ ] 支持更多视频平台
+- [x] 支持更多视频平台
 - [ ] 📅 每日更新提醒：及时获取最新剧集更新信息
 - [ ] 🎯 个性化追踪：可以根据个人喜好设置关注的节目
 - [ ] 添加图形用户界面（GUI）
