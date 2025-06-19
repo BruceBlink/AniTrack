@@ -84,7 +84,7 @@ def merge_dict_data(*dicts: dict[str, list[Result]]) -> dict[str, list[Result]]:
                     if item not in seen_for_key:
                         seen_for_key.add(item)
                         merged_for_key.append(item)
-    return merged
+    return dict(merged)
 
 
 def print_results(results: dict[str, list]):
