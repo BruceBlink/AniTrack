@@ -91,3 +91,7 @@ desktop.ini
 *.local
 *.envrc
 .env.*
+
+# 暂时忽略_carton.json
+/*.json
+
