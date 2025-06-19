@@ -13,6 +13,7 @@
 ## 今日更新
 
 ### 星期四 番剧更新
+
 - [外星人姆姆](https://mikanani.me/Home/Bangumi/3594) - 2025/06/19 更新 【Mikanani】
 - [拜托请穿上，鹰峰同学](https://mikanani.me/Home/Bangumi/3603) - 2025/06/19 更新 【Mikanani】
 - [圣女因太过完美不够可爱而被废除婚约并卖到邻国](https://mikanani.me/Home/Bangumi/3609) - 2025/06/19 更新 【Mikanani】
@@ -96,7 +97,7 @@ pip install -r requirements.txt
     ```bash
     python main.py
     ```
-    
+
 - **用docker-compose运行**：
 
   安装以及启动
@@ -104,7 +105,9 @@ pip install -r requirements.txt
     ```bash
     docker-compose -f docker-compose.yml -p anitrack up -d
     ```
+
   停止及卸载
+
     ```bash
     docker-compose -f docker-compose.yml -p anitrack down
     ```
@@ -123,31 +126,37 @@ pip install -r requirements.txt
 
 ## 项目文件说明
 
-- `main.py`: 主程序文件，包含数据整合和更新到readme的逻辑
-- `platforms/`: 各大视频平台数据爬取模块
-  - `__init__.py`: 初始化文件
-  - `mikanani.py`: 蜜柑计划数据爬取模块
-  - `tencent.py`: 腾讯视频数据爬取模块
-  - `bilibili.py`: 哔哩哔哩数据爬取模块
-  - `iqiyi.py`: 爱奇艺数据爬取模块
-  - `youku.py`: 优酷数据爬取模块
-- `common/`: 公共模块
-  - `__init__.py`: 初始化文件
-  - `common.py`: 公共函数模块，包含数据处理和格式化逻辑
-  - `constants.py`: 常量定义模块，包含各平台的URL和其他常量
-  - `decorators.py`: 装饰器模块，用于日志记录和异常处理
-  - `logger_setup.py`: 日志记录模块
-- `utils`:
-  - `__init__.py`: 初始化文件
-  - `utils.py`: 工具函数模块，包含一些通用的辅助函数
-- `config`: 配置模块
-  - `config.py`: 配置文件，包含常量和配置参数
-- `README.md`: 项目说明文件
-- `requirements.txt`: Python依赖包列表
-- `.github/workflows/`: GitHub Actions工作流配置
-  - `mian.yml`: 自动更新README的工作流
-- `.gitignore`: Git忽略文件列表
-- `LICENSE`: 许可证文件
+```txt
+AniTrack/
+├── 2025-06-19_cartoon.json       存储动漫相关数据的JSON文件
+├── Dockerfile                    用于构建项目Docker镜像的配置文件
+├── Makefile                      自动化构建和管理任务的脚本
+├── README.md                     项目说明文档
+├── docker-compose.yml            Docker Compose编排文件，定义多容器服务
+├── main.py                       项目主程序入口
+├── requirements.txt              Python依赖包列表
+├── LICENSE                       项目许可证文件
+├── common/                       存放通用工具和基础模块
+│   ├── __init__.py               package初始化文件
+│   ├── common.py                 通用函数或类
+│   ├── contants.py               常量定义
+│   ├── decorators.py             装饰器相关代码
+│   └── logger_setup.py           日志配置相关代码
+├── config/                       配置相关模块
+│   ├── __init__.py               package初始化文件              
+│   └── config.py                 项目配置文件
+├── logs/                         日志文件存放目录
+├── platforms/                    各平台相关的爬虫或数据处理模块
+│   ├── __init__.py               package初始化文件
+│   ├── bilibili.py               哔哩哔哩数据处理
+│   ├── iqiyi.py                  爱奇艺数据处理
+│   ├── mikanani.py               蜜柑计划数据处理
+│   ├── tencent.py                腾讯视频数据处理
+│   └── youku.py                  优酷视频数据处理
+└── utils/                        工具函数模块
+    ├── __init__.py               package初始化文件          
+    └── utils.py                  通用工具函数
+```
 
 ## 贡献指南
 
