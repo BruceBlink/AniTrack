@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: AniTrack
+    working_dir: /app
+    command: python main.py
+    volumes:
+      - .:/app
+    environment:
+      - PYTHONUNBUFFERED=1
