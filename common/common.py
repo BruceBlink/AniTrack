@@ -3,6 +3,7 @@ from abc import ABC, abstractmethod
 from dataclasses import dataclass, asdict
 
 import requests
+from bs4 import Tag
 
 import utils
 from common import contants
@@ -61,3 +62,7 @@ class AbstractFetcher(ABC):
         except requests.RequestException as e:
             self.logger.error(f"请求 {self.api_url} 失败：{e}")
             raise e
+
+    @abstractmethod
+    def _build_result_from_episode(self, episodes: dict | Tag) -> Result:
+        pass
