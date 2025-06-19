@@ -64,8 +64,6 @@ def _fetch_youku_cartoon_today(api_url: str) -> dict[str, list] | None:
             prefix = "window.__INITIAL_DATA__="
             json_str = script_content[len(prefix) + 1:].strip().rstrip(";")
             fixed_json_str = json_str.replace('undefined', 'null')
-            # 视频地址需要vid +
-            # https://v.youku.com/video?vid=XNjQ3MjQzMjE2MA==&scm=20140719.apircmd.298496.video_XNjQ3MjQzMjE2MA==
             # 解析 JSON 数据
             data = json.loads(fixed_json_str)
             module_list = data.get("moduleList", [])
@@ -93,20 +91,21 @@ def _fetch_youku_cartoon_today(api_url: str) -> dict[str, list] | None:
                 item for item in all_raw_items if item.get('updateTips') == '有更新'
             )
 
+            # updated_items = [item for item in all_raw_items if item.get('updateTips') == '有更新']
             # 步骤4: 根据过滤后的 item 创建 Result 对象，并收集到列表中
-            comics_found = [
+            comics_found = list({  # 去重处理
                 Result(
                     platform='youku',
                     title=item.get('title', '').strip(),
                     update_count=str(utils.extract_number(item.get('lbTexts', ''))),
                     update_info=item.get('lbTexts', '').strip(),
                     image_url=item.get('img', '').strip(),
-                    detail_url="",
+                    detail_url=YOUKU_COMICS_API,
                     update_time=utils.iso_date_ld,
                 )
                 for item in updated_items
-            ]
-            result_data[weekday] = comics_found
+            })
+            result_data[weekday] = comics_found  # 将结果存入字典
             logger.info(f"成功提取到 {len(comics_found)} 部今日更新的漫画。")
             return result_data  # 成功获取并返回数据
 
@@ -140,6 +139,25 @@ def _fetch_youku_cartoon_today(api_url: str) -> dict[str, list] | None:
         utils.random_delay()  # 每次尝试结束后都添加延迟
 
     return None  # 发生任何异常，返回 None
+
+
+def _get_video_id(preview_info: dict) -> str:
+    """ 从预览信息中提取视频 ID"""
+
+    return preview_info.get("videoId", "").strip() if preview_info else ""
+
+
+def _get_youku_video_url(item: dict) -> str:
+    """ 根据 item 中的 previewInfo 和 vid scm spm提取视频 URL。"""
+    'https://v.youku.com/v_show/id_XNjM5NTIzOTM2MA==.html?scm=20140719.apircmd.298639.video_XNjM5NTIzOTM2MA%3D%3D&s=badbb5792f934ddb82fd'
+    'https://v.youku.com/video?vid=XNjQ1NTg1OTE2MA==&scm=20140719.manual.feed.show_badbb5792f934ddb82fd&spm=a2hkl.14919748_WEBCOMIC_JINGXUAN.calendar_scroll_1.d_1_play'
+    preview_info: dict = item.get('previewInfo', {})
+    vid = _get_video_id(preview_info)
+    scm = item.get('scm', '').strip()
+    'https://v.youku.com/v_show/id_XNjQ1NDcyMjAxMg==.html'
+
+    spm = f'{item.get('spmAB', '').strip()}.{item.get('spmC', '').strip()}.{item.get('spmD', '').strip()}'.strip()
+    return f'https://v.youku.com/video?vid={vid}&scm={scm}&spm={spm}' if vid and scm else YOUKU_COMICS_API
 
 
 @retry(
