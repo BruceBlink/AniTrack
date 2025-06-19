@@ -48,7 +48,7 @@ def get_all_update_data():
 def init():
     """初始化日志记录器"""
     # 统一初始化 logger
-    init_logger(level=logging.DEBUG)
+    init_logger(level=logging.INFO, log_file=f"logs/{utils.iso_date}_cartoon_fetcher.log")
     logging.info("日志记录器已初始化。")
 
 
