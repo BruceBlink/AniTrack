@@ -5,11 +5,11 @@ services:
     build:
       context: .              # Dockerfile 现在在根目录
       dockerfile: Dockerfile  # 可省略，默认就是这个名字
-    image: likanug/anitrack:1.0.0      # ⬅️ 指定构建后的镜像名和版本
+    image: likanug515/anitrack      # ⬅️ 指定构建后的镜像名和版本
     container_name: AniTrack
     working_dir: /app
     command: python main.py
     volumes:
-      - .:/app
+      - .:/app  # ⬅️ 挂载当前目录到容器的 /app 目录
     environment:
       - PYTHONUNBUFFERED=1
