@@ -135,7 +135,7 @@ pip install -r requirements.txt
 
 ## 数据存储
 
-直接更新在readme中和存储在**_cartoon.json文件中
+直接更新在readme中和存储在data/**_cartoon.json文件中
 
 ## 项目文件说明
 
