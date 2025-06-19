@@ -24,16 +24,16 @@ class MikananiFetcher(AbstractFetcher):
     def _build_result_from_episode(self, li: Tag) -> Result:
         super()._build_result_from_episode(li)
         """从单个 <li> 元素构建 Result 对象。"""
-        text = li.get_text(" ", strip=True)[2:15]
+        text = li.get_text()[2:15]
         a_tag = li.find("a", href=True)
         title = a_tag.get_text(strip=True) if a_tag else text
-        detail_url = urljoin(MIKANANI_BASE_URL, a_tag["href"]) if a_tag else ""
+        detail_url = urljoin(self.api_url, a_tag["href"]) if a_tag else ""
 
         # 提取封面图
         image_url = ""
         span = li.find("span", class_="js-expand_bangumi")
         if span and span.has_attr("data-src"):
-            image_url = urljoin(MIKANANI_BASE_URL, span["data-src"])
+            image_url = urljoin(self.api_url, span["data-src"])
 
         return Result(
             platform=self.platform,
