@@ -94,4 +94,6 @@ desktop.ini
 
 # 暂时忽略_carton.json
 /*.json
+# 忽略更新数据生成目录
+/data/
 
