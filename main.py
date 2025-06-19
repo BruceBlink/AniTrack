@@ -20,7 +20,7 @@ def main():
     merged_data = utils.merge_dict_data(*data.values())
     # 保存合并后的数据到 JSON 文件
     logging.info("保存今日追番数据到 JSON 文件...")
-    utils.save_data_to_json("today_cartoon.json", merged_data)
+    utils.save_data_to_json(f"{utils.iso_date}_cartoon.json", merged_data)
     # 更新 README 中的今日番剧更新部分
     logging.info("更新 README 中的今日番剧更新部分...")
     utils.update_today_section_in_readme(merged_data)
