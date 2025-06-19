@@ -102,7 +102,7 @@ pip install -r requirements.txt
     python main.py
     ```
 
-- **用docker-compose运行**：
+- **docker-compose运行**：
 
   安装以及启动
 
