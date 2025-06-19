@@ -2,7 +2,10 @@ version: '3.8'
 
 services:
   app:
-    build: .
+    build:
+      context: ./docker       # Dockerfile 所在目录
+      dockerfile: Dockerfile  # 可省略，默认就是这个名字
+    image: likanug/anitrack:1.0.0      # ⬅️ 指定构建后的镜像名和版本
     container_name: AniTrack
     working_dir: /app
     command: python main.py
