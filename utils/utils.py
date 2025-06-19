@@ -45,7 +45,7 @@ def update_today_section_in_readme(data: dict[str, list]) -> None:
             break
 
     if start_idx and end_idx and start_idx <= end_idx:
-        today_md = [f"### {_weekday} 番剧更新\n"]
+        today_md = [f"### {_weekday} 番剧更新\n\n"]
         for item in items:
             title = item["title"]
             link = item["detail_url"]
