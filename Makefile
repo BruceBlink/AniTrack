@@ -1,5 +1,5 @@
 # 配置项
-IMAGE_NAME = likanug/AniTrackerer
+IMAGE_NAME = likanug/anitrack
 IMAGE_TAG = 1.0.0
 FULL_IMAGE = $(IMAGE_NAME):$(IMAGE_TAG)
 

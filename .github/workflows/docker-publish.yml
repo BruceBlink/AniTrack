@@ -34,5 +34,5 @@ jobs:
           context: .
           push: true
           tags: |
-            ${{ secrets.DOCKER_USERNAME }}/AniTracker:${{ env.IMAGE_TAG }}
-            ${{ secrets.DOCKER_USERNAME }}/AniTracker:latest
+            ${{ secrets.DOCKER_USERNAME }}/anitrack:${{ env.IMAGE_TAG }}
+            ${{ secrets.DOCKER_USERNAME }}/anitrack:latest
