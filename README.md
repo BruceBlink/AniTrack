@@ -95,18 +95,15 @@
 ## 安装步骤
 
 1. 克隆仓库到本地：
+    ```bash
+    git clone https://github.com/BruceBlink/AniTracker
+    cd AniTracker
+    ```
 
-```bash
-git clone https://github.com/BruceBlink/AniTracker
-cd AniTracker
-```
-
-1. 安装依赖：
-
-```bash
-pip install -r requirements.txt
-```
-
+2. 安装依赖：
+    ```bash
+    pip install -r requirements.txt
+    ```
 ## 使用说明
 
 - **运行主程序**：
