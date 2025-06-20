@@ -3,9 +3,10 @@ import time
 
 import requests
 
+import common
 import utils
 from common import Result, AbstractFetcher
-from common.decorators import retry, print_after_return
+from common.decorators import retry, print_after_return, timer
 from config import BILIBILI_GUOCHUANG_API, BILIBILI_ANIME_API
 from utils import iso_date_ld
 from utils import print_results, clean_text
@@ -80,6 +81,7 @@ class BilibiliFetcher(AbstractFetcher):
         retry_condition=lambda result: not result
     )
     @print_after_return(print_results, print_condition=lambda r: any(r.values()))
+    @timer(unit="ms", print_report=True)
     # @save_after_return(filename="bilibili_guochuang_today.json", save_condition=lambda r: any(r.values()))
     def fetch_bilibili_cartoon_today(self) -> dict[str, list] | None:
         """获取哔哩哔哩国创频道今日更新的动漫信息。"""
@@ -88,6 +90,13 @@ class BilibiliFetcher(AbstractFetcher):
 
 
 if __name__ == "__main__":
+    common.Logger.init(
+        level=logging.DEBUG,
+        max_bytes=10_000_000,
+        backup_count=5,
+        console=True,
+        colored=True
+    )
     bilibili_guochuang = BilibiliFetcher(BILIBILI_GUOCHUANG_API)
 
     bilibili_guochuang_data = bilibili_guochuang.fetch_bilibili_cartoon_today()
