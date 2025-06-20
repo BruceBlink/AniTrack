@@ -2,6 +2,7 @@ import logging
 
 import utils
 from common import Logger
+from common.decorators import timer
 from config import BILIBILI_GUOCHUANG_API, BILIBILI_ANIME_API, MIKANANI_BASE_URL
 from platforms.bilibili import BilibiliFetcher
 from platforms.iqiyi import fetch_iqiyi_cartoon_today
@@ -10,6 +11,7 @@ from platforms.tencent import fetch_qq_cartoon_today
 from platforms.youku import fetch_youku_cartoon_today
 
 
+@timer(unit="ms")
 def main():
     init()
     logging.info("开始获取今日的 追番数据...")
@@ -29,6 +31,7 @@ def main():
     logging.info(f"今日的番剧更新数据已更新到 README 中，总共更新了 {count} 部番剧。")
 
 
+@timer(unit="ms")
 def get_all_update_data():
     """
     获取所有平台的今日更新数据。

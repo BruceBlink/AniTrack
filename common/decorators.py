@@ -207,7 +207,7 @@ def timer(
                 if elapsed > TIME_OUT_5:  # 如果耗时超过5秒
                     logging.warning(logs_info)
                 else:
-                    logging.info(logs_info)
+                    logging.debug(logs_info)
 
             # 调用层级追踪清理
             if track_hierarchy:
@@ -246,7 +246,7 @@ def timer(
                 if elapsed > TIME_OUT_5:  # 如果耗时超过5秒
                     logging.warning(log_info)
                 else:
-                    logging.info(log_info)
+                    logging.debug(log_info)
 
             # 调用层级追踪清理
             if track_hierarchy:
