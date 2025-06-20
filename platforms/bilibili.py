@@ -4,8 +4,8 @@ import time
 import requests
 
 import utils
-from common import Result, AbstractFetcher
-from common.decorators import retry, print_after_return
+from common import Result, AbstractFetcher, Logger
+from common.decorators import retry, print_after_return, timer
 from config import BILIBILI_GUOCHUANG_API, BILIBILI_ANIME_API
 from utils import iso_date_ld
 from utils import print_results, clean_text
@@ -39,6 +39,7 @@ class BilibiliFetcher(AbstractFetcher):
             update_time=iso_date_ld
         )
 
+    @timer(unit="ms")
     def _fetch_bilibili_update_today(self) -> dict[str, list] | None:
         """从哔哩哔哩国创频道官方 JSON 接口获取今日更新的动漫信息。"""
         try:
@@ -88,6 +89,13 @@ class BilibiliFetcher(AbstractFetcher):
 
 
 if __name__ == "__main__":
+    Logger.init(
+        level=logging.DEBUG,
+        max_bytes=10_000_000,
+        backup_count=5,
+        console=True,
+        colored=True
+    )
     bilibili_guochuang = BilibiliFetcher(BILIBILI_GUOCHUANG_API)
 
     bilibili_guochuang_data = bilibili_guochuang.fetch_bilibili_cartoon_today()
