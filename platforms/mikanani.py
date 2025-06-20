@@ -1,3 +1,4 @@
+import logging
 import time
 from urllib.parse import urljoin
 import requests
@@ -47,30 +48,30 @@ class MikananiFetcher(AbstractFetcher):
 
     def _fetch_mikanani_update_today(self) -> dict[str, list] | None:
         """抓取 Mikanani 今日更新的番剧数据。"""
-        self.logger.info("Fetching today's Mikanani data...")
+        logging.info("Fetching today's Mikanani data...")
 
         try:
             super().send_request()
             soup = BeautifulSoup(self.response.text, 'html.parser')
-            self.logger.debug(f"解析 HTML 内容：{soup}")
+            logging.debug(f"解析 HTML 内容：{soup}")
 
             items = (li for li in soup.find_all("li") if li.find("div", class_="num-node text-center"))
 
             for li in items:
                 anime_info = self._build_result_from_episode(li)
-                self.logger.info(f"识别到更新：{anime_info.title} - {anime_info.update_info}")
+                logging.info(f"识别到更新：{anime_info.title} - {anime_info.update_info}")
                 self.result[utils.weekday_today].append(anime_info)
 
             return self.result
         except requests.exceptions.Timeout:
-            self.logger.warning("请求超时，10 秒后重试...")
+            logging.warning("请求超时，10 秒后重试...")
             time.sleep(10)
             return self._fetch_mikanani_update_today()
         except requests.RequestException as e:
-            self.logger.error(f"请求处理异常：{e}")
+            logging.error(f"请求处理异常：{e}")
             return None
         except Exception as e:
-            self.logger.exception(f"其他错误：{e}")
+            logging.exception(f"其他错误：{e}")
             return None
 
     @retry(
@@ -82,7 +83,7 @@ class MikananiFetcher(AbstractFetcher):
     # @save_after_return(filename="qq_cartoon_today.json", save_condition=lambda r: any(r.values()))
     def fetch_mikanani_update_today(self) -> dict[str, list] | None:
         """获取蜜柑计划今日更新的动漫信息。"""
-        self.logger.info("开始获取蜜柑计划今日更新...")
+        logging.info("开始获取蜜柑计划今日更新...")
         return self._fetch_mikanani_update_today()
 
 

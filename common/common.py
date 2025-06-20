@@ -47,7 +47,6 @@ class Result:
 
 class AbstractFetcher(ABC):
     def __init__(self):
-        self.logger = logging.getLogger(self.__class__.__name__)
         self.api_url = None
         self.platform = None
         self.result = {utils.weekday_today: []}
@@ -55,12 +54,12 @@ class AbstractFetcher(ABC):
 
     @abstractmethod
     def send_request(self):
-        self.logger.info(f"Fetching today's data from {self.api_url} ...")
+        logging.info(f"Fetching today's data from {self.api_url} ...")
         try:
             self.response = requests.get(self.api_url, headers=contants.HEADERS, timeout=10)
             self.response.raise_for_status()
         except requests.RequestException as e:
-            self.logger.error(f"请求 {self.api_url} 失败：{e}")
+            logging.error(f"请求 {self.api_url} 失败：{e}")
             raise e
 
     @abstractmethod

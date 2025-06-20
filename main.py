@@ -1,7 +1,7 @@
 import logging
 
 import utils
-from common.logger_setup import init_logger
+from common import Logger
 from config import BILIBILI_GUOCHUANG_API, BILIBILI_ANIME_API, MIKANANI_BASE_URL
 from platforms.bilibili import BilibiliFetcher
 from platforms.iqiyi import fetch_iqiyi_cartoon_today
@@ -48,7 +48,14 @@ def get_all_update_data():
 def init():
     """初始化日志记录器"""
     # 统一初始化 logger
-    init_logger(level=logging.INFO, log_file=f"logs/{utils.iso_date_dd}_cartoon_fetcher.log")
+    Logger.init(
+        level=logging.DEBUG,
+        log_file=f"logs/{utils.iso_date_dd}_cartoon_fetcher.log",
+        max_bytes=10_000_000,
+        backup_count=5,
+        console=True,
+        colored=True
+    )
     logging.info("日志记录器已初始化。")
 
 

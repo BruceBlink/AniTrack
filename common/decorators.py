@@ -4,10 +4,7 @@ import os
 import time
 from functools import wraps
 from typing import Callable, Any
-
 from common import Result
-
-logger = logging.getLogger(__name__)
 
 
 def retry(
@@ -31,21 +28,21 @@ def retry(
         def wrapper(*args, **kwargs):
             for attempt in range(1, retries + 1):
                 try:
-                    logger.info(f"\n{'=' * 40}\n第 {attempt} 次尝试\n{'=' * 40}")
+                    logging.info(f"\n{'=' * 40}\n第 {attempt} 次尝试\n{'=' * 40}")
                     result = func(*args, **kwargs)
                     try:
                         if not retry_condition(result):
                             return result
-                        logger.warning("条件未满足，准备重试...")
+                        logging.warning("条件未满足，准备重试...")
                     except Exception as inner:
-                        logger.error(f"重试判断条件出错：{inner}")
+                        logging.error(f"重试判断条件出错：{inner}")
                         return result
                 except exceptions as e:
-                    logger.warning(f"第 {attempt} 次调用发生异常：{e}")
+                    logging.warning(f"第 {attempt} 次调用发生异常：{e}")
                 if attempt < retries:
-                    logger.info(f"等待 {delay} 秒后进行下一次尝试...")
+                    logging.info(f"等待 {delay} 秒后进行下一次尝试...")
                     time.sleep(delay)
-            logger.error("重试次数已耗尽，操作失败。")
+            logging.error("重试次数已耗尽，操作失败。")
             return None
 
         return wrapper
@@ -107,11 +104,11 @@ def save_after_return(filename: str = "results.json", save_condition: Callable[[
                 try:
                     with open(file_path, 'w', encoding='utf-8') as f:
                         json.dump(serializable_result, f, ensure_ascii=False, indent=2)
-                    logger.info(f"结果已保存到 {file_path}")
+                    logging.info(f"结果已保存到 {file_path}")
                 except Exception as e:
-                    logger.error(f"保存结果失败: {e}")
+                    logging.error(f"保存结果失败: {e}")
             else:
-                logger.info("结果为空，不保存文件。")
+                logging.info("结果为空，不保存文件。")
             return result
 
         return wrapper
