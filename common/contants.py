@@ -17,3 +17,5 @@ HEADERS = {
     "Sec-Fetch-Site": "same-origin",
     "Sec-Fetch-User": "?1",
 }
+
+TIME_OUT_5 = 5  # 默认请求超时时间，单位为秒

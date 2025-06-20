@@ -8,6 +8,7 @@ import asyncio
 from functools import wraps
 from collections import defaultdict
 import threading
+from common.contants import TIME_OUT_5
 
 
 def retry(
@@ -202,7 +203,11 @@ def timer(
 
             # 打印单次执行报告
             if print_report:
-                print(f"⏱️ {func.__name__}: {format_time(elapsed)}")
+                logs_info = f"⏱️ {func.__name__}: {format_time(elapsed)}"
+                if elapsed > TIME_OUT_5:  # 如果耗时超过5秒
+                    logging.warning(logs_info)
+                else:
+                    logging.info(logs_info)
 
             # 调用层级追踪清理
             if track_hierarchy:
@@ -237,7 +242,11 @@ def timer(
 
             # 打印单次执行报告
             if print_report:
-                print(f"⏱️ [ASYNC] {func.__name__}: {format_time(elapsed)}")
+                log_info = f"⏱️ [ASYNC] {func.__name__}: {format_time(elapsed)}"
+                if elapsed > TIME_OUT_5:  # 如果耗时超过5秒
+                    logging.warning(log_info)
+                else:
+                    logging.info(log_info)
 
             # 调用层级追踪清理
             if track_hierarchy:
