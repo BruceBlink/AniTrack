@@ -9,6 +9,8 @@ import time
 from collections import defaultdict
 from datetime import datetime
 
+from common import Result
+
 # 获取当前本地时间（你的环境默认就是 +08:00 新加坡时区）
 now = datetime.now()
 
@@ -64,15 +66,15 @@ def update_today_section_in_readme(data: dict[str, list]) -> None:
             f.writelines(lines)
 
 
-def merge_dict_data(*dicts: dict[str, list]) -> dict[str, list]:
+def merge_dict_data(*dicts: dict[str, list[Result]]) -> dict[str, list[Result]]:
     """
     合并任意数量的数据字典，并去除重复元素。
     相同键下的列表会按传入顺序拼接，且只保留第一次出现的元素。
 
     要求：列表元素必须为可哈希类型，如使用 @dataclass(frozen=True) 的对象或者实现了__hash__函数的对象。
     """
-    merged: dict[str, list] = defaultdict(list)
-    seen: dict[str, set] = defaultdict(set)
+    merged: dict[str, list[Result]] = defaultdict(list)
+    seen: dict[str, set[Result]] = defaultdict(set)
 
     for d in dicts:
         if d:
