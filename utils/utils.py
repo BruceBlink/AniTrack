@@ -8,6 +8,7 @@ import tempfile
 import time
 from collections import defaultdict
 from datetime import datetime
+from common.decorators import timer
 
 # 获取当前本地时间（你的环境默认就是 +08:00 新加坡时区）
 now = datetime.now()
@@ -86,6 +87,7 @@ def merge_dict_data(*dicts: dict[str, list]) -> dict[str, list]:
     return dict(merged)
 
 
+@timer(unit="ms")
 def print_results(results: dict[str, list]):
     """将获取到的动漫更新结果打印到控制台。"""
     if not results:
@@ -93,28 +95,30 @@ def print_results(results: dict[str, list]):
         return
 
     _weekday = list(results.keys())[0]
-    if not results[_weekday]:
+    anime_list = results[_weekday]
+    if not anime_list:
         print(f"{_weekday} 没有找到更新的动漫。")
         return
 
-    print(f"\n{_weekday} 更新动漫列表:")
-    print("=" * 80)
-
-    for i, anime in enumerate(results[_weekday], 1):
-        print(f"{i}. {anime['title']}")
-        print(f"   更新集数: {anime['update_count']}")
+    # print(f"\n{_weekday} 更新动漫列表:")
+    # print("=" * 80)
+    output_lines = [f"\n{_weekday} 更新动漫列表:\n", "=" * 80]
+    for i, anime in enumerate(anime_list, 1):
+        output_lines.append(f"{i}. {anime['title']}")
+        output_lines.append(f"   更新集数: {anime['update_count']}")
         if anime['update_info'] and anime['update_info'] != anime['update_count']:  # 避免冗余
-            print(f"   更新说明: {anime['update_info']}")
+            output_lines.append(f"   更新说明: {anime['update_info']}")
         if anime['image_url']:
-            print(f"   封面图片: {anime['image_url']}")
+            output_lines.append(f"   封面图片: {anime['image_url']}")
         if anime['detail_url']:
-            print(f"   详情链接: {anime['detail_url']}")
-        print("-" * 80)
+            output_lines.append(f"   详情链接: {anime['detail_url']}")
+        output_lines.append("-" * 80)
 
-    print(f"\n统计: 共找到 {len(results[_weekday])} 部今日更新的动漫")
+        # 添加统计信息
+    output_lines.append(f"\n统计: 共找到 {len(anime_list)} 部今日更新的动漫")
+    # 一次性输出所有内容
+    logging.info("\n".join(output_lines))
 
-
-# print(iso_date, iso_datetime, chinese_date, compact, weekday, sep="\n")
 
 def extract_number(text: str) -> int | None:
     """ 从字符串中提取第一个数字并返回整数。"""
@@ -275,4 +279,3 @@ def save_data_to_json(
     # 原子替换
     os.replace(tmp_path, filename)
     logging.info(f"JSON 数据已安全保存到 {filename}")
-
