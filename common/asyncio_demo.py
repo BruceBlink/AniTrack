@@ -1,8 +1,6 @@
 import asyncio
 from random import random
 
-from common.decorators import timer
-
 
 async def worker(name, delay):
     await asyncio.sleep(delay)
