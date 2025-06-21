@@ -1,7 +1,9 @@
+import asyncio
 import logging
 from abc import ABC, abstractmethod
 from dataclasses import dataclass, asdict
 
+import aiohttp
 import requests
 from bs4 import Tag
 
@@ -52,15 +54,28 @@ class AbstractFetcher(ABC):
         self.result = {utils.weekday_today: []}
         self.response = None
 
-    @abstractmethod
-    def send_request(self):
-        logging.info(f"Fetching today's data from {self.api_url} ...")
+    async def send_request(self, session: aiohttp.ClientSession) -> None:
+        if not self.api_url:
+            raise RuntimeError("api_url 未设置")
+        logging.info(f"Fetching today's data from [{self.platform}] {self.api_url} 发起异步请求 ...")
         try:
-            self.response = requests.get(self.api_url, headers=contants.HEADERS, timeout=10)
-            self.response.raise_for_status()
-        except requests.RequestException as e:
-            logging.error(f"请求 {self.api_url} 失败：{e}")
+            async with session.get(self.api_url, headers=contants.HEADERS, timeout=10) as resp:
+                resp.raise_for_status()
+                self.response = await resp.text(encoding='utf-8')
+
+        except (aiohttp.ClientError, asyncio.TimeoutError) as e:
+            logging.error(f"from [{self.platform}] {self.api_url} 发起异步请求失败：{e}")
             raise e
+
+    async def fetch_and_build(self, session: aiohttp.ClientSession) -> None:
+        """异步获取数据并构建 Result 对象。"""
+        await self.send_request(session)
+        if not self.response:
+            logging.error(f"从 [{self.platform}] {self.api_url} 获取数据失败")
+            return
+
+    def _has_episode_info(self, episodes: Tag | dict) -> bool:
+        pass
 
     @abstractmethod
     def _build_result_from_episode(self, episodes: dict | Tag) -> Result:
