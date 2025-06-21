@@ -19,3 +19,4 @@ HEADERS = {
 }
 
 TIME_OUT_5 = 5  # 默认请求超时时间，单位为秒
+CONCURRENCY_LIMIT = 5  # 并发请求限制
