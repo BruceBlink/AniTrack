@@ -47,11 +47,11 @@ def get_all_update_data():
     #     "iqiyi": fetch_iqiyi_cartoon_today(),
     #     "youku": fetch_youku_cartoon_today()
     # }
-    result = asyncio.run(get_all_update_data_async())
+    result = asyncio.run(get_all_async_fetcher_tasks())
     return result
 
 
-async def get_all_update_data_async():
+async def get_all_async_fetcher_tasks():
     """异步获取所有更新数据"""
     fetcher = FetcherImpl()
     mikanani = fetcher.mikanani.fetch_mikanani_update_today()
