@@ -3,3 +3,4 @@ from .bilibili import BilibiliFetcher
 from .iqiyi import IQiyiFetcher
 from .mikanani import MikananiFetcher
 from .tencent import TencentFetcher
+from .youku import YoukuFetcher
