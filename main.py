@@ -1,3 +1,4 @@
+import asyncio
 import logging
 
 import utils
@@ -19,7 +20,7 @@ def main():
     data = get_all_update_data()
     logging.info("今日的追番数据获取完成。")
     # 合并所有平台的数据
-    merged_data = utils.merge_dict_data(*data.values())
+    merged_data = utils.merge_dict_data(*data)
     # 保存合并后的数据到 JSON 文件
     logging.info("保存今日追番数据到 JSON 文件...")
     utils.save_data_to_json(f"data/{utils.iso_date}_cartoon.json", merged_data)
@@ -37,15 +38,30 @@ def get_all_update_data():
     获取所有平台的今日更新数据。
     返回一个包含各平台更新数据的字典。
     """
+    # fetcher = FetcherImpl()
+    # return {
+    #     "mikanani": fetcher.mikanani.fetch_mikanani_update_today(),
+    #     "tencent": fetch_qq_cartoon_today(),
+    #     "bilibili_guochuang": fetcher.bilibili_guochuang.fetch_bilibili_cartoon_today(),
+    #     "bilibili_anime": fetcher.bilibili_anime.fetch_bilibili_cartoon_today(),
+    #     "iqiyi": fetch_iqiyi_cartoon_today(),
+    #     "youku": fetch_youku_cartoon_today()
+    # }
+    result = asyncio.run(get_all_update_data_async())
+    return result
+
+
+async def get_all_update_data_async():
+    """异步获取所有更新数据"""
     fetcher = FetcherImpl()
-    return {
-        "mikanani": fetcher.mikanani.fetch_mikanani_update_today(),
-        "tencent": fetch_qq_cartoon_today(),
-        "bilibili_guochuang": fetcher.bilibili_guochuang.fetch_bilibili_cartoon_today(),
-        "bilibili_anime": fetcher.bilibili_anime.fetch_bilibili_cartoon_today(),
-        "iqiyi": fetch_iqiyi_cartoon_today(),
-        "youku": fetch_youku_cartoon_today()
-    }
+    mikanani = fetcher.mikanani.fetch_mikanani_update_today()
+    bilibili_guochuang = fetcher.bilibili_guochuang.fetch_bilibili_cartoon_today()
+    bilibili_anime = fetcher.bilibili_anime.fetch_bilibili_cartoon_today()
+    # tencent = fetch_qq_cartoon_today()
+    # iqiyi = fetch_iqiyi_cartoon_today()
+    # youku = fetch_youku_cartoon_today()
+    tasks = [mikanani, bilibili_guochuang, bilibili_anime]
+    return await asyncio.gather(*tasks)
 
 
 def init():
