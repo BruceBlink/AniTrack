@@ -6,7 +6,7 @@ import aiohttp
 import requests
 import utils
 from common import Result, AbstractFetcher, Logger
-from common.decorators import timer, retry_async, print_after_return_async
+from common.decorators import timer, retry_async, print_after_return_async, print_performance_metrics
 from config import BILIBILI_GUOCHUANG_API, BILIBILI_ANIME_API
 from utils import iso_date_ld
 from utils import print_results, clean_text
@@ -120,12 +120,7 @@ if __name__ == "__main__":
 
     # 获取统计信息
     # stats = test_all1.get_stats()
-    stats = test_all2.get_stats()
-    print(f"\n📊 {stats['function']} 性能统计:")
-    print(f"  调用次数: {stats['total_calls']}")
-    print(f"  总耗时: {stats['total_time'] * 1000:.2f}ms")
-    print(f"  平均耗时: {stats['avg_time'] * 1000:.2f}ms")
-    print(f"  最快: {stats['min_time'] * 1000:.2f}ms | 最慢: {stats['max_time'] * 1000:.2f}ms")
+    print_performance_metrics(test_all2)
     """
     📊 test_all1 性能统计:
     调用次数: 10
