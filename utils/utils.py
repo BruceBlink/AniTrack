@@ -87,7 +87,6 @@ def merge_dict_data(*dicts: dict[str, list]) -> dict[str, list]:
     return dict(merged)
 
 
-@timer(unit="ms")
 def print_results(results: dict[str, list]):
     """将获取到的动漫更新结果打印到控制台。"""
     if not results:
