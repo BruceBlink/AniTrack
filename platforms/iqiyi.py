@@ -64,7 +64,7 @@ class IQiyiFetcher(AbstractFetcher):
                     self.result[utils.weekday_today] = results
                     # 记录更新信息
                     for res in results:
-                        logging.info("识别到更新：%s %s", res.title, res.update_info)
+                        logging.info(f"识别到更新：{res.title} {res.update_info}")
 
                     return self.result
 

@@ -57,7 +57,7 @@ class MikananiFetcher(AbstractFetcher):
 
             for li in items:
                 anime_info = self._build_result_from_episode(li)
-                logging.info(f"识别到更新：{anime_info.title} - {anime_info.update_info}")
+                logging.info(f"识别到更新：{anime_info.title} {anime_info.update_info}")
                 self.result[utils.weekday_today].append(anime_info)
 
             return self.result
