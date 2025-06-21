@@ -2,4 +2,4 @@
 from .bilibili import BilibiliFetcher
 from .iqiyi import fetch_iqiyi_cartoon_today
 from .mikanani import MikananiFetcher
-from .tencent import fetch_qq_cartoon_today
+from .tencent import TencentFetcher
