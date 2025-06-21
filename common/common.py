@@ -46,10 +46,10 @@ class Result:
 
 class AbstractFetcher(ABC):
     def __init__(self):
-        self.api_url = None
-        self.platform = str | None
-        self.result = {utils.weekday_today: []}
-        self.response_text = None
+        self.api_url: str | None = None
+        self.platform: str | None = None
+        self.result: dict | None = {utils.weekday_today: []}
+        self.response_text: str | None = None
 
     async def send_request(self, session: aiohttp.ClientSession) -> None:
         if not self.api_url:
