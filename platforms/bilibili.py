@@ -56,7 +56,7 @@ class BilibiliFetcher(AbstractFetcher):
             # 初始化结果字典
             for ep in (e for e in today.get("episodes") or [] if e.get("published") == 1):
                 item = self._build_result_from_episode(ep)
-                logging.info("识别到更新：%s %s", item.title, item.update_info)
+                logging.info(f"识别到更新：{item.title} {item.update_info}")
                 self.result[utils.weekday_today].append(item)
 
             return self.result

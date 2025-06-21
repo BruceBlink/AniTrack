@@ -5,9 +5,8 @@ import os
 import aiohttp
 import requests
 from bs4 import BeautifulSoup, Tag
-
 import utils
-from common import Result, HEADERS, retry, print_after_return, AbstractFetcher, Logger
+from common import Result, AbstractFetcher, Logger
 from common.decorators import print_after_return_async, retry_async, timer, print_performance_metrics
 from config import YOUKU_COMICS_API
 from utils import print_results
@@ -105,8 +104,10 @@ class YoukuFetcher(AbstractFetcher):
                 self._build_result_from_episode(item)
                 for item in updated_items
             })
+            for comic in comics_found:
+                logging.info(f"识别到更新：{comic.title} {comic.update_info}")
             self.result[weekday] = comics_found  # 将结果存入字典
-            logging.info(f"成功提取到 {len(comics_found)} 部今日更新的漫画。")
+            logging.info(f"成功提取到 {len(comics_found)} 部今日更新的动漫。")
             return self.result  # 成功获取并返回数据
 
         except requests.exceptions.Timeout:
