@@ -2,11 +2,8 @@ import asyncio
 import logging
 from abc import ABC, abstractmethod
 from dataclasses import dataclass, asdict
-
 import aiohttp
-import requests
 from bs4 import Tag
-
 import utils
 from common import contants
 
@@ -50,9 +47,9 @@ class Result:
 class AbstractFetcher(ABC):
     def __init__(self):
         self.api_url = None
-        self.platform = None
+        self.platform = str | None
         self.result = {utils.weekday_today: []}
-        self.response = None
+        self.response_text = None
 
     async def send_request(self, session: aiohttp.ClientSession) -> None:
         if not self.api_url:
@@ -61,20 +58,21 @@ class AbstractFetcher(ABC):
         try:
             async with session.get(self.api_url, headers=contants.HEADERS, timeout=10) as resp:
                 resp.raise_for_status()
-                self.response = await resp.text(encoding='utf-8')
+                self.response_text = await resp.text(encoding='utf-8')
 
         except (aiohttp.ClientError, asyncio.TimeoutError) as e:
             logging.error(f"from [{self.platform}] {self.api_url} 发起异步请求失败：{e}")
             raise e
 
-    async def fetch_and_build(self, session: aiohttp.ClientSession) -> None:
+    async def fetch_update_data(self, session: aiohttp.ClientSession) -> str | None:
         """异步获取数据并构建 Result 对象。"""
         await self.send_request(session)
-        if not self.response:
+        if not self.response_text:
             logging.error(f"从 [{self.platform}] {self.api_url} 获取数据失败")
-            return
+            return None
+        return self.response_text
 
-    def _has_episode_info(self, episodes: Tag | dict) -> bool:
+    def _has_episode_info(self, episodes_info: str) -> bool:
         pass
 
     @abstractmethod
