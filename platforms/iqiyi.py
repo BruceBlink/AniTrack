@@ -15,7 +15,7 @@ from utils import iso_date_ld, clean_text, extract_number, print_results
 
 
 class IQiyiFetcher(AbstractFetcher):
-    def __init__(self, api_url: str, platform: str = "bilibili"):
+    def __init__(self, api_url: str, platform: str = "iqiyi"):
         super().__init__()
         self.api_url = api_url
         self.platform = platform
