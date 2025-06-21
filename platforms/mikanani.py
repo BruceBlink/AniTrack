@@ -15,7 +15,7 @@ from utils import iso_date_ld, print_results
 class MikananiFetcher(AbstractFetcher):
     """蜜柑计划数据抓取器，继承自抽象基类 AbstractFetcher。"""
 
-    def __init__(self, api_url: str = MIKANANI_BASE_URL, platform: str = "Mikanani"):
+    def __init__(self, api_url: str = MIKANANI_BASE_URL, platform: str = "mikanani"):
         super().__init__()
         self.api_url = api_url
         self.platform = platform
