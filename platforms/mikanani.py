@@ -89,7 +89,7 @@ class MikananiFetcher(AbstractFetcher):
 async def test_all():
     mikanani_fetcher = MikananiFetcher(api_url=MIKANANI_BASE_URL)
     t1 = asyncio.create_task(mikanani_fetcher.fetch_mikanani_update_today())
-    await asyncio.gather(t1)
+    return await asyncio.gather(t1)
 
 
 if __name__ == "__main__":
@@ -101,8 +101,8 @@ if __name__ == "__main__":
         colored=True
     )
 
-    for i in range(1, 11):
-        asyncio.run(test_all())
+    # for i in range(1, 11):
+    print(asyncio.run(test_all())[0]["星期六"])
 
     # 获取统计信息
     # stats = test_all1.get_stats()
