@@ -323,6 +323,17 @@ def timer(
     return decorator
 
 
+def print_performance_metrics(func):
+    """输出程序运行的性能统计"""
+    stats = func.get_stats()
+    res = [f"\n📊 {stats['function']} 性能统计:",
+           f"  调用次数: {stats['total_calls']}",
+           f"  总耗时: {stats['total_time'] * 1000:.2f}ms",
+           f"  平均耗时: {stats['avg_time'] * 1000:.2f}ms",
+           f"  最快: {stats['min_time'] * 1000:.2f}ms | 最慢: {stats['max_time'] * 1000:.2f}ms"]
+    print("\n".join(res))
+
+
 # ===== 使用示例 =====
 
 @retry(retries=4, delay=1, retry_condition=lambda x: x is None, exceptions=(ValueError,))
