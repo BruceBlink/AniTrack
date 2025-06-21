@@ -6,7 +6,7 @@ import aiohttp
 import requests
 import utils
 from common import Result, AbstractFetcher, Logger
-from common.decorators import retry, print_after_return, timer
+from common.decorators import timer, retry_async, print_after_return_async
 from config import BILIBILI_GUOCHUANG_API, BILIBILI_ANIME_API
 from utils import iso_date_ld
 from utils import print_results, clean_text
@@ -72,19 +72,27 @@ class BilibiliFetcher(AbstractFetcher):
             logging.exception("未知错误：%s", e)
             return None
 
-    # @retry(
-    #     retries=5,
-    #     delay=10,
-    #     retry_condition=lambda result: not result
-    # )
-    # @print_after_return(print_results, print_condition=lambda r: any(r.values()))
-    # @save_after_return(filename="bilibili_guochuang_today.json", save_condition=lambda r: any(r.values()))
+    @retry_async(
+        retries=5,
+        delay=10,
+        retry_condition=lambda result: not result
+    )
+    @print_after_return_async(print_results, print_condition=lambda r: any(r.values()))
     @timer(unit="ms")
     async def fetch_bilibili_cartoon_today(self) -> dict[str, list] | None:
         """获取哔哩哔哩国创频道今日更新的动漫信息。"""
         logging.info("开始获取哔哩哔哩动漫频道今日更新...")
         async with aiohttp.ClientSession() as session:
             return await self._fetch_bilibili_update_today(session)
+
+
+@timer(unit="ms")
+def test_all():
+    bilibili_guochuang = BilibiliFetcher(BILIBILI_GUOCHUANG_API)
+    asyncio.run(bilibili_guochuang.fetch_bilibili_cartoon_today())
+    bilibili_anime = BilibiliFetcher(BILIBILI_ANIME_API)
+    asyncio.run(bilibili_anime.fetch_bilibili_cartoon_today())
+    print("\n所有测试完成！")
 
 
 if __name__ == "__main__":
@@ -95,10 +103,4 @@ if __name__ == "__main__":
         console=True,
         colored=True
     )
-    bilibili_guochuang = BilibiliFetcher(BILIBILI_GUOCHUANG_API)
-
-    asyncio.run(bilibili_guochuang.fetch_bilibili_cartoon_today())
-
-    bilibili_anime = BilibiliFetcher(BILIBILI_ANIME_API)
-    asyncio.run(bilibili_anime.fetch_bilibili_cartoon_today())
-    print("\n所有测试完成！")
+    test_all()
