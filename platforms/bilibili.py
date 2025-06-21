@@ -1,11 +1,12 @@
+import asyncio
+import json
 import logging
 import time
-
+import aiohttp
 import requests
-
 import utils
 from common import Result, AbstractFetcher, Logger
-from common.decorators import retry, print_after_return, timer
+from common.decorators import timer, retry_async, print_after_return_async, print_performance_metrics
 from config import BILIBILI_GUOCHUANG_API, BILIBILI_ANIME_API
 from utils import iso_date_ld
 from utils import print_results, clean_text
@@ -19,10 +20,6 @@ class BilibiliFetcher(AbstractFetcher):
         super().__init__()
         self.api_url = api_url
         self.platform = platform
-
-    def send_request(self):
-        """实现数据抓取逻辑，获取哔哩哔哩国创频道今日更新的动漫信息。"""
-        super().send_request()
 
     def _build_result_from_episode(self, ep: dict) -> Result:
         super()._build_result_from_episode(ep)
@@ -40,11 +37,11 @@ class BilibiliFetcher(AbstractFetcher):
         )
 
     @timer(unit="ms")
-    def _fetch_bilibili_update_today(self) -> dict[str, list] | None:
+    async def _fetch_bilibili_update_today(self, session: aiohttp.ClientSession) -> dict[str, list] | None:
         """从哔哩哔哩国创频道官方 JSON 接口获取今日更新的动漫信息。"""
         try:
-            self.send_request()
-            data = self.response.json()
+            await super().fetch_update_data(session)
+            data = json.loads(self.response_text)
             if data.get("code") != 0 or "result" not in data:
                 logging.error("接口返回异常：%s", data)
                 return None
@@ -67,7 +64,7 @@ class BilibiliFetcher(AbstractFetcher):
         except requests.exceptions.Timeout:
             logging.warning("请求超时，10 秒后重试...")
             time.sleep(10)
-            return self._fetch_bilibili_update_today()
+            return None
         except requests.exceptions.RequestException as e:
             logging.error("请求错误：%s", e)
             return None
@@ -75,17 +72,36 @@ class BilibiliFetcher(AbstractFetcher):
             logging.exception("未知错误：%s", e)
             return None
 
-    @retry(
+    @retry_async(
         retries=5,
         delay=10,
         retry_condition=lambda result: not result
     )
-    @print_after_return(print_results, print_condition=lambda r: any(r.values()))
-    # @save_after_return(filename="bilibili_guochuang_today.json", save_condition=lambda r: any(r.values()))
-    def fetch_bilibili_cartoon_today(self) -> dict[str, list] | None:
+    @print_after_return_async(print_results, print_condition=lambda r: any(r.values()))
+    @timer(unit="ms")
+    async def fetch_bilibili_cartoon_today(self) -> dict[str, list] | None:
         """获取哔哩哔哩国创频道今日更新的动漫信息。"""
         logging.info("开始获取哔哩哔哩动漫频道今日更新...")
-        return self._fetch_bilibili_update_today()
+        async with aiohttp.ClientSession() as session:
+            return await self._fetch_bilibili_update_today(session)
+
+
+@timer(enable_stats=True, print_report=False)
+def test_all1():
+    bilibili_guochuang = BilibiliFetcher(BILIBILI_GUOCHUANG_API)
+    bilibili_anime = BilibiliFetcher(BILIBILI_ANIME_API)
+    asyncio.run(bilibili_guochuang.fetch_bilibili_cartoon_today())
+    asyncio.run(bilibili_anime.fetch_bilibili_cartoon_today())
+
+
+@timer(enable_stats=True, print_report=False)
+async def test_all2():
+    bilibili_guochuang = BilibiliFetcher(BILIBILI_GUOCHUANG_API)
+    bilibili_anime = BilibiliFetcher(BILIBILI_ANIME_API)
+    t1 = asyncio.create_task(bilibili_guochuang.fetch_bilibili_cartoon_today())
+    t2 = asyncio.create_task(bilibili_anime.fetch_bilibili_cartoon_today())
+    # 等待所有任务完成
+    await asyncio.gather(t1, t2)
 
 
 if __name__ == "__main__":
@@ -96,10 +112,26 @@ if __name__ == "__main__":
         console=True,
         colored=True
     )
-    bilibili_guochuang = BilibiliFetcher(BILIBILI_GUOCHUANG_API)
 
-    bilibili_guochuang_data = bilibili_guochuang.fetch_bilibili_cartoon_today()
+    # 多次调用
+    for i in range(1, 11):
+        asyncio.run(test_all2())
+        # test_all1()
 
-    bilibili_anime = BilibiliFetcher(BILIBILI_ANIME_API)
-    bilibili_anime_data = bilibili_anime.fetch_bilibili_cartoon_today()
-    print("\n所有测试完成！")
+    # 获取统计信息
+    # stats = test_all1.get_stats()
+    print_performance_metrics(test_all2)
+    """
+    📊 test_all1 性能统计:
+    调用次数: 10
+    总耗时: 1762.63ms
+    平均耗时: 176.26ms
+    最快: 138.37ms | 最慢: 208.08ms
+    
+    📊 test_all2 性能统计:
+    调用次数: 10
+    总耗时: 1109.34ms
+    平均耗时: 110.93ms
+    最快: 92.30ms | 最慢: 136.00ms
+    
+    """

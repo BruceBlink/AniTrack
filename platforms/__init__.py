@@ -1,5 +1,6 @@
 """This module provides functions to fetch cartoon data from various platforms."""
 from .bilibili import BilibiliFetcher
-from .iqiyi import fetch_iqiyi_cartoon_today
+from .iqiyi import IQiyiFetcher
 from .mikanani import MikananiFetcher
-from .tencent import fetch_qq_cartoon_today
+from .tencent import TencentFetcher
+from .youku import YoukuFetcher

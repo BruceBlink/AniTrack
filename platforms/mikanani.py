@@ -1,11 +1,13 @@
+import asyncio
 import logging
 import time
 from urllib.parse import urljoin
+import aiohttp
 import requests
 from bs4 import BeautifulSoup, Tag
 import utils
-from common import Result, AbstractFetcher
-from common.decorators import retry, print_after_return
+from common import Result, AbstractFetcher, Logger
+from common.decorators import retry_async, print_after_return_async, timer, print_performance_metrics
 from config import MIKANANI_BASE_URL
 from utils import iso_date_ld, print_results
 
@@ -13,14 +15,10 @@ from utils import iso_date_ld, print_results
 class MikananiFetcher(AbstractFetcher):
     """蜜柑计划数据抓取器，继承自抽象基类 AbstractFetcher。"""
 
-    def __init__(self, api_url: str = MIKANANI_BASE_URL, platform: str = "Mikanani"):
+    def __init__(self, api_url: str = MIKANANI_BASE_URL, platform: str = "mikanani"):
         super().__init__()
         self.api_url = api_url
         self.platform = platform
-
-    def send_request(self):
-        """实现数据抓取逻辑，获取蜜柑计划今日更新的动漫信息。"""
-        super().send_request()
 
     def _build_result_from_episode(self, li: Tag) -> Result:
         super()._build_result_from_episode(li)
@@ -46,13 +44,13 @@ class MikananiFetcher(AbstractFetcher):
             update_time=iso_date_ld,
         )
 
-    def _fetch_mikanani_update_today(self) -> dict[str, list] | None:
+    async def _fetch_mikanani_update_today(self, session: aiohttp.ClientSession) -> dict[str, list] | None:
         """抓取 Mikanani 今日更新的番剧数据。"""
         logging.info("Fetching today's Mikanani data...")
 
         try:
-            super().send_request()
-            soup = BeautifulSoup(self.response.text, 'html.parser')
+            await super().fetch_update_data(session)
+            soup = BeautifulSoup(self.response_text, 'html.parser')
             logging.debug(f"解析 HTML 内容：{soup}")
 
             items = (li for li in soup.find_all("li") if li.find("div", class_="num-node text-center"))
@@ -66,7 +64,6 @@ class MikananiFetcher(AbstractFetcher):
         except requests.exceptions.Timeout:
             logging.warning("请求超时，10 秒后重试...")
             time.sleep(10)
-            return self._fetch_mikanani_update_today()
         except requests.RequestException as e:
             logging.error(f"请求处理异常：{e}")
             return None
@@ -74,20 +71,44 @@ class MikananiFetcher(AbstractFetcher):
             logging.exception(f"其他错误：{e}")
             return None
 
-    @retry(
+    @retry_async(
         retries=5,
         delay=10,
         retry_condition=lambda result: not result
     )
-    @print_after_return(print_results, print_condition=lambda r: any(r.values()))
-    # @save_after_return(filename="qq_cartoon_today.json", save_condition=lambda r: any(r.values()))
-    def fetch_mikanani_update_today(self) -> dict[str, list] | None:
+    @print_after_return_async(print_results, print_condition=lambda r: any(r.values()))
+    @timer(unit="ms")
+    async def fetch_mikanani_update_today(self) -> dict[str, list] | None:
         """获取蜜柑计划今日更新的动漫信息。"""
         logging.info("开始获取蜜柑计划今日更新...")
-        return self._fetch_mikanani_update_today()
+        async with aiohttp.ClientSession() as session:
+            return await self._fetch_mikanani_update_today(session)
+
+
+@timer(enable_stats=True, print_report=False)
+async def test_all():
+    mikanani_fetcher = MikananiFetcher(api_url=MIKANANI_BASE_URL)
+    t1 = asyncio.create_task(mikanani_fetcher.fetch_mikanani_update_today())
+    return await asyncio.gather(t1)
 
 
 if __name__ == "__main__":
-    mikanani_fetcher = MikananiFetcher(api_url=MIKANANI_BASE_URL)
-    print(mikanani_fetcher.fetch_mikanani_update_today())
-    print("\n所有测试完成！")
+    Logger.init(
+        level=logging.DEBUG,
+        max_bytes=10_000_000,
+        backup_count=5,
+        console=True,
+        colored=True
+    )
+
+    # for i in range(1, 11):
+    asyncio.run(test_all())
+    # 获取统计信息
+    print_performance_metrics(test_all)
+    """
+    📊 test_all 性能统计:
+    调用次数: 10
+    总耗时: 22492.76ms
+    平均耗时: 2249.28ms
+    最快: 1867.27ms | 最慢: 3059.87ms   
+    """
