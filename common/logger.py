@@ -150,7 +150,6 @@ if __name__ == '__main__':
     # 示例：初始化 Logger
     Logger.init(
         level=logging.DEBUG,
-        log_file='logs/app.log',
         max_bytes=10_000_000,
         backup_count=5,
         console=True,
