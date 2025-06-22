@@ -36,10 +36,9 @@ class IQiyiFetcher(AbstractFetcher):
     async def _fetch_iqiyi_cartoon_today(self, session: aiohttp.ClientSession) -> dict[str, list] | None:
         """从爱奇艺动漫频道获取今日更新的动漫信息。"""
         try:
-
             await super().fetch_update_data(session)
             data = json.loads(self.response_text)
-
+            logging.debug(f"解析从API获取到的 JSON 数据为：{data}")
             if data.get("code") != 0 or not data.get("items"):
                 logging.error("接口返回异常: %s", data)
                 return None

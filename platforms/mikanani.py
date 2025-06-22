@@ -46,12 +46,10 @@ class MikananiFetcher(AbstractFetcher):
 
     async def _fetch_mikanani_update_today(self, session: aiohttp.ClientSession) -> dict[str, list] | None:
         """抓取 Mikanani 今日更新的番剧数据。"""
-        logging.info("Fetching today's Mikanani data...")
-
         try:
             await super().fetch_update_data(session)
             soup = BeautifulSoup(self.response_text, 'html.parser')
-            logging.debug(f"解析 HTML 内容：{soup}")
+            logging.debug(f"解析从API获取到的 HTML 内容为：{soup.prettify()}...")
 
             items = (li for li in soup.find_all("li") if li.find("div", class_="num-node text-center"))
 

@@ -42,10 +42,10 @@ class BilibiliFetcher(AbstractFetcher):
         try:
             await super().fetch_update_data(session)
             data = json.loads(self.response_text)
+            logging.debug(f"解析从API获取到的 JSON 数据为：{data}")
             if data.get("code") != 0 or "result" not in data:
                 logging.error("接口返回异常：%s", data)
                 return None
-            logging.info(f"成功获取哔哩哔哩更新时间线数据{data}。")
             # 找到 is_today == 1 的那一天
             today_list = [d for d in data["result"] if d.get("is_today") == 1]
             if not today_list:

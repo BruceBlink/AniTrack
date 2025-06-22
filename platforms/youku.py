@@ -41,22 +41,12 @@ class YoukuFetcher(AbstractFetcher):
         Returns:
             包含每日更新动漫信息的字典，如果获取失败则返回 None。
         """
-        html_file_name = "youku_cartoon.html"  # 临时 HTML 文件名
-        html_path = os.path.join(os.getcwd(), html_file_name)  # 完整的临时文件路径
-
         try:
             await super().fetch_update_data(session)
-            # 保存 HTML 以便调试
-            with open(html_path, "w", encoding="utf-8") as f:
-                f.write(self.response_text)
-            logging.info(f"HTML 已保存到 {html_path}")
-
             # 初始化结果字典
             weekday = utils.weekday_today
-
-            logging.info("正在解析 HTML 并提取 __INITIAL_DATA__...")
             soup = BeautifulSoup(self.response_text, "html.parser")
-
+            logging.debug(f"解析从API获取到的 HTML 内容为：{soup.prettify()}...")
             # 查找包含 JavaScript 变量 __INITIAL_DATA__ 的 <script> 标签
             script_content = None
             for tag in soup.find_all("script"):
@@ -122,21 +112,10 @@ class YoukuFetcher(AbstractFetcher):
             logging.error(f"网络请求通用错误: {e}")
         except json.JSONDecodeError as e:
             logging.error(f"解析 JSON 数据时出错: {e}")
-            # 为了调试，可以打印部分引起错误的JSON字符串
-            # logger.debug(f"原始 JSON 字符串（部分）: {fixed_json_str[:500]}...")
         except ValueError as e:
             logging.error(f"数据提取或逻辑错误: {e}")
         except Exception as e:
             logging.exception(f"获取优酷动漫频道更新信息时发生意外错误 {e}。")  # 记录完整的异常信息
-
-        finally:
-            # 无论成功或失败，尝试删除临时 HTML 文件
-            if os.path.exists(html_path):
-                try:
-                    os.remove(html_path)
-                    logging.info(f"已清理临时 HTML 文件: {html_path}")
-                except OSError as e:
-                    logging.warning(f"清理临时文件失败: {e}")
 
         return None  # 发生任何异常，返回 None
 
