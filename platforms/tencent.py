@@ -82,19 +82,11 @@ class TencentFetcher(AbstractFetcher):
 
     async def _fetch_qq_cartoon_today(self, session: aiohttp.ClientSession) -> dict[str, list] | None:
         """从腾讯视频动漫频道获取今日更新的动漫信息。"""
-        html_path = "tencent_cartoon.html"  # 临时 HTML 文件名
         try:
             await super().fetch_update_data(session)
-            # 保存 HTML 以便调试
-            html_filename = "tencent_cartoon.html"
-            html_path = os.path.join(os.getcwd(), html_filename)  # 使用 os.path.join 构造路径
-            with open(html_path, "w", encoding="utf-8") as f:
-                f.write(self.response_text)
-            logging.info(f"HTML 已保存到 {html_path}")
-
             # 解析 HTML
             soup = BeautifulSoup(self.response_text, "html.parser")
-
+            logging.debug(f"解析从API获取到的 HTML 内容为：{soup.prettify()}...")
             # 获取今天的中文星期
             weekday = utils.weekday_today
 
@@ -122,15 +114,12 @@ class TencentFetcher(AbstractFetcher):
             time.sleep(10)
         except requests.exceptions.TooManyRedirects:
             logging.error("重定向过多。请检查 URL。")
-            return None
         except requests.exceptions.RequestException as e:
             logging.error(f"网络请求错误: {str(e)}")
-            return None
         except Exception as e:
             logging.exception(f"获取腾讯动漫更新信息时发生意外错误: {str(e)}")
-            return None
-        finally:
-            os.remove(html_path)  # 清理临时 HTML 文件
+
+        return None
 
     @retry_async(
         retries=5,
