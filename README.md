@@ -26,7 +26,6 @@
 - [凸变英雄X](https://mikanani.me/Home/Bangumi/3640) - 2025/06/22 更新 【mikanani】
 - [虽然我是白豚贵族，但因为我有前世的记忆，所以我在养育弱小的弟弟](https://mikanani.me/Home/Bangumi/3647) - 2025/06/22 更新 【mikanani】
 - [脱离了A级队伍的我，和从前的徒弟们前往迷宫深处。](https://mikanani.me/Home/Bangumi/3556) - 2025/06/22 更新 【mikanani】
-- [安妮·雪莉](https://mikanani.me/Home/Bangumi/3582) - 2025/06/22 更新 【mikanani】
 - [打了300年的史莱姆，不知不觉就练到了满级 ～其二～](https://mikanani.me/Home/Bangumi/3586) - 2025/06/22 更新 【mikanani】
 - [乡下大叔成为剑圣](https://mikanani.me/Home/Bangumi/3591) - 2025/06/22 更新 【mikanani】
 - [我是星际国家的恶德领主！](https://mikanani.me/Home/Bangumi/3592) - 2025/06/22 更新 【mikanani】
@@ -42,10 +41,10 @@
 - [推理要在晚餐后](https://mikanani.me/Home/Bangumi/3605) - 2025/06/22 更新 【mikanani】
 - [每日男公关](https://mikanani.me/Home/Bangumi/3642) - 2025/06/22 更新 【mikanani】
 - [圣女因太过完美不够可爱而被废除婚约并卖到邻国](https://mikanani.me/Home/Bangumi/3609) - 2025/06/22 更新 【mikanani】
+- [机动战士高达 GQuuuuuuX](https://mikanani.me/Home/Bangumi/3585) - 2025/06/22 更新 【mikanani】
 - [随兴旅-That's Journey-](https://mikanani.me/Home/Bangumi/3598) - 2025/06/22 更新 【mikanani】
 - [夏日口袋](https://mikanani.me/Home/Bangumi/3599) - 2025/06/22 更新 【mikanani】
 - [中禅寺老师的灵怪讲义实录 老师会把谜题全都解开的。](https://mikanani.me/Home/Bangumi/3601) - 2025/06/22 更新 【mikanani】
-- [测不准的阿波连同学 第二季](https://mikanani.me/Home/Bangumi/3612) - 2025/06/22 更新 【mikanani】
 - [搞笑漫画日和GO](https://mikanani.me/Home/Bangumi/3627) - 2025/06/22 更新 【mikanani】
 - [凸变英雄X](https://www.bilibili.com/bangumi/play/ep1508574) - 2025/06/22 更新 更新至12集 【bilibili】
 - [凸变英雄X 日语版](https://www.bilibili.com/bangumi/play/ep1551018) - 2025/06/22 更新 更新至12集 【bilibili】
@@ -78,25 +77,25 @@
 - [回到古代当皇帝 动态漫画 第1季](http://www.iqiyi.com/v_sbzhdgolps.html) - 2025/06/22 更新 更新至19集 【iqiyi】
 - [邪神降世，我有一座大凶狱 动态漫画](http://www.iqiyi.com/v_dp0rbk9hd4.html) - 2025/06/22 更新 更新至55集 【iqiyi】
 - [全民进化 我只幸运了亿点点 动态漫画](http://www.iqiyi.com/v_2c6x58bl2ws.html) - 2025/06/22 更新 更新至20集 【iqiyi】
-- [盖世扫地僧：我可以无限融合](https://www.youku.com/ku/webcomic) - 2025/06/22 更新 更新至116集 【youku】
-- [全民诡异：开局掌握零元购](https://www.youku.com/ku/webcomic) - 2025/06/22 更新 更新至50集 【youku】
-- [葬送的芙莉莲](https://www.youku.com/ku/webcomic) - 2025/06/22 更新 更新至9集 【youku】
-- [绝世武神 第七季](https://www.youku.com/ku/webcomic) - 2025/06/22 更新 更新至120集 【youku】
-- [古神游戏](https://www.youku.com/ku/webcomic) - 2025/06/22 更新 更新至47集 【youku】
-- [开局送外挂，爷无敌了 第二季](https://www.youku.com/ku/webcomic) - 2025/06/22 更新 更新至80集 【youku】
-- [哆啦A梦 第五季](https://www.youku.com/ku/webcomic) - 2025/06/22 更新 更新至78集 【youku】
-- [神豪之天降系统 第二季 动态漫画](https://www.youku.com/ku/webcomic) - 2025/06/22 更新 更新至14集 【youku】
-- [弟子修炼，我躺平！第二季](https://www.youku.com/ku/webcomic) - 2025/06/22 更新 更新至81集 【youku】
-- [假面骑士歌查德 中配版](https://www.youku.com/ku/webcomic) - 2025/06/22 更新 更新至29集 【youku】
-- [反派大师兄 师妹们不按套路出牌·动态漫](https://www.youku.com/ku/webcomic) - 2025/06/22 更新 更新至76集 【youku】
-- [邪神降世，我有一座大凶狱](https://www.youku.com/ku/webcomic) - 2025/06/22 更新 更新至55集 【youku】
-- [网游之天下无双](https://www.youku.com/ku/webcomic) - 2025/06/22 更新 更新至70集 【youku】
 - [只有我能用召唤术](https://www.youku.com/ku/webcomic) - 2025/06/22 更新 更新至54集 【youku】
+- [假面骑士歌查德 中配版](https://www.youku.com/ku/webcomic) - 2025/06/22 更新 更新至29集 【youku】
+- [弟子修炼，我躺平！第二季](https://www.youku.com/ku/webcomic) - 2025/06/22 更新 更新至81集 【youku】
+- [开局送外挂，爷无敌了 第二季](https://www.youku.com/ku/webcomic) - 2025/06/22 更新 更新至80集 【youku】
+- [古神游戏](https://www.youku.com/ku/webcomic) - 2025/06/22 更新 更新至47集 【youku】
+- [葬送的芙莉莲](https://www.youku.com/ku/webcomic) - 2025/06/22 更新 更新至9集 【youku】
 - [武道大帝](https://www.youku.com/ku/webcomic) - 2025/06/22 更新 更新至63集 【youku】
-- [我被困在同一天一千年](https://www.youku.com/ku/webcomic) - 2025/06/22 更新 更新至117集 【youku】
+- [反派大师兄 师妹们不按套路出牌·动态漫](https://www.youku.com/ku/webcomic) - 2025/06/22 更新 更新至76集 【youku】
+- [盖世扫地僧：我可以无限融合](https://www.youku.com/ku/webcomic) - 2025/06/22 更新 更新至116集 【youku】
+- [绝世武神 第七季](https://www.youku.com/ku/webcomic) - 2025/06/22 更新 更新至120集 【youku】
 - [我夺舍了系统玩家](https://www.youku.com/ku/webcomic) - 2025/06/22 更新 更新至105集 【youku】
+- [网游之天下无双](https://www.youku.com/ku/webcomic) - 2025/06/22 更新 更新至70集 【youku】
+- [哆啦A梦 第五季](https://www.youku.com/ku/webcomic) - 2025/06/22 更新 更新至78集 【youku】
+- [我被困在同一天一千年](https://www.youku.com/ku/webcomic) - 2025/06/22 更新 更新至117集 【youku】
+- [邪神降世，我有一座大凶狱](https://www.youku.com/ku/webcomic) - 2025/06/22 更新 更新至55集 【youku】
+- [全民诡异：开局掌握零元购](https://www.youku.com/ku/webcomic) - 2025/06/22 更新 更新至50集 【youku】
+- [神豪之天降系统 第二季 动态漫画](https://www.youku.com/ku/webcomic) - 2025/06/22 更新 更新至14集 【youku】
 
-**今天总共更新了 81 部番剧。**
+**今天总共更新了 80 部番剧。**
 
 ## 系统要求
 
