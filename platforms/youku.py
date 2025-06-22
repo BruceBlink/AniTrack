@@ -33,13 +33,6 @@ class YoukuFetcher(AbstractFetcher):
     async def _fetch_youku_cartoon_today(self, session: aiohttp.ClientSession) -> dict[str, list] | None:
         """
         从优酷动漫频道一次性获取今日更新的动漫信息。
-        此函数不包含重试逻辑，失败即返回 None。
-
-        Args:
-            api_url: 优酷动漫频道的API URL。
-
-        Returns:
-            包含每日更新动漫信息的字典，如果获取失败则返回 None。
         """
         try:
             await super().fetch_update_data(session)
