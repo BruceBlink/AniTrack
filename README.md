@@ -60,16 +60,16 @@
 - [大夏剑主 动态漫画](http://www.iqiyi.com/v_2f1ar1e82rk.html) - 2025/06/23 更新 更新至186集 【iqiyi】
 - [穿越后我成了团宠 动态漫画](http://www.iqiyi.com/v_1kl1g82i2wo.html) - 2025/06/23 更新 更新至42集 【iqiyi】
 - [开心锤锤](http://www.iqiyi.com/v_gewlea1pd8.html) - 2025/06/23 更新 更新至6集 【iqiyi】
-- [太古战魂](https://www.youku.com/ku/webcomic) - 2025/06/23 更新 更新至23集 【youku】
-- [斗罗大陆4终极斗罗 合集](https://www.youku.com/ku/webcomic) - 2025/06/23 更新 更新至140集 【youku】
-- [假面骑士歌查德 中配版](https://www.youku.com/ku/webcomic) - 2025/06/23 更新 更新至30集 【youku】
-- [武道大帝](https://www.youku.com/ku/webcomic) - 2025/06/23 更新 更新至64集 【youku】
-- [香格里拉边境](https://www.youku.com/ku/webcomic) - 2025/06/23 更新 更新至11集 【youku】
-- [仙武帝尊](https://www.youku.com/ku/webcomic) - 2025/06/23 更新 更新至459集 【youku】
 - [道友让让：俺来都市斩鬼神](https://www.youku.com/ku/webcomic) - 2025/06/23 更新 更新至42集 【youku】
-- [盖世扫地僧：我可以无限融合](https://www.youku.com/ku/webcomic) - 2025/06/23 更新 更新至117集 【youku】
-- [结婚后，我把冰山女总裁气哭了](https://www.youku.com/ku/webcomic) - 2025/06/23 更新 更新至37集 【youku】
+- [武道大帝](https://www.youku.com/ku/webcomic) - 2025/06/23 更新 更新至64集 【youku】
 - [轩辕小豆之山海奇缘](https://www.youku.com/ku/webcomic) - 2025/06/23 更新 更新至49集 【youku】
+- [香格里拉边境](https://www.youku.com/ku/webcomic) - 2025/06/23 更新 更新至11集 【youku】
+- [斗罗大陆4终极斗罗 合集](https://www.youku.com/ku/webcomic) - 2025/06/23 更新 更新至140集 【youku】
+- [结婚后，我把冰山女总裁气哭了](https://www.youku.com/ku/webcomic) - 2025/06/23 更新 更新至37集 【youku】
+- [假面骑士歌查德 中配版](https://www.youku.com/ku/webcomic) - 2025/06/23 更新 更新至30集 【youku】
+- [仙武帝尊](https://www.youku.com/ku/webcomic) - 2025/06/23 更新 更新至459集 【youku】
+- [盖世扫地僧：我可以无限融合](https://www.youku.com/ku/webcomic) - 2025/06/23 更新 更新至117集 【youku】
+- [太古战魂](https://www.youku.com/ku/webcomic) - 2025/06/23 更新 更新至23集 【youku】
 
 **今天总共更新了 56 部番剧。**
 
