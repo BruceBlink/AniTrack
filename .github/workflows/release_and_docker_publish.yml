@@ -56,7 +56,10 @@ jobs:
         id: get-prev-tag
         run: |
           # 获取所有标签（按版本降序排序）
+          git fetch --tags --force  # 确保获取所有远程标签
           TAGS=$(git tag --list 'v*' --sort=-v:refname)
+          echo "All tags: $TAGS"
+          
           CURRENT_TAG="${{ env.VERSION_TAG }}"
           PREV_TAG=""
           
@@ -65,10 +68,12 @@ jobs:
             if [[ "$tag" == "$CURRENT_TAG" ]]; then
               if [[ -n "$PREV_TAG" ]]; then
                 echo "prev_tag=$PREV_TAG" >> $GITHUB_OUTPUT
+                echo "Found previous tag: $PREV_TAG"
                 break
               else
                 # 如果是第一个标签，没有上一个标签
                 echo "prev_tag=" >> $GITHUB_OUTPUT
+                echo "No previous tag found (first release)"
                 break
               fi
             fi
@@ -78,17 +83,17 @@ jobs:
           # 如果没有找到上一个标签（首次发布）
           if [[ -z "$PREV_TAG" ]]; then
             echo "prev_tag=" >> $GITHUB_OUTPUT
+            echo "No previous tag found (first release)"
           fi
-          
-          echo "Previous tag: $PREV_TAG"
 
       - name: Generate Changelog
         id: changelog
         uses: mikepenz/release-changelog-builder-action@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          from: ${{ steps.get-prev-tag.outputs.prev_tag || '' }}  # 从上个标签开始
-          to: ${{ env.VERSION_TAG }}  # 到当前标签
+          # 使用正确的参数名
+          fromTag: ${{ steps.get-prev-tag.outputs.prev_tag || '' }}  # 从上个标签开始
+          toTag: ${{ env.VERSION_TAG }}  # 到当前标签
           failOnError: false  # 即使没有PR也不失败
           configuration: |
             categories:
