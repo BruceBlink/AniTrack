@@ -10,6 +10,15 @@
       "update_time": "2025/06/23"
     },
     {
+      "detail_url": "https://mikanani.me/Home/Bangumi/3598",
+      "image_url": "https://mikanani.me/images/Bangumi/202504/95afd8e9.jpg?width=400&height=400&format=webp",
+      "platform": "mikanani",
+      "title": "随兴旅-That's Journey-",
+      "update_count": "",
+      "update_info": "1\n\n\n2025/06/2",
+      "update_time": "2025/06/23"
+    },
+    {
       "detail_url": "https://mikanani.me/Home/Bangumi/3599",
       "image_url": "https://mikanani.me/images/Bangumi/202504/076c1094.jpg?width=400&height=400&format=webp",
       "platform": "mikanani",
@@ -42,7 +51,7 @@
       "platform": "mikanani",
       "title": "魔神创造传",
       "update_count": "",
-      "update_info": "2\n\n\n2025/06/2",
+      "update_info": "1\n\n\n2025/06/2",
       "update_time": "2025/06/23"
     },
     {
@@ -51,7 +60,7 @@
       "platform": "mikanani",
       "title": "魔女守护者",
       "update_count": "",
-      "update_info": "3\n\n\n2025/06/2",
+      "update_info": "2\n\n\n2025/06/2",
       "update_time": "2025/06/23"
     },
     {
@@ -150,7 +159,7 @@
       "platform": "mikanani",
       "title": "虽然我是白豚贵族，但因为我有前世的记忆，所以我在养育弱小的弟弟",
       "update_count": "",
-      "update_info": "5\n\n\n2025/06/2",
+      "update_info": "1\n\n\n2025/06/2",
       "update_time": "2025/06/23"
     },
     {
@@ -335,6 +344,33 @@
     },
     {
       "detail_url": "https://www.youku.com/ku/webcomic",
+      "image_url": "http://liangcang-material.alicdn.com/prod/upload/4d67d623a20e4c26af7686f64a1660ef.webp.jpg",
+      "platform": "youku",
+      "title": "香格里拉边境",
+      "update_count": "11",
+      "update_info": "更新至11话",
+      "update_time": "2025/06/23"
+    },
+    {
+      "detail_url": "https://www.youku.com/ku/webcomic",
+      "image_url": "http://m.ykimg.com/0581000068075A7213ED4E164487C099",
+      "platform": "youku",
+      "title": "结婚后，我把冰山女总裁气哭了",
+      "update_count": "37",
+      "update_info": "更新至37话",
+      "update_time": "2025/06/23"
+    },
+    {
+      "detail_url": "https://www.youku.com/ku/webcomic",
+      "image_url": "http://liangcang-material.alicdn.com/prod/upload/eb15f59722bc447ba26cc8ff70227877.webp.jpg",
+      "platform": "youku",
+      "title": "太古战魂",
+      "update_count": "23",
+      "update_info": "更新至23话",
+      "update_time": "2025/06/23"
+    },
+    {
+      "detail_url": "https://www.youku.com/ku/webcomic",
       "image_url": "http://liangcang-material.alicdn.com/prod/upload/7a8fa17e38294be38afb28883ebd7f21.webp.jpg",
       "platform": "youku",
       "title": "假面骑士歌查德 中配版",
@@ -353,60 +389,6 @@
     },
     {
       "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://liangcang-material.alicdn.com/prod/upload/7b3336744fd04f2d8781ce8ee8e02cc5.webp.jpg",
-      "platform": "youku",
-      "title": "轩辕小豆之山海奇缘",
-      "update_count": "49",
-      "update_info": "更新至49话",
-      "update_time": "2025/06/23"
-    },
-    {
-      "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://liangcang-material.alicdn.com/prod/upload/a46cb76fa43746dc9a843989a4c9019a.webp.jpg",
-      "platform": "youku",
-      "title": "斗罗大陆4终极斗罗 合集",
-      "update_count": "140",
-      "update_info": "更新至140话",
-      "update_time": "2025/06/23"
-    },
-    {
-      "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://m.ykimg.com/0581000068075A7213ED4E164487C099",
-      "platform": "youku",
-      "title": "结婚后，我把冰山女总裁气哭了",
-      "update_count": "37",
-      "update_info": "更新至37话",
-      "update_time": "2025/06/23"
-    },
-    {
-      "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://liangcang-material.alicdn.com/prod/upload/f7cf11318a4f4eb8a03e64cb4f99ede4.webp.jpg",
-      "platform": "youku",
-      "title": "太古战魂",
-      "update_count": "23",
-      "update_info": "更新至23话",
-      "update_time": "2025/06/23"
-    },
-    {
-      "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://liangcang-material.alicdn.com/prod/upload/4d67d623a20e4c26af7686f64a1660ef.webp.jpg",
-      "platform": "youku",
-      "title": "香格里拉边境",
-      "update_count": "11",
-      "update_info": "更新至11话",
-      "update_time": "2025/06/23"
-    },
-    {
-      "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://m.ykimg.com/05810000654DC9F513EB660EAFC36190",
-      "platform": "youku",
-      "title": "武道大帝",
-      "update_count": "64",
-      "update_info": "更新至64话",
-      "update_time": "2025/06/23"
-    },
-    {
-      "detail_url": "https://www.youku.com/ku/webcomic",
       "image_url": "http://m.ykimg.com/0581000067B55340C8479F1DB02C4453",
       "platform": "youku",
       "title": "盖世扫地僧：我可以无限融合",
@@ -416,11 +398,38 @@
     },
     {
       "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://liangcang-material.alicdn.com/prod/upload/8964aeb223c24e7d9b08b58c54911b11.webp.jpg",
+      "image_url": "http://liangcang-material.alicdn.com/prod/upload/aa8905b5340d4efb80559e4cb63bcbed.webp.jpg",
+      "platform": "youku",
+      "title": "轩辕小豆之山海奇缘",
+      "update_count": "49",
+      "update_info": "更新至49话",
+      "update_time": "2025/06/23"
+    },
+    {
+      "detail_url": "https://www.youku.com/ku/webcomic",
+      "image_url": "http://liangcang-material.alicdn.com/prod/upload/bd85fc19bc5e40a49f242a688e5c5f90.webp.jpg",
+      "platform": "youku",
+      "title": "斗罗大陆4终极斗罗 合集",
+      "update_count": "140",
+      "update_info": "更新至140话",
+      "update_time": "2025/06/23"
+    },
+    {
+      "detail_url": "https://www.youku.com/ku/webcomic",
+      "image_url": "http://liangcang-material.alicdn.com/prod/upload/b50fa5eef166429f9d66f7720553e7a6.webp.jpg",
       "platform": "youku",
       "title": "仙武帝尊",
       "update_count": "460",
       "update_info": "更新至460话",
+      "update_time": "2025/06/23"
+    },
+    {
+      "detail_url": "https://www.youku.com/ku/webcomic",
+      "image_url": "http://m.ykimg.com/05810000654DC9F513EB660EAFC36190",
+      "platform": "youku",
+      "title": "武道大帝",
+      "update_count": "64",
+      "update_info": "更新至64话",
       "update_time": "2025/06/23"
     }
   ]
