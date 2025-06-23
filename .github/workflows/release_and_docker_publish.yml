@@ -55,7 +55,8 @@ jobs:
         id: get-prev-tag
         run: |
           git fetch --tags --force
-          TAGS=$(git tag --list 'v*' --sort=-v:refname)
+          # 升序排列的tag列表
+          TAGS=$(git tag --list 'v*' --sort=v:refname)
           CURRENT_TAG="${{ env.VERSION_TAG }}"
           PREV_TAG=""
           while IFS= read -r tag; do
@@ -69,26 +70,25 @@ jobs:
       - name: Generate Changelog
         id: changelog
         run: |
-          if [ -z "${{ steps.get-prev-tag.outputs.prev_tag }}" ]; then
-            RANGE="${{ env.VERSION_TAG }}"
+          PREV=${{ steps.get-prev-tag.outputs.prev_tag }}
+          if [ -z "$PREV" ]; then
+            echo "首次发布，跳过 Changelog 生成"
+            echo "changelog=" >> $GITHUB_OUTPUT
           else
-            RANGE="${{ steps.get-prev-tag.outputs.prev_tag }}..${{ env.VERSION_TAG }}"
+            RANGE="$PREV..${{ env.VERSION_TAG }}"
+            echo "Changelog 范围: $RANGE"
+            CHANGELOG=$(git log $RANGE --pretty=format:"%h %s")
+            echo "changelog<<EOF" >> $GITHUB_OUTPUT
+            echo "$CHANGELOG" >> $GITHUB_OUTPUT
+            echo "EOF" >> $GITHUB_OUTPUT
           fi
-          echo "Changelog 范围: $RANGE"
-
-          # 每行：短 SHA + 空格 + 提交信息
-          CHANGELOG=$(git log $RANGE --pretty=format:"%h %s")
-
-          echo "changelog<<EOF" >> $GITHUB_OUTPUT
-          echo "$CHANGELOG" >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
 
       - name: Create GitHub Release
         id: create-release
         uses: softprops/action-gh-release@v1
         with:
           tag_name: ${{ env.VERSION_TAG }}
-          name: ${{ env.IMAGE_NAME }}-${{ env.VERSION_TAG }}
+          name: ${{ env.VERSION_TAG }}
           body: ${{ steps.changelog.outputs.changelog || 'Initial release' }}
           prerelease: ${{ contains(env.VERSION_TAG, '-') }}
 
