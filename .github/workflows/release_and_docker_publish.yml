@@ -58,13 +58,8 @@ jobs:
           # 升序排列的tag列表
           TAGS=$(git tag --list 'v*' --sort=v:refname)
           CURRENT_TAG="${{ env.VERSION_TAG }}"
-          PREV_TAG=""
-          while IFS= read -r tag; do
-            if [[ "$tag" == "$CURRENT_TAG" ]]; then
-              break
-            fi
-            PREV_TAG="$tag"
-          done <<< "$TAGS"
+          # 如果当前标签是最新的，则获取上一个标签(git自带的命令)
+          PREV_TAG=$(git describe --tags --abbrev=0 ${CURRENT_TAG}^)
           echo "prev_tag=$PREV_TAG" >> $GITHUB_OUTPUT
 
       - name: Generate Changelog
