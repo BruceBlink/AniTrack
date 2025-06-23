@@ -15,9 +15,11 @@
 ### 星期一 番剧更新
 
 - [转生成猫咪的大叔](https://mikanani.me/Home/Bangumi/3491) - 2025/06/23 更新 【mikanani】
+- [鬼人幻灯抄](https://mikanani.me/Home/Bangumi/3580) - 2025/06/23 更新 【mikanani】
 - [随兴旅-That's Journey-](https://mikanani.me/Home/Bangumi/3598) - 2025/06/23 更新 【mikanani】
 - [夏日口袋](https://mikanani.me/Home/Bangumi/3599) - 2025/06/23 更新 【mikanani】
 - [测不准的阿波连同学 第二季](https://mikanani.me/Home/Bangumi/3612) - 2025/06/23 更新 【mikanani】
+- [正义使者 -我的英雄学院之非法英雄-](https://mikanani.me/Home/Bangumi/3619) - 2025/06/23 更新 【mikanani】
 - [航海王](https://mikanani.me/Home/Bangumi/228) - 2025/06/23 更新 【mikanani】
 - [魔神创造传](https://mikanani.me/Home/Bangumi/3534) - 2025/06/23 更新 【mikanani】
 - [魔女守护者](https://mikanani.me/Home/Bangumi/3587) - 2025/06/23 更新 【mikanani】
@@ -37,18 +39,11 @@
 - [忍者与杀手二人组的日常生活](https://mikanani.me/Home/Bangumi/3584) - 2025/06/23 更新 【mikanani】
 - [瞬间治疗却被视为无用而被流放的天才治疗师，以暗黑治疗师的身份幸福地生活着](https://mikanani.me/Home/Bangumi/3593) - 2025/06/23 更新 【mikanani】
 - [摇滚乃是淑女的爱好](https://mikanani.me/Home/Bangumi/3606) - 2025/06/23 更新 【mikanani】
-- [终末起点](https://mikanani.me/Home/Bangumi/3615) - 2025/06/23 更新 【mikanani】
 - [记忆缝线](https://mikanani.me/Home/Bangumi/3620) - 2025/06/23 更新 【mikanani】
+- [末日后酒店](https://mikanani.me/Home/Bangumi/3600) - 2025/06/23 更新 【mikanani】
 - [宗门里除了我都是卧底](https://www.bilibili.com/bangumi/play/ep1495949) - 2025/06/23 更新 更新至78集 【bilibili】
 - [测不准的阿波连同学 第二季](https://www.bilibili.com/bangumi/play/ep1777258) - 2025/06/23 更新 更新至12集 【bilibili】
-- [仙逆](https://v.qq.com/x/cover/mzc00200aaogpgh.html) - 2025/06/23 更新 更新至94集 【tencent独播】
-- [大猿魂](https://v.qq.com/x/cover/mzc0020096xci6x.html) - 2025/06/23 更新 更新至5集 【tencent独播】
-- [诛仙合集篇](https://v.qq.com/x/cover/mzc00200phqxwd6.html) - 2025/06/23 更新 更新至8集 【tencent独播】
-- [吞天记](https://v.qq.com/x/cover/mzc00200t39giu5.html) - 2025/06/23 更新 更新至14集 【tencent独播】
-- [无上神帝](https://v.qq.com/x/cover/mzc00200ilydv1a.html) - 2025/06/23 更新 更新至502集 【tencent独播】
-- [逆天至尊](https://v.qq.com/x/cover/mzc00200azkttu2.html) - 2025/06/23 更新 更新至421集 【tencent独播】
-- [吞噬星空](https://v.qq.com/x/cover/324olz7ilvo2j5f.html) - 2025/06/23 更新 更新至177集 【tencent独播】
-- [星辰变 第6季](https://v.qq.com/x/cover/mzc002006wuirfi.html) - 2025/06/23 更新 更新至17集 【tencent独播】
+- [夏日口袋](https://www.bilibili.com/bangumi/play/ep1723588) - 2025/06/23 更新 更新至12集 【bilibili】
 - [小仙之瑶](http://www.iqiyi.com/v_k0wl3ialj8.html) - 2025/06/23 更新 更新至22集 【iqiyi】
 - [灵武大陆](http://www.iqiyi.com/v_2gjv1pyuyik.html) - 2025/06/23 更新 更新至85集 【iqiyi】
 - [陆地键仙](http://www.iqiyi.com/v_lobrkfgdeg.html) - 2025/06/23 更新 更新至128集 【iqiyi】
@@ -60,18 +55,18 @@
 - [大夏剑主 动态漫画](http://www.iqiyi.com/v_2f1ar1e82rk.html) - 2025/06/23 更新 更新至186集 【iqiyi】
 - [穿越后我成了团宠 动态漫画](http://www.iqiyi.com/v_1kl1g82i2wo.html) - 2025/06/23 更新 更新至42集 【iqiyi】
 - [开心锤锤](http://www.iqiyi.com/v_gewlea1pd8.html) - 2025/06/23 更新 更新至6集 【iqiyi】
-- [轩辕小豆之山海奇缘](https://www.youku.com/ku/webcomic) - 2025/06/23 更新 更新至49集 【youku】
-- [香格里拉边境](https://www.youku.com/ku/webcomic) - 2025/06/23 更新 更新至11集 【youku】
-- [假面骑士歌查德 中配版](https://www.youku.com/ku/webcomic) - 2025/06/23 更新 更新至30集 【youku】
 - [斗罗大陆4终极斗罗 合集](https://www.youku.com/ku/webcomic) - 2025/06/23 更新 更新至140集 【youku】
 - [盖世扫地僧：我可以无限融合](https://www.youku.com/ku/webcomic) - 2025/06/23 更新 更新至117集 【youku】
-- [结婚后，我把冰山女总裁气哭了](https://www.youku.com/ku/webcomic) - 2025/06/23 更新 更新至37集 【youku】
-- [武道大帝](https://www.youku.com/ku/webcomic) - 2025/06/23 更新 更新至64集 【youku】
 - [道友让让：俺来都市斩鬼神](https://www.youku.com/ku/webcomic) - 2025/06/23 更新 更新至42集 【youku】
+- [轩辕小豆之山海奇缘](https://www.youku.com/ku/webcomic) - 2025/06/23 更新 更新至49集 【youku】
+- [假面骑士歌查德 中配版](https://www.youku.com/ku/webcomic) - 2025/06/23 更新 更新至30集 【youku】
 - [太古战魂](https://www.youku.com/ku/webcomic) - 2025/06/23 更新 更新至23集 【youku】
 - [仙武帝尊](https://www.youku.com/ku/webcomic) - 2025/06/23 更新 更新至460集 【youku】
+- [结婚后，我把冰山女总裁气哭了](https://www.youku.com/ku/webcomic) - 2025/06/23 更新 更新至37集 【youku】
+- [武道大帝](https://www.youku.com/ku/webcomic) - 2025/06/23 更新 更新至64集 【youku】
+- [香格里拉边境](https://www.youku.com/ku/webcomic) - 2025/06/23 更新 更新至11集 【youku】
 
-**今天总共更新了 56 部番剧。**
+**今天总共更新了 51 部番剧。**
 
 ## 系统要求
 
