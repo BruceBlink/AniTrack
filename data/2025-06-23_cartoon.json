@@ -244,78 +244,6 @@
       "update_time": "2025/06/23"
     },
     {
-      "detail_url": "https://v.qq.com/x/cover/mzc00200aaogpgh.html",
-      "image_url": "https://vcover-hz-pic.puui.qpic.cn/vcover_hz_pic/0/mzc00200aaogpgh1750584734067/750?max_age=7776001",
-      "platform": "tencent独播",
-      "title": "仙逆",
-      "update_count": 94,
-      "update_info": "VIP用户每周一10点更新1集，SVIP权益加码，可抢先1天看更新集（周日18:00）",
-      "update_time": "2025/06/23"
-    },
-    {
-      "detail_url": "https://v.qq.com/x/cover/mzc0020096xci6x.html",
-      "image_url": "https://vcover-hz-pic.puui.qpic.cn/vcover_hz_pic/0/mzc0020096xci6x1748942569917/750?max_age=7776001",
-      "platform": "tencent独播",
-      "title": "大猿魂",
-      "update_count": 5,
-      "update_info": "每周一10点更新1集会员集，转免1集。",
-      "update_time": "2025/06/23"
-    },
-    {
-      "detail_url": "https://v.qq.com/x/cover/mzc00200phqxwd6.html",
-      "image_url": "https://vcover-hz-pic.puui.qpic.cn/vcover_hz_pic/0/mzc00200phqxwd61749563467321/750?max_age=7776001",
-      "platform": "tencent独播",
-      "title": "诛仙合集篇",
-      "update_count": 8,
-      "update_info": "每周一、二、三10:00各更新1集",
-      "update_time": "2025/06/23"
-    },
-    {
-      "detail_url": "https://v.qq.com/x/cover/mzc00200t39giu5.html",
-      "image_url": "https://vcover-hz-pic.puui.qpic.cn/vcover_hz_pic/0/mzc00200t39giu51747571186421/750?max_age=7776001",
-      "platform": "tencent独播",
-      "title": "吞天记",
-      "update_count": 14,
-      "update_info": "每周一、周三10点更新1集",
-      "update_time": "2025/06/23"
-    },
-    {
-      "detail_url": "https://v.qq.com/x/cover/mzc00200ilydv1a.html",
-      "image_url": "https://vcover-hz-pic.puui.qpic.cn/vcover_hz_pic/0/mzc00200ilydv1a1739245447700/750?max_age=7776001",
-      "platform": "tencent独播",
-      "title": "无上神帝",
-      "update_count": 502,
-      "update_info": "每周一、五10:00更新1集",
-      "update_time": "2025/06/23"
-    },
-    {
-      "detail_url": "https://v.qq.com/x/cover/mzc00200azkttu2.html",
-      "image_url": "https://puui.qpic.cn/vcover_hz_pic/0/mzc00200azkttu21691465584683/810?max_age=7776001",
-      "platform": "tencent独播",
-      "title": "逆天至尊",
-      "update_count": 421,
-      "update_info": "每周一、五10点更1集",
-      "update_time": "2025/06/23"
-    },
-    {
-      "detail_url": "https://v.qq.com/x/cover/324olz7ilvo2j5f.html",
-      "image_url": "https://vcover-hz-pic.puui.qpic.cn/vcover_hz_pic/0/324olz7ilvo2j5f1747046475987/750?max_age=7776001",
-      "platform": "tencent独播",
-      "title": "吞噬星空",
-      "update_count": 176,
-      "update_info": "VIP用户每周二10点更新。SVIP会员权益加码，抢先1天看更新集（每周一18:00）",
-      "update_time": "2025/06/23"
-    },
-    {
-      "detail_url": "https://v.qq.com/x/cover/mzc002006wuirfi.html",
-      "image_url": "https://vcover-hz-pic.puui.qpic.cn/vcover_hz_pic/0/mzc002006wuirfi1738151370027/750?max_age=7776001",
-      "platform": "tencent独播",
-      "title": "星辰变 第6季",
-      "update_count": 16,
-      "update_info": "5月27日10点更新两集，VIP会员每周二10点更新。SVIP会员权益加码，可抢先1天看更新集（周一18:00）",
-      "update_time": "2025/06/23"
-    },
-    {
       "detail_url": "http://www.iqiyi.com/v_k0wl3ialj8.html",
       "image_url": "http://pic1.iqiyipic.com/image/20250414/aa/dc/a_100571627_m_601_m2.avif",
       "platform": "iqiyi",
@@ -416,11 +344,29 @@
     },
     {
       "detail_url": "https://www.youku.com/ku/webcomic",
+      "image_url": "http://liangcang-material.alicdn.com/prod/upload/a2963deecc6443cfba5d9c20523f0bd6.webp.jpg",
+      "platform": "youku",
+      "title": "香格里拉边境",
+      "update_count": "11",
+      "update_info": "更新至11话",
+      "update_time": "2025/06/23"
+    },
+    {
+      "detail_url": "https://www.youku.com/ku/webcomic",
       "image_url": "http://m.ykimg.com/05810000675270111417E414527AAAE2",
       "platform": "youku",
       "title": "道友让让：俺来都市斩鬼神",
       "update_count": "42",
       "update_info": "更新至42话",
+      "update_time": "2025/06/23"
+    },
+    {
+      "detail_url": "https://www.youku.com/ku/webcomic",
+      "image_url": "http://liangcang-material.alicdn.com/prod/upload/c147c762e3b34f0e9d0e07c67d42d39c.webp.jpg",
+      "platform": "youku",
+      "title": "斗罗大陆4终极斗罗 合集",
+      "update_count": "140",
+      "update_info": "更新至140话",
       "update_time": "2025/06/23"
     },
     {
@@ -443,29 +389,20 @@
     },
     {
       "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://liangcang-material.alicdn.com/prod/upload/4d67d623a20e4c26af7686f64a1660ef.webp.jpg",
+      "image_url": "http://liangcang-material.alicdn.com/prod/upload/eb15f59722bc447ba26cc8ff70227877.webp.jpg",
       "platform": "youku",
-      "title": "香格里拉边境",
-      "update_count": "11",
-      "update_info": "更新至11话",
+      "title": "太古战魂",
+      "update_count": "23",
+      "update_info": "更新至23话",
       "update_time": "2025/06/23"
     },
     {
       "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://liangcang-material.alicdn.com/prod/upload/521052c1ddab413ead8095e8662a1c5d.webp.jpg",
+      "image_url": "http://liangcang-material.alicdn.com/prod/upload/fd1210b66dc44762bac70b599fc8e302.webp.jpg",
       "platform": "youku",
-      "title": "斗罗大陆4终极斗罗 合集",
-      "update_count": "140",
-      "update_info": "更新至140话",
-      "update_time": "2025/06/23"
-    },
-    {
-      "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://m.ykimg.com/0581000068075A7213ED4E164487C099",
-      "platform": "youku",
-      "title": "结婚后，我把冰山女总裁气哭了",
-      "update_count": "37",
-      "update_info": "更新至37话",
+      "title": "仙武帝尊",
+      "update_count": "459",
+      "update_info": "更新至459话",
       "update_time": "2025/06/23"
     },
     {
@@ -479,11 +416,11 @@
     },
     {
       "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://liangcang-material.alicdn.com/prod/upload/8964aeb223c24e7d9b08b58c54911b11.webp.jpg",
+      "image_url": "http://m.ykimg.com/0581000068075A7213ED4E164487C099",
       "platform": "youku",
-      "title": "仙武帝尊",
-      "update_count": "459",
-      "update_info": "更新至459话",
+      "title": "结婚后，我把冰山女总裁气哭了",
+      "update_count": "37",
+      "update_info": "更新至37话",
       "update_time": "2025/06/23"
     },
     {
@@ -493,15 +430,6 @@
       "title": "盖世扫地僧：我可以无限融合",
       "update_count": "117",
       "update_info": "更新至117话",
-      "update_time": "2025/06/23"
-    },
-    {
-      "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://liangcang-material.alicdn.com/prod/upload/f7cf11318a4f4eb8a03e64cb4f99ede4.webp.jpg",
-      "platform": "youku",
-      "title": "太古战魂",
-      "update_count": "23",
-      "update_info": "更新至23话",
       "update_time": "2025/06/23"
     }
   ]
