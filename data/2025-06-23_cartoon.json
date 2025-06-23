@@ -15,7 +15,7 @@
       "platform": "mikanani",
       "title": "随兴旅-That's Journey-",
       "update_count": "",
-      "update_info": "1\n\n\n2025/06/2",
+      "update_info": "5\n\n\n2025/06/2",
       "update_time": "2025/06/23"
     },
     {
@@ -136,15 +136,6 @@
       "update_time": "2025/06/23"
     },
     {
-      "detail_url": "https://mikanani.me/Home/Bangumi/3632",
-      "image_url": "https://mikanani.me/images/Bangumi/202504/af9a6139.jpg?width=400&height=400&format=webp",
-      "platform": "mikanani",
-      "title": "干杂活我乃最强～关于原英雄队伍的杂役人员，实际上除了战斗能力外全是SSS的故事～",
-      "update_count": "",
-      "update_info": "1\n\n\n2025/06/2",
-      "update_time": "2025/06/23"
-    },
-    {
       "detail_url": "https://mikanani.me/Home/Bangumi/3646",
       "image_url": "https://mikanani.me/images/Bangumi/202504/be7f8aef.jpg?width=400&height=400&format=webp",
       "platform": "mikanani",
@@ -176,6 +167,15 @@
       "image_url": "https://mikanani.me/images/Bangumi/202504/fddd0557.jpg?width=400&height=400&format=webp",
       "platform": "mikanani",
       "title": "时光流逝，饭菜依旧美味",
+      "update_count": "",
+      "update_info": "1\n\n\n2025/06/2",
+      "update_time": "2025/06/23"
+    },
+    {
+      "detail_url": "https://mikanani.me/Home/Bangumi/681",
+      "image_url": "https://mikanani.me/images/Bangumi/200504/1df90634.jpg?width=400&height=400&format=webp",
+      "platform": "mikanani",
+      "title": "哆啦A梦",
       "update_count": "",
       "update_info": "1\n\n\n2025/06/2",
       "update_time": "2025/06/23"
@@ -222,16 +222,7 @@
       "platform": "mikanani",
       "title": "记忆缝线",
       "update_count": "",
-      "update_info": "2\n\n\n2025/06/2",
-      "update_time": "2025/06/23"
-    },
-    {
-      "detail_url": "https://mikanani.me/Home/Bangumi/3585",
-      "image_url": "https://mikanani.me/images/Bangumi/202504/e33a7226.jpg?width=400&height=400&format=webp",
-      "platform": "mikanani",
-      "title": "机动战士高达 GQuuuuuuX",
-      "update_count": "",
-      "update_info": "1\n\n\n2025/06/2",
+      "update_info": "3\n\n\n2025/06/2",
       "update_time": "2025/06/23"
     },
     {
@@ -425,42 +416,6 @@
     },
     {
       "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://liangcang-material.alicdn.com/prod/upload/bd85fc19bc5e40a49f242a688e5c5f90.webp.jpg",
-      "platform": "youku",
-      "title": "斗罗大陆4终极斗罗 合集",
-      "update_count": "140",
-      "update_info": "更新至140话",
-      "update_time": "2025/06/23"
-    },
-    {
-      "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://liangcang-material.alicdn.com/prod/upload/a2963deecc6443cfba5d9c20523f0bd6.webp.jpg",
-      "platform": "youku",
-      "title": "香格里拉边境",
-      "update_count": "11",
-      "update_info": "更新至11话",
-      "update_time": "2025/06/23"
-    },
-    {
-      "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://liangcang-material.alicdn.com/prod/upload/b50fa5eef166429f9d66f7720553e7a6.webp.jpg",
-      "platform": "youku",
-      "title": "仙武帝尊",
-      "update_count": "460",
-      "update_info": "更新至460话",
-      "update_time": "2025/06/23"
-    },
-    {
-      "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://m.ykimg.com/0581000067B55340C8479F1DB02C4453",
-      "platform": "youku",
-      "title": "盖世扫地僧：我可以无限融合",
-      "update_count": "117",
-      "update_info": "更新至117话",
-      "update_time": "2025/06/23"
-    },
-    {
-      "detail_url": "https://www.youku.com/ku/webcomic",
       "image_url": "http://liangcang-material.alicdn.com/prod/upload/aa8905b5340d4efb80559e4cb63bcbed.webp.jpg",
       "platform": "youku",
       "title": "轩辕小豆之山海奇缘",
@@ -470,11 +425,38 @@
     },
     {
       "detail_url": "https://www.youku.com/ku/webcomic",
+      "image_url": "http://liangcang-material.alicdn.com/prod/upload/4d67d623a20e4c26af7686f64a1660ef.webp.jpg",
+      "platform": "youku",
+      "title": "香格里拉边境",
+      "update_count": "11",
+      "update_info": "更新至11话",
+      "update_time": "2025/06/23"
+    },
+    {
+      "detail_url": "https://www.youku.com/ku/webcomic",
       "image_url": "http://liangcang-material.alicdn.com/prod/upload/7a8fa17e38294be38afb28883ebd7f21.webp.jpg",
       "platform": "youku",
       "title": "假面骑士歌查德 中配版",
       "update_count": "30",
       "update_info": "更新至30话",
+      "update_time": "2025/06/23"
+    },
+    {
+      "detail_url": "https://www.youku.com/ku/webcomic",
+      "image_url": "http://liangcang-material.alicdn.com/prod/upload/bd85fc19bc5e40a49f242a688e5c5f90.webp.jpg",
+      "platform": "youku",
+      "title": "斗罗大陆4终极斗罗 合集",
+      "update_count": "140",
+      "update_info": "更新至140话",
+      "update_time": "2025/06/23"
+    },
+    {
+      "detail_url": "https://www.youku.com/ku/webcomic",
+      "image_url": "http://m.ykimg.com/0581000067B55340C8479F1DB02C4453",
+      "platform": "youku",
+      "title": "盖世扫地僧：我可以无限融合",
+      "update_count": "117",
+      "update_info": "更新至117话",
       "update_time": "2025/06/23"
     },
     {
@@ -511,6 +493,15 @@
       "title": "太古战魂",
       "update_count": "23",
       "update_info": "更新至23话",
+      "update_time": "2025/06/23"
+    },
+    {
+      "detail_url": "https://www.youku.com/ku/webcomic",
+      "image_url": "http://liangcang-material.alicdn.com/prod/upload/b50fa5eef166429f9d66f7720553e7a6.webp.jpg",
+      "platform": "youku",
+      "title": "仙武帝尊",
+      "update_count": "460",
+      "update_info": "更新至460话",
       "update_time": "2025/06/23"
     }
   ]
