@@ -26,13 +26,13 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       version_tag: ${{ steps.extract-version.outputs.version }}
-      release_id: ${{ steps.release-id.outputs.release_id }}  # 输出 Release ID
+      release_id: ${{ steps.capture-release-id.outputs.release_id }}
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # 获取完整提交历史（包含标签）
+          fetch-depth: 0
 
       - name: Set version tag
         id: extract-version
@@ -42,87 +42,60 @@ jobs:
           else
             TAG="${GITHUB_REF#refs/tags/}"
           fi
-          
-          # 基本版本格式验证
+
           if [[ ! "$TAG" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
             echo "::error::Invalid version format: $TAG. Use vX.Y.Z"
             exit 1
           fi
-          
+
           echo "version=$TAG" >> $GITHUB_OUTPUT
           echo "VERSION_TAG=$TAG" >> $GITHUB_ENV
 
       - name: Get previous tag
         id: get-prev-tag
         run: |
-          # 获取所有标签（按版本降序排序）
-          git fetch --tags --force  # 确保获取所有远程标签
+          git fetch --tags --force
           TAGS=$(git tag --list 'v*' --sort=-v:refname)
-          echo "All tags: $TAGS"
-          
           CURRENT_TAG="${{ env.VERSION_TAG }}"
           PREV_TAG=""
-          
-          # 遍历标签列表找到上一个标签
           while IFS= read -r tag; do
             if [[ "$tag" == "$CURRENT_TAG" ]]; then
-              if [[ -n "$PREV_TAG" ]]; then
-                echo "prev_tag=$PREV_TAG" >> $GITHUB_OUTPUT
-                echo "Found previous tag: $PREV_TAG"
-                break
-              else
-                # 如果是第一个标签，没有上一个标签
-                echo "prev_tag=" >> $GITHUB_OUTPUT
-                echo "No previous tag found (first release)"
-                break
-              fi
+              break
             fi
             PREV_TAG="$tag"
           done <<< "$TAGS"
-          
-          # 如果没有找到上一个标签（首次发布）
-          if [[ -z "$PREV_TAG" ]]; then
-            echo "prev_tag=" >> $GITHUB_OUTPUT
-            echo "No previous tag found (first release)"
-          fi
+          echo "prev_tag=$PREV_TAG" >> $GITHUB_OUTPUT
 
       - name: Generate Changelog
         id: changelog
-        uses: mikepenz/release-changelog-builder-action@v3
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          # 使用正确的参数名
-          fromTag: ${{ steps.get-prev-tag.outputs.prev_tag || '' }}  # 从上个标签开始
-          toTag: ${{ env.VERSION_TAG }}  # 到当前标签
-          failOnError: false  # 即使没有PR也不失败
-          configuration: |
-            categories:
-              - title: '✨ Features'
-                labels: ['feature']
-              - title: '🐛 Bug Fixes'
-                labels: ['bug', 'fix']
-              - title: '♻️ Refactors'
-                labels: ['refactor']
-              - title: '📚 Documentation'
-                labels: ['docs']
-              - title: '📦 Other Changes'
-                labels: ['*']  # 捕获所有未分类的PR
+        run: |
+          if [ -z "${{ steps.get-prev-tag.outputs.prev_tag }}" ]; then
+            RANGE="${{ env.VERSION_TAG }}"
+          else
+            RANGE="${{ steps.get-prev-tag.outputs.prev_tag }}..${{ env.VERSION_TAG }}"
+          fi
+          echo "Changelog 范围: $RANGE"
+
+          # 每行：短 SHA + 空格 + 提交信息
+          CHANGELOG=$(git log $RANGE --pretty=format:"%h %s")
+
+          echo "changelog<<EOF" >> $GITHUB_OUTPUT
+          echo "$CHANGELOG" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
 
       - name: Create GitHub Release
         id: create-release
         uses: softprops/action-gh-release@v1
         with:
           tag_name: ${{ env.VERSION_TAG }}
-          name: ${{ env.VERSION_TAG }}
-          body: ${{ steps.changelog.outputs.changelog || 'Initial release' }}  # 处理空changelog
+          name: ${{ env.IMAGE_NAME }}-${{ env.VERSION_TAG }}
+          body: ${{ steps.changelog.outputs.changelog || 'Initial release' }}
           prerelease: ${{ contains(env.VERSION_TAG, '-') }}
 
       - name: Capture Release ID
-        id: release-id
+        id: capture-release-id
         run: |
-          RELEASE_ID="${{ steps.create-release.outputs.id }}"
-          echo "release_id=$RELEASE_ID" >> $GITHUB_OUTPUT
-          echo "Captured Release ID: $RELEASE_ID"
+          echo "release_id=${{ steps.create-release.outputs.id }}" >> $GITHUB_OUTPUT
 
   docker:
     name: Build and Push Docker Image
@@ -130,7 +103,7 @@ jobs:
     needs: releaser
     env:
       VERSION_TAG: ${{ needs.releaser.outputs.version_tag }}
-      RELEASE_ID: ${{ needs.releaser.outputs.release_id }}  # 从releaser传递的Release ID
+      RELEASE_ID: ${{ needs.releaser.outputs.release_id }}
 
     steps:
       - name: Checkout code
@@ -148,10 +121,8 @@ jobs:
       - name: Convert image name to lowercase
         id: lowercase-image
         run: |
-          # 手动转换为小写
           LOWER_NAME=$(echo "${{ env.IMAGE_NAME }}" | tr '[:upper:]' '[:lower:]')
           echo "LOWER_IMAGE_NAME=$LOWER_NAME" >> $GITHUB_ENV
-          echo "Converted image name to lowercase: $LOWER_NAME"
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
@@ -171,35 +142,22 @@ jobs:
         with:
           script: |
             try {
-              // 获取从releaser作业传递的Release ID
               const releaseId = process.env.RELEASE_ID;
-              console.log(`Updating release with ID: ${releaseId}`);
-            
-              // 获取当前的Release内容
-              const currentRelease = await github.rest.repos.getRelease({
+              const current = await github.rest.repos.getRelease({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 release_id: releaseId
               });
-            
-              // 添加Docker镜像信息
-              const dockerInfo = 
+              const info = 
                 `\n\n## Docker Image\n\n` +
                 `- **${process.env.DOCKERHUB_USERNAME}/${process.env.LOWER_IMAGE_NAME}:${process.env.VERSION_TAG}**\n` +
                 `- Pull with: \`docker pull ${process.env.DOCKERHUB_USERNAME}/${process.env.LOWER_IMAGE_NAME}:${process.env.VERSION_TAG}\``;
-            
-              const updatedBody = currentRelease.data.body + dockerInfo;
-            
-              // 更新Release
               await github.rest.repos.updateRelease({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 release_id: releaseId,
-                body: updatedBody
+                body: current.data.body + info
               });
-            
-              console.log('Release updated successfully');
-            } catch (error) {
-              console.error('Failed to update release:', error);
-              // 优雅处理错误，不使工作流失败
+            } catch (e) {
+              console.error('Update release failed:', e);
             }
