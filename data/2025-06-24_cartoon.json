@@ -109,24 +109,6 @@
       "update_time": "2025/06/24"
     },
     {
-      "detail_url": "https://mikanani.me/Home/Bangumi/3617",
-      "image_url": "https://mikanani.me/images/Bangumi/202504/096c19d0.jpg?width=400&height=400&format=webp",
-      "platform": "mikanani",
-      "title": "爱有些沉重的黑暗精灵从异世界追过来了",
-      "update_count": "",
-      "update_info": "1\n\n\n2025/06/2",
-      "update_time": "2025/06/24"
-    },
-    {
-      "detail_url": "https://mikanani.me/Home/Bangumi/3621",
-      "image_url": "https://mikanani.me/images/Bangumi/202504/2b2ea518.jpg?width=400&height=400&format=webp",
-      "platform": "mikanani",
-      "title": "快藏起来！玛琪娜同学!!",
-      "update_count": "",
-      "update_info": "1\n\n\n2025/06/2",
-      "update_time": "2025/06/24"
-    },
-    {
       "detail_url": "https://mikanani.me/Home/Bangumi/3646",
       "image_url": "https://mikanani.me/images/Bangumi/202504/be7f8aef.jpg?width=400&height=400&format=webp",
       "platform": "mikanani",
@@ -205,6 +187,87 @@
       "title": "大侠请上功",
       "update_count": "8",
       "update_info": "更新至第8话",
+      "update_time": "2025/06/24"
+    },
+    {
+      "detail_url": "https://v.qq.com/x/cover/324olz7ilvo2j5f.html",
+      "image_url": "https://vcover-hz-pic.puui.qpic.cn/vcover_hz_pic/0/324olz7ilvo2j5f1747046475987/750?max_age=7776001",
+      "platform": "tencent独播",
+      "title": "吞噬星空",
+      "update_count": 177,
+      "update_info": "VIP用户每周二10点更新。SVIP会员权益加码，抢先1天看更新集（每周一18:00）",
+      "update_time": "2025/06/24"
+    },
+    {
+      "detail_url": "https://v.qq.com/x/cover/mzc00200cu8uq8c.html",
+      "image_url": "https://puui.qpic.cn/vcover_hz_pic/0/mzc00200cu8uq8c1617596139122/810?max_age=7776001",
+      "platform": "tencent独播",
+      "title": "万界独尊",
+      "update_count": 341,
+      "update_info": "每周二、六10点更1集",
+      "update_time": "2025/06/24"
+    },
+    {
+      "detail_url": "https://v.qq.com/x/cover/mzc002006wuirfi.html",
+      "image_url": "https://vcover-hz-pic.puui.qpic.cn/vcover_hz_pic/0/mzc002006wuirfi1738151370027/750?max_age=7776001",
+      "platform": "tencent独播",
+      "title": "星辰变 第6季",
+      "update_count": 17,
+      "update_info": "5月27日10点更新两集，VIP会员每周二10点更新。SVIP会员权益加码，可抢先1天看更新集（周一18:00）",
+      "update_time": "2025/06/24"
+    },
+    {
+      "detail_url": "https://v.qq.com/x/cover/7q544xyrava3vxf.html",
+      "image_url": "https://vcover-hz-pic.puui.qpic.cn/vcover_hz_pic/0/7q544xyrava3vxf1747279182497/750?max_age=7776001",
+      "platform": "tencent独播",
+      "title": "武神主宰",
+      "update_count": 558,
+      "update_info": "每周二、日10：00更1集",
+      "update_time": "2025/06/24"
+    },
+    {
+      "detail_url": "https://v.qq.com/x/cover/mzc002006n62s11.html",
+      "image_url": "https://vcover-hz-pic.puui.qpic.cn/vcover_hz_pic/0/mzc002006n62s111722876262898/750?max_age=7776001",
+      "platform": "tencent独播",
+      "title": "炼气十万年",
+      "update_count": 252,
+      "update_info": "每周二、周六10点更新",
+      "update_time": "2025/06/24"
+    },
+    {
+      "detail_url": "https://v.qq.com/x/cover/mzc00200phqxwd6.html",
+      "image_url": "https://vcover-hz-pic.puui.qpic.cn/vcover_hz_pic/0/mzc00200phqxwd61749563467321/750?max_age=7776001",
+      "platform": "tencent独播",
+      "title": "诛仙合集篇",
+      "update_count": 9,
+      "update_info": "每周一、二、三10:00各更新1集",
+      "update_time": "2025/06/24"
+    },
+    {
+      "detail_url": "https://v.qq.com/x/cover/2w2legt0g8z26al.html",
+      "image_url": "https://puui.qpic.cn/vcover_hz_pic/0/2w2legt0g8z26al1691461257230/810?max_age=7776001",
+      "platform": "tencent独播",
+      "title": "灵剑尊",
+      "update_count": 607,
+      "update_info": "每周二、五10点更新1集",
+      "update_time": "2025/06/24"
+    },
+    {
+      "detail_url": "https://v.qq.com/x/cover/mzc002003lw1kp8.html",
+      "image_url": "https://vcover-hz-pic.puui.qpic.cn/vcover_hz_pic/0/mzc002003lw1kp81747735664174/750?max_age=7776001",
+      "platform": "tencent独播",
+      "title": "一念永恒 第3季",
+      "update_count": 54,
+      "update_info": "VIP会员每周三10点更新。SVIP会员权益加码，可抢先1天看更新集（周二18:00）",
+      "update_time": "2025/06/24"
+    },
+    {
+      "detail_url": "https://v.qq.com/x/cover/mzc00200n53vkqc.html",
+      "image_url": "https://vcover-hz-pic.puui.qpic.cn/vcover_hz_pic/0/mzc00200n53vkqc1749178917466/750?max_age=7776001",
+      "platform": "tencent独播",
+      "title": "遮天",
+      "update_count": 114,
+      "update_info": "VIP会员每周三10点更新。SVIP会员权益加码，可抢先1天看更新集（周二18:00）",
       "update_time": "2025/06/24"
     },
     {
@@ -353,65 +416,38 @@
     },
     {
       "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://liangcang-material.alicdn.com/prod/upload/e99cd5abaa7c4ba18b9f5471bc4f180e.webp.jpg",
+      "image_url": "http://m.ykimg.com/0581000066700EFA13EBC6111F0E2C9E",
       "platform": "youku",
-      "title": "克金玩家",
-      "update_count": "4",
-      "update_info": "更新至4话",
+      "title": "重生为怪兽什么鬼 第二季",
+      "update_count": "103",
+      "update_info": "更新至103话",
       "update_time": "2025/06/24"
     },
     {
       "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://m.ykimg.com/05810000672AFC6413EB6612D57A09FA",
+      "image_url": "http://m.ykimg.com/05810000657C13B813EBC61B63C5F625",
       "platform": "youku",
-      "title": "进化狂潮 第二季",
-      "update_count": "65",
-      "update_info": "更新至65话",
+      "title": "我神魔双修：制霸当世",
+      "update_count": "73",
+      "update_info": "更新至73话",
       "update_time": "2025/06/24"
     },
     {
       "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://m.ykimg.com/0581000067063D1613EBC6101663E470",
+      "image_url": "http://liangcang-material.alicdn.com/prod/upload/31ffe186faf944a685e1e188336af0bc.webp.jpg",
       "platform": "youku",
-      "title": "全民末日：我！病毒君王",
-      "update_count": "36",
-      "update_info": "更新至36话",
+      "title": "我不过是个大罗金仙：横扫天下篇",
+      "update_count": "46",
+      "update_info": "更新至46话",
       "update_time": "2025/06/24"
     },
     {
       "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://liangcang-material.alicdn.com/prod/upload/bd85fc19bc5e40a49f242a688e5c5f90.webp.jpg",
+      "image_url": "http://m.ykimg.com/0581000067B6D50FC8479F12471FBCC4",
       "platform": "youku",
-      "title": "斗罗大陆4终极斗罗 合集",
-      "update_count": "140",
-      "update_info": "更新至140话",
-      "update_time": "2025/06/24"
-    },
-    {
-      "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://m.ykimg.com/0581000067B55B44200396146DDF4E19",
-      "platform": "youku",
-      "title": "气运之子：我可以无限暴击",
+      "title": "氪丹修仙只苟长生",
       "update_count": "53",
       "update_info": "更新至53话",
-      "update_time": "2025/06/24"
-    },
-    {
-      "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://m.ykimg.com/0581000067D7D9CB20039613B8DDEDE8",
-      "platform": "youku",
-      "title": "末世钞能力者",
-      "update_count": "31",
-      "update_info": "更新至31话",
-      "update_time": "2025/06/24"
-    },
-    {
-      "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://m.ykimg.com/0581000066EB931513EB661549D07DC6",
-      "platform": "youku",
-      "title": "江思先生",
-      "update_count": "84",
-      "update_info": "更新至84话",
       "update_time": "2025/06/24"
     },
     {
@@ -434,9 +470,81 @@
     },
     {
       "detail_url": "https://www.youku.com/ku/webcomic",
+      "image_url": "http://m.ykimg.com/0581000067BC141C2003961367EFF62B",
+      "platform": "youku",
+      "title": "从哥布林到哥布林神",
+      "update_count": "15",
+      "update_info": "更新至15话",
+      "update_time": "2025/06/24"
+    },
+    {
+      "detail_url": "https://www.youku.com/ku/webcomic",
+      "image_url": "http://m.ykimg.com/0581000067B55B44200396146DDF4E19",
+      "platform": "youku",
+      "title": "气运之子：我可以无限暴击",
+      "update_count": "53",
+      "update_info": "更新至53话",
+      "update_time": "2025/06/24"
+    },
+    {
+      "detail_url": "https://www.youku.com/ku/webcomic",
+      "image_url": "http://m.ykimg.com/0581000067EA4FD1711E4F12431A189D",
+      "platform": "youku",
+      "title": "全民御兽：铲屎官首富开局",
+      "update_count": "22",
+      "update_info": "更新至22话",
+      "update_time": "2025/06/24"
+    },
+    {
+      "detail_url": "https://www.youku.com/ku/webcomic",
+      "image_url": "http://m.ykimg.com/0581000067063D1613EBC6101663E470",
+      "platform": "youku",
+      "title": "全民末日：我！病毒君王",
+      "update_count": "36",
+      "update_info": "更新至36话",
+      "update_time": "2025/06/24"
+    },
+    {
+      "detail_url": "https://www.youku.com/ku/webcomic",
       "image_url": "http://liangcang-material.alicdn.com/prod/upload/7a8fa17e38294be38afb28883ebd7f21.webp.jpg",
       "platform": "youku",
       "title": "假面骑士歌查德 中配版",
+      "update_count": "31",
+      "update_info": "更新至31话",
+      "update_time": "2025/06/24"
+    },
+    {
+      "detail_url": "https://www.youku.com/ku/webcomic",
+      "image_url": "http://m.ykimg.com/05810000672AFC6413EB6612D57A09FA",
+      "platform": "youku",
+      "title": "进化狂潮 第二季",
+      "update_count": "65",
+      "update_info": "更新至65话",
+      "update_time": "2025/06/24"
+    },
+    {
+      "detail_url": "https://www.youku.com/ku/webcomic",
+      "image_url": "http://m.ykimg.com/05810000670A3AA07B50BB14897E9164",
+      "platform": "youku",
+      "title": "开局物价贬值，我成为了世界首富",
+      "update_count": "77",
+      "update_info": "更新至77话",
+      "update_time": "2025/06/24"
+    },
+    {
+      "detail_url": "https://www.youku.com/ku/webcomic",
+      "image_url": "http://m.ykimg.com/0581000066EB931513EB661549D07DC6",
+      "platform": "youku",
+      "title": "江思先生",
+      "update_count": "84",
+      "update_info": "更新至84话",
+      "update_time": "2025/06/24"
+    },
+    {
+      "detail_url": "https://www.youku.com/ku/webcomic",
+      "image_url": "http://m.ykimg.com/0581000067D7D9CB20039613B8DDEDE8",
+      "platform": "youku",
+      "title": "末世钞能力者",
       "update_count": "31",
       "update_info": "更新至31话",
       "update_time": "2025/06/24"
@@ -452,65 +560,11 @@
     },
     {
       "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://m.ykimg.com/0581000067B6D50FC8479F12471FBCC4",
+      "image_url": "http://liangcang-material.alicdn.com/prod/upload/7fdb6a0cb788418296166c4ef3b55b83.webp.jpg",
       "platform": "youku",
-      "title": "氪丹修仙只苟长生",
-      "update_count": "53",
-      "update_info": "更新至53话",
-      "update_time": "2025/06/24"
-    },
-    {
-      "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://m.ykimg.com/0581000067BC141C2003961367EFF62B",
-      "platform": "youku",
-      "title": "从哥布林到哥布林神",
-      "update_count": "15",
-      "update_info": "更新至15话",
-      "update_time": "2025/06/24"
-    },
-    {
-      "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://liangcang-material.alicdn.com/prod/upload/31ffe186faf944a685e1e188336af0bc.webp.jpg",
-      "platform": "youku",
-      "title": "我不过是个大罗金仙：横扫天下篇",
-      "update_count": "46",
-      "update_info": "更新至46话",
-      "update_time": "2025/06/24"
-    },
-    {
-      "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://m.ykimg.com/0581000066700EFA13EBC6111F0E2C9E",
-      "platform": "youku",
-      "title": "重生为怪兽什么鬼 第二季",
-      "update_count": "103",
-      "update_info": "更新至103话",
-      "update_time": "2025/06/24"
-    },
-    {
-      "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://m.ykimg.com/05810000657C13B813EBC61B63C5F625",
-      "platform": "youku",
-      "title": "我神魔双修：制霸当世",
-      "update_count": "73",
-      "update_info": "更新至73话",
-      "update_time": "2025/06/24"
-    },
-    {
-      "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://m.ykimg.com/05810000670A3AA07B50BB14897E9164",
-      "platform": "youku",
-      "title": "开局物价贬值，我成为了世界首富",
-      "update_count": "77",
-      "update_info": "更新至77话",
-      "update_time": "2025/06/24"
-    },
-    {
-      "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://m.ykimg.com/0581000067EA4FD1711E4F12431A189D",
-      "platform": "youku",
-      "title": "全民御兽：铲屎官首富开局",
-      "update_count": "22",
-      "update_info": "更新至22话",
+      "title": "克金玩家",
+      "update_count": "4",
+      "update_info": "更新至4话",
       "update_time": "2025/06/24"
     }
   ]
