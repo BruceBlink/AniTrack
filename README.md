@@ -31,7 +31,9 @@
 - [安妮·雪莉](https://mikanani.me/Home/Bangumi/3582) - 2025/06/24 更新 【mikanani】
 - [我是星际国家的恶德领主！](https://mikanani.me/Home/Bangumi/3592) - 2025/06/24 更新 【mikanani】
 - [哆啦A梦](https://mikanani.me/Home/Bangumi/681) - 2025/06/24 更新 【mikanani】
+- [推理要在晚餐后](https://mikanani.me/Home/Bangumi/3605) - 2025/06/24 更新 【mikanani】
 - [瞬间治疗却被视为无用而被流放的天才治疗师，以暗黑治疗师的身份幸福地生活着](https://mikanani.me/Home/Bangumi/3593) - 2025/06/24 更新 【mikanani】
+- [摇滚乃是淑女的爱好](https://mikanani.me/Home/Bangumi/3606) - 2025/06/24 更新 【mikanani】
 - [记忆缝线](https://mikanani.me/Home/Bangumi/3620) - 2025/06/24 更新 【mikanani】
 - [我的师兄太强了](https://www.bilibili.com/bangumi/play/ep1524726) - 2025/06/24 更新 更新至30集 【bilibili】
 - [大侠请上功](https://www.bilibili.com/bangumi/play/ep1508582) - 2025/06/24 更新 更新至8集 【bilibili】
@@ -51,25 +53,25 @@
 - [江思先生 动态漫画](http://www.iqiyi.com/v_25iso6bw3c8.html) - 2025/06/24 更新 更新至84集 【iqiyi】
 - [进化狂潮 动态漫画 第2季](http://www.iqiyi.com/v_1bd4divc9x0.html) - 2025/06/24 更新 更新至65集 【iqiyi】
 - [全民末日：我！病毒君王 动态漫画](http://www.iqiyi.com/v_gx0wx0acqw.html) - 2025/06/24 更新 更新至36集 【iqiyi】
-- [我不过是个大罗金仙：横扫天下篇](https://www.youku.com/ku/webcomic) - 2025/06/24 更新 更新至46集 【youku】
-- [全民末日：我！病毒君王](https://www.youku.com/ku/webcomic) - 2025/06/24 更新 更新至36集 【youku】
-- [末日狠人：开局囤积万亿物资](https://www.youku.com/ku/webcomic) - 2025/06/24 更新 更新至15集 【youku】
 - [从哥布林到哥布林神](https://www.youku.com/ku/webcomic) - 2025/06/24 更新 更新至15集 【youku】
-- [全民御兽：铲屎官首富开局](https://www.youku.com/ku/webcomic) - 2025/06/24 更新 更新至22集 【youku】
-- [末世钞能力者](https://www.youku.com/ku/webcomic) - 2025/06/24 更新 更新至31集 【youku】
-- [全民御兽：开局山海经，我横扫全球](https://www.youku.com/ku/webcomic) - 2025/06/24 更新 更新至71集 【youku】
-- [氪丹修仙只苟长生](https://www.youku.com/ku/webcomic) - 2025/06/24 更新 更新至53集 【youku】
-- [盖世扫地僧：我可以无限融合](https://www.youku.com/ku/webcomic) - 2025/06/24 更新 更新至118集 【youku】
-- [假面骑士歌查德 中配版](https://www.youku.com/ku/webcomic) - 2025/06/24 更新 更新至31集 【youku】
-- [克金玩家](https://www.youku.com/ku/webcomic) - 2025/06/24 更新 更新至4集 【youku】
-- [进化狂潮 第二季](https://www.youku.com/ku/webcomic) - 2025/06/24 更新 更新至65集 【youku】
-- [重生为怪兽什么鬼 第二季](https://www.youku.com/ku/webcomic) - 2025/06/24 更新 更新至103集 【youku】
 - [我神魔双修：制霸当世](https://www.youku.com/ku/webcomic) - 2025/06/24 更新 更新至73集 【youku】
+- [重生为怪兽什么鬼 第二季](https://www.youku.com/ku/webcomic) - 2025/06/24 更新 更新至103集 【youku】
 - [开局物价贬值，我成为了世界首富](https://www.youku.com/ku/webcomic) - 2025/06/24 更新 更新至77集 【youku】
+- [全民末日：我！病毒君王](https://www.youku.com/ku/webcomic) - 2025/06/24 更新 更新至36集 【youku】
 - [气运之子：我可以无限暴击](https://www.youku.com/ku/webcomic) - 2025/06/24 更新 更新至53集 【youku】
+- [全民御兽：开局山海经，我横扫全球](https://www.youku.com/ku/webcomic) - 2025/06/24 更新 更新至71集 【youku】
+- [假面骑士歌查德 中配版](https://www.youku.com/ku/webcomic) - 2025/06/24 更新 更新至31集 【youku】
+- [末日狠人：开局囤积万亿物资](https://www.youku.com/ku/webcomic) - 2025/06/24 更新 更新至15集 【youku】
+- [盖世扫地僧：我可以无限融合](https://www.youku.com/ku/webcomic) - 2025/06/24 更新 更新至118集 【youku】
+- [我不过是个大罗金仙：横扫天下篇](https://www.youku.com/ku/webcomic) - 2025/06/24 更新 更新至46集 【youku】
+- [氪丹修仙只苟长生](https://www.youku.com/ku/webcomic) - 2025/06/24 更新 更新至53集 【youku】
+- [全民御兽：铲屎官首富开局](https://www.youku.com/ku/webcomic) - 2025/06/24 更新 更新至22集 【youku】
+- [克金玩家](https://www.youku.com/ku/webcomic) - 2025/06/24 更新 更新至4集 【youku】
 - [江思先生](https://www.youku.com/ku/webcomic) - 2025/06/24 更新 更新至84集 【youku】
+- [进化狂潮 第二季](https://www.youku.com/ku/webcomic) - 2025/06/24 更新 更新至65集 【youku】
+- [末世钞能力者](https://www.youku.com/ku/webcomic) - 2025/06/24 更新 更新至31集 【youku】
 
-**今天总共更新了 54 部番剧。**
+**今天总共更新了 56 部番剧。**
 
 ## 系统要求
 
