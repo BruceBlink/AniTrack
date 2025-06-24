@@ -60,7 +60,7 @@
       "platform": "mikanani",
       "title": "夏日口袋",
       "update_count": "",
-      "update_info": "7\n\n\n2025/06/2",
+      "update_info": "6\n\n\n2025/06/2",
       "update_time": "2025/06/24"
     },
     {
@@ -97,6 +97,15 @@
       "title": "受到猩猩之神庇护的大小姐在皇家骑士团受到宠爱",
       "update_count": "",
       "update_info": "2\n\n\n2025/06/2",
+      "update_time": "2025/06/24"
+    },
+    {
+      "detail_url": "https://mikanani.me/Home/Bangumi/3624",
+      "image_url": "https://mikanani.me/images/Bangumi/202504/cf6e83ba.jpg?width=400&height=400&format=webp",
+      "platform": "mikanani",
+      "title": "拉撒路",
+      "update_count": "",
+      "update_info": "1\n\n\n2025/06/2",
       "update_time": "2025/06/24"
     },
     {
@@ -140,15 +149,6 @@
       "image_url": "https://mikanani.me/images/Bangumi/202504/80d05785.jpg?width=400&height=400&format=webp",
       "platform": "mikanani",
       "title": "推理要在晚餐后",
-      "update_count": "",
-      "update_info": "1\n\n\n2025/06/2",
-      "update_time": "2025/06/24"
-    },
-    {
-      "detail_url": "https://mikanani.me/Home/Bangumi/3593",
-      "image_url": "https://mikanani.me/images/Bangumi/202504/44e224ed.jpg?width=400&height=400&format=webp",
-      "platform": "mikanani",
-      "title": "瞬间治疗却被视为无用而被流放的天才治疗师，以暗黑治疗师的身份幸福地生活着",
       "update_count": "",
       "update_info": "1\n\n\n2025/06/2",
       "update_time": "2025/06/24"
@@ -205,6 +205,24 @@
       "title": "大侠请上功",
       "update_count": "8",
       "update_info": "更新至第8话",
+      "update_time": "2025/06/24"
+    },
+    {
+      "detail_url": "https://www.bilibili.com/bangumi/play/ep1827460",
+      "image_url": "http://i0.hdslb.com/bfs/bangumi/image/8ac62df8d1d0c5db8e844f34ca6d3d00548633c2.jpg",
+      "platform": "bilibili",
+      "title": "我是不白吃",
+      "update_count": "988",
+      "update_info": "更新至第988话",
+      "update_time": "2025/06/24"
+    },
+    {
+      "detail_url": "https://www.bilibili.com/bangumi/play/ep1829836",
+      "image_url": "https://i0.hdslb.com/bfs/bangumi/image/30309601d9d63499df5c7302e213685f280a5bd1.png",
+      "platform": "bilibili",
+      "title": "最强王者的第二人生",
+      "update_count": "10",
+      "update_info": "更新至第10话",
       "update_time": "2025/06/24"
     },
     {
@@ -434,47 +452,11 @@
     },
     {
       "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://m.ykimg.com/05810000670A3AA07B50BB14897E9164",
+      "image_url": "http://m.ykimg.com/05810000672AFC6413EB6612D57A09FA",
       "platform": "youku",
-      "title": "开局物价贬值，我成为了世界首富",
-      "update_count": "77",
-      "update_info": "更新至77话",
-      "update_time": "2025/06/24"
-    },
-    {
-      "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://m.ykimg.com/05810000657C13B813EBC61B63C5F625",
-      "platform": "youku",
-      "title": "我神魔双修：制霸当世",
-      "update_count": "73",
-      "update_info": "更新至73话",
-      "update_time": "2025/06/24"
-    },
-    {
-      "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://m.ykimg.com/0581000066EB931513EB661549D07DC6",
-      "platform": "youku",
-      "title": "江思先生",
-      "update_count": "84",
-      "update_info": "更新至84话",
-      "update_time": "2025/06/24"
-    },
-    {
-      "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://liangcang-material.alicdn.com/prod/upload/31ffe186faf944a685e1e188336af0bc.webp.jpg",
-      "platform": "youku",
-      "title": "我不过是个大罗金仙：横扫天下篇",
-      "update_count": "46",
-      "update_info": "更新至46话",
-      "update_time": "2025/06/24"
-    },
-    {
-      "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://liangcang-material.alicdn.com/prod/upload/7a8fa17e38294be38afb28883ebd7f21.webp.jpg",
-      "platform": "youku",
-      "title": "假面骑士歌查德 中配版",
-      "update_count": "31",
-      "update_info": "更新至31话",
+      "title": "进化狂潮 第二季",
+      "update_count": "65",
+      "update_info": "更新至65话",
       "update_time": "2025/06/24"
     },
     {
@@ -488,20 +470,11 @@
     },
     {
       "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://m.ykimg.com/05810000672AFC6413EB6612D57A09FA",
+      "image_url": "http://m.ykimg.com/0581000067B6D50FC8479F12471FBCC4",
       "platform": "youku",
-      "title": "进化狂潮 第二季",
-      "update_count": "65",
-      "update_info": "更新至65话",
-      "update_time": "2025/06/24"
-    },
-    {
-      "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://m.ykimg.com/0581000067063D1613EBC6101663E470",
-      "platform": "youku",
-      "title": "全民末日：我！病毒君王",
-      "update_count": "36",
-      "update_info": "更新至36话",
+      "title": "氪丹修仙只苟长生",
+      "update_count": "53",
+      "update_info": "更新至53话",
       "update_time": "2025/06/24"
     },
     {
@@ -515,20 +488,20 @@
     },
     {
       "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://m.ykimg.com/0581000067B6D50FC8479F12471FBCC4",
+      "image_url": "http://m.ykimg.com/05810000657C13B813EBC61B63C5F625",
       "platform": "youku",
-      "title": "氪丹修仙只苟长生",
-      "update_count": "53",
-      "update_info": "更新至53话",
+      "title": "我神魔双修：制霸当世",
+      "update_count": "73",
+      "update_info": "更新至73话",
       "update_time": "2025/06/24"
     },
     {
       "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://m.ykimg.com/0581000066700EFA13EBC6111F0E2C9E",
+      "image_url": "http://m.ykimg.com/0581000067BC141C2003961367EFF62B",
       "platform": "youku",
-      "title": "重生为怪兽什么鬼 第二季",
-      "update_count": "103",
-      "update_info": "更新至103话",
+      "title": "从哥布林到哥布林神",
+      "update_count": "15",
+      "update_info": "更新至15话",
       "update_time": "2025/06/24"
     },
     {
@@ -551,29 +524,38 @@
     },
     {
       "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://m.ykimg.com/0581000067BC19CFC8479F12473E7F0D",
+      "image_url": "http://liangcang-material.alicdn.com/prod/upload/7a8fa17e38294be38afb28883ebd7f21.webp.jpg",
       "platform": "youku",
-      "title": "末日狠人：开局囤积万亿物资",
-      "update_count": "15",
-      "update_info": "更新至15话",
+      "title": "假面骑士歌查德 中配版",
+      "update_count": "31",
+      "update_info": "更新至31话",
       "update_time": "2025/06/24"
     },
     {
       "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://m.ykimg.com/0581000067BC141C2003961367EFF62B",
+      "image_url": "http://m.ykimg.com/0581000067063D1613EBC6101663E470",
       "platform": "youku",
-      "title": "从哥布林到哥布林神",
-      "update_count": "15",
-      "update_info": "更新至15话",
+      "title": "全民末日：我！病毒君王",
+      "update_count": "36",
+      "update_info": "更新至36话",
       "update_time": "2025/06/24"
     },
     {
       "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://liangcang-material.alicdn.com/prod/upload/e99cd5abaa7c4ba18b9f5471bc4f180e.webp.jpg",
+      "image_url": "http://m.ykimg.com/05810000670A3AA07B50BB14897E9164",
       "platform": "youku",
-      "title": "克金玩家",
-      "update_count": "4",
-      "update_info": "更新至4话",
+      "title": "开局物价贬值，我成为了世界首富",
+      "update_count": "77",
+      "update_info": "更新至77话",
+      "update_time": "2025/06/24"
+    },
+    {
+      "detail_url": "https://www.youku.com/ku/webcomic",
+      "image_url": "http://m.ykimg.com/0581000066EB931513EB661549D07DC6",
+      "platform": "youku",
+      "title": "江思先生",
+      "update_count": "84",
+      "update_info": "更新至84话",
       "update_time": "2025/06/24"
     },
     {
@@ -583,6 +565,42 @@
       "title": "盖世扫地僧：我可以无限融合",
       "update_count": "118",
       "update_info": "更新至118话",
+      "update_time": "2025/06/24"
+    },
+    {
+      "detail_url": "https://www.youku.com/ku/webcomic",
+      "image_url": "http://m.ykimg.com/0581000066700EFA13EBC6111F0E2C9E",
+      "platform": "youku",
+      "title": "重生为怪兽什么鬼 第二季",
+      "update_count": "103",
+      "update_info": "更新至103话",
+      "update_time": "2025/06/24"
+    },
+    {
+      "detail_url": "https://www.youku.com/ku/webcomic",
+      "image_url": "http://m.ykimg.com/0581000067BC19CFC8479F12473E7F0D",
+      "platform": "youku",
+      "title": "末日狠人：开局囤积万亿物资",
+      "update_count": "15",
+      "update_info": "更新至15话",
+      "update_time": "2025/06/24"
+    },
+    {
+      "detail_url": "https://www.youku.com/ku/webcomic",
+      "image_url": "http://liangcang-material.alicdn.com/prod/upload/7fdb6a0cb788418296166c4ef3b55b83.webp.jpg",
+      "platform": "youku",
+      "title": "克金玩家",
+      "update_count": "4",
+      "update_info": "更新至4话",
+      "update_time": "2025/06/24"
+    },
+    {
+      "detail_url": "https://www.youku.com/ku/webcomic",
+      "image_url": "http://liangcang-material.alicdn.com/prod/upload/31ffe186faf944a685e1e188336af0bc.webp.jpg",
+      "platform": "youku",
+      "title": "我不过是个大罗金仙：横扫天下篇",
+      "update_count": "46",
+      "update_info": "更新至46话",
       "update_time": "2025/06/24"
     }
   ]
