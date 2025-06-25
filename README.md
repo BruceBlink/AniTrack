@@ -29,7 +29,6 @@
 - [You and idol 光之美少女♪](https://mikanani.me/Home/Bangumi/3570) - 2025/06/25 更新 【mikanani】
 - [魔女守护者](https://mikanani.me/Home/Bangumi/3587) - 2025/06/25 更新 【mikanani】
 - [秘密的偶像公主 RING篇](https://mikanani.me/Home/Bangumi/3597) - 2025/06/25 更新 【mikanani】
-- [受到猩猩之神庇护的大小姐在皇家骑士团受到宠爱](https://mikanani.me/Home/Bangumi/3608) - 2025/06/25 更新 【mikanani】
 - [拉撒路](https://mikanani.me/Home/Bangumi/3624) - 2025/06/25 更新 【mikanani】
 - [战队大失格 第二季](https://mikanani.me/Home/Bangumi/3646) - 2025/06/25 更新 【mikanani】
 - [我家有个阿宅女忍者](https://mikanani.me/Home/Bangumi/3526) - 2025/06/25 更新 【mikanani】
@@ -41,42 +40,45 @@
 - [摇滚乃是淑女的爱好](https://mikanani.me/Home/Bangumi/3606) - 2025/06/25 更新 【mikanani】
 - [小浣熊 卡尔卡尔团](https://mikanani.me/Home/Bangumi/3626) - 2025/06/25 更新 【mikanani】
 - [防风少年 第二季](https://mikanani.me/Home/Bangumi/3634) - 2025/06/25 更新 【mikanani】
+- [少年歌行 血染天启篇](https://www.bilibili.com/bangumi/play/ep1343071) - 2025/06/25 更新 更新至26集 【bilibili】
 - [末日后酒店](https://www.bilibili.com/bangumi/play/ep1723584) - 2025/06/25 更新 更新至12集 【bilibili】
+- [一念永恒 第3季](https://v.qq.com/x/cover/mzc002003lw1kp8.html) - 2025/06/25 更新 更新至55集 【tencent独播】
+- [遮天](https://v.qq.com/x/cover/mzc00200n53vkqc.html) - 2025/06/25 更新 更新至115集 【tencent独播】
+- [诛仙合集篇](https://v.qq.com/x/cover/mzc00200phqxwd6.html) - 2025/06/25 更新 更新至10集 【tencent独播】
+- [剑道第一仙](https://v.qq.com/x/cover/mzc00200bkls85f.html) - 2025/06/25 更新 更新至140集 【tencent独播】
+- [吞天记](https://v.qq.com/x/cover/mzc00200t39giu5.html) - 2025/06/25 更新 更新至15集 【tencent独播】
+- [神印王座](https://v.qq.com/x/cover/mzc002007j7p5hn.html) - 2025/06/25 更新 更新至164集 【tencent独播】
+- [诛仙 第3季](https://v.qq.com/x/cover/mzc00200z195unq.html) - 2025/06/25 更新 更新至4集 【tencent独播】
 - [大夏剑主 动态漫画](http://www.iqiyi.com/v_2f1ar1e82rk.html) - 2025/06/25 更新 更新至186集 【iqiyi】
 - [神宠进化 动态漫画 第2季](http://www.iqiyi.com/v_1zmppdpww5o.html) - 2025/06/25 更新 更新至82集 【iqiyi】
 - [魔法小公主绮莉 动态漫画](http://www.iqiyi.com/v_1gn3zf8qr4k.html) - 2025/06/25 更新 更新至64集 【iqiyi】
 - [修真聊天群 动态漫画](http://www.iqiyi.com/v_1khwur3ntm4.html) - 2025/06/25 更新 更新至50集 【iqiyi】
 - [特工王妃虐渣记 动态漫画](http://www.iqiyi.com/v_11u444o3k1o.html) - 2025/06/25 更新 更新至64集 【iqiyi】
 - [被迫成为隐藏职业 动态漫画](http://www.iqiyi.com/v_23jscm9fkgg.html) - 2025/06/25 更新 更新至59集 【iqiyi】
-- [都市古仙医](http://www.iqiyi.com/v_1la70ef6oaw.html) - 2025/06/25 更新 更新至81集 【iqiyi】
+- [都市古仙医](http://www.iqiyi.com/v_1la70ef6oaw.html) - 2025/06/25 更新 更新至82集 【iqiyi】
 - [穿越后我成了团宠 动态漫画](http://www.iqiyi.com/v_1kl1g82i2wo.html) - 2025/06/25 更新 更新至42集 【iqiyi】
-- [逆天仙命：捡个婴儿当大佬 动态漫画](http://www.iqiyi.com/v_2b9tawusim4.html) - 2025/06/25 更新 更新至46集 【iqiyi】
+- [逆天仙命：捡个婴儿当大佬 动态漫画](http://www.iqiyi.com/v_2b9tawusim4.html) - 2025/06/25 更新 更新至47集 【iqiyi】
 - [邪神降世，我有一座大凶狱 动态漫画](http://www.iqiyi.com/v_dp0rbk9hd4.html) - 2025/06/25 更新 更新至55集 【iqiyi】
-- [一世独尊](http://www.iqiyi.com/v_16zxzexerfg.html) - 2025/06/25 更新 更新至134集 【iqiyi】
-- [开局签到至尊丹田 动态漫画](http://www.iqiyi.com/v_2amiwl7pa8s.html) - 2025/06/25 更新 更新至183集 【iqiyi】
+- [一世独尊](http://www.iqiyi.com/v_16zxzexerfg.html) - 2025/06/25 更新 更新至135集 【iqiyi】
+- [开局签到至尊丹田 动态漫画](http://www.iqiyi.com/v_2amiwl7pa8s.html) - 2025/06/25 更新 更新至184集 【iqiyi】
 - [神探双骄 动态漫画](http://www.iqiyi.com/v_2aoz08v35fk.html) - 2025/06/25 更新 更新至31集 【iqiyi】
-- [诡异游戏：我靠亿万功德氪通关 动态漫画](http://www.iqiyi.com/v_1vjgd7croug.html) - 2025/06/25 更新 更新至104集 【iqiyi】
+- [诡异游戏：我靠亿万功德氪通关 动态漫画](http://www.iqiyi.com/v_1vjgd7croug.html) - 2025/06/25 更新 更新至105集 【iqiyi】
 - [斗罗大陆5重生唐三 动态漫画](http://www.iqiyi.com/v_20079ouizgs.html) - 2025/06/25 更新 更新至24集 【iqiyi】
-- [全民诡异：开局掌握零元购 动态漫画](http://www.iqiyi.com/v_1t3om8emqd8.html) - 2025/06/25 更新 更新至50集 【iqiyi】
-- [进化狂潮 第二季](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至65集 【youku】
-- [气运之子：我可以无限暴击](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至53集 【youku】
-- [盖世扫地僧：我可以无限融合](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至118集 【youku】
-- [末日狠人：开局囤积万亿物资](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至15集 【youku】
-- [从哥布林到哥布林神](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至15集 【youku】
-- [全民御兽：铲屎官首富开局](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至22集 【youku】
-- [克金玩家](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至4集 【youku】
-- [开局物价贬值，我成为了世界首富](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至77集 【youku】
-- [全民末日：我！病毒君王](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至36集 【youku】
-- [我神魔双修：制霸当世](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至73集 【youku】
-- [重生为怪兽什么鬼 第二季](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至103集 【youku】
-- [末世钞能力者](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至31集 【youku】
-- [氪丹修仙只苟长生](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至53集 【youku】
-- [假面骑士歌查德 中配版](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至31集 【youku】
-- [全民御兽：开局山海经，我横扫全球](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至71集 【youku】
-- [我不过是个大罗金仙：横扫天下篇](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至46集 【youku】
-- [江思先生](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至84集 【youku】
+- [全民诡异：开局掌握零元购 动态漫画](http://www.iqiyi.com/v_1t3om8emqd8.html) - 2025/06/25 更新 更新至51集 【iqiyi】
+- [百斩屠神](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至52集 【youku】
+- [全民诡异：开局掌握零元购](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至51集 【youku】
+- [重生为怪兽什么鬼2：兽神崛起](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至99集 【youku】
+- [精神病面前 鬼东西算个球](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至120集 【youku】
+- [武道大帝](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至65集 【youku】
+- [香格里拉边境](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至12集 【youku】
+- [结婚后，我把冰山女总裁气哭了](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至38集 【youku】
+- [寒冰末日：我屯了千亿物资](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至42集 【youku】
+- [重生归来：直接无敌 第三季](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至98集 【youku】
+- [全民转职：无职的我终结了神明！](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至15集 【youku】
+- [盖世扫地僧：我可以无限融合](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至119集 【youku】
+- [我刷爆了无限致命游戏](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至73集 【youku】
 
-**今天总共更新了 61 部番剧。**
+**今天总共更新了 63 部番剧。**
 
 ## 系统要求
 
