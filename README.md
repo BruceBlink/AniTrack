@@ -19,6 +19,7 @@
 - [末日后酒店](https://mikanani.me/Home/Bangumi/3600) - 2025/06/25 更新 【mikanani】
 - [紫云寺家的兄弟姐妹](https://mikanani.me/Home/Bangumi/3614) - 2025/06/25 更新 【mikanani】
 - [竹轮战纪～用我的可爱来侵略地球～](https://mikanani.me/Home/Bangumi/3638) - 2025/06/25 更新 【mikanani】
+- [随兴旅-That's Journey-](https://mikanani.me/Home/Bangumi/3598) - 2025/06/25 更新 【mikanani】
 - [夏日口袋](https://mikanani.me/Home/Bangumi/3599) - 2025/06/25 更新 【mikanani】
 - [正义使者 -我的英雄学院之非法英雄-](https://mikanani.me/Home/Bangumi/3619) - 2025/06/25 更新 【mikanani】
 - [搞笑漫画日和GO](https://mikanani.me/Home/Bangumi/3627) - 2025/06/25 更新 【mikanani】
@@ -33,7 +34,6 @@
 - [九龙大众浪漫](https://mikanani.me/Home/Bangumi/3607) - 2025/06/25 更新 【mikanani】
 - [时光流逝，饭菜依旧美味](https://mikanani.me/Home/Bangumi/3623) - 2025/06/25 更新 【mikanani】
 - [真･武士传 剑勇传说](https://mikanani.me/Home/Bangumi/3637) - 2025/06/25 更新 【mikanani】
-- [摇滚乃是淑女的爱好](https://mikanani.me/Home/Bangumi/3606) - 2025/06/25 更新 【mikanani】
 - [小浣熊 卡尔卡尔团](https://mikanani.me/Home/Bangumi/3626) - 2025/06/25 更新 【mikanani】
 - [防风少年 第二季](https://mikanani.me/Home/Bangumi/3634) - 2025/06/25 更新 【mikanani】
 - [少年歌行 血染天启篇](https://www.bilibili.com/bangumi/play/ep1343071) - 2025/06/25 更新 更新至26集 【bilibili】
@@ -62,20 +62,20 @@
 - [诡异游戏：我靠亿万功德氪通关 动态漫画](http://www.iqiyi.com/v_1vjgd7croug.html) - 2025/06/25 更新 更新至105集 【iqiyi】
 - [斗罗大陆5重生唐三 动态漫画](http://www.iqiyi.com/v_20079ouizgs.html) - 2025/06/25 更新 更新至25集 【iqiyi】
 - [全民诡异：开局掌握零元购 动态漫画](http://www.iqiyi.com/v_1t3om8emqd8.html) - 2025/06/25 更新 更新至51集 【iqiyi】
-- [我刷爆了无限致命游戏](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至73集 【youku】
-- [斗罗大陆5重生唐三](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至25集 【youku】
-- [武道大帝](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至65集 【youku】
-- [我被困在同一天一千年](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至118集 【youku】
-- [百斩屠神](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至52集 【youku】
 - [全民转职：无职的我终结了神明！](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至15集 【youku】
+- [盖世扫地僧：我可以无限融合](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至119集 【youku】
+- [百斩屠神](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至52集 【youku】
+- [精神病面前 鬼东西算个球](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至120集 【youku】
+- [寒冰末日：我屯了千亿物资](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至42集 【youku】
+- [我被困在同一天一千年](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至118集 【youku】
+- [武道大帝](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至65集 【youku】
+- [重生为怪兽什么鬼2：兽神崛起](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至99集 【youku】
+- [结婚后，我把冰山女总裁气哭了](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至38集 【youku】
+- [全民诡异：开局掌握零元购](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至51集 【youku】
+- [斗罗大陆5重生唐三](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至25集 【youku】
 - [香格里拉边境](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至12集 【youku】
 - [重生归来：直接无敌 第三季](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至98集 【youku】
-- [寒冰末日：我屯了千亿物资](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至42集 【youku】
-- [盖世扫地僧：我可以无限融合](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至119集 【youku】
-- [结婚后，我把冰山女总裁气哭了](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至38集 【youku】
-- [精神病面前 鬼东西算个球](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至120集 【youku】
-- [重生为怪兽什么鬼2：兽神崛起](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至99集 【youku】
-- [全民诡异：开局掌握零元购](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至51集 【youku】
+- [我刷爆了无限致命游戏](https://www.youku.com/ku/webcomic) - 2025/06/25 更新 更新至73集 【youku】
 
 **今天总共更新了 62 部番剧。**
 
