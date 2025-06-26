@@ -69,7 +69,7 @@ def init():
     """初始化日志记录器"""
     # 统一初始化 logger
     Logger.init(
-        level=logging.DEBUG,
+        level=logging.INFO,
         log_file=f"logs/{utils.iso_date_dd}_cartoon_fetcher.log",
         max_bytes=10_000_000,
         backup_count=5,
