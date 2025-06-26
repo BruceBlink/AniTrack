@@ -42,7 +42,7 @@
       "platform": "mikanani",
       "title": "记忆缝线",
       "update_count": "",
-      "update_info": "7\n\n\n2025/06/2",
+      "update_info": "10\n\n\n2025/06/",
       "update_time": "2025/06/26"
     },
     {
@@ -169,6 +169,15 @@
       "title": "mono女孩",
       "update_count": "",
       "update_info": "1\n\n\n2025/06/2",
+      "update_time": "2025/06/26"
+    },
+    {
+      "detail_url": "https://mikanani.me/Home/Bangumi/3637",
+      "image_url": "https://mikanani.me/images/Bangumi/202504/060a6b96.jpg?width=400&height=400&format=webp",
+      "platform": "mikanani",
+      "title": "真･武士传 剑勇传说",
+      "update_count": "",
+      "update_info": "2\n\n\n2025/06/2",
       "update_time": "2025/06/26"
     },
     {
@@ -362,56 +371,11 @@
     },
     {
       "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://m.ykimg.com/05810000668E623EC54FDB20AEEFD894",
-      "platform": "youku",
-      "title": "我被困在同一天一千年",
-      "update_count": "118",
-      "update_info": "更新至118话",
-      "update_time": "2025/06/26"
-    },
-    {
-      "detail_url": "https://www.youku.com/ku/webcomic",
       "image_url": "http://m.ykimg.com/05810000677F92A513FAB41363CE6B02",
       "platform": "youku",
       "title": "全民御兽：开局山海经，我横扫全球",
       "update_count": "72",
       "update_info": "更新至72话",
-      "update_time": "2025/06/26"
-    },
-    {
-      "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://liangcang-material.alicdn.com/prod/upload/0eaa0ecef2ff4cb986c4fedfbbdbc0af.webp.jpg",
-      "platform": "youku",
-      "title": "师兄啊师兄",
-      "update_count": "95",
-      "update_info": "更新至95话",
-      "update_time": "2025/06/26"
-    },
-    {
-      "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://liangcang-material.alicdn.com/prod/upload/b50fa5eef166429f9d66f7720553e7a6.webp.jpg",
-      "platform": "youku",
-      "title": "仙武帝尊",
-      "update_count": "461",
-      "update_info": "更新至461话",
-      "update_time": "2025/06/26"
-    },
-    {
-      "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://m.ykimg.com/058100006499599F13EB660DDD8D09C4",
-      "platform": "youku",
-      "title": "收徒亿万返还：为师无敌世间 第二季",
-      "update_count": "129",
-      "update_info": "更新至129话",
-      "update_time": "2025/06/26"
-    },
-    {
-      "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://m.ykimg.com/0581000068074E70142D16164EFC4EA9",
-      "platform": "youku",
-      "title": "无敌神王",
-      "update_count": "22",
-      "update_info": "更新至22话",
       "update_time": "2025/06/26"
     },
     {
@@ -425,74 +389,38 @@
     },
     {
       "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://m.ykimg.com/0581000067B6D50FC8479F12471FBCC4",
+      "image_url": "http://m.ykimg.com/058100006780E02BC7545212D0962D1D",
       "platform": "youku",
-      "title": "氪丹修仙只苟长生",
-      "update_count": "54",
-      "update_info": "更新至54话",
+      "title": "古神游戏",
+      "update_count": "48",
+      "update_info": "更新至48话",
       "update_time": "2025/06/26"
     },
     {
       "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://liangcang-material.alicdn.com/prod/upload/0a6d5f8a04b5467ca46f8fef3779fca9.webp.jpg",
+      "image_url": "http://m.ykimg.com/05810000668E623EC54FDB20AEEFD894",
       "platform": "youku",
-      "title": "假面骑士圣刃 中配版",
-      "update_count": "31",
-      "update_info": "更新至31话",
+      "title": "我被困在同一天一千年",
+      "update_count": "118",
+      "update_info": "更新至118话",
       "update_time": "2025/06/26"
     },
     {
       "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://m.ykimg.com/0581000066B9B9877B50C01357C3B462",
+      "image_url": "http://m.ykimg.com/058100006499599F13EB660DDD8D09C4",
       "platform": "youku",
-      "title": "弟子修炼，我躺平！第二季",
-      "update_count": "82",
-      "update_info": "更新至82话",
+      "title": "收徒亿万返还：为师无敌世间 第二季",
+      "update_count": "129",
+      "update_info": "更新至129话",
       "update_time": "2025/06/26"
     },
     {
       "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://liangcang-material.alicdn.com/prod/upload/aa8905b5340d4efb80559e4cb63bcbed.webp.jpg",
-      "platform": "youku",
-      "title": "轩辕小豆之山海奇缘",
-      "update_count": "50",
-      "update_info": "更新至50话",
-      "update_time": "2025/06/26"
-    },
-    {
-      "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://liangcang-material.alicdn.com/prod/upload/1ea7aad437fa4e3daf06322efcf48450.webp.jpg",
+      "image_url": "http://liangcang-material.alicdn.com/prod/upload/1ed70a6155be435d93bcc2bd1104824f.webp.jpg",
       "platform": "youku",
       "title": "暴富系统：我有999个新马甲 第二季",
       "update_count": "58",
       "update_info": "更新至58话",
-      "update_time": "2025/06/26"
-    },
-    {
-      "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://m.ykimg.com/0581000067B59AE913FAB4137EFDF861",
-      "platform": "youku",
-      "title": "我在末日玄幻世界无敌了",
-      "update_count": "37",
-      "update_info": "更新至37话",
-      "update_time": "2025/06/26"
-    },
-    {
-      "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://m.ykimg.com/0581000067B55B44200396146DDF4E19",
-      "platform": "youku",
-      "title": "气运之子：我可以无限暴击",
-      "update_count": "54",
-      "update_info": "更新至54话",
-      "update_time": "2025/06/26"
-    },
-    {
-      "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://m.ykimg.com/05810000680DA0EB1409CB1588E682E1",
-      "platform": "youku",
-      "title": "我掌控百万阴兵阴将",
-      "update_count": "30",
-      "update_info": "更新至30话",
       "update_time": "2025/06/26"
     },
     {
@@ -506,11 +434,29 @@
     },
     {
       "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://m.ykimg.com/058100006780E02BC7545212D0962D1D",
+      "image_url": "http://liangcang-material.alicdn.com/prod/upload/0a6d5f8a04b5467ca46f8fef3779fca9.webp.jpg",
       "platform": "youku",
-      "title": "古神游戏",
-      "update_count": "48",
-      "update_info": "更新至48话",
+      "title": "假面骑士圣刃 中配版",
+      "update_count": "31",
+      "update_info": "更新至31话",
+      "update_time": "2025/06/26"
+    },
+    {
+      "detail_url": "https://www.youku.com/ku/webcomic",
+      "image_url": "http://liangcang-material.alicdn.com/prod/upload/a58722270b414907942317f4a81f22ef.webp.jpg",
+      "platform": "youku",
+      "title": "仙武帝尊",
+      "update_count": "461",
+      "update_info": "更新至461话",
+      "update_time": "2025/06/26"
+    },
+    {
+      "detail_url": "https://www.youku.com/ku/webcomic",
+      "image_url": "http://liangcang-material.alicdn.com/prod/upload/7b3336744fd04f2d8781ce8ee8e02cc5.webp.jpg",
+      "platform": "youku",
+      "title": "轩辕小豆之山海奇缘",
+      "update_count": "50",
+      "update_info": "更新至50话",
       "update_time": "2025/06/26"
     },
     {
@@ -520,6 +466,69 @@
       "title": "师尊：这个冲师逆徒才不是圣子",
       "update_count": "25",
       "update_info": "更新至25话",
+      "update_time": "2025/06/26"
+    },
+    {
+      "detail_url": "https://www.youku.com/ku/webcomic",
+      "image_url": "http://m.ykimg.com/05810000680DA0EB1409CB1588E682E1",
+      "platform": "youku",
+      "title": "我掌控百万阴兵阴将",
+      "update_count": "30",
+      "update_info": "更新至30话",
+      "update_time": "2025/06/26"
+    },
+    {
+      "detail_url": "https://www.youku.com/ku/webcomic",
+      "image_url": "http://m.ykimg.com/0581000067B6D50FC8479F12471FBCC4",
+      "platform": "youku",
+      "title": "氪丹修仙只苟长生",
+      "update_count": "54",
+      "update_info": "更新至54话",
+      "update_time": "2025/06/26"
+    },
+    {
+      "detail_url": "https://www.youku.com/ku/webcomic",
+      "image_url": "http://m.ykimg.com/0581000066B9B9877B50C01357C3B462",
+      "platform": "youku",
+      "title": "弟子修炼，我躺平！第二季",
+      "update_count": "82",
+      "update_info": "更新至82话",
+      "update_time": "2025/06/26"
+    },
+    {
+      "detail_url": "https://www.youku.com/ku/webcomic",
+      "image_url": "http://m.ykimg.com/0581000067B59AE913FAB4137EFDF861",
+      "platform": "youku",
+      "title": "我在末日玄幻世界无敌了",
+      "update_count": "37",
+      "update_info": "更新至37话",
+      "update_time": "2025/06/26"
+    },
+    {
+      "detail_url": "https://www.youku.com/ku/webcomic",
+      "image_url": "http://liangcang-material.alicdn.com/prod/upload/b47ecde7d6f24b1287579a84a58aa46b.webp.jpg",
+      "platform": "youku",
+      "title": "师兄啊师兄",
+      "update_count": "95",
+      "update_info": "更新至95话",
+      "update_time": "2025/06/26"
+    },
+    {
+      "detail_url": "https://www.youku.com/ku/webcomic",
+      "image_url": "http://m.ykimg.com/0581000067B55B44200396146DDF4E19",
+      "platform": "youku",
+      "title": "气运之子：我可以无限暴击",
+      "update_count": "54",
+      "update_info": "更新至54话",
+      "update_time": "2025/06/26"
+    },
+    {
+      "detail_url": "https://www.youku.com/ku/webcomic",
+      "image_url": "http://m.ykimg.com/0581000068074E70142D16164EFC4EA9",
+      "platform": "youku",
+      "title": "无敌神王",
+      "update_count": "22",
+      "update_info": "更新至22话",
       "update_time": "2025/06/26"
     }
   ]
