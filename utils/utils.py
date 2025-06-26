@@ -116,7 +116,7 @@ def print_results(results: dict[str, list]):
         # 添加统计信息
     output_lines.append(f"\n统计: 共找到 {len(anime_list)} 部今日更新的动漫")
     # 一次性输出所有内容
-    logging.info("\n".join(output_lines))
+    logging.debug("\n".join(output_lines))
 
 
 def extract_number(text: str) -> int | None:
