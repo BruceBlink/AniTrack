@@ -94,8 +94,9 @@ class TencentFetcher(AbstractFetcher):
 
             # 查找所有包含动漫项目的容器
             banner_wraps = soup.find_all('div', class_='form-banner-item-wrap')
-            logging.info(f"找到 {len(banner_wraps)} 个动漫容器")
-
+            if not len(banner_wraps):
+                logging.warning("没有找到任何动漫更新信息，可能页面结构已更改或没有今日更新。")
+                return None
             for wrap in banner_wraps:
                 # 每个容器内有多个项目，但只取第一个实际显示的项目
                 video_items = wrap.find_all('div', class_='video-banner-item')
