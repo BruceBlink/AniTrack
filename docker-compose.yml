@@ -8,7 +8,7 @@ services:
     image: likanug515/anitracker      # ⬅️ 指定构建后的镜像名和版本
     container_name: AniTracker
     working_dir: /app
-    command: python main.py
+    command: python -m anitracker
     volumes:
       - ./data:/app/data  # ⬅️ 挂载当前data目录到容器的 /app/data 目录
       - ./logs:/app/logs  # ⬅️ 挂载日志目录
