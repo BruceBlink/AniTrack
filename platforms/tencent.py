@@ -1,17 +1,55 @@
 import asyncio
+import json
 import logging  # 导入 logging 模块
-import os
-import time
-from urllib.parse import urljoin, unquote
 import aiohttp
-import requests
 from bs4 import BeautifulSoup, Tag
 import utils
 from common import Result, AbstractFetcher, Logger
 from common.decorators import timer, retry_async, print_after_return_async, \
     print_performance_metrics
 from config import TENCENT_CARTOON_BASE_URL
-from utils import print_results, extract_number, iso_date_ld, clean_text
+from utils import print_results
+
+
+def _extract_vikor_json(html: str) -> dict:
+    """从 HTML 中提取并解析 window.__vikor__context__ 对应的 JSON."""
+    soup = BeautifulSoup(html, "html.parser")
+    logging.debug("解析 HTML 内容：\n%s", soup.prettify())
+
+    script = next(
+        (tag.string for tag in soup.find_all("script")
+         if tag.string and "window.__vikor__context__" in tag.string),
+        None
+    )
+    if not script:
+        raise ValueError("未找到包含 window.__vikor__context__ 的 <script> 标签。")
+
+    # 分割出真正的 JSON 串，并替换 undefined
+    prefix = "window.__vikor__context__="
+    try:
+        raw_json = script.split(prefix, 1)[1].rstrip(";")
+    except IndexError:
+        raise ValueError("脚本内容格式不正确，无法提取 JSON。")
+
+    fixed_json = raw_json.replace("undefined", "null")
+    return json.loads(fixed_json)
+
+
+def _find_daily_card(pinia_state: dict) -> dict:
+    """从 _piniaState 中找到 moduleTitle 为 '每日更新' 的 card."""
+    cards = (
+        pinia_state
+        .get("channelPageData", {})
+        .get("channelsModulesMap", {})
+        .get("100119", {})
+        .get("cardListData", [])
+    )
+    return next((c for c in cards if c.get("moduleTitle") == "每日更新"), {})
+
+
+def _get_qq_video_url(cid: str) -> str:
+    """从预览信息中提取视频 ID"""
+    return f"https://v.qq.com/x/cover/{cid}.html"
 
 
 class TencentFetcher(AbstractFetcher):
@@ -22,105 +60,54 @@ class TencentFetcher(AbstractFetcher):
 
     def _build_result_from_episode(self, item: dict | Tag) -> Result:
         super()._build_result_from_episode(item)
-        data = Result(
-            platform="tencent",
-            title="",
-            update_count="",
-            update_info="",
-            image_url="",
-            detail_url="",
-            update_time=iso_date_ld
+        uniImgTag = item.get("uniImgTag", "")
+        update_info = json.loads(uniImgTag)
+        update_count = update_info.get("tag_4", "").get("text", "")
+        cid = item.get("cid", "")
+        return Result(
+            platform=self.platform,
+            title=item.get('title', '').strip(),
+            update_count=str(utils.extract_number(update_count)),
+            update_info=item.get('topicLabel', '').strip(),
+            image_url=item.get('coverPic', '').strip(),
+            detail_url=_get_qq_video_url(cid),
+            update_time=utils.iso_date_ld,
         )
-        # 提取标题
-        title_elem = item.select_one('.banner-title')
-        if title_elem:
-            data["title"] = clean_text(title_elem.get_text(strip=True))
-
-        # 提取更新集数
-        update_count_elem = item.select_one('.corner-mark--rightBottom')
-        if update_count_elem:
-            data["update_count"] = extract_number(clean_text(update_count_elem.get_text(strip=True)))
-
-        # 提取更新说明
-        update_info_elem = item.select_one('.banner-subtitle')
-        if update_info_elem:
-            data["update_info"] = clean_text(update_info_elem.get_text(strip=True))
-
-        # 提取封面图片
-        img_elem = item.select_one('.banner-cover')
-        if img_elem:
-            img_url = img_elem.get('data-src') or img_elem.get('src')
-            if img_url:
-                data["image_url"] = normalize_url(img_url)
-
-        # 提取详情链接
-        link_elem = item.select_one('.banner-cover-wrap')
-        if link_elem and link_elem.get('href'):
-            data["detail_url"] = normalize_url(link_elem['href'])
-
-        # 提取宣传语
-        tagline_elem = item.select_one('.tag-wrap span')
-        if tagline_elem:
-            data["tagline"] = clean_text(tagline_elem.get_text(strip=True))
-
-        # 提取平台信息
-        platform_elem = item.select_one('.corner-mark--rightTop')
-        if platform_elem:
-            data["platform"] = data["platform"] + clean_text(platform_elem.get_text(strip=True))
-
-        # 提取元数据参数
-        dt_params = item.get('dt-params', '')
-        if dt_params:
-            params = {}
-            for pair in dt_params.split('&'):
-                if '=' in pair:
-                    key, value = pair.split('=', 1)
-                    params[key] = unquote(value)
-
-            data["metadata"] = params
-        return data
 
     async def _fetch_qq_cartoon_today(self, session: aiohttp.ClientSession) -> dict[str, list] | None:
         """从腾讯视频动漫频道获取今日更新的动漫信息。"""
-        try:
-            await super().fetch_update_data(session)
-            # 解析 HTML
-            soup = BeautifulSoup(self.response_text, "html.parser")
-            logging.debug(f"解析从API获取到的 HTML 内容为：{soup.prettify()}...")
-            # 获取今天的中文星期
-            weekday = utils.weekday_today
 
-            logging.info("正在查找今日更新模块...")
+        await super().fetch_update_data(session)
+        # 解析 HTML
+        # 1. 解析 JSON
+        data = _extract_vikor_json(self.response_text)
+        pinia = data.get("_piniaState", {})
 
-            # 查找所有包含动漫项目的容器
-            banner_wraps = soup.find_all('div', class_='form-banner-item-wrap')
-            if not len(banner_wraps):
-                logging.warning("没有找到任何动漫更新信息，可能页面结构已更改或没有今日更新。")
-                return None
-            for wrap in banner_wraps:
-                # 每个容器内有多个项目，但只取第一个实际显示的项目
-                video_items = wrap.find_all('div', class_='video-banner-item')
+        # 2. 找到“每日更新”模块
+        daily = _find_daily_card(pinia)
+        if not daily:
+            logging.warning("未找到“每日更新”模块，返回空结果。")
+            return None
 
-                for item in video_items:
-                    data = self._build_result_from_episode(item)
-                    # 添加到结果列表
-                    if data["title"]:
-                        self.result[weekday].append(data)
-                        logging.info(f"识别到更新：{data.title} {data.update_info}")
+            # 3. 提取今日更新的视频列表
+        tab_id = daily.get("selectedTabId", "")
+        today_videos = (
+            daily
+            .get("videoBannerMap", {})
+            .get(tab_id, {})
+            .get("videoList", [])
+        )
 
-            return self.result
+        # 4. 构建结果并记录日志
+        comics = [self._build_result_from_episode(item) for item in today_videos]
+        for comic in comics:
+            logging.info(f"识别到更新：{comic.title}, {comic.update_info}")
 
-        except requests.exceptions.Timeout:
-            logging.error("请求超时。将在 10 秒后重试...")
-            time.sleep(10)
-        except requests.exceptions.TooManyRedirects:
-            logging.error("重定向过多。请检查 URL。")
-        except requests.exceptions.RequestException as e:
-            logging.error(f"网络请求错误: {str(e)}")
-        except Exception as e:
-            logging.exception(f"获取腾讯动漫更新信息时发生意外错误: {str(e)}")
-
-        return None
+        # 5. 存储并返回
+        weekday = utils.weekday_today
+        self.result[weekday] = comics
+        logging.info(f"成功提取到 {len(comics)}部今日更新的动漫。")
+        return self.result
 
     @retry_async(
         retries=5,
@@ -134,21 +121,6 @@ class TencentFetcher(AbstractFetcher):
         logging.info("开始获取腾讯视频动漫频道今日更新...")
         async with aiohttp.ClientSession() as session:
             return await self._fetch_qq_cartoon_today(session)
-
-
-def normalize_url(url, base_url="https://v.qq.com"):
-    """将给定 URL 规范化为绝对路径。"""
-    if not url:
-        return ""
-
-    if url.startswith('//'):
-        return 'https:' + url
-    elif url.startswith('/'):
-        return urljoin(base_url, url)
-    elif not url.startswith('http'):
-        # 处理 URL 可能是相对路径但不是以 / 开头的情况
-        return urljoin(base_url, url)
-    return url
 
 
 @timer(enable_stats=True, print_report=False)
@@ -166,7 +138,7 @@ if __name__ == "__main__":
         console=True,
         colored=True
     )
-    for i in range(0, 10):
-        asyncio.run(test_all())
+    # for i in range(0, 10):
+    asyncio.run(test_all())
 
     print_performance_metrics(test_all)

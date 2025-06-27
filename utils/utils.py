@@ -90,13 +90,13 @@ def merge_dict_data(*dicts: dict[str, list]) -> dict[str, list]:
 def print_results(results: dict[str, list]):
     """将获取到的动漫更新结果打印到控制台。"""
     if not results:
-        print("没有找到任何更新信息可供打印。")
+        logging.debug("没有找到任何更新信息可供打印。")
         return
 
     _weekday = list(results.keys())[0]
     anime_list = results[_weekday]
     if not anime_list:
-        print(f"{_weekday} 没有找到更新的动漫。")
+        logging.debug(f"{_weekday} 没有找到更新的动漫。")
         return
 
     # print(f"\n{_weekday} 更新动漫列表:")

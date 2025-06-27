@@ -86,7 +86,7 @@ def retry_async(
                     logging.warning(f"第 {attempt} 次调用异常：{exc!r}")
                 if attempt < retries:
                     logging.info(f"等待 {delay}s 后重试…")
-                    await asyncio.sleep(random.uniform(1, delay) * retries)  # 使用随机延迟增加不确定性
+                    await asyncio.sleep(random.uniform(1, delay))  # 使用随机延迟增加不确定性
             logging.error("重试次数用尽（Async），操作失败。")
             if last_exc:
                 raise last_exc
