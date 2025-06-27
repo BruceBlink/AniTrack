@@ -128,7 +128,7 @@ def print_after_return(
 # ===== 异步版 print_after_return =====
 def print_after_return_async(
         print_func: Callable[[Any], None],
-        print_condition: Callable[[Any], bool] = lambda x: True
+        print_condition: Callable[[Any], bool] = lambda x: False
 ):
     """
     异步函数返回后打印装饰器。
