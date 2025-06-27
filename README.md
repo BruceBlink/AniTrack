@@ -103,7 +103,7 @@
 - **运行主程序**：
 
     ```bash
-    python main.py
+    python -m anitracker
     ```
 
 - **docker-compose运行**：
