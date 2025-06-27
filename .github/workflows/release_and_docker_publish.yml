@@ -106,18 +106,19 @@ jobs:
           else
             RANGE="$PREV..${{ env.VERSION_TAG }}"
             echo "Changelog 范围: $RANGE"
-            PREFIXES=$(paste -sd'|' .github/changelog-include-prefixes.txt)
-            if [ -z "$PREFIXES" ]; then
-              CHANGELOG=$(git log $RANGE --pretty=format:"%h %s")
-              echo "changelog<<EOF" >> $GITHUB_OUTPUT
-              echo "$CHANGELOG" >> $GITHUB_OUTPUT
-              echo "EOF" >> $GITHUB_OUTPUT
-            else
+            if [ -f .github/changelog-include-prefixes.txt ] && [ -s .github/changelog-include-prefixes.txt ]; then
+              PREFIXES=$(paste -sd'|' .github/changelog-include-prefixes.txt)
+              echo "使用前缀过滤: $PREFIXES"
               CHANGELOG=$(git log $RANGE --pretty=format:"%h %s" | grep -E "^($PREFIXES):" || true)
-              echo "changelog<<EOF" >> $GITHUB_OUTPUT
-              echo "$CHANGELOG" >> $GITHUB_OUTPUT
-              echo "EOF" >> $GITHUB_OUTPUT
+            else
+              echo "未设置前缀过滤，输出全部 commit"
+              CHANGELOG=$(git log $RANGE --pretty=format:"%h %s")
             fi
+            echo "生成的 CHANGELOG:"
+            echo "$CHANGELOG"
+            echo "changelog<<EOF" >> $GITHUB_OUTPUT
+            echo "$CHANGELOG" >> $GITHUB_OUTPUT
+            echo "EOF" >> $GITHUB_OUTPUT
           fi
 
       - name: Create GitHub Release
@@ -220,7 +221,7 @@ jobs:
               const info = 
                 `\n\n## Docker Image\n\n` +
                 `- **${process.env.DOCKERHUB_USERNAME}/${process.env.LOWER_IMAGE_NAME}:${process.env.VERSION_TAG}**\n` +
-                `- Pull with: \`docker pull ${process.env.DOCKERHUB_USERNAME}/${process.env.LOWER_IMAGE_NAME}:${process.env.VERSION_TAG}\``;
+                `- Pull with: \`docker pull ghcr.io/${{ github.actor }}/${process.env.LOWER_IMAGE_NAME}:${process.env.VERSION_TAG}\``;
               await github.rest.repos.updateRelease({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
