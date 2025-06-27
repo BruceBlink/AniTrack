@@ -106,7 +106,8 @@ jobs:
           else
             RANGE="$PREV..${{ env.VERSION_TAG }}"
             echo "Changelog 范围: $RANGE"
-            CHANGELOG=$(git log $RANGE --pretty=format:"%h %s")
+            PREFIXES=$(paste -sd'|' .github/changelog-include-prefixes.txt)
+            CHANGELOG=$(git log $RANGE --pretty=format:"%h %s" | grep -E "^($PREFIXES):")
             echo "changelog<<EOF" >> $GITHUB_OUTPUT
             echo "$CHANGELOG" >> $GITHUB_OUTPUT
             echo "EOF" >> $GITHUB_OUTPUT
