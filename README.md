@@ -96,7 +96,7 @@
 
 2. 安装依赖：
     ```bash
-    pip install -r requirements.txt
+    pip install --no-cache-dir .
     ```
 ## 使用说明
 
