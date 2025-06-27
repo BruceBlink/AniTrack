@@ -109,7 +109,7 @@ jobs:
             if [ -f .github/changelog-include-prefixes.txt ] && [ -s .github/changelog-include-prefixes.txt ]; then
               PREFIXES=$(paste -sd'|' .github/changelog-include-prefixes.txt)
               echo "使用前缀过滤: $PREFIXES"
-              CHANGELOG=$(git log $RANGE --pretty=format:"%h %s" | grep -E "^($PREFIXES):" || true)
+              CHANGELOG=$(git log $RANGE --pretty=format:"%h %s" | grep -E "^[a-f0-9]+ ($PREFIXES):" || true)
             else
               echo "未设置前缀过滤，输出全部 commit"
               CHANGELOG=$(git log $RANGE --pretty=format:"%h %s")
