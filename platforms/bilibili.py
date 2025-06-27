@@ -63,14 +63,12 @@ class BilibiliFetcher(AbstractFetcher):
 
         except requests.exceptions.Timeout:
             logging.warning("请求超时，10 秒后重试...")
-            time.sleep(10)
-            return None
         except requests.exceptions.RequestException as e:
             logging.error("请求错误：%s", e)
-            return None
         except Exception as e:
             logging.exception("未知错误：%s", e)
-            return None
+
+        return None
 
     @retry_async(
         retries=5,

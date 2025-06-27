@@ -61,13 +61,11 @@ class MikananiFetcher(AbstractFetcher):
             return self.result
         except requests.exceptions.Timeout:
             logging.warning("请求超时，10 秒后重试...")
-            time.sleep(10)
         except requests.RequestException as e:
             logging.error(f"请求处理异常：{e}")
-            return None
         except Exception as e:
             logging.exception(f"其他错误：{e}")
-            return None
+        return None
 
     @retry_async(
         retries=5,

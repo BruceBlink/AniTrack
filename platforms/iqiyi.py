@@ -71,17 +71,14 @@ class IQiyiFetcher(AbstractFetcher):
 
         except requests.exceptions.Timeout:
             logging.warning("请求超时，将在 10 秒后重试...")
-            time.sleep(10)
-            return None
         except requests.exceptions.TooManyRedirects:
             logging.error("重定向过多，请检查 URL")
-            return None
         except requests.exceptions.RequestException as e:
             logging.error(f"网络请求错误: {e}")
-            return None
         except Exception as e:
             logging.exception(f"处理数据时发生意外错误: {e}")
-            return None
+
+        return None
 
     @retry_async(
         retries=5,
