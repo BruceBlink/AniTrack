@@ -19,3 +19,5 @@ dependencies = [
     "aiohttp >=3.10.5"
 ]
 
+[project.scripts]
+anitracker = "main:main"
