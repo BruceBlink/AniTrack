@@ -32,7 +32,6 @@ class IQiyiFetcher(AbstractFetcher):
             update_time=iso_date_ld
         )
 
-    @timer(unit="ms")
     async def _fetch_iqiyi_cartoon_today(self, session: aiohttp.ClientSession) -> dict[str, list] | None:
         """从爱奇艺动漫频道获取今日更新的动漫信息。"""
         try:
