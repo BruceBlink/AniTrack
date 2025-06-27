@@ -77,7 +77,7 @@ class BilibiliFetcher(AbstractFetcher):
         delay=10,
         retry_condition=lambda result: not result
     )
-    @print_after_return_async(print_results, print_condition=lambda r: any(r.values()))
+    @print_after_return_async(print_results, print_condition=lambda r: not r and any(r.values()))
     @timer(unit="ms")
     async def fetch_bilibili_cartoon_today(self) -> dict[str, list] | None:
         """获取哔哩哔哩国创频道今日更新的动漫信息。"""

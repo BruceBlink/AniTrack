@@ -126,7 +126,7 @@ class TencentFetcher(AbstractFetcher):
         delay=10,
         retry_condition=lambda result: not result
     )
-    @print_after_return_async(print_results, print_condition=lambda r: any(r.values()))
+    @print_after_return_async(print_results, print_condition=lambda r: not r and any(r.values()))
     @timer(unit="ms")
     async def fetch_qq_cartoon_today(self) -> dict[str, list] | None:
         """获取腾讯视频动漫频道今日更新的动漫信息。"""
