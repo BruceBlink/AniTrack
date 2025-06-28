@@ -12,78 +12,70 @@
 
 ## 今日更新
 
-### 星期五 番剧更新
+### 星期六 番剧更新
 
-- [宝可梦 地平线](https://mikanani.me/Home/Bangumi/3015) - 2025/06/27 更新 【mikanani】
-- [忍者与杀手二人组的日常生活](https://mikanani.me/Home/Bangumi/3584) - 2025/06/27 更新 【mikanani】
-- [摇滚乃是淑女的爱好](https://mikanani.me/Home/Bangumi/3606) - 2025/06/27 更新 【mikanani】
-- [末日后酒店](https://mikanani.me/Home/Bangumi/3600) - 2025/06/27 更新 【mikanani】
-- [随兴旅-That's Journey-](https://mikanani.me/Home/Bangumi/3598) - 2025/06/27 更新 【mikanani】
-- [赛马娘 芦毛灰姑娘](https://mikanani.me/Home/Bangumi/3604) - 2025/06/27 更新 【mikanani】
-- [时光流逝，饭菜依旧美味](https://mikanani.me/Home/Bangumi/3623) - 2025/06/27 更新 【mikanani】
-- [mono女孩](https://mikanani.me/Home/Bangumi/3628) - 2025/06/27 更新 【mikanani】
-- [小市民系列 第二季](https://mikanani.me/Home/Bangumi/3635) - 2025/06/27 更新 【mikanani】
-- [涩谷♡八 第三部分](https://mikanani.me/Home/Bangumi/3643) - 2025/06/27 更新 【mikanani】
-- [全职高手荣耀小剧场](https://www.bilibili.com/bangumi/play/ep1835276) - 2025/06/27 更新 更新至13集 【bilibili】
-- [灵笼 第二季](https://www.bilibili.com/bangumi/play/ep1633649) - 2025/06/27 更新 更新至7集 【bilibili】
-- [龅牙的快乐生活](https://www.bilibili.com/bangumi/play/ep1795907) - 2025/06/27 更新 更新至3集 【bilibili】
-- [开心锤锤世界](https://www.bilibili.com/bangumi/play/ep1791488) - 2025/06/27 更新 更新至10集 【bilibili】
-- [U探泰拉](https://www.bilibili.com/bangumi/play/ep1715503) - 2025/06/27 更新 更新至None集 【bilibili】
-- [U探泰拉 中配版](https://www.bilibili.com/bangumi/play/ep1715590) - 2025/06/27 更新 更新至None集 【bilibili】
-- [宝可梦 地平线（中配）](https://www.bilibili.com/bangumi/play/ep1553949) - 2025/06/27 更新 更新至24集 【bilibili】
-- [赛马娘 芦毛灰姑娘](https://www.bilibili.com/bangumi/play/ep1792339) - 2025/06/27 更新 更新至10集 【bilibili】
-- [失业魔王](https://v.qq.com/x/cover/mzc00200zhmrgzi.html) - 2025/06/27 更新 更新至26集 【tencent】
-- [完美世界](https://v.qq.com/x/cover/mcv8hkc8zk8lnov.html) - 2025/06/27 更新 更新至221集 【tencent】
-- [荒神录之玲珑山](https://v.qq.com/x/cover/mzc00200f7h34nq.html) - 2025/06/27 更新 更新至12集 【tencent】
-- [无上神帝](https://v.qq.com/x/cover/mzc00200ilydv1a.html) - 2025/06/27 更新 更新至503集 【tencent】
-- [灵剑尊](https://v.qq.com/x/cover/2w2legt0g8z26al.html) - 2025/06/27 更新 更新至608集 【tencent】
-- [逆天至尊](https://v.qq.com/x/cover/mzc00200azkttu2.html) - 2025/06/27 更新 更新至422集 【tencent】
-- [宝可梦 地平线 第1季](https://v.qq.com/x/cover/mzc00200jlkp05g.html) - 2025/06/27 更新 更新至24集 【tencent】
-- [新世界加载中](https://v.qq.com/x/cover/mzc002007z2f2du.html) - 2025/06/27 更新 更新至1集 【tencent】
-- [斗罗大陆Ⅱ绝世唐门](https://v.qq.com/x/cover/mzc00200xf3rir6.html) - 2025/06/27 更新 更新至107集 【tencent】
-- [火影忍者疾风传[日语版]](https://v.qq.com/x/cover/mzc00200nc1cbum.html) - 2025/06/27 更新 更新至720集 【tencent】
-- [U探泰拉[普通话版]](https://v.qq.com/x/cover/mzc002004dvt2x3.html) - 2025/06/27 更新 更新至8集 【tencent】
-- [仙宠](http://www.iqiyi.com/v_1isl5407uyw.html) - 2025/06/27 更新 更新至5集 【iqiyi】
-- [灵武大陆](http://www.iqiyi.com/v_2gjv1pyuyik.html) - 2025/06/27 更新 更新至86集 【iqiyi】
-- [丹道至尊](http://www.iqiyi.com/v_1bsc8u64b8c.html) - 2025/06/27 更新 更新至131集 【iqiyi】
-- [斗战天下](http://www.iqiyi.com/v_te1xtm32hk.html) - 2025/06/27 更新 更新至48集 【iqiyi】
-- [从零开始当首富 动态漫画 第2季](http://www.iqiyi.com/v_2ar1d6errzc.html) - 2025/06/27 更新 更新至93集 【iqiyi】
-- [维将 第2季](http://www.iqiyi.com/v_w0skb2qgro.html) - 2025/06/27 更新 更新至37集 【iqiyi】
-- [开局有剑域，我能苟成剑神 动态漫画](http://www.iqiyi.com/v_2gndx2ja2c8.html) - 2025/06/27 更新 更新至140集 【iqiyi】
-- [混沌天帝诀 动态漫画](http://www.iqiyi.com/v_1eqd0fc8q0g.html) - 2025/06/27 更新 更新至93集 【iqiyi】
-- [从今天开始当城主 动态漫画 第2季](http://www.iqiyi.com/v_2fnvoqlm3gk.html) - 2025/06/27 更新 更新至151集 【iqiyi】
-- [修真百万年：我的弟子遍布仙界 动态漫画](http://www.iqiyi.com/v_lnx53gleys.html) - 2025/06/27 更新 更新至46集 【iqiyi】
-- [永生不死 动态漫画](http://www.iqiyi.com/v_21nog9qjbms.html) - 2025/06/27 更新 更新至16集 【iqiyi】
-- [再不死我就真无敌了 动态漫画 第1季](http://www.iqiyi.com/v_1sy4jt3ww0c.html) - 2025/06/27 更新 更新至61集 【iqiyi】
-- [高武：登陆未来一万年 动态漫画](http://www.iqiyi.com/v_18oqryjhc6s.html) - 2025/06/27 更新 更新至40集 【iqiyi】
-- [我夺舍了系统玩家 动态漫画](http://www.iqiyi.com/v_1qsp6706ln0.html) - 2025/06/27 更新 更新至106集 【iqiyi】
-- [冰封末日：绝无生还之路 动态漫画](http://www.iqiyi.com/v_1z02degcqy8.html) - 2025/06/27 更新 更新至21集 【iqiyi】
-- [神的欲望游戏 动态漫画](http://www.iqiyi.com/v_ahwc1idf14.html) - 2025/06/27 更新 更新至48集 【iqiyi】
-- [盖世扫地僧：我可以无限融合](https://www.youku.com/ku/webcomic) - 2025/06/27 更新 更新至121集 【youku】
-- [神的欲望游戏](https://www.youku.com/ku/webcomic) - 2025/06/27 更新 更新至48集 【youku】
-- [武道大帝](https://www.youku.com/ku/webcomic) - 2025/06/27 更新 更新至66集 【youku】
-- [太古战魂](https://www.youku.com/ku/webcomic) - 2025/06/27 更新 更新至24集 【youku】
-- [重生为怪兽什么鬼 第二季](https://www.youku.com/ku/webcomic) - 2025/06/27 更新 更新至104集 【youku】
-- [全民诡异：开局掌握零元购](https://www.youku.com/ku/webcomic) - 2025/06/27 更新 更新至52集 【youku】
-- [终极肆意神豪系统 动态漫画](https://www.youku.com/ku/webcomic) - 2025/06/27 更新 更新至15集 【youku】
-- [江思先生](https://www.youku.com/ku/webcomic) - 2025/06/27 更新 更新至85集 【youku】
-- [我夺舍了系统玩家](https://www.youku.com/ku/webcomic) - 2025/06/27 更新 更新至106集 【youku】
-- [大奉打更人·动态漫画](https://www.youku.com/ku/webcomic) - 2025/06/27 更新 更新至123集 【youku】
-- [我不过是个大罗金仙：横扫天下篇](https://www.youku.com/ku/webcomic) - 2025/06/27 更新 更新至47集 【youku】
-- [小表弟之梦狱国度](https://www.youku.com/ku/webcomic) - 2025/06/27 更新 更新至19集 【youku】
-- [师尊：这个冲师逆徒才不是圣子](https://www.youku.com/ku/webcomic) - 2025/06/27 更新 更新至26集 【youku】
-- [结婚后，我把冰山女总裁气哭了](https://www.youku.com/ku/webcomic) - 2025/06/27 更新 更新至39集 【youku】
-- [我天命大反派 第3季](https://www.youku.com/ku/webcomic) - 2025/06/27 更新 更新至30集 【youku】
-- [假面骑士圣刃 中配版](https://www.youku.com/ku/webcomic) - 2025/06/27 更新 更新至32集 【youku】
-- [沧元图](https://www.youku.com/ku/webcomic) - 2025/06/27 更新 更新至60集 【youku】
-- [异变降临，我刷爆了全球副本！动态漫](https://www.youku.com/ku/webcomic) - 2025/06/27 更新 更新至13集 【youku】
-- [二师兄是个凡人却很强](https://www.youku.com/ku/webcomic) - 2025/06/27 更新 更新至82集 【youku】
-- [全民御兽：开局觉醒神话级天赋](https://www.youku.com/ku/webcomic) - 2025/06/27 更新 更新至37集 【youku】
-- [进化狂潮 第二季](https://www.youku.com/ku/webcomic) - 2025/06/27 更新 更新至66集 【youku】
-- [末世钞能力者](https://www.youku.com/ku/webcomic) - 2025/06/27 更新 更新至32集 【youku】
-- [全民转职：驭龙师是最弱职业？](https://www.youku.com/ku/webcomic) - 2025/06/27 更新 更新至36集 【youku】
+- [时光流逝，饭菜依旧美味](https://mikanani.me/Home/Bangumi/3623) - 2025/06/28 更新 【mikanani】
+- [小市民系列 第二季](https://mikanani.me/Home/Bangumi/3635) - 2025/06/28 更新 【mikanani】
+- [章鱼哔的原罪](https://mikanani.me/Home/Bangumi/3649) - 2025/06/28 更新 【mikanani】
+- [宝可梦 地平线](https://mikanani.me/Home/Bangumi/3015) - 2025/06/28 更新 【mikanani】
+- [药屋少女的呢喃 第二季](https://mikanani.me/Home/Bangumi/3530) - 2025/06/28 更新 【mikanani】
+- [神统记](https://mikanani.me/Home/Bangumi/3618) - 2025/06/28 更新 【mikanani】
+- [忍者与杀手二人组的日常生活](https://mikanani.me/Home/Bangumi/3584) - 2025/06/28 更新 【mikanani】
+- [摇滚乃是淑女的爱好](https://mikanani.me/Home/Bangumi/3606) - 2025/06/28 更新 【mikanani】
+- [末日后酒店](https://mikanani.me/Home/Bangumi/3600) - 2025/06/28 更新 【mikanani】
+- [赛马娘 芦毛灰姑娘](https://mikanani.me/Home/Bangumi/3604) - 2025/06/28 更新 【mikanani】
+- [受到猩猩之神庇护的大小姐在皇家骑士团受到宠爱](https://mikanani.me/Home/Bangumi/3608) - 2025/06/28 更新 【mikanani】
+- [斗罗大陆Ⅱ绝世唐门](https://v.qq.com/x/cover/mzc00200xf3rir6.html) - 2025/06/28 更新 更新至107集 【tencent】
+- [诡秘之主](https://v.qq.com/x/cover/mzc00200x6fq63h.html) - 2025/06/28 更新 更新至10集 【tencent】
+- [万界独尊](https://v.qq.com/x/cover/mzc00200cu8uq8c.html) - 2025/06/28 更新 更新至341集 【tencent】
+- [炼气十万年](https://v.qq.com/x/cover/mzc002006n62s11.html) - 2025/06/28 更新 更新至252集 【tencent】
+- [宝可梦 地平线 第1季](https://v.qq.com/x/cover/mzc00200jlkp05g.html) - 2025/06/28 更新 更新至24集 【tencent】
+- [最强升级](https://v.qq.com/x/cover/mzc00200qur7xiz.html) - 2025/06/28 更新 更新至37集 【tencent】
+- [斗破苍穹年番](https://v.qq.com/x/cover/mzc0020027yzd9e.html) - 2025/06/28 更新 更新至152集 【tencent】
+- [胆大党[普通话版]](https://v.qq.com/x/cover/mzc00200ko2gj9u.html) - 2025/06/28 更新 更新至12集 【tencent】
+- [名侦探柯南[普通话版]](https://v.qq.com/x/cover/hzgtnf6tbvfekfv.html) - 2025/06/28 更新 更新至1224集 【tencent】
+- [神国之上](http://www.iqiyi.com/v_kf3uqi54rs.html) - 2025/06/28 更新 更新至4集 【iqiyi】
+- [绝世战魂](http://www.iqiyi.com/v_1wvyqasu2no.html) - 2025/06/28 更新 更新至125集 【iqiyi】
+- [万物合一 动态漫画](http://www.iqiyi.com/v_20b2ugldpxo.html) - 2025/06/28 更新 更新至60集 【iqiyi】
+- [末世盗贼行 动态漫画](http://www.iqiyi.com/v_20x944yw8ho.html) - 2025/06/28 更新 更新至62集 【iqiyi】
+- [龙脉武神 动态漫画](http://www.iqiyi.com/v_17wl0fhzbzw.html) - 2025/06/28 更新 更新至62集 【iqiyi】
+- [我拿捏了气运之子 动态漫画 第1季](http://www.iqiyi.com/v_1okp2nuojz4.html) - 2025/06/28 更新 更新至76集 【iqiyi】
+- [从今天开始当城主 动态漫画 第2季](http://www.iqiyi.com/v_2fnvoqlm3gk.html) - 2025/06/28 更新 更新至151集 【iqiyi】
+- [原来我早就无敌了 动态漫画](http://www.iqiyi.com/v_117jjmsjv3o.html) - 2025/06/28 更新 更新至172集 【iqiyi】
+- [一世独尊](http://www.iqiyi.com/v_16zxzexerfg.html) - 2025/06/28 更新 更新至135集 【iqiyi】
+- [神探双骄 动态漫画](http://www.iqiyi.com/v_2aoz08v35fk.html) - 2025/06/28 更新 更新至31集 【iqiyi】
+- [明日神都 动态漫画 第1季](http://www.iqiyi.com/v_2c9jikhf4ks.html) - 2025/06/28 更新 更新至48集 【iqiyi】
+- [武灵剑尊 动态漫画](http://www.iqiyi.com/v_1zmyqrdvh9c.html) - 2025/06/28 更新 更新至43集 【iqiyi】
+- [荒天至尊 动态漫画](http://www.iqiyi.com/v_eipfyqinpo.html) - 2025/06/28 更新 更新至50集 【iqiyi】
+- [异能狂师 动态漫画](http://www.iqiyi.com/v_23eyi0c76nk.html) - 2025/06/28 更新 更新至51集 【iqiyi】
+- [圣堂之城 动态漫画](http://www.iqiyi.com/v_1l6wk88jl90.html) - 2025/06/28 更新 更新至50集 【iqiyi】
+- [全民神祗：我献祭亿万生灵成神 动态漫画](http://www.iqiyi.com/v_1y2g1jt2qmo.html) - 2025/06/28 更新 更新至63集 【iqiyi】
+- [假面骑士圣刃 中配版](https://www.youku.com/ku/webcomic) - 2025/06/28 更新 更新至32集 【youku】
+- [末世钞能力者](https://www.youku.com/ku/webcomic) - 2025/06/28 更新 更新至32集 【youku】
+- [终极肆意神豪系统 动态漫画](https://www.youku.com/ku/webcomic) - 2025/06/28 更新 更新至15集 【youku】
+- [我不过是个大罗金仙：横扫天下篇](https://www.youku.com/ku/webcomic) - 2025/06/28 更新 更新至47集 【youku】
+- [师尊：这个冲师逆徒才不是圣子](https://www.youku.com/ku/webcomic) - 2025/06/28 更新 更新至26集 【youku】
+- [全民御兽：开局觉醒神话级天赋](https://www.youku.com/ku/webcomic) - 2025/06/28 更新 更新至37集 【youku】
+- [二师兄是个凡人却很强](https://www.youku.com/ku/webcomic) - 2025/06/28 更新 更新至82集 【youku】
+- [全民转职：驭龙师是最弱职业？](https://www.youku.com/ku/webcomic) - 2025/06/28 更新 更新至36集 【youku】
+- [我夺舍了系统玩家](https://www.youku.com/ku/webcomic) - 2025/06/28 更新 更新至106集 【youku】
+- [异变降临，我刷爆了全球副本！动态漫](https://www.youku.com/ku/webcomic) - 2025/06/28 更新 更新至13集 【youku】
+- [沧元图](https://www.youku.com/ku/webcomic) - 2025/06/28 更新 更新至60集 【youku】
+- [盖世扫地僧：我可以无限融合](https://www.youku.com/ku/webcomic) - 2025/06/28 更新 更新至121集 【youku】
+- [重生为怪兽什么鬼 第二季](https://www.youku.com/ku/webcomic) - 2025/06/28 更新 更新至104集 【youku】
+- [结婚后，我把冰山女总裁气哭了](https://www.youku.com/ku/webcomic) - 2025/06/28 更新 更新至39集 【youku】
+- [武道大帝](https://www.youku.com/ku/webcomic) - 2025/06/28 更新 更新至66集 【youku】
+- [开心锤锤世界](https://www.youku.com/ku/webcomic) - 2025/06/28 更新 更新至10集 【youku】
+- [小表弟之梦狱国度](https://www.youku.com/ku/webcomic) - 2025/06/28 更新 更新至19集 【youku】
+- [江思先生](https://www.youku.com/ku/webcomic) - 2025/06/28 更新 更新至85集 【youku】
+- [全民诡异：开局掌握零元购](https://www.youku.com/ku/webcomic) - 2025/06/28 更新 更新至52集 【youku】
+- [神的欲望游戏](https://www.youku.com/ku/webcomic) - 2025/06/28 更新 更新至48集 【youku】
+- [太古战魂](https://www.youku.com/ku/webcomic) - 2025/06/28 更新 更新至24集 【youku】
+- [我天命大反派 第3季](https://www.youku.com/ku/webcomic) - 2025/06/28 更新 更新至30集 【youku】
+- [进化狂潮 第二季](https://www.youku.com/ku/webcomic) - 2025/06/28 更新 更新至66集 【youku】
+- [大奉打更人·动态漫画](https://www.youku.com/ku/webcomic) - 2025/06/28 更新 更新至123集 【youku】
 
-**今天总共更新了 68 部番剧。**
+**今天总共更新了 60 部番剧。**
 
 ## 系统要求
 
