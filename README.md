@@ -28,12 +28,12 @@
 - [虽然我是白豚贵族，但因为我有前世的记忆，所以我在养育弱小的弟弟](https://mikanani.me/Home/Bangumi/3647) - 2025/06/30 更新 【mikanani】
 - [脱离了A级队伍的我，和从前的徒弟们前往迷宫深处。](https://mikanani.me/Home/Bangumi/3556) - 2025/06/30 更新 【mikanani】
 - [打了300年的史莱姆，不知不觉就练到了满级 ～其二～](https://mikanani.me/Home/Bangumi/3586) - 2025/06/30 更新 【mikanani】
-- [九龙大众浪漫](https://mikanani.me/Home/Bangumi/3607) - 2025/06/30 更新 【mikanani】
 - [时光流逝，饭菜依旧美味](https://mikanani.me/Home/Bangumi/3623) - 2025/06/30 更新 【mikanani】
 - [mono女孩](https://mikanani.me/Home/Bangumi/3628) - 2025/06/30 更新 【mikanani】
 - [忍者与杀手二人组的日常生活](https://mikanani.me/Home/Bangumi/3584) - 2025/06/30 更新 【mikanani】
 - [记忆缝线](https://mikanani.me/Home/Bangumi/3620) - 2025/06/30 更新 【mikanani】
 - [机动战士高达 GQuuuuuuX](https://mikanani.me/Home/Bangumi/3585) - 2025/06/30 更新 【mikanani】
+- [末日后酒店](https://mikanani.me/Home/Bangumi/3600) - 2025/06/30 更新 【mikanani】
 - [紫云寺家的兄弟姐妹](https://mikanani.me/Home/Bangumi/3614) - 2025/06/30 更新 【mikanani】
 - [宗门里除了我都是卧底](https://www.bilibili.com/bangumi/play/ep1495951) - 2025/06/30 更新 更新至80集 【bilibili】
 - [仙逆](https://v.qq.com/x/cover/mzc00200aaogpgh.html) - 2025/06/30 更新 更新至95集 【tencent】
@@ -55,19 +55,19 @@
 - [大夏剑主 动态漫画](http://www.iqiyi.com/v_2f1ar1e82rk.html) - 2025/06/30 更新 更新至186集 【iqiyi】
 - [穿越后我成了团宠 动态漫画](http://www.iqiyi.com/v_1kl1g82i2wo.html) - 2025/06/30 更新 更新至42集 【iqiyi】
 - [开心锤锤](http://www.iqiyi.com/v_2ftdbd3cs88.html) - 2025/06/30 更新 更新至6集 【iqiyi】
+- [轩辕小豆之山海奇缘](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至51集 【youku】
+- [道友让让：俺来都市斩鬼神](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至43集 【youku】
+- [香格里拉边境](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至13集 【youku】
+- [假面骑士歌查德 中配版](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至33集 【youku】
+- [太古战魂](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至25集 【youku】
+- [开局送外挂，爷无敌了 第二季](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至83集 【youku】
+- [小狮子赛几 第四季](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至82集 【youku】
+- [我被困在同一天一千年](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至120集 【youku】
+- [武道大帝](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至68集 【youku】
 - [斗罗大陆4终极斗罗 合集](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至141集 【youku】
 - [原来我是魔道老祖？](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至79集 【youku】
 - [盖世扫地僧：我可以无限融合](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至124集 【youku】
-- [开局送外挂，爷无敌了 第二季](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至83集 【youku】
-- [小狮子赛几 第四季](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至82集 【youku】
-- [武道大帝](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至68集 【youku】
-- [太古战魂](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至25集 【youku】
-- [道友让让：俺来都市斩鬼神](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至43集 【youku】
-- [轩辕小豆之山海奇缘](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至51集 【youku】
 - [仙武帝尊](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至461集 【youku】
-- [香格里拉边境](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至13集 【youku】
-- [我被困在同一天一千年](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至120集 【youku】
-- [假面骑士歌查德 中配版](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至33集 【youku】
 
 **今天总共更新了 54 部番剧。**
 
