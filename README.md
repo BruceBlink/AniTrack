@@ -16,6 +16,7 @@
 
 - [转生成猫咪的大叔](https://mikanani.me/Home/Bangumi/3491) - 2025/06/30 更新 【mikanani】
 - [夏日口袋](https://mikanani.me/Home/Bangumi/3599) - 2025/06/30 更新 【mikanani】
+- [正义使者 -我的英雄学院之非法英雄-](https://mikanani.me/Home/Bangumi/3619) - 2025/06/30 更新 【mikanani】
 - [航海王](https://mikanani.me/Home/Bangumi/228) - 2025/06/30 更新 【mikanani】
 - [魔女守护者](https://mikanani.me/Home/Bangumi/3587) - 2025/06/30 更新 【mikanani】
 - [前桥魔女](https://mikanani.me/Home/Bangumi/3588) - 2025/06/30 更新 【mikanani】
@@ -33,6 +34,7 @@
 - [末日后酒店](https://mikanani.me/Home/Bangumi/3600) - 2025/06/30 更新 【mikanani】
 - [紫云寺家的兄弟姐妹](https://mikanani.me/Home/Bangumi/3614) - 2025/06/30 更新 【mikanani】
 - [宗门里除了我都是卧底](https://www.bilibili.com/bangumi/play/ep1495951) - 2025/06/30 更新 更新至80集 【bilibili】
+- [夏日口袋](https://www.bilibili.com/bangumi/play/ep1853192) - 2025/06/30 更新 更新至13集 【bilibili】
 - [仙逆](https://v.qq.com/x/cover/mzc00200aaogpgh.html) - 2025/06/30 更新 更新至95集 【tencent】
 - [大猿魂](https://v.qq.com/x/cover/mzc0020096xci6x.html) - 2025/06/30 更新 更新至6集 【tencent】
 - [诛仙合集篇](https://v.qq.com/x/cover/mzc00200phqxwd6.html) - 2025/06/30 更新 更新至11集 【tencent】
@@ -52,19 +54,19 @@
 - [大夏剑主 动态漫画](http://www.iqiyi.com/v_2f1ar1e82rk.html) - 2025/06/30 更新 更新至186集 【iqiyi】
 - [穿越后我成了团宠 动态漫画](http://www.iqiyi.com/v_1kl1g82i2wo.html) - 2025/06/30 更新 更新至42集 【iqiyi】
 - [开心锤锤](http://www.iqiyi.com/v_2ftdbd3cs88.html) - 2025/06/30 更新 更新至6集 【iqiyi】
-- [太古战魂](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至25集 【youku】
 - [武道大帝](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至68集 【youku】
-- [原来我是魔道老祖？](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至79集 【youku】
-- [轩辕小豆之山海奇缘](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至51集 【youku】
-- [盖世扫地僧：我可以无限融合](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至124集 【youku】
-- [开局送外挂，爷无敌了 第二季](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至83集 【youku】
-- [香格里拉边境](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至13集 【youku】
-- [假面骑士歌查德 中配版](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至33集 【youku】
-- [斗罗大陆4终极斗罗 合集](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至141集 【youku】
-- [道友让让：俺来都市斩鬼神](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至43集 【youku】
 - [仙武帝尊](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至461集 【youku】
+- [原来我是魔道老祖？](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至79集 【youku】
+- [盖世扫地僧：我可以无限融合](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至124集 【youku】
+- [道友让让：俺来都市斩鬼神](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至43集 【youku】
+- [假面骑士歌查德 中配版](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至33集 【youku】
+- [太古战魂](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至25集 【youku】
+- [香格里拉边境](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至13集 【youku】
+- [斗罗大陆4终极斗罗 合集](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至141集 【youku】
+- [轩辕小豆之山海奇缘](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至51集 【youku】
+- [开局送外挂，爷无敌了 第二季](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至83集 【youku】
 
-**今天总共更新了 49 部番剧。**
+**今天总共更新了 51 部番剧。**
 
 ## 系统要求
 
