@@ -125,13 +125,12 @@
 AniTracker/
 ├── anitracker/                  主程序包，包含核心逻辑和功能实现
 │   ├── __init__.py               package初始化文件
-│   ├── __main__.py               主程序逻辑
+│   ├── __main__.py               项目主程序入口
 │── pyproject.toml                项目的描述文件
 ├── Dockerfile                    用于构建项目Docker镜像的配置文件
 ├── Makefile                      自动化构建和管理任务的脚本
 ├── README.md                     项目说明文档
 ├── docker-compose.yml            Docker Compose编排文件，定义多容器服务
-├── main.py                       项目主程序入口
 ├── LICENSE                       项目许可证文件
 ├── common/                       存放通用工具和基础模块
 │   ├── __init__.py               package初始化文件
