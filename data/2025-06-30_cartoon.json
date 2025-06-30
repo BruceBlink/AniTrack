@@ -15,7 +15,7 @@
       "platform": "mikanani",
       "title": "夏日口袋",
       "update_count": "",
-      "update_info": "4\n\n\n2025/06/2",
+      "update_info": "5\n\n\n2025/06/3",
       "update_time": "2025/06/30"
     },
     {
@@ -82,6 +82,15 @@
       "update_time": "2025/06/30"
     },
     {
+      "detail_url": "https://mikanani.me/Home/Bangumi/3610",
+      "image_url": "https://mikanani.me/images/Bangumi/202504/2f6a7782.jpg?width=400&height=400&format=webp",
+      "platform": "mikanani",
+      "title": "黑执事 -绿之魔女篇-",
+      "update_count": "",
+      "update_info": "1\n\n\n2025/06/3",
+      "update_time": "2025/06/30"
+    },
+    {
       "detail_url": "https://mikanani.me/Home/Bangumi/3623",
       "image_url": "https://mikanani.me/images/Bangumi/202504/fddd0557.jpg?width=400&height=400&format=webp",
       "platform": "mikanani",
@@ -100,12 +109,21 @@
       "update_time": "2025/06/30"
     },
     {
+      "detail_url": "https://mikanani.me/Home/Bangumi/681",
+      "image_url": "https://mikanani.me/images/Bangumi/200504/1df90634.jpg?width=400&height=400&format=webp",
+      "platform": "mikanani",
+      "title": "哆啦A梦",
+      "update_count": "",
+      "update_info": "1\n\n\n2025/06/3",
+      "update_time": "2025/06/30"
+    },
+    {
       "detail_url": "https://mikanani.me/Home/Bangumi/3584",
       "image_url": "https://mikanani.me/images/Bangumi/202504/d92cb519.jpg?width=400&height=400&format=webp",
       "platform": "mikanani",
       "title": "忍者与杀手二人组的日常生活",
       "update_count": "",
-      "update_info": "4\n\n\n2025/06/3",
+      "update_info": "3\n\n\n2025/06/3",
       "update_time": "2025/06/30"
     },
     {
@@ -114,7 +132,7 @@
       "platform": "mikanani",
       "title": "记忆缝线",
       "update_count": "",
-      "update_info": "2\n\n\n2025/06/3",
+      "update_info": "3\n\n\n2025/06/3",
       "update_time": "2025/06/30"
     },
     {
@@ -326,56 +344,11 @@
     },
     {
       "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://liangcang-material.alicdn.com/prod/upload/a2963deecc6443cfba5d9c20523f0bd6.webp.jpg",
+      "image_url": "http://liangcang-material.alicdn.com/prod/upload/eb15f59722bc447ba26cc8ff70227877.webp.jpg",
       "platform": "youku",
-      "title": "香格里拉边境",
-      "update_count": "13",
-      "update_info": "更新至13话",
-      "update_time": "2025/06/30"
-    },
-    {
-      "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://m.ykimg.com/0581000065840BE013EBC61B9A7E7292",
-      "platform": "youku",
-      "title": "原来我是魔道老祖？",
-      "update_count": "79",
-      "update_info": "更新至79话",
-      "update_time": "2025/06/30"
-    },
-    {
-      "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://m.ykimg.com/05810000675270111417E414527AAAE2",
-      "platform": "youku",
-      "title": "道友让让：俺来都市斩鬼神",
-      "update_count": "43",
-      "update_info": "更新至43话",
-      "update_time": "2025/06/30"
-    },
-    {
-      "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://liangcang-material.alicdn.com/prod/upload/7a8fa17e38294be38afb28883ebd7f21.webp.jpg",
-      "platform": "youku",
-      "title": "假面骑士歌查德 中配版",
-      "update_count": "33",
-      "update_info": "更新至33话",
-      "update_time": "2025/06/30"
-    },
-    {
-      "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://liangcang-material.alicdn.com/prod/upload/b50fa5eef166429f9d66f7720553e7a6.webp.jpg",
-      "platform": "youku",
-      "title": "仙武帝尊",
-      "update_count": "461",
-      "update_info": "更新至461话",
-      "update_time": "2025/06/30"
-    },
-    {
-      "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://m.ykimg.com/0581000067B55340C8479F1DB02C4453",
-      "platform": "youku",
-      "title": "盖世扫地僧：我可以无限融合",
-      "update_count": "124",
-      "update_info": "更新至124话",
+      "title": "太古战魂",
+      "update_count": "25",
+      "update_info": "更新至25话",
       "update_time": "2025/06/30"
     },
     {
@@ -389,29 +362,29 @@
     },
     {
       "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://liangcang-material.alicdn.com/prod/upload/eb15f59722bc447ba26cc8ff70227877.webp.jpg",
+      "image_url": "http://m.ykimg.com/0581000065840BE013EBC61B9A7E7292",
       "platform": "youku",
-      "title": "太古战魂",
-      "update_count": "25",
-      "update_info": "更新至25话",
+      "title": "原来我是魔道老祖？",
+      "update_count": "79",
+      "update_info": "更新至79话",
       "update_time": "2025/06/30"
     },
     {
       "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://liangcang-material.alicdn.com/prod/upload/c0785641f6dc46f491341c8cd4313573.webp.jpg",
-      "platform": "youku",
-      "title": "斗罗大陆4终极斗罗 合集",
-      "update_count": "141",
-      "update_info": "更新至141话",
-      "update_time": "2025/06/30"
-    },
-    {
-      "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://liangcang-material.alicdn.com/prod/upload/25ef1b6e3cd5444ab10c4df7c88ead92.webp.jpg",
+      "image_url": "http://liangcang-material.alicdn.com/prod/upload/7b3336744fd04f2d8781ce8ee8e02cc5.webp.jpg",
       "platform": "youku",
       "title": "轩辕小豆之山海奇缘",
       "update_count": "51",
       "update_info": "更新至51话",
+      "update_time": "2025/06/30"
+    },
+    {
+      "detail_url": "https://www.youku.com/ku/webcomic",
+      "image_url": "http://m.ykimg.com/0581000067B55340C8479F1DB02C4453",
+      "platform": "youku",
+      "title": "盖世扫地僧：我可以无限融合",
+      "update_count": "124",
+      "update_info": "更新至124话",
       "update_time": "2025/06/30"
     },
     {
@@ -421,6 +394,51 @@
       "title": "开局送外挂，爷无敌了 第二季",
       "update_count": "83",
       "update_info": "更新至83话",
+      "update_time": "2025/06/30"
+    },
+    {
+      "detail_url": "https://www.youku.com/ku/webcomic",
+      "image_url": "http://liangcang-material.alicdn.com/prod/upload/a2963deecc6443cfba5d9c20523f0bd6.webp.jpg",
+      "platform": "youku",
+      "title": "香格里拉边境",
+      "update_count": "13",
+      "update_info": "更新至13话",
+      "update_time": "2025/06/30"
+    },
+    {
+      "detail_url": "https://www.youku.com/ku/webcomic",
+      "image_url": "http://liangcang-material.alicdn.com/prod/upload/7a8fa17e38294be38afb28883ebd7f21.webp.jpg",
+      "platform": "youku",
+      "title": "假面骑士歌查德 中配版",
+      "update_count": "33",
+      "update_info": "更新至33话",
+      "update_time": "2025/06/30"
+    },
+    {
+      "detail_url": "https://www.youku.com/ku/webcomic",
+      "image_url": "http://liangcang-material.alicdn.com/prod/upload/bd85fc19bc5e40a49f242a688e5c5f90.webp.jpg",
+      "platform": "youku",
+      "title": "斗罗大陆4终极斗罗 合集",
+      "update_count": "141",
+      "update_info": "更新至141话",
+      "update_time": "2025/06/30"
+    },
+    {
+      "detail_url": "https://www.youku.com/ku/webcomic",
+      "image_url": "http://m.ykimg.com/05810000675270111417E414527AAAE2",
+      "platform": "youku",
+      "title": "道友让让：俺来都市斩鬼神",
+      "update_count": "43",
+      "update_info": "更新至43话",
+      "update_time": "2025/06/30"
+    },
+    {
+      "detail_url": "https://www.youku.com/ku/webcomic",
+      "image_url": "http://liangcang-material.alicdn.com/prod/upload/02a009b3be4e4b7ba439a1f71021fab8.webp.jpg",
+      "platform": "youku",
+      "title": "仙武帝尊",
+      "update_count": "461",
+      "update_info": "更新至461话",
       "update_time": "2025/06/30"
     }
   ]
