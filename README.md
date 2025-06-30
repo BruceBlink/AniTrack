@@ -132,7 +132,6 @@ AniTracker/
 ├── README.md                     项目说明文档
 ├── docker-compose.yml            Docker Compose编排文件，定义多容器服务
 ├── main.py                       项目主程序入口
-├── requirements.txt              Python依赖包列表
 ├── LICENSE                       项目许可证文件
 ├── common/                       存放通用工具和基础模块
 │   ├── __init__.py               package初始化文件
