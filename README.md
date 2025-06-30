@@ -22,7 +22,6 @@
 - [赛马娘 芦毛灰姑娘](https://mikanani.me/Home/Bangumi/3604) - 2025/06/30 更新 【mikanani】
 - [拉撒路](https://mikanani.me/Home/Bangumi/3624) - 2025/06/30 更新 【mikanani】
 - [战队大失格 第二季](https://mikanani.me/Home/Bangumi/3646) - 2025/06/30 更新 【mikanani】
-- [虽然我是白豚贵族，但因为我有前世的记忆，所以我在养育弱小的弟弟](https://mikanani.me/Home/Bangumi/3647) - 2025/06/30 更新 【mikanani】
 - [脱离了A级队伍的我，和从前的徒弟们前往迷宫深处。](https://mikanani.me/Home/Bangumi/3556) - 2025/06/30 更新 【mikanani】
 - [时光流逝，饭菜依旧美味](https://mikanani.me/Home/Bangumi/3623) - 2025/06/30 更新 【mikanani】
 - [mono女孩](https://mikanani.me/Home/Bangumi/3628) - 2025/06/30 更新 【mikanani】
@@ -51,19 +50,19 @@
 - [大夏剑主 动态漫画](http://www.iqiyi.com/v_2f1ar1e82rk.html) - 2025/06/30 更新 更新至186集 【iqiyi】
 - [穿越后我成了团宠 动态漫画](http://www.iqiyi.com/v_1kl1g82i2wo.html) - 2025/06/30 更新 更新至42集 【iqiyi】
 - [开心锤锤](http://www.iqiyi.com/v_2ftdbd3cs88.html) - 2025/06/30 更新 更新至6集 【iqiyi】
-- [开局送外挂，爷无敌了 第二季](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至83集 【youku】
-- [武道大帝](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至68集 【youku】
-- [斗罗大陆4终极斗罗 合集](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至141集 【youku】
 - [香格里拉边境](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至13集 【youku】
 - [原来我是魔道老祖？](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至79集 【youku】
 - [道友让让：俺来都市斩鬼神](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至43集 【youku】
-- [盖世扫地僧：我可以无限融合](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至124集 【youku】
 - [假面骑士歌查德 中配版](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至33集 【youku】
-- [轩辕小豆之山海奇缘](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至51集 【youku】
 - [仙武帝尊](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至461集 【youku】
+- [盖世扫地僧：我可以无限融合](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至124集 【youku】
+- [武道大帝](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至68集 【youku】
 - [太古战魂](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至25集 【youku】
+- [斗罗大陆4终极斗罗 合集](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至141集 【youku】
+- [轩辕小豆之山海奇缘](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至51集 【youku】
+- [开局送外挂，爷无敌了 第二季](https://www.youku.com/ku/webcomic) - 2025/06/30 更新 更新至83集 【youku】
 
-**今天总共更新了 48 部番剧。**
+**今天总共更新了 47 部番剧。**
 
 ## 系统要求
 
