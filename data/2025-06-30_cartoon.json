@@ -24,7 +24,7 @@
       "platform": "mikanani",
       "title": "航海王",
       "update_count": "",
-      "update_info": "2\n\n\n2025/06/2",
+      "update_info": "2\n\n\n2025/06/3",
       "update_time": "2025/06/30"
     },
     {
@@ -69,7 +69,7 @@
       "platform": "mikanani",
       "title": "赛马娘 芦毛灰姑娘",
       "update_count": "",
-      "update_info": "3\n\n\n2025/06/3",
+      "update_info": "4\n\n\n2025/06/3",
       "update_time": "2025/06/30"
     },
     {
@@ -371,33 +371,6 @@
     },
     {
       "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://liangcang-material.alicdn.com/prod/upload/319e5eca0f554c0490a64db85bb1f670.webp.jpg",
-      "platform": "youku",
-      "title": "小狮子赛几 第四季",
-      "update_count": "82",
-      "update_info": "更新至82话",
-      "update_time": "2025/06/30"
-    },
-    {
-      "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://liangcang-material.alicdn.com/prod/upload/25ef1b6e3cd5444ab10c4df7c88ead92.webp.jpg",
-      "platform": "youku",
-      "title": "轩辕小豆之山海奇缘",
-      "update_count": "51",
-      "update_info": "更新至51话",
-      "update_time": "2025/06/30"
-    },
-    {
-      "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://liangcang-material.alicdn.com/prod/upload/a2963deecc6443cfba5d9c20523f0bd6.webp.jpg",
-      "platform": "youku",
-      "title": "香格里拉边境",
-      "update_count": "13",
-      "update_info": "更新至13话",
-      "update_time": "2025/06/30"
-    },
-    {
-      "detail_url": "https://www.youku.com/ku/webcomic",
       "image_url": "http://m.ykimg.com/0581000067B55340C8479F1DB02C4453",
       "platform": "youku",
       "title": "盖世扫地僧：我可以无限融合",
@@ -407,16 +380,7 @@
     },
     {
       "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://m.ykimg.com/05810000654DC9F513EB660EAFC36190",
-      "platform": "youku",
-      "title": "武道大帝",
-      "update_count": "68",
-      "update_info": "更新至68话",
-      "update_time": "2025/06/30"
-    },
-    {
-      "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://liangcang-material.alicdn.com/prod/upload/fd1210b66dc44762bac70b599fc8e302.webp.jpg",
+      "image_url": "http://liangcang-material.alicdn.com/prod/upload/02a009b3be4e4b7ba439a1f71021fab8.webp.jpg",
       "platform": "youku",
       "title": "仙武帝尊",
       "update_count": "461",
@@ -434,15 +398,6 @@
     },
     {
       "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://m.ykimg.com/058100006758E3E713EB6613226CDF2A",
-      "platform": "youku",
-      "title": "开局送外挂，爷无敌了 第二季",
-      "update_count": "83",
-      "update_info": "更新至83话",
-      "update_time": "2025/06/30"
-    },
-    {
-      "detail_url": "https://www.youku.com/ku/webcomic",
       "image_url": "http://liangcang-material.alicdn.com/prod/upload/7a8fa17e38294be38afb28883ebd7f21.webp.jpg",
       "platform": "youku",
       "title": "假面骑士歌查德 中配版",
@@ -452,11 +407,11 @@
     },
     {
       "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://liangcang-material.alicdn.com/prod/upload/eb15f59722bc447ba26cc8ff70227877.webp.jpg",
+      "image_url": "http://m.ykimg.com/0581000065840BE013EBC61B9A7E7292",
       "platform": "youku",
-      "title": "太古战魂",
-      "update_count": "25",
-      "update_info": "更新至25话",
+      "title": "原来我是魔道老祖？",
+      "update_count": "79",
+      "update_info": "更新至79话",
       "update_time": "2025/06/30"
     },
     {
@@ -470,11 +425,56 @@
     },
     {
       "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://m.ykimg.com/0581000065840BE013EBC61B9A7E7292",
+      "image_url": "http://m.ykimg.com/058100006758E3E713EB6613226CDF2A",
       "platform": "youku",
-      "title": "原来我是魔道老祖？",
-      "update_count": "79",
-      "update_info": "更新至79话",
+      "title": "开局送外挂，爷无敌了 第二季",
+      "update_count": "83",
+      "update_info": "更新至83话",
+      "update_time": "2025/06/30"
+    },
+    {
+      "detail_url": "https://www.youku.com/ku/webcomic",
+      "image_url": "http://m.ykimg.com/05810000654DC9F513EB660EAFC36190",
+      "platform": "youku",
+      "title": "武道大帝",
+      "update_count": "68",
+      "update_info": "更新至68话",
+      "update_time": "2025/06/30"
+    },
+    {
+      "detail_url": "https://www.youku.com/ku/webcomic",
+      "image_url": "http://liangcang-material.alicdn.com/prod/upload/4d67d623a20e4c26af7686f64a1660ef.webp.jpg",
+      "platform": "youku",
+      "title": "香格里拉边境",
+      "update_count": "13",
+      "update_info": "更新至13话",
+      "update_time": "2025/06/30"
+    },
+    {
+      "detail_url": "https://www.youku.com/ku/webcomic",
+      "image_url": "http://liangcang-material.alicdn.com/prod/upload/eb15f59722bc447ba26cc8ff70227877.webp.jpg",
+      "platform": "youku",
+      "title": "太古战魂",
+      "update_count": "25",
+      "update_info": "更新至25话",
+      "update_time": "2025/06/30"
+    },
+    {
+      "detail_url": "https://www.youku.com/ku/webcomic",
+      "image_url": "http://liangcang-material.alicdn.com/prod/upload/319e5eca0f554c0490a64db85bb1f670.webp.jpg",
+      "platform": "youku",
+      "title": "小狮子赛几 第四季",
+      "update_count": "82",
+      "update_info": "更新至82话",
+      "update_time": "2025/06/30"
+    },
+    {
+      "detail_url": "https://www.youku.com/ku/webcomic",
+      "image_url": "http://liangcang-material.alicdn.com/prod/upload/7b3336744fd04f2d8781ce8ee8e02cc5.webp.jpg",
+      "platform": "youku",
+      "title": "轩辕小豆之山海奇缘",
+      "update_count": "51",
+      "update_info": "更新至51话",
       "update_time": "2025/06/30"
     }
   ]
