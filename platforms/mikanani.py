@@ -1,6 +1,5 @@
 import asyncio
 import logging
-import time
 from urllib.parse import urljoin
 import aiohttp
 import requests
