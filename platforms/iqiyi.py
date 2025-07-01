@@ -1,11 +1,12 @@
 import asyncio
 import json
 import logging  # 导入 logging 模块
-import time
 from datetime import datetime
+
 import aiohttp
 import requests
 from bs4 import Tag
+
 import utils
 from common import Result, AbstractFetcher, Logger
 from common.decorators import print_after_return_async, retry_async, timer, \
@@ -15,7 +16,7 @@ from utils import iso_date_ld, clean_text, extract_number, print_results
 
 
 class IQiyiFetcher(AbstractFetcher):
-    def __init__(self, api_url: str, platform: str = "iqiyi"):
+    def __init__(self, api_url: str =IQIYI_CARTOON_API, platform: str = "iqiyi"):
         super().__init__()
         self.api_url = api_url
         self.platform = platform

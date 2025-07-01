@@ -53,7 +53,7 @@ def _get_qq_video_url(cid: str) -> str:
 
 
 class TencentFetcher(AbstractFetcher):
-    def __init__(self, api_url: str, platform: str = "tencent"):
+    def __init__(self, api_url: str = TENCENT_CARTOON_BASE_URL, platform: str = "tencent"):
         super().__init__()
         self.api_url = api_url
         self.platform = platform
