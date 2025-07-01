@@ -67,7 +67,7 @@ class AgedmFetcher(AbstractFetcher):
     )
     @print_after_return_async(print_results, print_condition=lambda r: not r and any(r.values()))
     @timer(unit="ms")
-    async def fetch_mikanani_update_today(self) -> dict[str, list] | None:
+    async def fetch_agedm_update_today(self) -> dict[str, list] | None:
         """获取AGE动漫今日更新的动漫信息。"""
         logging.info("开始获AGE动漫今日更新...")
         async with aiohttp.ClientSession() as session:
@@ -77,7 +77,7 @@ class AgedmFetcher(AbstractFetcher):
 @timer(enable_stats=True, print_report=False)
 async def test_all():
     agedm_fetcher = AgedmFetcher()
-    t1 = asyncio.create_task(agedm_fetcher.fetch_mikanani_update_today())
+    t1 = asyncio.create_task(agedm_fetcher.fetch_agedm_update_today())
     return await asyncio.gather(t1)
 
 
