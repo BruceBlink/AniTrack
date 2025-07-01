@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "anitracker"
-version = "2.1.3"
+version = "2.1.4"
 description = "AniTracker - an anime crawler project, supporting mikanani, tencent, bilibili, youku, iqiyi..."
 authors = [
     { name="likanug", email="likanug.g@qq.com" }
