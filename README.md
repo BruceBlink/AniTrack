@@ -16,6 +16,9 @@
 
 - [我的师兄太强了](https://www.bilibili.com/bangumi/play/ep1524728) - 2025/07/01 更新 更新至32集 【bilibili】
 - [大侠请上功](https://www.bilibili.com/bangumi/play/ep1508583) - 2025/07/01 更新 更新至9集 【bilibili】
+- [我是不白吃](https://www.bilibili.com/bangumi/play/ep1854518) - 2025/07/01 更新 更新至991集 【bilibili】
+- [那年那兔那些事儿 第七季](https://www.bilibili.com/bangumi/play/ep1438463) - 2025/07/01 更新 更新至11集 【bilibili】
+- [最强王者的第二人生](https://www.bilibili.com/bangumi/play/ep1829837) - 2025/07/01 更新 更新至11集 【bilibili】
 - [吞噬星空](https://v.qq.com/x/cover/324olz7ilvo2j5f.html) - 2025/07/01 更新 更新至178集 【tencent】
 - [万界独尊](https://v.qq.com/x/cover/mzc00200cu8uq8c.html) - 2025/07/01 更新 更新至343集 【tencent】
 - [星辰变 第6季](https://v.qq.com/x/cover/mzc002006wuirfi.html) - 2025/07/01 更新 更新至18集 【tencent】
@@ -36,30 +39,31 @@
 - [我不过是个大罗金仙：横扫岛国篇 动态漫画](http://www.iqiyi.com/v_28rikmhkmjc.html) - 2025/07/01 更新 更新至48集 【iqiyi】
 - [从哥布林到哥布林神 动态漫画](http://www.iqiyi.com/v_okar3e9qjk.html) - 2025/07/01 更新 更新至16集 【iqiyi】
 - [末日狠人：开局囤积万亿物资 动态漫画](http://www.iqiyi.com/v_15kixsqap08.html) - 2025/07/01 更新 更新至16集 【iqiyi】
-- [那年那兔那些事儿 第7季](http://www.iqiyi.com/v_1ikbf2jsdxg.html) - 2025/07/01 更新 更新至10集 【iqiyi】
+- [那年那兔那些事儿 第7季](http://www.iqiyi.com/v_1ikbf2jsdxg.html) - 2025/07/01 更新 更新至11集 【iqiyi】
 - [江思先生 动态漫画](http://www.iqiyi.com/v_25iso6bw3c8.html) - 2025/07/01 更新 更新至86集 【iqiyi】
 - [进化狂潮 动态漫画 第2季](http://www.iqiyi.com/v_1bd4divc9x0.html) - 2025/07/01 更新 更新至67集 【iqiyi】
 - [全民末日：我！病毒君王 动态漫画](http://www.iqiyi.com/v_gx0wx0acqw.html) - 2025/07/01 更新 更新至37集 【iqiyi】
 - [开局物价贬值，我成为了世界首富 动态漫画](http://www.iqiyi.com/v_1iut1o4ubps.html) - 2025/07/01 更新 更新至79集 【iqiyi】
-- [重生为怪兽什么鬼 第二季](https://www.youku.com/ku/webcomic) - 2025/07/01 更新 更新至105集 【youku】
-- [全民御兽：开局山海经，我横扫全球](https://www.youku.com/ku/webcomic) - 2025/07/01 更新 更新至74集 【youku】
-- [全民末日：我！病毒君王](https://www.youku.com/ku/webcomic) - 2025/07/01 更新 更新至37集 【youku】
-- [结婚后，我把冰山女总裁气哭了](https://www.youku.com/ku/webcomic) - 2025/07/01 更新 更新至41集 【youku】
-- [江思先生](https://www.youku.com/ku/webcomic) - 2025/07/01 更新 更新至86集 【youku】
-- [我不过是个大罗金仙：横扫天下篇](https://www.youku.com/ku/webcomic) - 2025/07/01 更新 更新至48集 【youku】
-- [异变降临，我刷爆了全球副本！动态漫](https://www.youku.com/ku/webcomic) - 2025/07/01 更新 更新至14集 【youku】
-- [气运之子：我可以无限暴击](https://www.youku.com/ku/webcomic) - 2025/07/01 更新 更新至56集 【youku】
-- [末日狠人：开局囤积万亿物资](https://www.youku.com/ku/webcomic) - 2025/07/01 更新 更新至16集 【youku】
-- [从哥布林到哥布林神](https://www.youku.com/ku/webcomic) - 2025/07/01 更新 更新至16集 【youku】
-- [末世钞能力者](https://www.youku.com/ku/webcomic) - 2025/07/01 更新 更新至33集 【youku】
-- [全民御兽：铲屎官首富开局](https://www.youku.com/ku/webcomic) - 2025/07/01 更新 更新至23集 【youku】
-- [进化狂潮 第二季](https://www.youku.com/ku/webcomic) - 2025/07/01 更新 更新至67集 【youku】
-- [开局物价贬值，我成为了世界首富](https://www.youku.com/ku/webcomic) - 2025/07/01 更新 更新至79集 【youku】
+- [盖世扫地僧：我可以无限融合](https://www.youku.com/ku/webcomic) - 2025/07/01 更新 更新至124集 【youku】
 - [氪丹修仙只苟长生](https://www.youku.com/ku/webcomic) - 2025/07/01 更新 更新至56集 【youku】
+- [全民御兽：铲屎官首富开局](https://www.youku.com/ku/webcomic) - 2025/07/01 更新 更新至23集 【youku】
+- [从哥布林到哥布林神](https://www.youku.com/ku/webcomic) - 2025/07/01 更新 更新至16集 【youku】
+- [全民御兽：开局山海经，我横扫全球](https://www.youku.com/ku/webcomic) - 2025/07/01 更新 更新至74集 【youku】
 - [克金玩家](https://www.youku.com/ku/webcomic) - 2025/07/01 更新 更新至5集 【youku】
+- [进化狂潮 第二季](https://www.youku.com/ku/webcomic) - 2025/07/01 更新 更新至67集 【youku】
+- [我不过是个大罗金仙：横扫天下篇](https://www.youku.com/ku/webcomic) - 2025/07/01 更新 更新至48集 【youku】
+- [末世钞能力者](https://www.youku.com/ku/webcomic) - 2025/07/01 更新 更新至33集 【youku】
+- [异变降临，我刷爆了全球副本！动态漫](https://www.youku.com/ku/webcomic) - 2025/07/01 更新 更新至14集 【youku】
+- [结婚后，我把冰山女总裁气哭了](https://www.youku.com/ku/webcomic) - 2025/07/01 更新 更新至41集 【youku】
+- [开局物价贬值，我成为了世界首富](https://www.youku.com/ku/webcomic) - 2025/07/01 更新 更新至79集 【youku】
+- [末日狠人：开局囤积万亿物资](https://www.youku.com/ku/webcomic) - 2025/07/01 更新 更新至16集 【youku】
+- [气运之子：我可以无限暴击](https://www.youku.com/ku/webcomic) - 2025/07/01 更新 更新至56集 【youku】
+- [全民末日：我！病毒君王](https://www.youku.com/ku/webcomic) - 2025/07/01 更新 更新至37集 【youku】
+- [重生为怪兽什么鬼 第二季](https://www.youku.com/ku/webcomic) - 2025/07/01 更新 更新至105集 【youku】
 - [假面骑士歌查德 中配版](https://www.youku.com/ku/webcomic) - 2025/07/01 更新 更新至34集 【youku】
+- [江思先生](https://www.youku.com/ku/webcomic) - 2025/07/01 更新 更新至86集 【youku】
 
-**今天总共更新了 44 部番剧。**
+**今天总共更新了 48 部番剧。**
 
 ## 系统要求
 
