@@ -4,8 +4,8 @@ import logging
 import utils
 from common import Logger
 from common.decorators import timer
-from config import BILIBILI_GUOCHUANG_API, BILIBILI_ANIME_API, MIKANANI_BASE_URL, TENCENT_CARTOON_BASE_URL, \
-    IQIYI_CARTOON_API, YOUKU_COMICS_API
+from config import BILIBILI_GUOCHUANG_API, BILIBILI_ANIME_API, MIKANANI_BASE_URL
+from platforms.agedm import AgedmFetcher
 from platforms.bilibili import BilibiliFetcher
 from platforms.iqiyi import IQiyiFetcher
 from platforms.mikanani import MikananiFetcher
@@ -61,7 +61,8 @@ async def get_all_async_fetcher_tasks():
     tencent_cartoon = fetcher.tencent.fetch_qq_cartoon_today()
     iqiyi_cartoon = fetcher.iqiyi.fetch_iqiyi_cartoon_today()
     youku = fetcher.youku.fetch_youku_cartoon_today()
-    tasks = [mikanani, bilibili_guochuang, bilibili_anime, tencent_cartoon, iqiyi_cartoon, youku]
+    agedm = fetcher.agedm.fetch_agedm_update_today()
+    tasks = [agedm, mikanani, bilibili_guochuang, bilibili_anime, tencent_cartoon, iqiyi_cartoon, youku]
     return await asyncio.gather(*tasks)
 
 
@@ -84,9 +85,10 @@ class FetcherImpl:
         self.bilibili_guochuang = BilibiliFetcher(BILIBILI_GUOCHUANG_API)
         self.bilibili_anime = BilibiliFetcher(BILIBILI_ANIME_API)
         self.mikanani = MikananiFetcher(MIKANANI_BASE_URL)
-        self.tencent = TencentFetcher(TENCENT_CARTOON_BASE_URL)
-        self.iqiyi = IQiyiFetcher(IQIYI_CARTOON_API)
-        self.youku = YoukuFetcher(YOUKU_COMICS_API)
+        self.tencent = TencentFetcher()
+        self.iqiyi = IQiyiFetcher()
+        self.youku = YoukuFetcher()
+        self.agedm = AgedmFetcher()
 
 
 if __name__ == "__main__":
