@@ -7,7 +7,7 @@ from functools import wraps
 import random
 from typing import Any, Callable, Tuple, Optional
 
-from common.contants import TIME_OUT_5
+from common.constants import TIME_OUT_5
 
 
 # ===== 同步版 retry =====

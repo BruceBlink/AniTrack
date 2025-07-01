@@ -5,7 +5,7 @@ from dataclasses import dataclass, asdict
 import aiohttp
 from bs4 import Tag
 import utils
-from common import contants
+from common import constants
 
 
 @dataclass(order=True)
@@ -56,7 +56,7 @@ class AbstractFetcher(ABC):
             raise RuntimeError("api_url 未设置")
         logging.info(f"Fetching today's data from [{self.platform}] {self.api_url} 发起异步请求 ...")
         try:
-            async with session.get(self.api_url, headers=contants.HEADERS, timeout=10) as resp:
+            async with session.get(self.api_url, headers=constants.HEADERS, timeout=10) as resp:
                 resp.raise_for_status()
                 self.response_text = await resp.text(encoding='utf-8')
 
