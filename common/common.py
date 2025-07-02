@@ -3,6 +3,7 @@ import logging
 from abc import ABC, abstractmethod
 from dataclasses import dataclass, asdict
 import aiohttp
+import chardet
 from bs4 import Tag
 import utils
 from common import constants
@@ -58,7 +59,10 @@ class AbstractFetcher(ABC):
         try:
             async with session.get(self.api_url, headers=constants.HEADERS, timeout=10) as resp:
                 resp.raise_for_status()
-                self.response_text = await resp.text(encoding='utf-8')
+                raw = await resp.read()
+                encoding = chardet.detect(raw)["encoding"]
+                logging.info(f"Detected encoding: {encoding}")
+                self.response_text = raw.decode(encoding or "utf-8", errors="ignore")
 
         except (aiohttp.ClientError, asyncio.TimeoutError) as e:
             logging.error(f"from [{self.platform}] {self.api_url} 发起异步请求失败：{e}")

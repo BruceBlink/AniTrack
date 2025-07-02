@@ -16,7 +16,9 @@ dependencies = [
     "beautifulsoup4>=4.13.4",
     "brotlicffi>=1.0.9",
     "colorlog>=6.7.0",
-    "aiohttp >=3.10.5"
+    "aiohttp >=3.10.5",
+    "chardet >=5.2.0",
+
 ]
 
 [project.scripts]
