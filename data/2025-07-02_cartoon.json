@@ -119,7 +119,7 @@
     },
     {
       "detail_url": "https://v.qq.com/x/cover/mzc002007j7p5hn.html",
-      "image_url": "https://vcover-hz-pic.puui.qpic.cn/vcover_hz_pic/0/mzc002007j7p5hn1750246109410/810",
+      "image_url": "https://vcover-hz-pic.puui.qpic.cn/vcover_hz_pic/0/mzc002007j7p5hn1751443143978/810",
       "platform": "tencent",
       "title": "神印王座",
       "update_count": "165",
@@ -281,6 +281,33 @@
     },
     {
       "detail_url": "https://www.youku.com/ku/webcomic",
+      "image_url": "http://liangcang-material.alicdn.com/prod/upload/03a11674a96140efbcd80c6052ddc70f.webp.jpg",
+      "platform": "youku",
+      "title": "精神病面前 鬼东西算个球",
+      "update_count": "122",
+      "update_info": "更新至122话",
+      "update_time": "2025/07/02"
+    },
+    {
+      "detail_url": "https://www.youku.com/ku/webcomic",
+      "image_url": "http://m.ykimg.com/05810000654DC9F513EB660EAFC36190",
+      "platform": "youku",
+      "title": "武道大帝",
+      "update_count": "69",
+      "update_info": "更新至69话",
+      "update_time": "2025/07/02"
+    },
+    {
+      "detail_url": "https://www.youku.com/ku/webcomic",
+      "image_url": "http://m.ykimg.com/0581000067BC1C56C7C00814FE436A4B",
+      "platform": "youku",
+      "title": "全民转职：无职的我终结了神明！",
+      "update_count": "16",
+      "update_info": "更新至16话",
+      "update_time": "2025/07/02"
+    },
+    {
+      "detail_url": "https://www.youku.com/ku/webcomic",
       "image_url": "http://m.ykimg.com/058100006719D89AC7BFE912E99BB4EA",
       "platform": "youku",
       "title": "重生归来：直接无敌 第三季",
@@ -290,27 +317,18 @@
     },
     {
       "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://liangcang-material.alicdn.com/prod/upload/4b088af142314cedb391b6112c425c7d.webp.jpg",
+      "image_url": "http://liangcang-material.alicdn.com/prod/upload/a2963deecc6443cfba5d9c20523f0bd6.webp.jpg",
       "platform": "youku",
-      "title": "斗罗大陆5重生唐三",
-      "update_count": "26",
-      "update_info": "更新至26话",
+      "title": "香格里拉边境",
+      "update_count": "14",
+      "update_info": "更新至14话",
       "update_time": "2025/07/02"
     },
     {
       "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://m.ykimg.com/0581000067B55340C8479F1DB02C4453",
+      "image_url": "http://m.ykimg.com/05810000675FE99813EB661337EF65B5",
       "platform": "youku",
-      "title": "盖世扫地僧：我可以无限融合",
-      "update_count": "124",
-      "update_info": "更新至124话",
-      "update_time": "2025/07/02"
-    },
-    {
-      "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://liangcang-material.alicdn.com/prod/upload/8fafe83a8c9e48d49cb3a84925e62435.webp.jpg",
-      "platform": "youku",
-      "title": "全民诡异：开局掌握零元购",
+      "title": "百斩屠神",
       "update_count": "54",
       "update_info": "更新至54话",
       "update_time": "2025/07/02"
@@ -326,11 +344,20 @@
     },
     {
       "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://liangcang-material.alicdn.com/prod/upload/4d67d623a20e4c26af7686f64a1660ef.webp.jpg",
+      "image_url": "http://liangcang-material.alicdn.com/prod/upload/bc167d86a51d42078d17459fe660955a.webp.jpg",
       "platform": "youku",
-      "title": "香格里拉边境",
-      "update_count": "14",
-      "update_info": "更新至14话",
+      "title": "全民诡异：开局掌握零元购",
+      "update_count": "54",
+      "update_info": "更新至54话",
+      "update_time": "2025/07/02"
+    },
+    {
+      "detail_url": "https://www.youku.com/ku/webcomic",
+      "image_url": "http://liangcang-material.alicdn.com/prod/upload/2bc056c2136d4b869106bde5cca52e02.webp.jpg",
+      "platform": "youku",
+      "title": "斗罗大陆5重生唐三",
+      "update_count": "26",
+      "update_info": "更新至26话",
       "update_time": "2025/07/02"
     },
     {
@@ -344,15 +371,6 @@
     },
     {
       "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://liangcang-material.alicdn.com/prod/upload/7b263aacd4774e09a87e95124a484ad9.webp.jpg",
-      "platform": "youku",
-      "title": "精神病面前 鬼东西算个球",
-      "update_count": "122",
-      "update_info": "更新至122话",
-      "update_time": "2025/07/02"
-    },
-    {
-      "detail_url": "https://www.youku.com/ku/webcomic",
       "image_url": "http://m.ykimg.com/0581000066164D7E7B50C011D4D2581B",
       "platform": "youku",
       "title": "我刷爆了无限致命游戏",
@@ -362,29 +380,11 @@
     },
     {
       "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://m.ykimg.com/05810000654DC9F513EB660EAFC36190",
+      "image_url": "http://m.ykimg.com/0581000067B55340C8479F1DB02C4453",
       "platform": "youku",
-      "title": "武道大帝",
-      "update_count": "69",
-      "update_info": "更新至69话",
-      "update_time": "2025/07/02"
-    },
-    {
-      "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://m.ykimg.com/05810000675FE99813EB661337EF65B5",
-      "platform": "youku",
-      "title": "百斩屠神",
-      "update_count": "54",
-      "update_info": "更新至54话",
-      "update_time": "2025/07/02"
-    },
-    {
-      "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://m.ykimg.com/0581000067BC1C56C7C00814FE436A4B",
-      "platform": "youku",
-      "title": "全民转职：无职的我终结了神明！",
-      "update_count": "16",
-      "update_info": "更新至16话",
+      "title": "盖世扫地僧：我可以无限融合",
+      "update_count": "124",
+      "update_info": "更新至124话",
       "update_time": "2025/07/02"
     }
   ]
