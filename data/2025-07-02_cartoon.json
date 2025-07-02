@@ -1,12 +1,48 @@
 {
   "星期三": [
     {
+      "detail_url": "https://mikanani.me/Home/Bangumi/3599",
+      "image_url": "https://mikanani.me/images/Bangumi/202504/076c1094.jpg?width=400&height=400&format=webp",
+      "platform": "mikanani",
+      "title": "夏日口袋",
+      "update_count": "",
+      "update_info": "3\n\n\n2025/07/0",
+      "update_time": "2025/07/02"
+    },
+    {
+      "detail_url": "https://mikanani.me/Home/Bangumi/3587",
+      "image_url": "https://mikanani.me/images/Bangumi/202504/ff5c2429.jpg?width=400&height=400&format=webp",
+      "platform": "mikanani",
+      "title": "魔女守护者",
+      "update_count": "",
+      "update_info": "3\n\n\n2025/07/0",
+      "update_time": "2025/07/02"
+    },
+    {
+      "detail_url": "https://mikanani.me/Home/Bangumi/3637",
+      "image_url": "https://mikanani.me/images/Bangumi/202504/060a6b96.jpg?width=400&height=400&format=webp",
+      "platform": "mikanani",
+      "title": "真･武士传 剑勇传说",
+      "update_count": "",
+      "update_info": "1\n\n\n2025/07/0",
+      "update_time": "2025/07/02"
+    },
+    {
       "detail_url": "https://mikanani.me/Home/Bangumi/3649",
       "image_url": "https://mikanani.me/images/Bangumi/202506/3cd27527.jpg?width=400&height=400&format=webp",
       "platform": "mikanani",
       "title": "章鱼哔的原罪",
       "update_count": "",
       "update_info": "3\n\n\n2025/07/0",
+      "update_time": "2025/07/02"
+    },
+    {
+      "detail_url": "https://www.bilibili.com/bangumi/play/ep1554090",
+      "image_url": "https://i0.hdslb.com/bfs/bangumi/image/1d5d692f1e334fe84c5631092a9e12158c7452b1.png",
+      "platform": "bilibili",
+      "title": "君有云 第二季",
+      "update_count": "8",
+      "update_info": "更新至第8话",
       "update_time": "2025/07/02"
     },
     {
@@ -218,11 +254,11 @@
     },
     {
       "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://m.ykimg.com/058100006719D89AC7BFE912E99BB4EA",
+      "image_url": "http://m.ykimg.com/05810000654DC9F513EB660EAFC36190",
       "platform": "youku",
-      "title": "重生归来：直接无敌 第三季",
-      "update_count": "101",
-      "update_info": "更新至101话",
+      "title": "武道大帝",
+      "update_count": "69",
+      "update_info": "更新至69话",
       "update_time": "2025/07/02"
     },
     {
@@ -236,29 +272,11 @@
     },
     {
       "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://m.ykimg.com/0581000067BC1C56C7C00814FE436A4B",
+      "image_url": "http://liangcang-material.alicdn.com/prod/upload/bc167d86a51d42078d17459fe660955a.webp.jpg",
       "platform": "youku",
-      "title": "全民转职：无职的我终结了神明！",
-      "update_count": "16",
-      "update_info": "更新至16话",
-      "update_time": "2025/07/02"
-    },
-    {
-      "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://liangcang-material.alicdn.com/prod/upload/a2963deecc6443cfba5d9c20523f0bd6.webp.jpg",
-      "platform": "youku",
-      "title": "香格里拉边境",
-      "update_count": "14",
-      "update_info": "更新至14话",
-      "update_time": "2025/07/02"
-    },
-    {
-      "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://m.ykimg.com/0581000067B55340C8479F1DB02C4453",
-      "platform": "youku",
-      "title": "盖世扫地僧：我可以无限融合",
-      "update_count": "124",
-      "update_info": "更新至124话",
+      "title": "全民诡异：开局掌握零元购",
+      "update_count": "54",
+      "update_info": "更新至54话",
       "update_time": "2025/07/02"
     },
     {
@@ -272,20 +290,20 @@
     },
     {
       "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://liangcang-material.alicdn.com/prod/upload/8fafe83a8c9e48d49cb3a84925e62435.webp.jpg",
+      "image_url": "http://m.ykimg.com/0581000067B55340C8479F1DB02C4453",
       "platform": "youku",
-      "title": "全民诡异：开局掌握零元购",
-      "update_count": "54",
-      "update_info": "更新至54话",
+      "title": "盖世扫地僧：我可以无限融合",
+      "update_count": "124",
+      "update_info": "更新至124话",
       "update_time": "2025/07/02"
     },
     {
       "detail_url": "https://www.youku.com/ku/webcomic",
-      "image_url": "http://m.ykimg.com/05810000654DC9F513EB660EAFC36190",
+      "image_url": "http://liangcang-material.alicdn.com/prod/upload/4d67d623a20e4c26af7686f64a1660ef.webp.jpg",
       "platform": "youku",
-      "title": "武道大帝",
-      "update_count": "69",
-      "update_info": "更新至69话",
+      "title": "香格里拉边境",
+      "update_count": "14",
+      "update_info": "更新至14话",
       "update_time": "2025/07/02"
     },
     {
@@ -295,6 +313,24 @@
       "title": "精神病面前 鬼东西算个球",
       "update_count": "122",
       "update_info": "更新至122话",
+      "update_time": "2025/07/02"
+    },
+    {
+      "detail_url": "https://www.youku.com/ku/webcomic",
+      "image_url": "http://m.ykimg.com/058100006719D89AC7BFE912E99BB4EA",
+      "platform": "youku",
+      "title": "重生归来：直接无敌 第三季",
+      "update_count": "101",
+      "update_info": "更新至101话",
+      "update_time": "2025/07/02"
+    },
+    {
+      "detail_url": "https://www.youku.com/ku/webcomic",
+      "image_url": "http://m.ykimg.com/0581000067BC1C56C7C00814FE436A4B",
+      "platform": "youku",
+      "title": "全民转职：无职的我终结了神明！",
+      "update_count": "16",
+      "update_info": "更新至16话",
       "update_time": "2025/07/02"
     },
     {
