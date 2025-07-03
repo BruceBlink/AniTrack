@@ -61,6 +61,8 @@ class AbstractFetcher(ABC):
                 resp.raise_for_status()
                 raw = await resp.read()
                 encoding = chardet.detect(raw)["encoding"]
+                if encoding is None or encoding.lower() in {"windows-1254", "ascii"}:
+                    encoding = "utf-8"
                 logging.info(f"Detected encoding: {encoding}")
                 self.response_text = raw.decode(encoding or "utf-8", errors="ignore")
 
