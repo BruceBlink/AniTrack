@@ -47,8 +47,10 @@ class MikananiFetcher(AbstractFetcher):
             await super().fetch_update_data(session)
             soup = BeautifulSoup(self.response_text, 'html.parser')
             logging.debug(f"解析从API获取到的 HTML 内容为：{soup.prettify()}...")
-
-            items = (li for li in soup.find_all("li") if li.find("div", class_="num-node text-center"))
+            today_date_text = utils.iso_date_ld
+            # 获取今天更新的番剧信息
+            items = (li for li in soup.find_all("li") if li.find("div", class_="num-node text-center") \
+                     and today_date_text in li.find("div", class_="date-text").text)
 
             for li in items:
                 anime_info = self._build_result_from_episode(li)
