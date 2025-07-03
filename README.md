@@ -42,24 +42,24 @@
 - [古神游戏 动态漫画](http://www.iqiyi.com/v_1up7enc5h9k.html) - 2025/07/03 更新 更新至50集 【iqiyi】
 - [平平无奇大师兄 动态漫画](http://www.iqiyi.com/v_13j8sd838xo.html) - 2025/07/03 更新 更新至26集 【iqiyi】
 - [末世钞能力者 动态漫画](http://www.iqiyi.com/v_1ee7zd8s2j8.html) - 2025/07/03 更新 更新至33集 【iqiyi】
-- [弟子修炼，我躺平！第二季](https://www.youku.com/ku/webcomic) - 2025/07/03 更新 更新至84集 【youku】
-- [收徒亿万返还：为师无敌世间 第二季](https://www.youku.com/ku/webcomic) - 2025/07/03 更新 更新至130集 【youku】
-- [气运之子：我可以无限暴击](https://www.youku.com/ku/webcomic) - 2025/07/03 更新 更新至57集 【youku】
-- [我在末日玄幻世界无敌了](https://www.youku.com/ku/webcomic) - 2025/07/03 更新 更新至39集 【youku】
-- [氪丹修仙只苟长生](https://www.youku.com/ku/webcomic) - 2025/07/03 更新 更新至57集 【youku】
-- [暴富系统：我有999个新马甲 第二季](https://www.youku.com/ku/webcomic) - 2025/07/03 更新 更新至60集 【youku】
-- [师尊：这个冲师逆徒才不是圣子](https://www.youku.com/ku/webcomic) - 2025/07/03 更新 更新至28集 【youku】
-- [结婚后，我把冰山女总裁气哭了](https://www.youku.com/ku/webcomic) - 2025/07/03 更新 更新至42集 【youku】
-- [师兄啊师兄](https://www.youku.com/ku/webcomic) - 2025/07/03 更新 更新至96集 【youku】
-- [仙武帝尊](https://www.youku.com/ku/webcomic) - 2025/07/03 更新 更新至463集 【youku】
-- [全民御兽：开局山海经，我横扫全球](https://www.youku.com/ku/webcomic) - 2025/07/03 更新 更新至75集 【youku】
 - [神戒降临：最强异世界](https://www.youku.com/ku/webcomic) - 2025/07/03 更新 更新至20集 【youku】
-- [古神游戏](https://www.youku.com/ku/webcomic) - 2025/07/03 更新 更新至50集 【youku】
-- [假面骑士圣刃 中配版](https://www.youku.com/ku/webcomic) - 2025/07/03 更新 更新至34集 【youku】
-- [轩辕小豆之山海奇缘](https://www.youku.com/ku/webcomic) - 2025/07/03 更新 更新至52集 【youku】
-- [我掌控百万阴兵阴将](https://www.youku.com/ku/webcomic) - 2025/07/03 更新 更新至32集 【youku】
 - [开局送外挂，爷无敌了 第二季](https://www.youku.com/ku/webcomic) - 2025/07/03 更新 更新至85集 【youku】
+- [收徒亿万返还：为师无敌世间 第二季](https://www.youku.com/ku/webcomic) - 2025/07/03 更新 更新至130集 【youku】
+- [轩辕小豆之山海奇缘](https://www.youku.com/ku/webcomic) - 2025/07/03 更新 更新至52集 【youku】
+- [弟子修炼，我躺平！第二季](https://www.youku.com/ku/webcomic) - 2025/07/03 更新 更新至84集 【youku】
+- [暴富系统：我有999个新马甲 第二季](https://www.youku.com/ku/webcomic) - 2025/07/03 更新 更新至60集 【youku】
 - [无敌神王](https://www.youku.com/ku/webcomic) - 2025/07/03 更新 更新至24集 【youku】
+- [气运之子：我可以无限暴击](https://www.youku.com/ku/webcomic) - 2025/07/03 更新 更新至57集 【youku】
+- [氪丹修仙只苟长生](https://www.youku.com/ku/webcomic) - 2025/07/03 更新 更新至57集 【youku】
+- [全民御兽：开局山海经，我横扫全球](https://www.youku.com/ku/webcomic) - 2025/07/03 更新 更新至75集 【youku】
+- [古神游戏](https://www.youku.com/ku/webcomic) - 2025/07/03 更新 更新至50集 【youku】
+- [师兄啊师兄](https://www.youku.com/ku/webcomic) - 2025/07/03 更新 更新至96集 【youku】
+- [假面骑士圣刃 中配版](https://www.youku.com/ku/webcomic) - 2025/07/03 更新 更新至34集 【youku】
+- [我掌控百万阴兵阴将](https://www.youku.com/ku/webcomic) - 2025/07/03 更新 更新至32集 【youku】
+- [结婚后，我把冰山女总裁气哭了](https://www.youku.com/ku/webcomic) - 2025/07/03 更新 更新至42集 【youku】
+- [仙武帝尊](https://www.youku.com/ku/webcomic) - 2025/07/03 更新 更新至463集 【youku】
+- [师尊：这个冲师逆徒才不是圣子](https://www.youku.com/ku/webcomic) - 2025/07/03 更新 更新至28集 【youku】
+- [我在末日玄幻世界无敌了](https://www.youku.com/ku/webcomic) - 2025/07/03 更新 更新至39集 【youku】
 
 **今天总共更新了 46 部番剧。**
 
