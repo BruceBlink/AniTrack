@@ -1,4 +1,5 @@
 import asyncio
+import io
 import logging
 from abc import ABC, abstractmethod
 from dataclasses import dataclass, asdict
@@ -7,7 +8,7 @@ import chardet
 from bs4 import Tag
 import utils
 from common import constants
-
+import zstandard as zstd
 
 @dataclass(order=True)
 class Result:
@@ -45,6 +46,31 @@ class Result:
         return asdict(self)
 
 
+async def safe_read_response(resp: aiohttp.ClientResponse) -> str:
+    raw_bytes = await resp.read()
+
+    # 解压 zstd（流式）
+    content_encoding = resp.headers.get('Content-Encoding', '').lower()
+    if content_encoding == 'zstd':
+        try:
+            dctx = zstd.ZstdDecompressor()
+            with dctx.stream_reader(io.BytesIO(raw_bytes)) as reader:
+                raw_bytes = reader.read()
+        except Exception as e:
+            logging.warning(f"Zstd 解压失败: {e}")
+
+    # 编码检测
+    detected = chardet.detect(raw_bytes)
+    encoding = detected.get("encoding") or "utf-8"
+
+    if encoding.lower() in {"windows-1254", "ascii"}:
+        encoding = "utf-8"
+
+    logging.info(f"Detected encoding: {encoding}")
+
+    return raw_bytes.decode(encoding, errors="replace")
+
+
 class AbstractFetcher(ABC):
     def __init__(self):
         self.api_url: str | None = None
@@ -59,16 +85,11 @@ class AbstractFetcher(ABC):
         try:
             async with session.get(self.api_url, headers=constants.HEADERS, timeout=10) as resp:
                 resp.raise_for_status()
-                raw = await resp.read()
-                encoding = chardet.detect(raw)["encoding"]
-                if encoding is None or encoding.lower() in {"windows-1254", "ascii"}:
-                    encoding = "utf-8"
-                logging.info(f"Detected encoding: {encoding}")
-                self.response_text = raw.decode(encoding or "utf-8", errors="ignore")
+                self.response_text = await safe_read_response(resp)
 
         except (aiohttp.ClientError, asyncio.TimeoutError) as e:
             logging.error(f"from [{self.platform}] {self.api_url} 发起异步请求失败：{e}")
-            raise e
+            raise
 
     async def fetch_update_data(self, session: aiohttp.ClientSession) -> str | None:
         """异步获取数据并构建 Result 对象。"""
