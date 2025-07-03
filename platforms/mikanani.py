@@ -8,7 +8,7 @@ import utils
 from common import Result, AbstractFetcher, Logger
 from common.decorators import retry_async, print_after_return_async, timer, print_performance_metrics
 from config import MIKANANI_BASE_URL
-from utils import iso_date_ld, print_results
+from utils import print_results
 
 
 class MikananiFetcher(AbstractFetcher):
@@ -19,28 +19,26 @@ class MikananiFetcher(AbstractFetcher):
         self.api_url = api_url
         self.platform = platform
 
-    def _build_result_from_episode(self, li: Tag) -> Result:
-        super()._build_result_from_episode(li)
-        """从单个 <li> 元素构建 Result 对象。"""
-        text = li.get_text()[2:15]
-        a_tag = li.find("a", href=True)
-        title = a_tag.get_text(strip=True) if a_tag else text
-        detail_url = urljoin(self.api_url, a_tag["href"]) if a_tag else ""
+    def _build_result_from_episode(self, li_tag: Tag) -> Result:
+        title_tag = li_tag.select_one("a.an-text")
+        title = title_tag.get("title", "").strip()
 
-        # 提取封面图
-        image_url = ""
-        span = li.find("span", class_="js-expand_bangumi")
-        if span and span.has_attr("data-src"):
-            image_url = urljoin(self.api_url, span["data-src"])
+        update_info_tag = li_tag.select_one("div.date-text")
+        update_info = update_info_tag.text.strip()
+
+        update_time = update_info.split()[0]
+
+        image_url = urljoin(self.api_url, li_tag.select_one("span.js-expand_bangumi").get("data-src"))
+        detail_url = urljoin(self.api_url, title_tag.get("href"))
 
         return Result(
             platform=self.platform,
             title=title,
-            update_count="",
-            update_info=text,
+            update_count="",  # 若需要填 2，可以取 li_tag.select_one(".num-node").text.strip()
+            update_info=update_info,
             image_url=image_url,
             detail_url=detail_url,
-            update_time=iso_date_ld,
+            update_time=update_time,
         )
 
     async def _fetch_mikanani_update_today(self, session: aiohttp.ClientSession) -> dict[str, list] | None:
