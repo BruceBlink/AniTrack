@@ -77,7 +77,7 @@
 ## 系统要求
 
 - Python 3.12+
-- 请查看 `requirements.txt` 获取所需依赖包
+- 请查看 `pyproject.toml` 获取所需依赖包
 
 ## 安装步骤
 
