@@ -61,8 +61,8 @@ async def get_all_async_fetcher_tasks():
     tencent_cartoon = fetcher.tencent.fetch_qq_cartoon_today()
     iqiyi_cartoon = fetcher.iqiyi.fetch_iqiyi_cartoon_today()
     youku = fetcher.youku.fetch_youku_cartoon_today()
-    agedm = fetcher.agedm.fetch_agedm_update_today()
-    tasks = [agedm, mikanani, bilibili_guochuang, bilibili_anime, tencent_cartoon, iqiyi_cartoon, youku]
+    # agedm = fetcher.agedm.fetch_agedm_update_today()
+    tasks = [ mikanani, bilibili_guochuang, bilibili_anime, tencent_cartoon, iqiyi_cartoon, youku]
     return await asyncio.gather(*tasks)
 
 
