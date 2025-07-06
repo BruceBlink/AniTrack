@@ -59,24 +59,24 @@
 - [回到古代当皇帝 动态漫画 第1季](http://www.iqiyi.com/v_sbzhdgolps.html) - 2025/07/06 更新 更新至21集 【iqiyi】
 - [邪神降世，我有一座大凶狱 动态漫画](http://www.iqiyi.com/v_dp0rbk9hd4.html) - 2025/07/06 更新 更新至57集 【iqiyi】
 - [全民进化 我只幸运了亿点点 动态漫画](http://www.iqiyi.com/v_2c6x58bl2ws.html) - 2025/07/06 更新 更新至23集 【iqiyi】
-- [弟子修炼，我躺平！第二季](https://www.youku.com/ku/webcomic) - 2025/07/06 更新 更新至85集 【youku】
-- [一力破诸天万界](https://www.youku.com/ku/webcomic) - 2025/07/06 更新 更新至38集 【youku】
-- [假面骑士歌查德 中配版](https://www.youku.com/ku/webcomic) - 2025/07/06 更新 更新至35集 【youku】
-- [我被困在同一天一千年](https://www.youku.com/ku/webcomic) - 2025/07/06 更新 更新至123集 【youku】
-- [反派大师兄 师妹们不按套路出牌·动态漫](https://www.youku.com/ku/webcomic) - 2025/07/06 更新 更新至78集 【youku】
-- [神豪之天降系统 第二季 动态漫画](https://www.youku.com/ku/webcomic) - 2025/07/06 更新 更新至16集 【youku】
-- [我夺舍了系统玩家](https://www.youku.com/ku/webcomic) - 2025/07/06 更新 更新至109集 【youku】
-- [小狮子赛几 第四季](https://www.youku.com/ku/webcomic) - 2025/07/06 更新 更新至85集 【youku】
-- [邪神降世，我有一座大凶狱](https://www.youku.com/ku/webcomic) - 2025/07/06 更新 更新至57集 【youku】
-- [无敌神王](https://www.youku.com/ku/webcomic) - 2025/07/06 更新 更新至25集 【youku】
-- [网游之天下无双](https://www.youku.com/ku/webcomic) - 2025/07/06 更新 更新至72集 【youku】
-- [古神游戏](https://www.youku.com/ku/webcomic) - 2025/07/06 更新 更新至51集 【youku】
-- [只有我能用召唤术](https://www.youku.com/ku/webcomic) - 2025/07/06 更新 更新至56集 【youku】
-- [绝世武神 第七季](https://www.youku.com/ku/webcomic) - 2025/07/06 更新 更新至124集 【youku】
-- [武道大帝](https://www.youku.com/ku/webcomic) - 2025/07/06 更新 更新至71集 【youku】
-- [全民诡异：开局掌握零元购](https://www.youku.com/ku/webcomic) - 2025/07/06 更新 更新至56集 【youku】
-- [葬送的芙莉莲](https://www.youku.com/ku/webcomic) - 2025/07/06 更新 更新至13集 【youku】
 - [重生归来：直接无敌 第三季](https://www.youku.com/ku/webcomic) - 2025/07/06 更新 更新至103集 【youku】
+- [弟子修炼，我躺平！第二季](https://www.youku.com/ku/webcomic) - 2025/07/06 更新 更新至85集 【youku】
+- [小狮子赛几 第四季](https://www.youku.com/ku/webcomic) - 2025/07/06 更新 更新至85集 【youku】
+- [反派大师兄 师妹们不按套路出牌·动态漫](https://www.youku.com/ku/webcomic) - 2025/07/06 更新 更新至78集 【youku】
+- [只有我能用召唤术](https://www.youku.com/ku/webcomic) - 2025/07/06 更新 更新至56集 【youku】
+- [无敌神王](https://www.youku.com/ku/webcomic) - 2025/07/06 更新 更新至25集 【youku】
+- [我夺舍了系统玩家](https://www.youku.com/ku/webcomic) - 2025/07/06 更新 更新至109集 【youku】
+- [古神游戏](https://www.youku.com/ku/webcomic) - 2025/07/06 更新 更新至51集 【youku】
+- [我被困在同一天一千年](https://www.youku.com/ku/webcomic) - 2025/07/06 更新 更新至123集 【youku】
+- [神豪之天降系统 第二季 动态漫画](https://www.youku.com/ku/webcomic) - 2025/07/06 更新 更新至16集 【youku】
+- [邪神降世，我有一座大凶狱](https://www.youku.com/ku/webcomic) - 2025/07/06 更新 更新至57集 【youku】
+- [一力破诸天万界](https://www.youku.com/ku/webcomic) - 2025/07/06 更新 更新至38集 【youku】
+- [全民诡异：开局掌握零元购](https://www.youku.com/ku/webcomic) - 2025/07/06 更新 更新至56集 【youku】
+- [武道大帝](https://www.youku.com/ku/webcomic) - 2025/07/06 更新 更新至71集 【youku】
+- [葬送的芙莉莲](https://www.youku.com/ku/webcomic) - 2025/07/06 更新 更新至13集 【youku】
+- [网游之天下无双](https://www.youku.com/ku/webcomic) - 2025/07/06 更新 更新至72集 【youku】
+- [假面骑士歌查德 中配版](https://www.youku.com/ku/webcomic) - 2025/07/06 更新 更新至35集 【youku】
+- [绝世武神 第七季](https://www.youku.com/ku/webcomic) - 2025/07/06 更新 更新至124集 【youku】
 
 **今天总共更新了 63 部番剧。**
 
