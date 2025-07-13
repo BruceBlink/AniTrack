@@ -8,7 +8,6 @@ import tempfile
 import time
 from collections import defaultdict
 from datetime import datetime
-from common.decorators import timer
 
 # 获取当前本地时间（你的环境默认就是 +08:00 新加坡时区）
 now = datetime.now()
